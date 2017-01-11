@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>FactionFound</defName>
+    <label>faction found</label>
+    <WorkerClass>FactionDiscovery.IncidentWorker_FactionFound</WorkerClass>
+    <baseChance>4</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Faction found</letterLabel>
+  </IncidentDef>
+
+</Defs>

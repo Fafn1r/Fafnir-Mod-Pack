@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+	
+	<FactionFound.label>faction found</FactionFound.label>
+	<FactionFound.letterLabel>Faction discovered</FactionFound.letterLabel>
+
+</LanguageData>
