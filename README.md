@@ -19,12 +19,16 @@ Installation:
 FAQ:
 
 Q: Can you add a version without Combat Realism/ammo system?
-A: [color=red]NO[/color]
+A: NO
+
 Q: Can you add mod X?
 A: If I'd like to used it, yes. If I don't, but many people would like to use it and it can be disabled/skipped (like Prepare Carefully), yes. Otherwise no.
+
 Q: X mod just got updated, can you add new version?
 A: Unless it's a gamebreaking bug hotfix, it has to wait until next FMP release. I won't be adding significiant changes mid-playthrough.
+
 Q: Can I add more mods to FMP?
 A: Do it at your own risk. Some mods may be incompatibile with others and I only make compatibility patches for mods in FMP.
+
 Q: Can I safely disable some mods from FMP?
 A: Some, yes. Some, no. I added more dependencies - for example you won't be able to make MoreFloors wool carpets, if you disable Vegetable Garden, because it uses Tailor's Loom.
