@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+	
+
+	<ThingDef ParentName="VG_MealRottable">
+	<defName>Rawtofu</defName>
+    <label>tofu</label>
+    <description>Raw protein-rich Tofu. Made from Beans. Nice to eat, even when raw.</description>
+    <graphicData>
+      <texPath>Things/Item/tofu</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>10</DeteriorationRate>
+      <MarketValue>14</MarketValue>
+      <WorkToMake>600</WorkToMake>
+    </statBases>
+    <ingestible>
+	<foodType>Processed</foodType>
+	<preferability>DesperateOnly</preferability>
+      <nutrition>0.25</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+	</ThingDef>
+
+
+	<ThingDef ParentName="VG_MealRottable">
+	<defName>RawPolenta</defName>
+    <label>Polenta</label>
+    <description>Made from Cornmeal. Nice to eat, even when raw. Can be baked or grilled into fine meals.</description>
+    <graphicData>
+      <texPath>Things/Item/Polenta</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>10</DeteriorationRate>
+      <MarketValue>14</MarketValue>
+      <WorkToMake>600</WorkToMake>
+    </statBases>
+    <ingestible>
+	<foodType>Processed</foodType>
+	<preferability>DesperateOnly</preferability>
+      <nutrition>0.25</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <thingCategories>
+      <li>PlantFoodRaw</li>
+    </thingCategories>
+	</ThingDef>
+
+</Resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <FloorWood1.label>나무 마룻바닥</FloorWood1.label>
+  <FloorWood2.label>넓은 나무 마룻바닥</FloorWood2.label>
+  <FloorWood3.label>밝은 나무바닥</FloorWood3.label>
+  <FloorWood4.label>모자이크 나무바닥</FloorWood4.label>
+  <FloorWood5.label>세로 나무바닥</FloorWood5.label>
+
+  <FloorWood1.description>시골 느낌의 마룻바닥입니다.</FloorWood1.description>
+  <FloorWood2.description>깔끔한 느낌의 넓은 나무바닥입니다.</FloorWood2.description>
+  <FloorWood3.description>밝은 색의 나무바닥입니다.</FloorWood3.description>
+  <FloorWood4.description>모자이크 패턴의 쪽모이 세공 마루바닥입니다.</FloorWood4.description>
+  <FloorWood5.description>윤이 나는 검은 나무바닥입니다.</FloorWood5.description>
+
+</LanguageData>

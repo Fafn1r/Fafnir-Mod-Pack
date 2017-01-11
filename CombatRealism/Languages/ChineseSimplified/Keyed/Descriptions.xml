@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <CR_DescDamage>伤害</CR_DescDamage>
+    <CR_DescExplosionRadius>爆炸范围</CR_DescExplosionRadius>
+    <CR_DescSecondaryExplosion>次级爆炸</CR_DescSecondaryExplosion>
+    <CR_DescFragRange>破片范围</CR_DescFragRange>
+    <CR_DescArmorPenetration>护甲穿透</CR_DescArmorPenetration>
+    <CR_DescPelletCount>弹丸数量</CR_DescPelletCount>
+    <CR_DescSpreadMult>散布率</CR_DescSpreadMult>
+	
+</LanguageData>

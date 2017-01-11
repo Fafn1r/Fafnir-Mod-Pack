@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+	<ThingDef ParentName="VG_CrateBase">
+		<defName>cider_Crate</defName>
+		<label>crate of Shinzee's apple cider</label>
+		<graphicData>
+			<texPath>Things/Crate/BeerCrate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_CrateBase">
+		<defName>rum_Crate</defName>
+		<label>crate of REinstein's Rum</label>
+		<graphicData>
+			<texPath>Things/Crate/BeerCrate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_CrateBase">
+		<defName>Wine_Crate</defName>
+		<label>crate of Ramsi's wine</label>
+		<graphicData>
+			<texPath>Things/Crate/BeerCrate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_CrateBase">
+		<defName>strawberrywine_Crate</defName>
+		<label>crate of spoon's wine</label>
+		<graphicData>
+			<texPath>Things/Crate/BeerCrate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_CrateBase">
+		<defName>saki_Crate</defName>
+		<label>crate of WHiZ Sake</label>
+		<graphicData>
+			<texPath>Things/Crate/BeerCrate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_CrateBase">
+		<defName>vodka_Crate</defName>
+		<label>crate of Syntria Vodka</label>
+		<graphicData>
+			<texPath>Things/Crate/BeerCrate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_CrateBase">
+		<defName>tequila_Crate</defName>
+		<label>crate of Kitty's Tequila</label>
+		<graphicData>
+			<texPath>Things/Crate/BeerCrate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_CrateBase">
+		<defName>Whiskey_Crate</defName>
+		<label>crate of Quill18's Whiskey</label>
+		<graphicData>
+			<texPath>Things/Crate/BeerCrate</texPath>
+		</graphicData>
+	</ThingDef>
+
+
+</Resources>
+
+
+
+
+
+

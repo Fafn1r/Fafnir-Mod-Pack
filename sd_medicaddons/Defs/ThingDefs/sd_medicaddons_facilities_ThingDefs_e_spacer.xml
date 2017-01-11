@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--================================ spacer vitalsmonitor ======================================-->
+  
+  <ThingDef ParentName="sd_facilitiesBase">
+    <defName>sd_medicaddons_spacer_surg_vitalsmonitor</defName>
+    <label>spacer vitalsmonitor</label>
+    <graphicData>
+      <texPath>sd_medicaddons/spacerfacilities/sd_medicaddons_spacer_surg_vitalsmonitor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <researchPrerequisites>
+		<li>sd_medicaddons_research_spacer_med</li>
+	</researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>New and improved: Not much like the normal vitalsmonitor, since this baby comes with a set of new functions to monitor the patients. Needs to be placed adjacent to a bed. One bed can be linked to only one of the same kind, but multiple beds can use the same one.</description>
+    <size>(1,1)</size>
+	<costList>
+		<Steel>100</Steel>
+		<Plasteel>10</Plasteel>
+		<Component>5</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
+          <ImmunityGainSpeedFactor>0.04</ImmunityGainSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+        <canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
+      </li>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>1.5</glowRadius>
+        <glowColor>(115,198,206,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!--================================ spacer surgery instruments ======================================-->
+  
+  <ThingDef ParentName="sd_facilitiesBase">
+    <defName>sd_medicaddons_spacer_surg_instruments</defName>
+    <label>spacer surgery instruments</label>
+    <graphicData>
+      <texPath>sd_medicaddons/spacerfacilities/sd_medicaddons_spacer_surg_instruments</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <researchPrerequisites>
+		<li>sd_medicaddons_research_spacer_med</li>
+	</researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>If i use the plasma cutter here this should work. Sounds not very convincing, but the patient will feel no pain. Atleast thats what the advertisment says. Needs to be placed adjacent to a bed. One bed can be linked to only one of the same kind, but multiple beds can use the same one.</description>
+    <size>(1,1)</size>
+	<costList>
+		<Steel>100</Steel>
+		<Plasteel>10</Plasteel>
+		<GlitterworldMedicine>1</GlitterworldMedicine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <MedicalTendQualityOffset>0.04</MedicalTendQualityOffset>
+          <ImmunityGainSpeedFactor>0.02</ImmunityGainSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+        <canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
+      </li>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>1.5</glowRadius>
+        <glowColor>(115,198,206,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!--================================ spacer surgery lamp ======================================-->
+  
+  <ThingDef ParentName="sd_facilitiesBase">
+    <defName>sd_medicaddons_spacer_surg_lamp</defName>
+    <label>spacer surgery lamp</label>
+    <graphicData>
+      <texPath>sd_medicaddons/spacerfacilities/sd_medicaddons_spacer_surg_lamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <researchPrerequisites>
+		<li>sd_medicaddons_research_spacer_med</li>
+	</researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>The newest advacement in surgery technologie, literally a floating ball of light. Needs to be placed adjacent to a bed. One bed can be linked to only one of the same kind, but multiple beds can use the same one.</description>
+    <size>(1,1)</size>
+	<costList>
+		<Steel>100</Steel>
+		<Plasteel>10</Plasteel>
+		<Component>5</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+      <MedicalTendQualityOffset>0.08</MedicalTendQualityOffset>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+        <canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
+      </li>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_Glower">
+        <overlightRadius>3.5</overlightRadius>
+        <glowRadius>6</glowRadius>
+        <glowColor>(115,198,206,0)</glowColor>
+      </li>
+    </comps>
+	<rotatable>False</rotatable>
+  </ThingDef>
+  
+</Defs>

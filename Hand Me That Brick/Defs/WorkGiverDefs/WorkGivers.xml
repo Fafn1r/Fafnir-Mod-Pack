@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+	<!-- DeliverResources work givers for Haulers, only active for buildings with total material cost over 0 -->
+
+	<WorkGiverDef>
+		<defName>HaulDeliverResourcesToFrames</defName>
+		<label>deliver resources to frames (hauler)</label>
+		<giverClass>HandMeThatBrick.WorkGiver_HaulDeliverResourcesToFrames</giverClass>
+		<workType>Hauling</workType>
+		<priorityInType>47</priorityInType>
+		<verb>deliver resources to</verb>
+		<gerund>delivering resources to</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>HaulDeliverResourcesToBlueprints</defName>
+		<label>deliver resources to blueprints (hauler)</label>
+		<giverClass>HandMeThatBrick.WorkGiver_HaulDeliverResourcesToBlueprints</giverClass>
+		<workType>Hauling</workType>
+		<priorityInType>45</priorityInType>
+		<verb>deliver resources to</verb>
+		<gerund>delivering resources to</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+</WorkGivers>

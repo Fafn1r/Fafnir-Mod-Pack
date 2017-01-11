@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RecipeDefs>
+
+
+  <RecipeDef>
+    <defName>GrillKabob</defName>
+    <label>grill two kabobs</label>
+    <description>Meats and/or vegetables skewered on a stick and grilled to perfection.</description>
+    <jobString>Grilling kabob.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.6</count>
+      </li>
+    </ingredients>
+    <products>
+      <Kabob>2</Kabob>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+        <li>MeatRaw</li>
+      </categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+        <li>MeatRaw</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+           <li>Megaspider_Meat</li>
+     </exceptedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+		<defName>CookSalad</defName>
+		<label>prepare two salads</label>
+		<description>Cooks a somewhat complex meal from a combination of raw meat and raw plant ingredients.</description>
+		<jobString>Preparing salad.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+      <Salad>2</Salad>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>PlantFoodRaw</li>
+			</categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>PlantFoodRaw</li>
+			</categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+				<li>Human_Meat</li>
+                     <li>Megaspider_Meat</li>
+			</exceptedThingDefs>
+		</defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+         <li>Canningstove</li>
+           <li>HandCanningstove</li>
+     </recipeUsers>
+
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Grillsteak</defName>
+    <label>grill two steaks</label>
+    <description>Meat that has been cooked over a grill. //nMakes 2 Steaks.</description>
+    <jobString>Grilling steak.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Grilledsteak>2</Grilledsteak>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+            <li>Megaspider_Meat</li>
+    </exceptedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>GrillVegetables</defName>
+    <label>grill two vegetables</label>
+    <description>Vegetables that have been cooked over a grill.</description>
+    <jobString>Grilling vegetables.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Grilledveg>2</Grilledveg>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+          <li>Megaspider_Meat</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+  </RecipeDef>
+
+
+
+</RecipeDefs>

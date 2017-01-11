@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+  
+
+
+	<!-- +++++++++++++++++++++++++++++++++++++++++ -->
+	
+  
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Rawapple</defName>
+		<label>apples</label>
+		<description>A red fruit grow on trees.</description>
+		<graphicData>
+      <texPath>Things/Fruits/apple</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>7</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Rawbanana</defName>
+		<label>banana</label>
+		<description>A yellow fruit that grows on trees.</description>
+		<graphicData>
+      <texPath>Things/Fruits/banana</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.5</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Rawgrape</defName>
+		<label>grapes</label>
+		<description>A sweet fruit that grows on vines.</description>
+		<graphicData>
+      <texPath>Things/Fruits/grape</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5</MarketValue>
+    </statBases>
+     <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>7</daysToRotStart>
+      </li>
+    </comps>
+ </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Raworange</defName>
+		<label>orange</label>
+		<description>A sweet fruit that grows on trees.</description>
+		<graphicData>
+      <texPath>Things/Fruits/orange</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.75</MarketValue>
+    </statBases>
+     <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>7</daysToRotStart>
+      </li>
+    </comps>
+ </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Rawpeach</defName>
+		<label>peach</label>
+		<description>A sweet fruit that grows on trees.</description>
+		<graphicData>
+      <texPath>Things/Fruits/peach</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.75</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Rawpineapple</defName>
+		<label>pineapple</label>
+		<description>A sweet fruit with a tough skin that grows on a bush.</description>
+		<graphicData>
+      <texPath>Things/Fruits/pineapple</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.5</MarketValue>
+    </statBases>
+     <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>6</daysToRotStart>
+      </li>
+    </comps>
+ </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Rawblueberry</defName>
+		<label>blueberry</label>
+		<description>Blue colored berry that grows in bushes. Even good raw.</description>
+		<graphicData>
+      <texPath>Things/Fruits/blueberry</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.9</MarketValue>
+			<Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+      </li>
+    </comps>
+
+  </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Rawwatermelon</defName>
+		<label>watermelon</label>
+		<description> This fruit is rich in vitamins A and C and can be eaten raw or cooked in a variety of ways.</description>
+		<graphicData>
+      <texPath>Things/Fruits/watermelon</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>7</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Rawdate</defName>
+		<label>date</label>
+		<description>A sweet fruit that grows on trees.</description>
+		<graphicData>
+      <texPath>Things/Fruits/date</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.8</MarketValue>
+			<Mass>0.027</Mass>
+    </statBases>
+      <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Rawfig</defName>
+		<label>fig</label>
+		<description>A sweet fruit that grows on trees.</description>
+		<graphicData>
+      <texPath>Things/Fruits/fig</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.8</MarketValue>
+  			<Mass>0.027</Mass>
+  </statBases>
+     <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+      </li>
+    </comps>
+ </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Rawgooseberry</defName>
+		<label>gooseberry</label>
+		<description>A sweet fruit that grows on vines.</description>
+		<graphicData>
+      <texPath>Things/Fruits/gooseberries</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.75</MarketValue>
+ 			<Mass>0.027</Mass>
+   </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>Rawcloudberry</defName>
+		<label>cloudberry</label>
+		<description>A sweet fruit that grows on vines.</description>
+		<graphicData>
+      <texPath>Things/Fruits/cloudberries</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.75</MarketValue>
+			<Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>RawCherry</defName>
+		<label>Cherries</label>
+		<description>A red berry fruit that grows on trees.</description>
+		<graphicData>
+      <texPath>Things/Fruits/CherryFruit</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4</MarketValue>
+			<Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>RawOlive</defName>
+		<label>Olive</label>
+		<description>A small berry fruit that grows on trees.</description>
+		<graphicData>
+      <texPath>Things/Fruits/OliveFruit</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4</MarketValue>
+ 			<Mass>0.027</Mass>
+   </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>RawCoconut</defName>
+		<label>Coconut</label>
+		<description>A coconut fruit that grows on trees. Has a hard outer shell with a juicy fruit flesh inside. Can be further havested at a food prep table to make coconut halves and milk.</description>
+		<graphicData>
+      <texPath>Things/Fruits/Coconut</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="VG_RawFruitBase">
+		<defName>RawCoconutHalf</defName>
+		<label>Coconut Halves</label>
+		<description>A half of a coconut fruit that grows on trees. Has a hard outer shell with a juicy fruit flesh inside.</description>
+		<graphicData>
+      <texPath>Things/Fruits/CoconutHalves</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4</MarketValue>
+			<Mass>0.010</Mass>
+    </statBases>
+     <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+      </li>
+    </comps>
+ </ThingDef>
+
+  <ThingDef ParentName="VG_RawFruitBase">
+    <defName>RawBerries</defName>
+    <label>berries</label>
+    <description>Assorted berries. Nice to eat, even when raw.</description>
+    <graphicData>
+      <texPath>Things/Fruits/Berries</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.1</MarketValue>
+			<Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_RawFruitBase">
+    <defName>RawAgave</defName>
+    <label>agave fruit</label>
+    <description>Raw agave fruit.</description>
+    <graphicData>
+      <texPath>Things/Veg/AgaveFruit</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3</MarketValue>
+			<Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+</Resources>

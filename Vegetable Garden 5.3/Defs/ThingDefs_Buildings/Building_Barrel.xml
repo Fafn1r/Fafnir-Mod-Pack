@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>VG_UnpackingSpot</defName>
+    <label>upacking spot</label>
+    <Description>A place for unpacking crates of alcohol.</Description>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/CraftingSpot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <AltitudeLayer>FloorEmplacement</AltitudeLayer>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+    </statBases>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>False</useHitPoints>
+    <Size>(1,1)</Size>
+    <DesignationCategory>FoodProduction</DesignationCategory>
+    <Passability>Standable</Passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BenchBase">
+    <DefName>Brewery</DefName>
+    <label>brewery</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A work station with all the equipment needed to brew beer.</Description>
+    <graphicData>
+      <texPath>Things/Building/Production/TableBrewery</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <rect>(0.3,0,2.7,1)</rect>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <constructEffect>ConstructWood</constructEffect>
+    <CostList>
+      <WoodLog>120</WoodLog>
+      <Steel>30</Steel>
+    </CostList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(3,1)</Size>
+    <DesignationCategory>FoodProduction</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>MakeWort</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisites><li>Brewing</li></researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>FermentingBarrel</defName>
+    <label>fermenting barrel</label>
+    <thingClass>Building_FermentingBarrel</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/FermentingBarrel</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>60</pathCost>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A barrel for fermenting raw wort into beer.</description>
+    <costList>
+      <Steel>10</Steel>
+      <WoodLog>30</WoodLog>
+    </costList>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>-1</minSafeTemperature>
+				<maxSafeTemperature>32</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+			</li>
+		</comps>
+    <tickerType>Rare</tickerType>
+    <rotatable>true</rotatable>
+    <designationCategory>FoodProduction</designationCategory>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites><li>Brewing</li></researchPrerequisites>
+  </ThingDef>
+
+
+    <ThingDef Name="BarrelBase" ParentName="BuildingBase" Abstract="True">
+        <thingClass>VGDrinks.Building_AlcoholBarrel</thingClass>
+        <Description>A barrel of fermenting alcohol.</Description>
+        <graphicData>
+            <texPath>Things/Building/Production/FermentingBarrel</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+        </graphicData>
+        <blockLight>false</blockLight>
+<placingDraggableDimensions>1</placingDraggableDimensions>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToBuild>250</WorkToBuild>
+        </statBases>
+        <constructEffect>ConstructWood</constructEffect>
+        <CostList>
+            <WoodLog>25</WoodLog>
+        </CostList>
+        <useHitPoints>true</useHitPoints>
+        <Size>(1,1)</Size>
+        <DesignationCategory>FoodProduction</DesignationCategory>
+        <Passability>PassThroughOnly</Passability>
+        <tickerType>Rare</tickerType>
+        <researchPrerequisites>
+            <li>Brewing</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+
+
+    <ThingDef ParentName="BarrelBase">
+        <defName>cider_Barrel</defName>
+        <label>barrel of Shinzee's apple cider</label>
+        <CostList>
+            <Rawapple>75</Rawapple>
+        </CostList>
+        <comps>
+            <li Class="VGDrinks.CompProperties_AlcoholBarrel">
+                <fermentTicks>1920</fermentTicks>
+                <product>cider_Crate</product>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BarrelBase">
+        <defName>rum_Barrel</defName>
+        <label>barrel of REinstein's Rum</label>
+        <CostList>
+            <Rawsugarcane>75</Rawsugarcane>
+        </CostList>
+        <comps>
+            <li Class="VGDrinks.CompProperties_AlcoholBarrel">
+                <fermentTicks>1920</fermentTicks>
+                <product>rum_Crate</product>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BarrelBase">
+        <defName>Wine_Barrel</defName>
+        <label>barrel of Ramsi's wine</label>
+        <CostList>
+            <Rawgrape>75</Rawgrape>
+        </CostList>
+        <comps>
+            <li Class="VGDrinks.CompProperties_AlcoholBarrel">
+                <fermentTicks>1920</fermentTicks>
+                <product>Wine_Crate</product>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BarrelBase">
+        <defName>strawberrywine_Barrel</defName>
+        <label>barrel of Spoon's Berry wine</label>
+        <CostList>
+            <RawBerries>75</RawBerries>
+        </CostList>
+        <comps>
+            <li Class="VGDrinks.CompProperties_AlcoholBarrel">
+                <fermentTicks>1920</fermentTicks>
+                <product>strawberrywine_Crate</product>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BarrelBase">
+        <defName>saki_Barrel</defName>
+        <label>barrel of WHiZ Sake</label>
+        <CostList>
+            <RawRice>75</RawRice>
+        </CostList>
+        <comps>
+            <li Class="VGDrinks.CompProperties_AlcoholBarrel">
+                <fermentTicks>1920</fermentTicks>
+                <product>saki_Crate</product>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BarrelBase">
+        <defName>vodka_Barrel</defName>
+        <label>barrel of Syntria Vodka</label>
+        <CostList>
+            <RawPotatoes>75</RawPotatoes>
+        </CostList>
+        <comps>
+            <li Class="VGDrinks.CompProperties_AlcoholBarrel">
+                <fermentTicks>1920</fermentTicks>
+                <product>vodka_Crate</product>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BarrelBase">
+        <defName>tequila_Barrel</defName>
+        <label>barrel of Kitty's Tequila</label>
+        <CostList>
+            <RawAgave>75</RawAgave>
+        </CostList>
+        <comps>
+            <li Class="VGDrinks.CompProperties_AlcoholBarrel">
+                <fermentTicks>1920</fermentTicks>
+                <product>tequila_Crate</product>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BarrelBase">
+        <defName>Whiskey_Barrel</defName>
+        <label>barrel of Quill18's Whiskey</label>
+        <CostList>
+            <RawCorn>75</RawCorn>
+        </CostList>
+        <comps>
+            <li Class="VGDrinks.CompProperties_AlcoholBarrel">
+                <fermentTicks>1920</fermentTicks>
+                <product>Whiskey_Crate</product>
+            </li>
+        </comps>
+    </ThingDef>
+
+
+</Buildings>

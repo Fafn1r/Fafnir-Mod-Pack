@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[sd] spaceship</name>
+  <author>sulusdacor</author>
+  <targetVersion>0.16.1393</targetVersion>
+  <url>https://ludeon.com/forums/index.php?topic=26276</url>
+	<description>"spaceship"
+	
+	Get your butt off the planet in style ;)
+	
+	This Mod does override some vanilla objects!!!
+	(ship beam, cryo casket of the ship menu)
+	
+	- adds additional (most purely cosmetic) ship parts to the game
+	- your ship still needs to have the vanilla parts needed to fly somewhere (enigne,reactor,computer,filled cryocasket)
+	- overrides the vanilla ship beam with a linkable variant like walls work(same costs like vanilla beam in the end)
+	- overrides the vanilla cryocasket in the ship menu to set the interaction spot in the object and remove the placeworks that forces you to put it on a beam (for better building)
+	
+	Download links for Dropbox (current or older versions) or Steamworkshop link for current Rimworld version can be found in the ludeon forum thread linked above.</description>
+</ModMetaData>

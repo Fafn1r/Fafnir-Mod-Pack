@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>MakeKibble</defName>
+    <label>make kibble</label>
+    <description>Make animal kibble by combining raw meat and plants. \n\nRequires 1 nutrition of meat and 1 nutrition of veg, fruit, or hay. \n\nMakes 50 Kibble. </description>
+    <jobString>Making kibble.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+	      <thingDefs>
+		   <li>Hay</li>
+           </thingDefs>
+        </filter>
+
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Kibble>50</Kibble>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+            <li>PlantFoodRaw</li>
+     </categories>
+	      <thingDefs>
+	        <li>Hay</li>
+           </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+            <li>PlantFoodRaw</li>
+      </categories>
+	      <thingDefs>
+	        <li>Hay</li>
+           </thingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+       <exceptedThingDefs>
+        <li>InsectJelly</li>
+      </exceptedThingDefs>
+   </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+
+</Defs>

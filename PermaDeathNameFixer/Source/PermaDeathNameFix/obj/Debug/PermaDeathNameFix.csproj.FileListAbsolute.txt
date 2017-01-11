@@ -1,0 +1,5 @@
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PermaDeathName\Assemblies\PermaDeathNameFix.dll
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PermaDeathName\Source\HealingGun\obj\Debug\PermaDeathNameFix.csprojResolveAssemblyReference.cache
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PermaDeathName\Source\HealingGun\obj\Debug\PermaDeathNameFix.dll
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PermaDeathName\Source\PermaDeathNameFix\obj\Debug\PermaDeathNameFix.csprojResolveAssemblyReference.cache
+D:\Games\Steam\steamapps\common\RimWorld\Mods\PermaDeathName\Source\PermaDeathNameFix\obj\Debug\PermaDeathNameFix.dll

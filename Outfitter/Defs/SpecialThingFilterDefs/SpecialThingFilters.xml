@@ -1,0 +1,11 @@
+<SpecialThingFilters>
+	<SpecialThingFilterDef>
+		<defName>AllowDeadmansApparel</defName>
+		<label>allow deadman's apparel</label>
+		<description>Allow apparel worn by dead poeple</description>
+		<parentCategory>Apparel</parentCategory>
+		<allowedByDefault>true</allowedByDefault>
+		<saveKey>allowDeadmansApparel</saveKey>
+		<workerClass>Outfitter.SpecialThingFilterWorker_DeadmansApparel</workerClass>
+	</SpecialThingFilterDef>
+</SpecialThingFilters>

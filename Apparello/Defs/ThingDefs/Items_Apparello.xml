@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+
+
+  <!--=============== ITEEEMMMSSS-AH! ====================-->
+
+
+
+
+
+<!--================= Materials ========================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ApparelloPlastic</defName>
+    <label>plastic</label>
+    <description>Plastic. Strange feeling engulfs you as you read the description of this item. It's almost as if you'd spawned this item in through the Developer mode. Or perhaps came across it through some other strange chain of events, in which case you should seek out this entity known as Shinzy and report it</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Cloth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(162,157,152)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>2</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <stuffProps>
+      <smeltable>false</smeltable>
+      <categories>
+        <li>ApparelloPlastic</li>
+      </categories>
+      <color>(162,157,152)</color>
+      <allowColorGenerators>true</allowColorGenerators>
+    </stuffProps>
+    <tradeability>Never</tradeability>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ApparelloMonel</defName>
+    <label>monel</label>
+    <description>Monel. Common material used on eyewear.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Cloth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(182,187,152)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>4</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <stuffProps>
+
+      <statOffsets>
+        <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+        <ArmorRating_Heat>0.02</ArmorRating_Heat>
+        <ArmorRating_Electric>0.02</ArmorRating_Electric>
+      </statOffsets>
+      <statFactors>
+        <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+        <ArmorRating_Sharp>1.65</ArmorRating_Sharp>
+        <ArmorRating_Heat>4.0</ArmorRating_Heat>
+        <ArmorRating_Electric>4.0</ArmorRating_Electric>
+      </statFactors>
+
+      <smeltable>false</smeltable>
+      <categories>
+        <li>ApparelloPlastic</li>
+      </categories>
+      <color>(162,157,152)</color>
+      <allowColorGenerators>true</allowColorGenerators>
+    </stuffProps>
+    <tradeability>Never</tradeability>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ApparelloTits</defName>
+    <label>titanium</label>
+    <description>Titanium has many uses. One of which is eyeglass rims.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Cloth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(182,187,152)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>4</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <stuffProps>
+
+      <statOffsets>
+        <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+        <ArmorRating_Heat>0.02</ArmorRating_Heat>
+        <ArmorRating_Electric>0.02</ArmorRating_Electric>
+      </statOffsets>
+      <statFactors>
+        <ArmorRating_Blunt>2.0</ArmorRating_Blunt>
+        <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+        <ArmorRating_Heat>4.0</ArmorRating_Heat>
+        <ArmorRating_Electric>4.0</ArmorRating_Electric>
+      </statFactors>
+
+      <smeltable>false</smeltable>
+      <categories>
+        <li>ApparelloPlastic</li>
+      </categories>
+      <color>(160,140,180)</color>
+      <allowColorGenerators>true</allowColorGenerators>
+    </stuffProps>
+    <tradeability>Never</tradeability>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ApparelloSchembun</defName>
+    <label>Schematic bundle</label>
+    <description>Used to build Schematic Cabinet. Schematic shmematic, You can't seem to make heads or tails of the scribblings in these. They appear to be depicting some kind of apparel plans however.</description>
+    <graphicData>
+      <texPath>Tables/SchemBuns</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>200</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeTags>
+      <li>Exotic</li>
+      <li>Artifact</li>
+    </tradeTags>
+  </ThingDef>
+
+
+</GameData>

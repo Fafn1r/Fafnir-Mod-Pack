@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Roof Support A16</name>
+    <url>https://github.com/MatchSG/A16RoofSupport</url>
+	<author>Match</author>
+	<targetVersion>0.16.1393</targetVersion>
+	<description>
+Updated from Alpha 15 to Alpha 16. This mod will allow you to build massive rooms without collapsing the ceiling.These supports do not impede movement, nor provide cover. 
+
+Special thanks to Nommy, Igabod, Minus, Shinzy, Vas.
+</description>
+</ModMetaData>

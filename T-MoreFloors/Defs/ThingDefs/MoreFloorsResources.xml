@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+  <ThingDef ParentName="ResourceBase">
+		<defName>WoolCloth</defName>
+		<label>wool cloth</label>
+		<description>Wool that has been woven on a loom into a thick, warm cloth.</description>
+    <graphicData>
+      <texPath>Things/WoolCloth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.0</MarketValue>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <stuffProps>
+      <statFactors>
+        <MarketValue>18.0</MarketValue>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+	</ThingDef>
+
+</Resources>

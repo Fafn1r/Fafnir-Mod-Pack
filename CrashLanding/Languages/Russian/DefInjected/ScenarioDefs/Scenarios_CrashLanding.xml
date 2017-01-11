@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!--  <rep>
+    <path>CrashLanding_Easy.label</path>
+    <trans>Легкое Крушение</trans>
+  </rep>
+  <rep>
+    <path>CrashLanding_Easy.description</path>
+    <trans>Ваши колонисты очнулись в своих криокапсулах под звук сирен и скрежет металла. К счастью ваша команда успела добраться до спасательных капсул, прежде чем корабль развалился на части.\n\nНекоторое время спустя они приземлились на эту неизвестную планету rimworld.\n\nОстальные колонисты с этого корабля потерпят жесткую посадку с небольшими шансами на выживание.</trans>
+  </rep> -->
+  <rep>
+    <path>CrashLanding_Easy.scenario.summary</path>
+    <trans>Три удачливых колониста пытаются спасти остальной экипаж и припасы.</trans>
+  </rep>
+
+  <rep>
+    <path>CrashLanding_Hard.scenario.summary</path>
+    <trans>Все колонисты окажутся ранеными. Попробуйте спасти их и остальной экипаж.</trans>
+  </rep>
+
+</LanguageData>

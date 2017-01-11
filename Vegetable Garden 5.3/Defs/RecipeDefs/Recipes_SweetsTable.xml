@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RecipeDefs>
+
+  <!--=============== Sweet ====================-->
+
+   <RecipeDef>
+	<defName>MakeHardcandy</defName>
+	<label>make four hard candies</label>
+	<description>Turn sugar into a sweet hard candy.</description>
+	<jobString>Making candy.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>900</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <Hardcandy>4</Hardcandy>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+  
+   <RecipeDef>
+	<defName>MakeCaramel</defName>
+	<label>make four caramels</label>
+	<description>Turn sugar into a sweet candy.</description>
+	<jobString>Making candy.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>900</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <Caramel>4</Caramel>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+   <RecipeDef>
+	<defName>MakeTaffy</defName>
+	<label>make four taffies</label>
+	<description>Turn sugar into a sweet candy.</description>
+	<jobString>Making candy.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>900</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <Taffy>4</Taffy>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>CraftChocolate</defName>
+	<label>make seven chocolates</label>
+	<description>Roast beans into chocolate.</description>
+	<jobString>Making chocolate.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>700</workAmount>
+		<effectWorking>Cook</effectWorking>
+    	<soundWorking>Recipe_CookMeal</soundWorking>  
+	<recipeUsers>
+         <li>CandyTable</li>
+      </recipeUsers>
+
+   	<allowMixingIngredients>true</allowMixingIngredients>
+	
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawcocoa</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Rawcocoa</li>
+	  
+	    <li>Sugar</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <Chocolate>7</Chocolate>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+  <!--=============== Sweet ====================-->
+
+   <RecipeDef>
+	<defName>MakeIcecream</defName>
+	<label>make two ice-creams</label>
+	<description>A sweet frozen treat made from milk. \n\nMakes 2 servings. \n\nFood Effects: Moving and Blood Pumping.</description>
+	<jobString>Making ice-cream.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>900</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>4</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Chocolate</li>
+	      </thingDefs>
+	    </filter>
+	    <count>1</count>
+	  </li>
+
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>soymilk</li>
+		   <li>Milk</li>
+		   <li>coconutmilk</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>  
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		   <li>Sugar</li>
+		   <li>coconutmilk</li>
+		   <li>soymilk</li>
+	        <li>Chocolate</li>
+   	   	   <li>Milk</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <icecream>2</icecream>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+  
+   <RecipeDef>
+	<defName>MakeYogurt</defName>
+	<label>make two yogurts</label>
+	<description>A sweet treat made from milk. \n\nMakes 2 servings. \n\nFood Effects: Sight and Blood Filtration.</description>
+	<jobString>Making yogurt.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>900</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>soymilk</li>
+		   <li>coconutmilk</li>
+		   <li>Milk</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	  <li>
+	    <filter>
+		<categories>
+			<li>FruitFoodRaw</li>
+		</categories>
+		</filter>
+		<count>3</count>
+	   	</li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	        <li>soymilk</li>
+		   <li>coconutmilk</li>
+		   <li>Milk</li>
+	  </thingDefs>
+		<categories>
+			<li>FruitFoodRaw</li>
+		</categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <yogurt>2</yogurt>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+   <RecipeDef>
+	<defName>MakeSmoothie</defName>
+	<label>make four smoothies</label>
+	<description>A sweet drink made from fruit and milk. \n\nMakes 4 servings. \n\nFood Effects: Sight and Moving.</description>
+	<jobString>Making smoothie.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>900</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>soymilk</li>
+		   <li>coconutmilk</li>
+		   <li>Milk</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+		<li>
+			<filter>
+				<categories>
+					<li>FruitFoodRaw</li>
+				</categories>
+			</filter>
+		<count>8</count>
+	   	</li>
+
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	        <li>soymilk</li>
+		   <li>coconutmilk</li>
+		   <li>Milk</li>
+	  </thingDefs>
+				<categories>
+					<li>FruitFoodRaw</li>
+				</categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <smoothie>4</smoothie>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+</RecipeDefs>

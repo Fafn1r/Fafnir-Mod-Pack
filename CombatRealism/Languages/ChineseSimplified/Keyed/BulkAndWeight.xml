@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<CR.Outfits>着装配置</CR.Outfits>
+	<CR.EditX>编辑 {0}</CR.EditX>
+	<CR.CurrentLoadout>当前武器组合</CR.CurrentLoadout>
+	<CR.Loadouts>武器组合</CR.Loadouts>
+	<CR.Weight>重量</CR.Weight>
+	<CR.Bulk>体积</CR.Bulk>
+	<CR.outfit>着装配置</CR.outfit>
+	<CR.drugs>成瘾品</CR.drugs>
+	<CR.loadout>武器组合</CR.loadout>
+	<CR.DetailedWeightTip>当前重量：{1}\n上限：{0}\n\n移动速度系数：{2}\n超重惩罚：{3}</CR.DetailedWeightTip>
+	<CR.DetailedBulkTip>当前体积：{1}\n上限：{0}\n\n工作速度系数：{2}</CR.DetailedBulkTip>
+	<CR.DetailedBaseWeightTip>当前重量：{1}\n基础上限：{0}\n\n移动速度系数：{2}\n超重惩罚：{3}</CR.DetailedBaseWeightTip>
+	<CR.DetailedBaseBulkTip>当前体积：{1}\n基础上限：{0}\n\n工作速度系数：{2}</CR.DetailedBaseBulkTip>
+	<CR.EmptyLoadoutName>无武装</CR.EmptyLoadoutName>
+	<CR.SelectLoadout>选择武器组合</CR.SelectLoadout>
+	<CR.NewLoadout>新建武器组合</CR.NewLoadout>
+	<CR.DeleteLoadout>删除武器组合</CR.DeleteLoadout>
+	<CR.NoLoadoutSelected>没有选择武器组合</CR.NoLoadoutSelected>
+	<CR.DefaultLoadoutName>武器组合</CR.DefaultLoadoutName>
+	<CR.SourceRangedTip>选择远程武器</CR.SourceRangedTip>
+	<CR.SourceMeleeTip>选择近战武器</CR.SourceMeleeTip>
+	<CR.SourceAmmoTip>选择弹药</CR.SourceAmmoTip>
+	<CR.SourceAllTip>选择全部</CR.SourceAllTip>
+	<CR.SourceFilterTip>筛选</CR.SourceFilterTip>
+	<CR.DragToReorder>拖动手柄排序</CR.DragToReorder>
+	<CR.CountFieldTip>数量：{0}</CR.CountFieldTip>
+	<CR.DeleteFilter>删除</CR.DeleteFilter>
+	<CR.AddAmmoFor>为{0}添加弹药</CR.AddAmmoFor>
+
+
+</LanguageData>

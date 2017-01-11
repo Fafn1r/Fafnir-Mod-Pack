@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Realistic Darkness V2.0 A16</name>
+  <author>Helpful Bot; Inspired by Viceroy, creator of Darkness Revamp which was updated by Cram and to A14 by Helpful Bot</author>
+  <url>http://rimworldgame.com</url>
+  <targetVersion>0.16.1393</targetVersion>
+  <description>This mod changes lighting and saturation in rimworld to be dynamically darker. This mod overrides your vanilla weather definitions (Could not be avoided, this was not elective)
+Includes:
+-Daylight remains unchanged but weather patterns have a stronger effect on light levels even during daylight hours.
+-Nights are considerably darker.
+-Night darkness changes dynamically with weather conditions:
+	+Hard/Gentle snow are the lightest nights
+	+Dry thunderstorms are only slightly darker than clear nights.
+	+Foggy Rain is the darkest. YOU WILL NOT BE ABLE TO SEE AREAS UNLIT BY TORCHES/LIGHTS DURING THIS WEATHER PATTERN.
+-Saturation (color strength) changes more dynamically in response to weather.
+-Movespeed and ranged accuracy are very close to vanilla values. Hard snow and foggy rain are harshest on accuracy and movement (foggy rain movement is same as rain).
+-Eclipses are now as dark as clear nights.
+  </description>
+</ModMetaData>

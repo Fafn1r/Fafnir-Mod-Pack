@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <!--<ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>-->
+
+  	<ThingDef ParentName="BuildingBase">
+		<defName>GlassMonitorLarge</defName>
+		<Label>Glassworks TV</Label>
+		<Description>A higher-tech glass television with crystal-clear image and richer color. More entertaining than a grainy flatscreen TV.</Description>
+		<graphicData>
+			<texPath>Things/Building/Other/GlassworkTV</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.25</fillPercent>
+		<statBases>
+			<WorkToBuild>9000</WorkToBuild>
+			<MaxHitPoints>10</MaxHitPoints>
+			<MarketValue>1400</MarketValue>
+			<Flammability>1.0</Flammability>
+			<EntertainmentStrengthFactor>1.3</EntertainmentStrengthFactor>
+			<Beauty>150</Beauty>
+		</statBases>
+		<costList>
+			<Steel>80</Steel>
+			<Component>10</Component>
+			<Glass>4</Glass>
+		</costList>
+		<Size>(2,1)</Size>
+		<building>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>
+				<min>2</min>
+				<max>6</max>
+			</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>6</watchBuildingStandRectWidth>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers>
+		<DesignationCategory>Joy</DesignationCategory>
+		<pathCost>70</pathCost>
+		<Passability>PassThroughOnly</Passability>
+		<comps>
+			<li Class="CompProperties_Power" >
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>50</basePowerConsumption>
+				<!--<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>-->
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<tradeTags>
+			<li>Television</li>
+		</tradeTags>
+		<researchPrerequisites><li>DecorativeGlassResearch</li></researchPrerequisites>
+	</ThingDef>
+
+</ThingDefs>

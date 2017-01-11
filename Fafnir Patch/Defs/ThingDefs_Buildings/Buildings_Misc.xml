@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ToolCabinet</defName>
+    <label>tool cabinet</label>
+    <graphicData>
+      <texPath>Things/Building/Misc/ToolCabinet</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,1)</drawSize>
+      <color>(96,114,95)</color>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>40</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Increases work speed. Needs to be placed near workbench. One workbench can be simultaneously linked to only two tools cabinets.</description>
+    <size>(2,1)</size>
+    <costList>
+      <Steel>200</Steel>
+    </costList>
+    <designationCategory>Production</designationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>2</maxSimultaneous>
+      </li>
+    </comps>
+    <designationHotkey>Misc6</designationHotkey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+   
+</Buildings>

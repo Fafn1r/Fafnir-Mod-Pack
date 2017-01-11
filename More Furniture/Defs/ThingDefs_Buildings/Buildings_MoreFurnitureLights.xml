@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+  <ThingDef Abstract="True" Name="LampBase" ParentName="BuildingBase">
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <selectable>true</selectable>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>8</pathCost>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <designationCategory>Furniture</designationCategory>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>170</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+  <!-- ======================== Lighting Base1 ======================= -->
+
+  <ThingDef Abstract="True" Name="StandingLampBase" ParentName="LampBase">
+      <designationCategory>Lighting</designationCategory>
+    <graphicData>
+      <texPath>Things/Building/Furniture/LampStanding</texPath>
+    </graphicData>
+    <costList>
+      <Steel>15</Steel>
+    </costList>
+    <statBases>
+      <Mass>4</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>75</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+    </comps>
+  </ThingDef>
+  
+
+  <!-- ======================== Tourch ======================= -->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>TorchLamp</defName>
+    <label>torch lamp</label>
+    <description>A wooden torch for lighting an area. Can be automatically refueled with wood. Produces a small amount of heat.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Misc/TorchLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <damageData>
+        <rect>(0.35,0.35,0.3,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>8</pathCost>
+    <constructEffect>ConstructWood</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.15</fillPercent>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <WoodLog>20</WoodLog>
+    </costList>
+    <soundImpactDefault>BulletImpactGround</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.2</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+        <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </fuelFilter>
+        <destroyOnNoFuel>true</destroyOnNoFuel>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>3.5</heatPerSecond>
+        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_FireOverlay">
+        <fireSize>0.4</fireSize>
+        <offset>(0,0,0.2)</offset>
+      </li>
+    </comps>
+    <designationCategory>Lighting</designationCategory>
+    <designationHotKey>Misc10</designationHotKey>
+  </ThingDef>
+
+
+<!--====================== end table light ======================--> 
+
+  <ThingDef ParentName="FurnitureBase">
+    <defName>ANON2EndTableLight</defName>
+    <label>end table light</label>
+    <description>This small table goes well with a bed. When placed with a bed it will increase comfort and rest effectiveness slightly. Includes a lamp.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/BedroomStuff/EndTableLight</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.15,0.15,1.7,1.7)</rect>
+      </damageData>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>12</Beauty>
+    </statBases>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Facility">       
+        <statOffsets>			
+        <BedRestEffectiveness>0.02</BedRestEffectiveness>			
+        <Comfort>0.05</Comfort>
+        </statOffsets>        
+        <maxSimultaneous>1</maxSimultaneous>    
+        </li>     
+        <li Class="CompProperties_Power">        
+        <compClass>CompPowerTrader</compClass>        
+        <basePowerConsumption>50</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>    
+        </li>      
+        <li Class="CompProperties_Flickable"/>     
+        <li>      
+        <compClass>CompQuality</compClass>      
+        </li>     
+        <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>        
+        <glowColor>(217,217,208,0)</glowColor>     
+        </li>         
+        </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <designationCategory>Lighting</designationCategory>
+  </ThingDef>
+
+
+<!-- ======================== sun lamp ======================= -->  
+  
+
+  <ThingDef ParentName="LampBase">
+    <defName>SunLamp</defName>
+    <label>sun lamp</label>
+    <description>Lights an area brightly enough to grow crops, but consumes a huge amount of power.</description>
+    <thingClass>Building_SunLamp</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/LampSun</texPath>
+    </graphicData>
+    <blockWind>true</blockWind>
+    <statBases>
+      <WorkToBuild>330</WorkToBuild>
+      <Mass>4.5</Mass>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>7.0</overlightRadius>
+        <glowRadius>14</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>1600</basePowerConsumption>
+      </li>
+    </comps>
+    <!-- Determined by trial and error
+    This value isn't perfect because these radii use different algorithms
+    but it matches in this case-->
+    <specialDisplayRadius>5.8</specialDisplayRadius>
+    <designationCategory>Lighting</designationCategory>
+  </ThingDef>
+
+
+
+<!-- ======================== standing lamp ======================== -->  
+  
+  <ThingDef ParentName="StandingLampBase" >
+    <defName>StandingLamp</defName>
+    <label>standing lamp</label>
+    <description>Standing lamp that lights an area.</description>
+    <designationHotKey>Misc11</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+<!-- ======================== standing lamp (red) ======================== -->
+
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Red</defName>
+    <label>standing lamp (red)</label>
+    <description>Standing lamp that lights an area in red.</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(217,0,0,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+<!-- ======================== standing lamp (green) ======================== -->
+
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Green</defName>
+    <label>standing lamp (green)</label>
+    <description>Standing lamp that lights an area in green.</description>
+    <comps>   
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(0,217,0,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+<!-- ======================== standing lamp (blue) ======================== -->
+
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Blue</defName>
+    <label>standing lamp (blue)</label>
+    <description>Standing lamp that lights an area in blue.</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(0,0,217,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+<!-- ======================== standing lamp (magenta) ======================== -->
+
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Magenta</defName>
+    <label>standing lamp (magenta)</label>
+    <description>Standing lamp that lights an area in magenta.</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(217,0,217,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+<!-- ======================== standing lamp (yellow) ======================== -->
+
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Yellow</defName>
+    <label>standing lamp (yellow)</label>
+    <description>Standing lamp that lights an area in yellow.</description>
+    <comps>   
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(217,217,0,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+<!-- ======================== standing lamp (orange) ======================== -->
+
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Orange</defName>
+    <label>standing lamp (orange)</label>
+    <description>Standing lamp that lights an area in orange.</description>
+    <comps>   
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(217,117,0,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+<!-- ======================== standing lamp (purple) ======================== -->
+
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Purple</defName>
+    <label>standing lamp (purple)</label>
+    <description>Standing lamp that lights an area in purple.</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(117,0,217,17)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+<!-- ======================== standing lamp (aqua) ======================== -->
+
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Aqua</defName>
+    <label>standing lamp (aqua)</label>
+    <description>Standing lamp that lights an area in aqua.</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(40,217,217,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+<!-- ======================== standing lamp (lime) ======================== -->
+
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Lime</defName>
+    <label>standing lamp (lime)</label>
+    <description>Standing lamp that lights an area in lime.</description>
+    <comps>   
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(137,237,0,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+
+</Buildings>

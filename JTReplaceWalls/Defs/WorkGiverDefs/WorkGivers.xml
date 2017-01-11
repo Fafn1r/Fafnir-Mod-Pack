@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+    
+    <WorkGiverDef>
+    <defName>ConstructDeliverResourcesToBlueprints</defName>
+    <label>deliver resources to blueprints</label>
+    <giverClass>JTReplaceWalls.WorkGiver_ConstructDeliverResourcesToBlueprints_JT</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>9</priorityInType>
+    <verb>work on</verb>
+    <gerund>working on</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByNonColonists>true</canBeDoneByNonColonists>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>Mine_JTReplaceWalls</defName>
+    <label>mine_JTReplaceWalls</label>
+    <giverClass>JTReplaceWalls.WorkGiver_Miner_JT</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>22</priorityInType>
+    <verb>mine_JTReplaceWalls</verb>
+    <gerund>mining_JTReplaceWalls</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+
+</WorkGivers>

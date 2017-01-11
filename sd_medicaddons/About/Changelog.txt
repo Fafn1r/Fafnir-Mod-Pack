@@ -1,0 +1,40 @@
+personal changelog for mod "sd_medicaddons"
+
+- 30/10/2016
+
+	- fixed research prerequisite to space surgery lamp, was industrial before
+	- cleaned up the research sections in the xml to bring them in line with other commands using <li>
+
+- 23/11/2016
+
+	- added comp to my vanillabedbase, since it seemed to be missing in the abstract and therefor for singlebeds
+
+- 22/12/2016
+
+	- updated for a16
+	- renamed texture names space to spacer
+	- removed tags from research, rename space to spacer in research xml
+	- added research tree locations: x = 13,14,15
+	- set ai_chill destination to false
+	- moved more xml tag lines to abstract from the individual facilities
+	- split xml file into seperate ones, base, eras and vanilla overrides
+	- added trade tag furniture to facilities
+	- changed medical treatmentquality/immunity gain ( mostly higher boni, less mali):
+		medieval washpan: +0,01 -> +0,02
+		medieval surg instr: -0,02 -> -0,01
+		medieval surg lamp: +0,01 -> +0,02
+		industr surg instr: 0 -> 0,02
+		indust lamp +0,02 -> +0,06
+		spacer vitals: +0,06 -> +0,1
+		spacer instruments: +0,02 -> +0,04
+		spacer surg lamp: +0,04 -> + 0,08
+	- added generic mass from vitals monitor of 20, for all facilites in base
+
+- 25/12/2016
+
+	- updated defnames from more furniture mod (in vanillachanged commentform)
+	- updated Preview image
+
+- 06/01/2017
+
+	- fixed the worktobuild xml tag, used old worktomake, which got idebuged to instant build (work 1)

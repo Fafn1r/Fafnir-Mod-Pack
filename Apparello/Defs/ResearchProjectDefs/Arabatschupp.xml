@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+  <ResearchProjectDef>
+    <defName>ApparelloResearchDesign</defName>
+    <label>Apparel design and patterning</label>
+    <description>Integral part of apparel beautification and making them fit for wear. Unlocks several new craft recipes for your tailoring table.</description>
+    <baseCost>400</baseCost>
+    <requiredResearchBuilding>ApparelloPatterner</requiredResearchBuilding>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>1</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ApparelloResearchQuilting</defName>
+    <label>Quilting</label>
+    <description>Techniques used to craft sturdier cloths and leather. Allows the creation of padded armor.</description>
+    <baseCost>300</baseCost>
+    <requiredResearchBuilding>ApparelloPatterner</requiredResearchBuilding>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ApparelloResearchWork</defName>
+    <label>Safety standards</label>
+    <description>Work safety and hygiene is key in staying healthy. Accidents DO happen! It pays to be prepared. Allows the crafting of apparel by modern safety and hygiene standards in Tailoring, Smithing, Tinkering and Machining benches</description>
+    <baseCost>800</baseCost>
+    <requiredResearchBuilding>ApparelloPatterner</requiredResearchBuilding>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>7</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ApparelloResearchLPOW</defName>
+    <label>Apparel augmentation</label>
+    <description>Build tinkering tables to enhance some apparel. Allows you to make more advanced apparel and equipment designed for light infantry on the machining table.</description>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>Machining</li>
+    </prerequisites>
+    <techLevel>Spacer</techLevel>
+    <researchViewX>8</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ApparelloResearchPrototype</defName>
+    <label>Prototype apparel</label>
+    <description>Study the gibberish schematics in your schematics cabinet to figure out if there's anything of worth in there.</description>
+    <baseCost>1000</baseCost>
+    <requiredResearchBuilding>ApparelloPatterner</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>ApparelloSchematics</li>
+    </requiredResearchFacilities>
+    <techLevel>Spacer</techLevel>
+    <researchViewX>9</researchViewX>
+  </ResearchProjectDef>
+
+
+
+
+
+
+  <ResearchProjectDef>
+    <defName>ApparelloTribalwearDesign</defName>
+    <label>Tribal adornment</label>
+    <description>Unlock the crafting of some of the more ceremonial tribal wear.</description>
+    <baseCost>400</baseCost>
+    <requiredResearchBuilding>ApparelloPatterner</requiredResearchBuilding>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+    </tags>
+
+
+  </ResearchProjectDef>
+
+
+
+
+
+  
+</ResearchProjectDefs>

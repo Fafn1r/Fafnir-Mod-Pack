@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <CarpetOrange.label>주황색 양탄자</CarpetOrange.label>
+  <CarpetOrange.description>선명한 주황색의 부드러운 양탄자입니다.</CarpetOrange.description>
+
+  <CarpetYellow.label>노란색 양탄자</CarpetYellow.label>
+  <CarpetYellow.description>여름을 연상케 하는 노란색 양탄자입니다.</CarpetYellow.description>
+
+  <CarpetTurquoise.label>청록색 양탄자</CarpetTurquoise.label>
+  <CarpetTurquoise.description>마음이 편해지는 청록색 양탄자입니다.</CarpetTurquoise.description>
+
+  <CarpetPurple.label>보라색 양탄자</CarpetPurple.label>
+  <CarpetPurple.description>우아한 보라색 양탄자입니다.</CarpetPurple.description>
+
+  <CarpetWhite.label>흰색 양탄자</CarpetWhite.label>
+  <CarpetWhite.description>염색하지 않은 양탄자입니다. 발이 편안하지만 쉽게 더러워집니다.</CarpetWhite.description>
+
+	<CarpetBlack.label>검정 양탄자</CarpetBlack.label>
+	<CarpetBlack.description>어두운 검은색 양탄자입니다.</CarpetBlack.description>
+
+
+
+	<CheckCarpetRed.label>붉은 체크 양탄자</CheckCarpetRed.label>
+	<CheckCarpetRed.description>사랑스러운 장밋빛의 양탄자입니다.</CheckCarpetRed.description>
+
+  <CheckCarpetOrange.label>주황색 체크 양탄자</CheckCarpetOrange.label>
+  <CheckCarpetOrange.description>선명한 주황색의 부드러운 양탄자입니다.</CheckCarpetOrange.description>
+
+  <CheckCarpetYellow.label>노란색 체크 양탄자</CheckCarpetYellow.label>
+  <CheckCarpetYellow.description>여름을 연상케 하는 노란색 양탄자입니다.</CheckCarpetYellow.description>
+
+	<CheckCarpetCream.label>크림 체크 양탄자</CheckCarpetCream.label>
+	<CheckCarpetCream.description>유혹적인 크림색의 양탄자입니다.</CheckCarpetCream.description>
+
+	<CheckCarpetGreen.label>초록색 체크 양탄자</CheckCarpetGreen.label>
+	<CheckCarpetGreen.description>초록빛의 자연스러움이 느껴지는 양탄자입니다.</CheckCarpetGreen.description>
+
+  <CheckCarpetTurquoise.label>청록색 체크 양탄자</CheckCarpetTurquoise.label>
+  <CheckCarpetTurquoise.description>마음이 편해지는 청록색 양탄자입니다.</CheckCarpetTurquoise.description>
+
+	<CheckCarpetBlue.label>파란 체크 양탄자</CheckCarpetBlue.label>
+	<CheckCarpetBlue.description>시원한 파란색이 발가락을 감싸는 양탄자입니다.</CheckCarpetBlue.description>
+
+  <CheckCarpetPurple.label>보라색 체크 양탄자</CheckCarpetPurple.label>
+  <CheckCarpetPurple.description>우아한 보라색 양탄자입니다.</CheckCarpetPurple.description>
+
+  <CheckCarpetWhite.label>흰색 체크 양탄자</CheckCarpetWhite.label>
+  <CheckCarpetWhite.description>염색하지 않은 양탄자입니다. 발이 편안하지만 쉽게 더러워집니다.</CheckCarpetWhite.description>
+
+	<CheckCarpetDark.label>암회색 체크 양탄자</CheckCarpetDark.label>
+	<CheckCarpetDark.description>전문적인 느낌의 암회색 양탄자입니다.</CheckCarpetDark.description>
+
+	<CheckCarpetBlack.label>검정 체크 양탄자</CheckCarpetBlack.label>
+	<CheckCarpetBlack.description>어두운 검은색 양탄자입니다.</CheckCarpetBlack.description>
+
+</LanguageData>

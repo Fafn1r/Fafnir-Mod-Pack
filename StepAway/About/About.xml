@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Step Away From The Medicine</name>
+  <author>ZorbaTHut</author>
+  <url>https://github.com/zorbathut/stepaway</url>
+  <description>Changes default medicine settings.</description>
+  <targetVersion>0.16.0</targetVersion>
+</ModMetaData>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!--================================ Abstract bases vanilla (unchanged) ======================================-->
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+  <!--================================ Abstract bases added (changed!!!) ======================================-->
+  
+  <!-- added extra abstract to easier add remove facilites for vanilla beds-->
+
+  <ThingDef Name="SDmedicaddonsVanillaBedBase" ParentName="BuildingBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+		  <li>sd_medicaddons_medieval_surg_washpan</li>  
+		  <li>sd_medicaddons_medieval_surg_instruments</li>
+		  <li>sd_medicaddons_medieval_surg_lamp</li>
+		  <li>sd_medicaddons_industrial_surg_instruments</li>
+		  <li>sd_medicaddons_industrial_surg_lamp</li>
+		  <li>VitalsMonitor</li>
+		  <li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+		  <li>sd_medicaddons_spacer_surg_instruments</li>
+		  <li>sd_medicaddons_spacer_surg_lamp</li>
+		  
+		  <!-- more furniture mod facilities -->
+		  
+		  <li>ANON2Dresser</li>
+          <li>ANON2EndTable</li>
+          <li>ANON2EndTableLight</li>
+		  
+		  
+		  
+		  <!-- CTS - Complete Tech Solutions Mod
+		  
+		  <li>CTSAdvancedVitalsMonitor</li>
+		  
+		  -->
+		  
+        </linkableFacilities>
+      </li>
+	  <li Class="CompProperties_RoomIdentifier">
+			<roomStat>Impressiveness</roomStat>
+	  </li>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	<tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+    <DesignationCategory>Furniture</DesignationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+  </ThingDef>
+  
+  <!--================================ beds ======================================--> 
+  
+  
+  
+   <!--================================ single vanilla bed ======================================-->
+   
+   
+  <ThingDef ParentName="SDmedicaddonsVanillaBedBase">
+    <defName>Bed</defName>
+    <label>bed</label>
+    <Description>A cozy mattress and sheets on a frame for resting.</Description>
+    <ThingClass>Building_Bed</ThingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/Bed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>8</Beauty>
+      <WorkToBuild>870</WorkToBuild>
+      <Mass>50</Mass>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.75</Comfort>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+    </statBases>
+    <Size>(1,2)</Size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <building>
+      <Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+      <bed_healPerDay>7</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <PathCost>60</PathCost>
+    <StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+    <CastEdgeShadows>True</CastEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <Passability>PassThroughOnly</Passability>
+    <DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+  
+  <!--================================ double vanilla bed ======================================-->
+
+  <ThingDef ParentName="SDmedicaddonsVanillaBedBase">
+    <defName>DoubleBed</defName>
+    <label>double bed</label>
+    <Description>A simple double-wide bed that fits two people.</Description>
+    <ThingClass>Building_Bed</ThingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/DoubleBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>1740</WorkToBuild>
+      <Mass>85</Mass>
+      <Comfort>0.75</Comfort>
+      <Beauty>8</Beauty>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+    </statBases>
+    <Size>(2,2)</Size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+    <building>
+      <Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+      <bed_healPerDay>7</bed_healPerDay>
+    </building>
+    <comps>
+		<li Class="CompProperties_Art">
+			<nameMaker>ArtName_Furniture</nameMaker>
+			<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		</li>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <PathCost>60</PathCost>
+    <LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+    <StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+    <CastEdgeShadows>True</CastEdgeShadows>
+    <designationHotKey>Misc3</designationHotKey>
+    <Passability>PassThroughOnly</Passability>
+    <DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>		
+  </ThingDef>
+
+   <!--================================ royal vanilla bed ======================================-->
+
+  <ThingDef ParentName="SDmedicaddonsVanillaBedBase">
+    <defName>RoyalBed</defName>
+    <label>royal bed</label>
+    <Description>A luxurious gold-inlaid bed fit for the highborn. Very comfy and beautiful. Fits two.</Description>
+    <ThingClass>Building_Bed</ThingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/RoyalBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>4500</WorkToBuild>
+      <Mass>90</Mass>
+      <Beauty>50</Beauty>
+      <BedRestEffectiveness>1.05</BedRestEffectiveness>
+      <Comfort>0.90</Comfort>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+    </statBases>
+    <Size>(2,2)</Size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>110</costStuffCount>
+    <costList>
+      <Gold>50</Gold>
+    </costList>
+    <building>
+      <Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+      <bed_healPerDay>8</bed_healPerDay>
+    </building>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_Furniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <PathCost>60</PathCost>
+    <LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+    <StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+    <CastEdgeShadows>True</CastEdgeShadows>
+    <designationHotKey>Misc4</designationHotKey>
+    <Passability>PassThroughOnly</Passability>
+    <DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+  
+     <!--================================ hospital vanilla bed ======================================-->
+
+  <ThingDef ParentName="SDmedicaddonsVanillaBedBase">
+    <defName>HospitalBed</defName>
+    <label>hospital bed</label>
+    <Description>A bed specially designed for injured people. Improves chance of successful medical work.</Description>
+    <ThingClass>Building_Bed</ThingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/HospitalBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,4)</drawSize>
+    </graphicData>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2850</WorkToBuild>
+      <Mass>45</Mass>
+      <Flammability>1.0</Flammability>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.80</Comfort>
+      <ImmunityGainSpeedFactor>1.144</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
+    </statBases>
+    <Size>(1,2)</Size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <costList>
+      <Steel>80</Steel>
+      <Medicine>10</Medicine>
+    </costList>
+    <building>
+      <Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+      <bed_healPerDay>12</bed_healPerDay>
+      <bed_defaultMedical>true</bed_defaultMedical>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <PathCost>60</PathCost>
+    <LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+    <StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+    <CastEdgeShadows>True</CastEdgeShadows>
+    <designationHotkey>Misc5</designationHotkey>
+    <Passability>PassThroughOnly</Passability>
+    <DrawGUIOverlay>True</DrawGUIOverlay>
+    <researchPrerequisites><li>HospitalBed</li></researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>CraftFlour</defName>
+	<label>grind grains into flour</label>
+	<description>Grind grains into flour.</description>
+	<jobString>Making flour.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+	<workAmount>900</workAmount>
+     <soundWorking>Recipe_CookMeal</soundWorking>          	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawwheat</li>
+	        <li>RawCorn</li>
+	        <li>RawRice</li>
+	        <li>Rawoats</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Rawwheat</li>
+	    <li>RawCorn</li>
+	    <li>RawRice</li>
+	    <li>Rawoats</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+
+	</fixedIngredientFilter>
+	<products>
+	  <Flour>4</Flour>
+	</products>
+	<workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>Canningstove</li>
+          <li>HandCanningstove</li>
+     </recipeUsers>
+</RecipeDef>
+
+
+<RecipeDef>
+	<defName>CraftBulkFlour</defName>
+	<label>grind bulk grains into wheat</label>
+	<description>Grind grains into flour.</description>
+	<jobString>Making bulk flour.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+	<workAmount>700</workAmount>
+     <soundWorking>Recipe_CookMeal</soundWorking>          	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawwheat</li>
+	        <li>RawCorn</li>
+	        <li>RawRice</li>
+	        <li>Rawoats</li>
+	      </thingDefs>
+	    </filter>
+	    <count>50</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Rawwheat</li>
+	    <li>RawCorn</li>
+	    <li>RawRice</li>
+	    <li>Rawoats</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+
+	</fixedIngredientFilter>
+	<products>
+	  <Flour>25</Flour>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>CraftCornmeal</defName>
+	<label>grind cornmeal</label>
+	<description>Grind corn into cornmeal.</description>
+	<jobString>Grinding corn.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+	<workAmount>700</workAmount>
+     <soundWorking>Recipe_CookMeal</soundWorking>          	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+            <li>Canningstove</li>
+            <li>HandCanningstove</li>
+    </recipeUsers>
+
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawCorn</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawCorn</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+
+	</fixedIngredientFilter>
+	<products>
+	  <Cornmeal>4</Cornmeal>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+<RecipeDef>
+	<defName>CraftBulkCornMeal</defName>
+	<label>grind bulk cornmeal</label>
+	<description>Grind corn into cornmeal.</description>
+	<jobString>Grinding corn.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+	<workAmount>700</workAmount>
+     <soundWorking>Recipe_CookMeal</soundWorking>          	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawCorn</li>
+	      </thingDefs>
+	    </filter>
+	    <count>50</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawCorn</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+
+	</fixedIngredientFilter>
+	<products>
+	  <Cornmeal>25</Cornmeal>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+   <RecipeDef>
+      <defName>GroundSugar</defName>
+	<label>grind sugarcane</label>
+      <description>Beat and grind those canes to get at that sugar!</description>
+      <jobString>Grinding sugarcane.</jobString>
+      <workAmount>1100</workAmount>
+	<recipeUsers>
+         <li>Canningstove</li>
+           <li>HandCanningstove</li>
+     </recipeUsers>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <products>
+         <Sugar>3</Sugar>
+      </products>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Rawsugarcane</li>
+               </thingDefs>
+            </filter>
+            <count>5</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Rawsugarcane</li>
+         </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+      </fixedIngredientFilter>
+      <workSkill>Cooking</workSkill>
+   </RecipeDef>
+
+
+   <RecipeDef>
+      <defName>CraftBulkSugar</defName>
+	<label>grind bulk sugarcane</label>
+      <description>Beat and grind those canes to get at that sugar!</description>
+      <jobString>Grinding sugarcane.</jobString>
+      <workAmount>700</workAmount>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <products>
+         <Sugar>25</Sugar>
+      </products>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Rawsugarcane</li>
+               </thingDefs>
+            </filter>
+            <count>50</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Rawsugarcane</li>
+         </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+      </fixedIngredientFilter>
+      <workSkill>Cooking</workSkill>
+   </RecipeDef>
+
+
+</Defs>

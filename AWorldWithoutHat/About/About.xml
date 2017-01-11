@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>A World Without Hat</name>
+  <author>ZorbaTHut</author>
+  <url>https://github.com/zorbathut/aworldwithouthat</url>
+  <description>Removes hat graphics from pawn portraits (and only from those.)</description>
+  <targetVersion>0.16.0</targetVersion>
+</ModMetaData>

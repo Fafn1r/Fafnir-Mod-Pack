@@ -1,0 +1,385 @@
+1/6/17
+-reviewed vanilla changes to price and crops
+-resource pricing 
+-sunlamps reworked
+-heated lamps research / cost list updated.
+-pile of soil added
+-digging spot in garden tools added
+-place / reclaim soil now require soil.
+-feritilizer recipe change
+
+1/5/17
+-Bread recipe. 
+-Fruit weight
+-Bread weight
+-Tree yields up
+-Mushrooms nutrition slightly lowered
+-Agave overall changed.
+-recipe for fertilier at campfire
+-place soil research cost.
+-resource leaves higher research.
+-raspberry bush art
+-cloth recipe balance due to market value changes
+-unpacking spot for alcohol in brewery menu.
+-heated sunlamps
+
+1/1
+- mass!!
+- description clean up
+- medicine balanced and fixed
+- Cloudberries and Gooseberries now cold weather!
+
+12/31
+- breakdown removed from loom and small hydro tables
+
+12/30
+- flour recipe updated
+- Glitterworld Medicine recipe added back/
+
+12/29
+- Meal thoughts missing
+- Soil cost for Reclaim added.
+
+
+12/27
+- Alcohol nut. removed
+
+
+12/25
+- Carrots def updated
+- Smelt plant recipes had old description
+- Polenta recipe had an old value
+
+
+12/24
+-Recipes name changes
+-Bug meat changes reflect vanilla
+-bamboo recipe added to chemfuel.
+-neutroamine recipe updated and bulk recipe added.
+-Cloth and Fiber adjustments
+-Red lentils and Salted meat count as food (caravans)
+-Carrots tweaked
+
+12/23
+-Guide pictures added to steam
+-Recipe names changes
+
+12/22
+-Work to build tags updated
+-canned foods fixed
+
+12/20
+- New art for nymph flower and mushroom
+- Minor mass changes
+- Alpha 16 released!
+
+12/19
+- Ferm Barrel updated
+- Barrel codes working
+
+12/18
+- Barrel codes worked on
+
+
+12/11
+- More recipes tweeks
+- Code fixes
+- More Parent defs
+
+12/10
+- New art added!!!!!!!!!
+- Recipes overhual finished
+- Art assests in defs reworked
+- Hand-made leather recipe added to crafting spot.
+
+11/26
+-Vegan Eggs / recipe added 
+
+11/25
+- blended leathers now random colors
+- resources plant names changed for new art
+
+11/24
+- begin dough removal
+- unused art removed
+
+11/20
+- recipes bug fixed
+
+11/5
+- fueled cooking tables added.
+- cremate to fertilizer added.
+- Neutroamine flowers now have research. Neutroamine making now unlocks with the drug lab.
+
+10/29
+-recipes amount / products balanced
+-plants nut. reduced
+-soils balanced
+
+
+10/25
+- small balance to recipes
+
+10/22
+- parent defs have been given unique names to avoid future mod conflicts.
+- non meal foods def updated.
+
+10/20/16
+- Drug limits set ( caffeine and tobacco ) 
+- cheese is food again
+- cheeseburgers can be made again
+
+
+10/16/16
+- small recipe patch pushed on steam.
+
+10/15/16
+-Steam release of 5.0 and 5.1
+
+10/10/16
+- spell checks in items.
+- small bug fixes.
+
+10/8
+- Alcohol barrels fully added
+- old recipes for alcohol removed
+- coconut milk added to cheese and chocolate milk
+- bug fixes (recipes, item, sunlamps)
+- new category added for all things brewing
+- dry fruit updated
+- rot times adjusted on many crop items. 
+
+10/7
+-Alcohol Barrels coding begin
+
+10/6
+- pickled veg recipe finally working.
+- soil research balanced
+
+10/5
+- canning machine added
+- can meat and veg added
+- can meal added to new table
+
+10/3
+- pickled veg and salt cured meats added 
+- recipes added to the prep table
+
+10/1
+- fertilizer added to soil req.s
+- compost bin added
+
+9/26/16
+- More guides added.
+- Campfire recipes added.
+- Whiz added to drinks.
+- Minor recipes tweeks.
+- coconut milk added to many recipes.
+
+9/25/16
+- Guide / description worked on.
+- Aloe updated
+- Cheese updated.
+- Silage tweeked.
+
+9/15/16
+- Icecream machine removed. Sweets table added
+- Artwork for some tables updated.
+- Work on fertilizer  begun.
+
+9/9/16
+- new prep table
+- capfire fixes
+- flax tweeks
+
+9/8/16
+- campfire fixes.
+
+9/6/16
+- Recipes fixes.
+- Bugs fixes.
+
+9/4/16
+- Lot of balances and bug fixes
+
+9/1/16
+-workgivers updated
+-research text fixed
+
+8/27/16
+-Continued to make drug policies
+-Neutro Flower and Petals added
+-Recipe for Neutroamine created.
+-Tobacco addiction added.
+
+8/26/16
+-Drug policies changes
+
+8/25/16
+-Cooking ingredent category changes
+-animal feed category changes
+-kiblle recipe reworked
+-medical table change to druglab
+-health drink changed to antibiotics.
+-refactored plant defs folder
+-medicine reworked
+
+8/21/16
+-Reworked Hediffs system
+-Reworked Alcohols
+
+
+8/20/16
+-terain defs updated
+-alcohol defs updated.
+
+8/16/16
+-Alchol defs updated
+
+
+8/12/16 Alpha 15 Work begins.
+- weed changed into vanilla
+- work begins on new drug system
+- plant defs updated
+
+
+8/10/16
+- Added 2 days to resource plants
+- doubled the work to make soils
+- traders updated
+
+8/8/16
+-Hediff for Fruit drink added again
+-Joy for Alcohol drinks upped.
+-Bulk smelt leafs recipes added.
+-Tea and Coffee recipes moved to food prep table.
+
+8/7/16
+-Research added back to the garden
+-Tobacco and Cannabis plants added
+-Rolling table added
+-Hemp Cloth added to Loom
+-Coconut and Palm trees added
+-Coconut halves and milk added.
+-Soil constrution work to build adjusted.
+-Old Floor models removed, Overall mod size reduced.
+
+8/4/16
+-plant descriptions worked on
+-hediffs for meal worked on
+
+8/1/16 
+-Permafrost removed.
+-labels to make fluffy tabs work
+
+7/30/16
+- tofu / polenta now is food again (breaks saves) pause and destroy all to fix saves.
+
+7/29/16
+-Stir Fry and Stew recipes updated to nutrition based
+-Steel and Plassteel leafs value corrected.
+-red lentils added
+
+7/26/16
+-New Resources added!
+-Hauling bug finally fixed!
+-Kibble recipe kinda fixed and working!
+
+7/25/16
+-Meals fixed finally!
+
+7/21/16
+- Grass def refactored
+- updated to 14.1241
+
+
+7/17/16
+- Sun lamps, Hydroponics, and Soil Reclaim's added to Category "Garden Tools".
+- 1x1 Modular Planter, Hydroponics, Advanced Hydroponics added
+- Art for Modular basins added
+- research removed from flax flowers
+
+7/16/16
+-Art cleaned up
+- New designation category added - Garden Tools
+
+7/15/16 ~14.1234
+-Steam day!
+
+7/13/16 ~14.1233
+-2 sizes of sunlights added mini and small.
+-research for advanced hydoponics added.
+-research removed from all plants, now only req skill.
+
+7/12/16 ~14.1232
+-2 more sizes of hydroponics tables added. One unpowered poor. One advance with research.
+
+7/10/16 ~14.1230
+-Typo's
+-Recipes on wrong tables
+
+7/5/16 ~14.1226
+-Bleneded leathers added.
+-Apparel Salavaging.
+-KeyBindings Fixed.
+
+7/1/16 14.1220 Build
+-Update to new version
+-Recipetweeks
+-Biome compatibility -added
+-Biomes spawns tweaked
+
+6/23/16
+-Pressure Cooker table changed to Food Prep table.
+-Food Table art cleaned up
+-Oven now only for baking, lots of new recipes.
+-Recipes balanced.
+-Dough recipe added all baked goods recipe.
+-Dough recipe vegan ingredents added.
+-All misc recipes moved on to Food Prep Table.
+-Milk and Soy Milk moved to Cooking Ingredents.
+-Aniaml chow removed due to Kibble.
+-Bulk Polenta recipe added.
+
+6/22/16
+-Added Recipes :
+Polenta
+Corn Bread
+Corn Muffins
+Muffins
+Chocolate Muffins
+Baked Polenta
+Grilled Polenta
+
+6/21/16
+-Added Snow Beets. Don't die from cold weather.
+
+6/20/16
+-xtra! flowers added
+-xtra! trees added
+
+Older Change log :
+
+v3.6 permafrost soil added. recipes tweeked. hotfixes. 5 brewing table recipes.
+v3.5a tiered veg, my fixes, tweeked research.
+v3.5 big move to version a13.
+v3.4 Recipes and resources added! 
+v3.3 - Coffee!!! And a floor from bamboo. Bulk recipes (4x) for a lot of things! Bugfixes.
+v3.2a - Minor Hotfixes.
+v3.2 - New fruit trees added, More natural plants grow in the worlds. Food Categories cleaned up. Hotfixes. Cook Facilities added. And new artwork.
+v3.1a - x4 Meal recipes added using new meal system. Tofu Updated to new meal system. Hay, Berries, and Agave added to Hydroponics.
+v3.1 - Updated to a12. Bug fixes for new meals being. Wine and fruit drinks added to brew table.
+v3e - Beans growth time fixed. Canning uses a steel now. Bamboo fixes.
+v3d - Nothing broke from 11b BUT updating anyway! New Plant art thanks to Jawar!
+v3c - Bulk tofu! Bamboo campfires! and some minor changes.
+v3b - Balances and tweaks.
+v3.0 - Updated for alpha 11. Removed a few recipes and plants for a short time, will be added at a later time.
+v2.2 - Final alpha 10 Added a a bunch of new recipes to use the stuff you grow!
+v2.0b - Tweaks!! artwork fixes and recipes fixes. 
+v2.0 - Big changes to the codes. Fixed some of the weird issues. Added new recipes. 
+v1.5b - Tweaks!!
+v1.5 - Cleaned some art work. Added recipes for Soy milk, Chocolate Milk, and Soy Cheese.
+v1.4 - New graphics for Oven and Now the canning is done at its own pressure cooking stove. Also Tofu can be made from beans at the the stove and used as a meat substitute ( yay vegans! ) 
+v1.3 - Added oven, new recipes, more vegetables.
+v1.2 - Added more Vegetables.
+v1.0  - Public Release. Blueberries, Celery, Eggplants, Squash, and Pumpkins. 

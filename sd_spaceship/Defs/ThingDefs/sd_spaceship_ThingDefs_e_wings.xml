@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<!--================================ wing 1x1 ======================================-->
+
+  <ThingDef ParentName="sd_spaceship_shippart_Base">
+    <defName>sd_spaceship_wing1x1_left</defName>
+    <label>ship wing 1x1 left</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>sd_spaceship/wings/sd_spaceship_wing1x1_left</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A structural beam around which a ship can be constructed.</description>
+    <size>(1,1)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>30</Plasteel>
+      <Component>2</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationHotkey>Misc1</designationHotkey>
+	<selectable>true</selectable>
+	<rotatable>true</rotatable>
+  </ThingDef>
+  
+  <ThingDef ParentName="sd_spaceship_shippart_Base">
+    <defName>sd_spaceship_wing1x1_right</defName>
+    <label>ship wing 1x1 right</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>sd_spaceship/wings/sd_spaceship_wing1x1_right</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A structural beam around which a ship can be constructed.</description>
+    <size>(1,1)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>30</Plasteel>
+      <Component>2</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <designationHotkey>Misc1</designationHotkey>
+	<selectable>true</selectable>
+	<rotatable>true</rotatable>
+  </ThingDef>
+  
+  <!--================================ wing 1x2 ======================================-->
+  
+  <ThingDef ParentName="sd_spaceship_shippart_Base">
+    <defName>sd_spaceship_wing1x2_left</defName>
+    <label>ship wing 1x2 left</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>sd_spaceship/wings/sd_spaceship_wing1x2_left</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>4000</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+	  <Mass>2000</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A structural beam around which a ship can be constructed.</description>
+    <size>(1,2)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <costList>
+      <Steel>80</Steel>
+      <Plasteel>60</Plasteel>
+      <Component>4</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <designationHotkey>Misc1</designationHotkey>
+	<selectable>true</selectable>
+	<rotatable>true</rotatable>
+  </ThingDef>
+  
+  <ThingDef ParentName="sd_spaceship_shippart_Base">
+    <defName>sd_spaceship_wing1x2_right</defName>
+    <label>ship wing 1x2 right</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>sd_spaceship/wings/sd_spaceship_wing1x2_right</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>4000</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+	  <Mass>2000</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A structural beam around which a ship can be constructed.</description>
+    <size>(1,2)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <costList>
+      <Steel>80</Steel>
+      <Plasteel>60</Plasteel>
+      <Component>4</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <designationHotkey>Misc1</designationHotkey>
+	<selectable>true</selectable>
+	<rotatable>true</rotatable>
+  </ThingDef>
+  
+</Defs>

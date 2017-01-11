@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+  <ResearchProjectDef>
+		<defName>ResearchFungiponics</defName>
+		<label>fungiponics</label>
+		<description>Research how to grow delicate cave plants.</description>
+    <descriptionDiscovered>You can now grow your own cave plants in fungiponics basins or use them as decorative plants.</descriptionDiscovered>
+    <techLevel>Neolithic</techLevel>
+    <baseCost>1200</baseCost>
+    <researchViewX>2</researchViewX>
+  </ResearchProjectDef>
+  
+</ResearchProjectDefs>

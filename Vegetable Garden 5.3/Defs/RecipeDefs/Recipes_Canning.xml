@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+	<defName>Canmeal</defName>
+	<label>can meal</label>
+	<description>Preserve food in a can to prevent spoiling.</description>
+	<jobString>Canning food.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>1000</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>FoodRaw</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+		<li>FoodRaw</li>
+	  </categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+	</fixedIngredientFilter>
+	<products>
+	  <MealCannedFood>7</MealCannedFood>
+	</products>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+	<workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>HandCanningstove</li>
+         <li>Canningstove</li>
+     </recipeUsers>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>CanVegetable</defName>
+	<label>can vegetables</label>
+	<description>Preserve vegetables in a can to prevent spoiling.</description>
+	<jobString>Canning food.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>1500</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>4</count>
+      </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+		<li>PlantFoodRaw</li>
+	  </categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+	</fixedIngredientFilter>
+	<products>
+	  <CannedVeg>10</CannedVeg>
+	</products>
+    <defaultIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+        <li>CannedVeg</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+	<workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>HandCanningstove</li>
+         <li>Canningstove</li>
+     </recipeUsers>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>CanMeat</defName>
+	<label>can meat</label>
+	<description>Preserve meat in a can to prevent spoiling.</description>
+	<jobString>Canning food.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>1500</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>4</count>
+      </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+		<li>MeatRaw</li>
+	  </categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+	</fixedIngredientFilter>
+	<products>
+	  <CannedMeat>10</CannedMeat>
+	</products>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+        <li>CannedMeat</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+	<workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>HandCanningstove</li>
+         <li>Canningstove</li>
+     </recipeUsers>
+</RecipeDef>
+
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>JTReplaceWalls</name>
+	<author>Jamestec</author>
+	<targetVersion>0.16.0</targetVersion>
+	<description>Replace wall type and doors on the fly. No need to deconstruct and then build another. Features smart building where it won't try to replace walls that are already that type. You can replace mineable things with walls and doors; it will set the mineable to be mined and your constructors will prioritise mining anything in the way of blueprints, then construct.
+
+Mod makers can look into the Vaccine class comments to see how to make new walls/doors/conduits replaceable without this mod updating to support them.
+	
+
+Version 1.0: Initial Alpha 16 release.
+
+Acknowledgements:
+Compatibility with Misc Stuff: D-19
+Compatibility with ConcreteWalls: Sanchez
+Linux SIGSEGV: lashtear
+Compatibility with PowerSwitch: 0riginal
+Compatibility with ED-Embrasures: DeathKnight
+Replace mineable: Dingo and SNJ
+Replace doors: rbinbox and DeathKnight
+Smart stuff not working: oı
+</description>
+	<url>https://ludeon.com/forums/index.php?topic=26210</url>
+</ModMetaData>

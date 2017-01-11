@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThinkTrees>
+	  
+  <ThinkTreeDef>
+    <defName>Hygiene</defName>
+    <insertTag>Humanlike_PostMain</insertTag>
+    <insertPriority>1000</insertPriority>
+    <thinkRoot Class="ThinkNode_PrioritySorter">
+      <subNodes>
+        <li Class="Hygiene.JobGiver_GetHygiene"/>
+      </subNodes>
+	</thinkRoot>
+  </ThinkTreeDef>
+
+</ThinkTrees>

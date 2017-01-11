@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>VG_Neutroamine</defName>
+		<label>make neutroamine</label>
+		<description>Make Neutroamine from neutroflower petals.</description>
+		<jobString>Crafting Neutroamine.</jobString>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+      <workSkill>Medicine</workSkill>
+		<workAmount>700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NeutroPetals</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>NeutroPetals</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Neutroamine>1</Neutroamine>
+		</products>
+      <skillRequirements>
+        <li>
+          <skill>Medicine</skill>
+          <minLevel>6</minLevel>
+        </li>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>3</minLevel>
+        </li>
+      </skillRequirements>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VG_BulkNeutroamine</defName>
+		<label>make bulk neutroamine</label>
+		<description>Make bulk neutroamine from neutroflower petals.</description>
+		<jobString>Crafting Neutroamine.</jobString>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+      <workSkill>Medicine</workSkill>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NeutroPetals</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>NeutroPetals</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Neutroamine>5</Neutroamine>
+		</products>
+      <skillRequirements>
+        <li>
+          <skill>Medicine</skill>
+          <minLevel>6</minLevel>
+        </li>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>3</minLevel>
+        </li>
+      </skillRequirements>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+	<defName>MakeGlitterMedicine</defName>
+	<label>Make Glitterworld Medicine</label>
+	<description>Combines Neutroamine, bandage kits, and medicine into a glitterworld medical kit.</description>
+	<jobString>Mixing Herbs.</jobString>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+	<workAmount>2000</workAmount>
+	<effectWorking>Surgery</effectWorking>
+     <soundWorking>Recipe_Surgery</soundWorking>                   
+	<ingredients>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Neutroamine</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+     <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Bandagekit</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+     <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Medicine</li>
+	      </thingDefs>
+	    </filter>
+	    <count>2</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	   <thingDefs>
+	           <li>Neutroamine</li>
+			<li>Bandagekit</li>
+	           <li>Medicine</li>
+	      </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <GlitterworldMedicine>1</GlitterworldMedicine>
+	</products>
+      <skillRequirements>
+        <li>
+          <skill>Medicine</skill>
+          <minLevel>10</minLevel>
+        </li>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>3</minLevel>
+        </li>
+      </skillRequirements>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+	</RecipeDef>
+
+
+</RecipeDefs>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+	
+	<ResearchProjectDef>
+		<defName>sd_medicaddons_research_medieval_med</defName>
+		<label>primitive medical care</label>
+		<description>New means to set up your medical area medieval style.</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>sd_medicaddons_research_industrial_med</defName>
+		<label>industrial medical care</label>
+		<description>Setting up a hospital area in your colony with these instruments will increase your colonists chances of survival. New means to set up your medical area somewhat civilized.</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>4</researchViewX>
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
+			<li>sd_medicaddons_research_medieval_med</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>sd_medicaddons_research_spacer_med</defName>
+		<label>spacer medical care</label>
+		<description>Your latest advancements in technology should be visible in all parts of your colony. New means to set up your medical area like a space ship.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>VitalsMonitor</li>
+			<li>sd_medicaddons_research_industrial_med</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>11</researchViewX>
+	</ResearchProjectDef>
+	
+
+</ResearchProjectDefs>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <CR_ReloadLabel>重新装填</CR_ReloadLabel>
+    <CR_ReloadDesc>重新装填这把枪。</CR_ReloadDesc>
+
+    <CR_ReloadingMote>重新装填中！</CR_ReloadingMote>
+    <CR_ReloadedMote>重新装填完成！</CR_ReloadedMote>
+
+    <CR_SuppressedMote>被压制！</CR_SuppressedMote>
+  <CR_HunkeringMote>被完全压制！</CR_HunkeringMote>
+	<CR_TurretReloading>重新装填中</CR_TurretReloading>
+	
+	<CR_AutoFireLabel>全自动</CR_AutoFireLabel>
+	<CR_BurstFireLabel>短点射</CR_BurstFireLabel>
+	<CR_SingleFireLabel>单发</CR_SingleFireLabel>
+	<CR_SnapshotLabel>快速射击</CR_SnapshotLabel>
+	<CR_AimedShotLabel>瞄准射击</CR_AimedShotLabel>
+	<CR_SuppressFireLabel>压制射击</CR_SuppressFireLabel>
+	<CR_HoldFireLabel>停止射击</CR_HoldFireLabel>
+	<CR_ToggleFireModeDesc>切换射击模式。</CR_ToggleFireModeDesc>
+	<CR_ToggleAimModeDesc>切换瞄准模式。</CR_ToggleAimModeDesc>
+	
+	<CR_MarkedForArtillery>炮击目标标记，消逝时间：</CR_MarkedForArtillery>
+	
+	<CR_VisibilityError>能见度误差</CR_VisibilityError>
+	<CR_LeadError>预判误差</CR_LeadError>
+	<CR_RangeError>射程误差</CR_RangeError>
+	<CR_Sway>枪口摆动</CR_Sway>
+	<CR_Spread>扩散</CR_Spread>
+	<CR_MissRadius>射偏范围</CR_MissRadius>
+	<CR_IndirectFire>间瞄射击</CR_IndirectFire>
+	<CR_CoverHeight>掩体高度</CR_CoverHeight>
+	<CR_TargetHeight>目标高度</CR_TargetHeight>
+	<CR_TargetWidth>目标宽度</CR_TargetWidth>
+	
+	<CR_CarriedWeight>携带重量</CR_CarriedWeight>
+	<CR_CarriedBulk>携带体积</CR_CarriedBulk>
+	<CR_Encumbered>超重</CR_Encumbered>
+	<CR_FinalModifier>最终修正</CR_FinalModifier>
+	<CR_InventoryFull>物品栏已满</CR_InventoryFull>
+	<CR_PickUp>拾取</CR_PickUp>
+  <CR_PickUpHalf>拾取一半</CR_PickUpHalf>
+	<CR_CannotPickUp>无法拾取</CR_CannotPickUp>
+	<CR_MagazineSize>弹匣容量</CR_MagazineSize>
+	<CR_ReloadTime>换弹时间</CR_ReloadTime>
+	<CR_AmmoSet>口径</CR_AmmoSet>
+	<CR_FireModes>射击模式</CR_FireModes>
+	<CR_AimedBurstCount>短点射射击次数</CR_AimedBurstCount>
+	<CR_OutOfAmmo>弹药耗尽</CR_OutOfAmmo>
+	<CR_PutAway>收起 {0}</CR_PutAway>
+	<CR_TamerInventoryFull>无法从事驯服工作，因为物品栏已满。</CR_TamerInventoryFull>
+	
+  <CR_DropThingHaul>丢弃并搬运</CR_DropThingHaul>
+  <CR_Eat>食用</CR_Eat>
+</LanguageData>

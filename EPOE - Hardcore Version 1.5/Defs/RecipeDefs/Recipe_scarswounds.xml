@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecipeDefs>
+
+	<RecipeDef Name="SurgeryOld" ParentName="SurgeryFlesh" Abstract="True">
+        <effectWorking>Surgery</effectWorking>
+        <soundWorking>Recipe_Surgery</soundWorking>
+        <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+        <workSkill>Medicine</workSkill>
+        <workSkillLearnFactor>18</workSkillLearnFactor>
+        <recipeUsers>
+            <li>Human</li>
+        </recipeUsers>
+    </RecipeDef>
+<!-- Injury: Burn -->
+    <RecipeDef ParentName="SurgeryOld">
+        <defName>CureInjuryBurn</defName>
+        <label>cure burn</label>
+        <description>Cure burn.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Curing burn.</jobString>
+        <workAmount>2000</workAmount>
+  <surgerySuccessChanceFactor>1.55</surgerySuccessChanceFactor>
+  <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+        <li>Medicine</li>
+      </exceptedThingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>10</minLevel>
+            </li>
+        </skillRequirements>
+        <removesHediff>Burn</removesHediff>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+<!-- Injury: Crush -->
+    <RecipeDef ParentName="SurgeryOld">
+        <defName>CureInjuryCrush</defName>
+        <label>cure crush</label>
+        <description>Cure crush.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Curing crush.</jobString>
+        <workAmount>2000</workAmount>
+  <surgerySuccessChanceFactor>1.55</surgerySuccessChanceFactor>
+  <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+        <li>Medicine</li>
+      </exceptedThingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>10</minLevel>
+            </li>
+        </skillRequirements>
+        <removesHediff>Crush</removesHediff>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+<!-- Injury: Crack -->
+    <RecipeDef ParentName="SurgeryOld">
+        <defName>CureInjuryCrack</defName>
+        <label>cure crack</label>
+        <description>Cure crack.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Curing crack.</jobString>
+        <workAmount>2000</workAmount>
+  <surgerySuccessChanceFactor>1.55</surgerySuccessChanceFactor>
+  <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+        <li>Medicine</li>
+      </exceptedThingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>10</minLevel>
+            </li>
+        </skillRequirements>
+        <removesHediff>Crack</removesHediff>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+<!-- Injury: Cut -->
+    <RecipeDef ParentName="SurgeryOld">
+        <defName>CureInjuryCut</defName>
+        <label>cure cut</label>
+        <description>Cure cut.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Curing cut.</jobString>
+        <workAmount>2000</workAmount>
+  <surgerySuccessChanceFactor>1.55</surgerySuccessChanceFactor>
+  <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+        <li>Medicine</li>
+      </exceptedThingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>10</minLevel>
+            </li>
+        </skillRequirements>
+        <removesHediff>Cut</removesHediff>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+<!-- Injury: SurgicalCut -->
+    <RecipeDef ParentName="SurgeryOld">
+        <defName>CureInjurySurgicalCut</defName>
+        <label>cure surgical cut</label>
+        <description>Cure surgical cut.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Curing surgical cut.</jobString>
+        <workAmount>2000</workAmount>
+  <surgerySuccessChanceFactor>1.55</surgerySuccessChanceFactor>
+  <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+        <li>Medicine</li>
+      </exceptedThingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>10</minLevel>
+            </li>
+        </skillRequirements>
+        <removesHediff>SurgicalCut</removesHediff>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+<!-- Injury: Scratch -->
+    <RecipeDef ParentName="SurgeryOld">
+        <defName>CureInjuryScratch</defName>
+        <label>cure scratch</label>
+        <description>Cure scratch.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Curing scratch.</jobString>
+        <workAmount>2000</workAmount>
+  <surgerySuccessChanceFactor>1.55</surgerySuccessChanceFactor>
+  <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+        <li>Medicine</li>
+      </exceptedThingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>10</minLevel>
+            </li>
+        </skillRequirements>
+        <removesHediff>Scratch</removesHediff>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+<!-- Injury: Bite -->
+    <RecipeDef ParentName="SurgeryOld">
+        <defName>CureInjuryBite</defName>
+        <label>cure bite</label>
+        <description>Cure bite.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Curing bite.</jobString>
+        <workAmount>2000</workAmount>
+  <surgerySuccessChanceFactor>1.55</surgerySuccessChanceFactor>
+  <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+        <li>Medicine</li>
+      </exceptedThingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>10</minLevel>
+            </li>
+        </skillRequirements>
+        <removesHediff>Bite</removesHediff>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+<!-- Injury: Stab -->
+    <RecipeDef ParentName="SurgeryOld">
+        <defName>CureInjuryStab</defName>
+        <label>cure stab</label>
+        <description>Cure stab.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Curing stab.</jobString>
+        <workAmount>2000</workAmount>
+  <surgerySuccessChanceFactor>1.55</surgerySuccessChanceFactor>
+  <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+        <li>Medicine</li>
+      </exceptedThingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>10</minLevel>
+            </li>
+        </skillRequirements>
+        <removesHediff>Stab</removesHediff>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+<!-- Injury: Gunshot -->
+    <RecipeDef ParentName="SurgeryOld">
+        <defName>CureInjuryGunshot</defName>
+        <label>cure gunshot</label>
+        <description>Cure gunshot.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Curing gunshot.</jobString>
+        <workAmount>2000</workAmount>
+  <surgerySuccessChanceFactor>1.55</surgerySuccessChanceFactor>
+  <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+        <li>Medicine</li>
+      </exceptedThingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>10</minLevel>
+            </li>
+        </skillRequirements>
+        <removesHediff>Gunshot</removesHediff>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+<!-- Injury: Shredded -->
+    <RecipeDef ParentName="SurgeryOld">
+        <defName>CureInjuryShredded</defName>
+        <label>cure shredded</label>
+        <description>Cure shredded.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Curing shredded.</jobString>
+        <workAmount>2000</workAmount>
+  <surgerySuccessChanceFactor>1.55</surgerySuccessChanceFactor>
+  <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+        <li>Medicine</li>
+      </exceptedThingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>10</minLevel>
+            </li>
+        </skillRequirements>
+        <removesHediff>Shredded</removesHediff>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+<!-- Injury: Bruise -->
+    <RecipeDef ParentName="SurgeryOld">
+        <defName>CureInjuryBruise</defName>
+        <label>cure bruise</label>
+        <description>Cure bruise.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Curing bruise.</jobString>
+        <workAmount>2000</workAmount>
+  <surgerySuccessChanceFactor>1.55</surgerySuccessChanceFactor>
+  <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+        <li>Medicine</li>
+      </exceptedThingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>10</minLevel>
+            </li>
+        </skillRequirements>
+        <removesHediff>Bruise</removesHediff>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+
+
+</RecipeDefs>

@@ -1,0 +1,17 @@
+C:\Users\mckin\Documents\CombatRealism\Assemblies\CombatRealism.dll
+C:\Users\mckin\Documents\CombatRealism\Source\CombatRealism\obj\Debug\CombatRealism.dll
+C:\Games\RimWorld1249Win\Mods\CombatRealism\Source\CombatRealism\obj\Debug\Combat_Realism.csprojResolveAssemblyReference.cache
+C:\Games\RimWorld1249Win\Mods\CombatRealism\Source\CombatRealism\obj\Debug\CombatRealism.dll
+C:\Games\RimWorld1249Win\Mods\CombatRealism\Assemblies\CombatRealism.dll
+C:\Users\tijn\Documents\CombatRealism\Assemblies\CombatRealism.dll
+C:\Users\tijn\Documents\CombatRealism\Source\CombatRealism\obj\Debug\Combat_Realism.csprojResolveAssemblyReference.cache
+C:\Users\tijn\Documents\CombatRealism\Source\CombatRealism\obj\Debug\CombatRealism.dll
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\CombatRealism-master\Source\CombatRealism\obj\Debug\Combat_Realism.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\CombatRealism-master\Source\CombatRealism\obj\Debug\CombatRealism.dll
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\CombatRealism-master\Assemblies\CombatRealism.dll
+C:\BitBucket\CR\Assemblies\CombatRealism.dll
+C:\BitBucket\CR\Source\CombatRealism\obj\Debug\CombatRealism.dll
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\CombatRealism\Source\CombatRealism\obj\Debug\Combat_Realism.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\CombatRealism\Source\CombatRealism\obj\Debug\CombatRealism.dll
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\CombatRealism\Assemblies\CombatRealism.dll
+C:\BitBucket\CR\Source\CombatRealism\obj\Debug\Combat_Realism.csprojResolveAssemblyReference.cache

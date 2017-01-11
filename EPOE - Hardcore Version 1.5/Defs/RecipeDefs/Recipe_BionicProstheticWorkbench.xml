@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RecipeDefs>
+
+	<RecipeDef Abstract="True" Name="RecipeBionicProsthesis">
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<soundWorking>EPOEAssembling</soundWorking>
+		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+		<workSkill>Crafting</workSkill>
+		<workAmount>20000</workAmount>
+		<researchPrerequisite>Bionics</researchPrerequisite>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>7</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBionicProsthesis">
+		<defName>CreateBionicEye</defName>
+		<label>Craft bionic eye</label>
+		<description>Crafts a bionic eye from plasteel.</description>
+		<jobString>Crafting bionic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BionicEye>1</BionicEye>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBionicProsthesis">
+		<defName>CreatePowerArm</defName>
+		<label>craft power arm</label>
+		<description>Attaching a power claw to a bionic arm is not as easy as it sounds. But damn is it awesome!</description>
+		<jobString>Crafting bionic.</jobString>
+		<products>
+			<PowerArm>1</PowerArm>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicArm</li>
+				<li>PowerClaw</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBionicProsthesis">
+		<defName>CreateBionicArm</defName>
+		<label>Craft bionic arm</label>
+		<description>Upgrades a simple prosthetic arm using plasteel and components.</description>
+		<jobString>Crafting bionic.</jobString>
+		<products>
+			<BionicArm>1</BionicArm>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>180</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticArm</li>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBionicProsthesis">
+		<defName>CreateBionicHand</defName>
+		<label>Craft bionic hand</label>
+		<description>Upgrades a simple prosthetic hand using plasteel and components.</description>
+		<jobString>Crafting bionic.</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<products>
+			<BionicHand>1</BionicHand>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticHand</li>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBionicProsthesis">
+		<defName>CreateBionicFoot</defName>
+		<label>Craft bionic foot</label>
+		<description>Upgrades a simple prosthetic foot using plasteel and components.</description>
+		<jobString>Crafting bionic.</jobString>
+		<products>
+			<BionicFoot>1</BionicFoot>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticFoot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticFoot</li>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBionicProsthesis">
+		<defName>CreateBionicLeg</defName>
+		<label>Craft bionic leg</label>
+		<description>Upgrades a simple prosthetic leg using plasteel and components.</description>
+		<jobString>Crafting bionic.</jobString>
+		<products>
+			<BionicLeg>1</BionicLeg>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>180</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticLeg</li>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBionicProsthesis">
+		<defName>CreateBionicEar</defName>
+		<label>Craft bionic ear</label>
+		<description>Crafts a bionic ear from plasteel.</description>
+		<jobString>Crafting bionic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BionicEar>1</BionicEar>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBionicProsthesis">
+		<defName>CreateBionicJaw</defName>
+		<label>Craft bionic jaw</label>
+		<description>Crafts a bionic jaw from steel and plasteel.</description>
+		<jobString>Crafting bionic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BionicJaw>1</BionicJaw>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeBionicProsthesis">
+		<defName>CreateBionicSpine</defName>
+		<label>Craft bionic spine</label>
+		<description>Crafts a bionic spine from steel and plasteel.</description>
+		<jobString>Crafting bionic.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>180</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>200</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>Component</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BionicSpine>1</BionicSpine>
+		</products>
+	</RecipeDef>
+
+</RecipeDefs>

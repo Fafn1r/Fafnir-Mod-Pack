@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[sd] medicaddons (more furnitrue mod compatible version)</name>
+  <author>sulusdacor</author>
+  <targetVersion>0.16.1393</targetVersion>
+  <url>https://ludeon.com/forums/index.php?topic=26276.0</url>
+	<description>"medic addons"
+	
+	"This is your medical area? It looks a bit ... empty."
+	"Don't worry just lay down and we will start with the operation"
+	... several missing limbs the patient died in a simple operation to replace an eye ...
+	
+	CAUTION: This mod does override the vanilla beds (single bed, double bed, royal bed, hospital bed). It will conflict with any other mod touching these!!!
+	
+	- adds medical facilities to link to your beds
+	- needs to be researched, 3 research projects (medieval, industrial, space)
+	- adds 3 medieval facilites, 2 industrial facilicies (you have the vanilla vitals monitor as the third), 3 spacy facilities
+	- all stuff can be linked to the vanilla beds
+	- the boni from the linked facilities are immunity gain and treatment quality only
+	- the boni are quite low, but the will influence the game balance. please keep that in mind!
+	
+	This mod does NOT:
+	
+	- it does NOT change the games mechanic in treating, illness and operations.
+	- it does NOT add any additional beds. (it just makes the vanilla beds "respond" to the added facilities by "redefining" them.)
+	- it does NOT work with beds added by other mods if not specified by the other mod. (to let beds use the facilites they need to have their properties changed in the mod xml defining/adding them. if you have done that it will work.)
+	
+	For how to make beds from other mods linkable to the facilites please read in the ludeon forum thread.
+	
+	Download links for Dropbox (current or older versions) or Steamworkshop link for current Rimworld version can be found in the ludeon forum thread linked above.</description>
+</ModMetaData>

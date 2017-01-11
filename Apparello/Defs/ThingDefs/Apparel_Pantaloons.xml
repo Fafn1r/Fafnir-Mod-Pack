@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+ 
+<!-- Vanilla pants -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparel_Pants</defName>
+    <label>pants</label>
+    <description>A simple set of pants.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Various/Pants_OnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+      <Insulation_Cold>-3</Insulation_Cold>
+    </statBases>
+    <apparel>
+      <worngraphicPath>Accessorello/Pants/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>0.7</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Spacer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+
+
+
+
+<!-- Urbants -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Urbskin</defName>
+    <label>Urban trousers</label>
+    <description>Trousers with suspenders, leave them hanging for that urban look</description>
+    <graphicData>
+      <texPath>Accessorello/Urb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchDesign</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <Insulation_Cold>-2</Insulation_Cold>
+      <Insulation_Heat>-3</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.01</MoveSpeed>
+      <MentalBreakThreshold>-0.01</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/Urb/Urb</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Spacer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+<!-- Supsy -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Suspender</defName>
+    <label>stablehand trousers</label>
+    <description>Ain't a chap on earf lookin' as honest as one wearin' these. With these equipped one should feel more comfortable wading through mud and filth and therefore more inclined to get the job done without distractions</description>
+    <graphicData>
+      <texPath>Accessorello/Suspenders</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+      <li>ApparelloGrowerSet</li>
+      <li>ApparelloHandlingSet</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <TameAnimalChance>0.06</TameAnimalChance>
+      <MentalBreakThreshold>-0.02</MentalBreakThreshold>
+      <PlantWorkSpeed>0.03</PlantWorkSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/Suspenders/Suspenders</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Outlander</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+
+
+
+
+<!-- Armor pants -->
+
+  <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Armorpants</defName>
+    <label>padded pants</label>
+    <description>Pair of pants with extra padding in key locations.</description>
+    <graphicData>
+      <texPath>Accessorello/Armorpants</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchQuilting</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+      <li>ApparelloWombatSet</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <apparel>
+      <worngraphicPath>Accessorello/APants/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+      </layers>
+      <commonality>0.6</commonality>
+      <tags>
+        <li>Military</li>
+        <li>Outlander</li>
+	<li>CR_Bulky</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+	<!-- SHELL -->
+
+
+
+
+
+<!-- Powerarmor pants -->
+
+  <ThingDef ParentName="ArmorelloMakeableBase">
+    <defName>Apparello_Spacemarinepants</defName>
+    <label>Spacemarine leggings</label>
+    <description>Highly advanced plasteel leggings</description>
+    <graphicData>
+      <texPath>Accessorello/SpacerPants</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <costList>
+      <Component>3</Component>
+      <Plasteel>75</Plasteel>
+    </costList>
+
+    <recipeMaker>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+    </recipeMaker>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>Apparellopanties</li>
+      <li>ApparelloWombatSet</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>2000</MarketValue>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/SpacerPants/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Shell</li>
+        <li>Middle</li>
+      </layers>
+      <commonality>0.10</commonality>
+      <tags>
+        <li>Military</li>
+        <li>Spacer</li>
+	<li>CR_Bulky</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+<!-- Glitter pants -->
+
+  <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Spacerpants</defName>
+    <label>Enviro-leggings</label>
+    <description>High quality and adapts well to temperature changes. Ideal for space exploration</description>
+    <graphicData>
+      <texPath>Accessorello/GlitterPants</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <thingCategories>
+      <li>Apparellopanties</li>
+    </thingCategories>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchLPOW</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+      <Insulation_Cold>-3</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/SpacerPants/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Spacer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+
+<!-- Chaps -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Chapel</defName>
+    <label>chaps</label>
+	<description>Chaps with holsters. All the fastest shots wore these. They usually got shot in the back. Tinkle winkle moonshine, probably should wear some pants with these.</description>
+    <graphicData>
+      <texPath>Accessorello/Chaps</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchQuilting</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+      <li>ApparelloSetRachel</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+	<AimingDelayFactor>-0.02</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/Chaps/Belt</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Shell</li>
+        <li>Middle</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Military</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Tribal pants -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_TribalPants</defName>
+    <label>waistcloth</label>
+    <description>Waistcloth. They itch a little.</description>
+    <graphicData>
+      <texPath>Accessorello/Tribants</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+
+      <researchPrerequisite>ApparelloTribalwearDesign</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+
+    <costStuffCount>8</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+      <li>Fabric</li>
+    </stuffCategories>
+    <tradeability>Sellable</tradeability>
+    <thingCategories>
+      <li>Apparellopanties</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>3500</WorkToMake>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <apparel>
+      <worngraphicPath>Accessorello/Tribants/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>0.3</commonality>
+      <tags>
+        <li>Tribal</li>
+	<li>TribalTrader</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+
+
+
+
+<!-- Holdem -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Holdem</defName>
+    <label>fancy pants</label>
+    <description>They're very stylish.</description>
+    <graphicData>
+      <texPath>Accessorello/Holdem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchDesign</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>70</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+      <li>ApparelloSocialSet</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+	<MoveSpeed>0.05</MoveSpeed>
+	<SocialImpact>0.03</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/Pants/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>OutlanderTrader</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+
+
+<!-- Scraps -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Scrapants</defName>
+    <label>patch pants</label>
+    <description>very crude and ugly pair of pants.</description>
+    <graphicData>
+      <texPath>Accessorello/NIATramps</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>10</costStuffCount>
+    <tradeability>Sellable</tradeability>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+    </thingCategories>
+    <equippedStatOffsets>
+	<SocialImpact>-0.25</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/Pants/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>0.2</commonality>
+      <tags>
+        <li>Scrap</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+
+<!-- Polly pocket -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Pollypocket</defName>
+    <label>Constructor's trousers</label>
+    <description>Trousers with huge pocket space. They help weakened beings to carry more.</description>
+    <graphicData>
+      <texPath>Accessorello/PollyPocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchWork</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>70</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+      <li>ApparelloConstructionSet</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+	<MoveSpeed>-0.08</MoveSpeed>
+	<ConstructionSpeed>0.02</ConstructionSpeed>
+        <CarryingCapacity>15</CarryingCapacity>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/Pants/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Spacer</li>
+        <li>CR_Pockets</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+<!-- Jeans -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Jeans</defName>
+    <label>jeans</label>
+    <description>Sturdy farmer pants.</description>
+    <graphicData>
+      <texPath>Accessorello/Jeans</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchDesign</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>65</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+      <li>ApparelloGrowerSet</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+	<MoveSpeed>-0.03</MoveSpeed>
+      <HarvestFailChance>-0.05</HarvestFailChance>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/Darkpants/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Outlander</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+
+<!-- Jodphurs -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Jodhpurs</defName>
+    <label>jodhpurs</label>
+    <description>Very commanding.</description>
+    <graphicData>
+      <texPath>Accessorello/Jodhpurs</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchDesign</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>65</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+      <li>ApparelloHandlingSet</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+	<MoveSpeed>-0.03</MoveSpeed>
+      <TrainAnimalChance>0.05</TrainAnimalChance>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/Pants/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Outlander</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+
+
+<!-- Skirt -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Skirtwirly</defName>
+    <label>skirt</label>
+    <description>For when your legs need all that extra space.</description>
+    <graphicData>
+      <texPath>Accessorello/Skirt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchDesign</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+      <li>ApparelloSocialSet</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+      <Insulation_Cold>-1</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+	<MoveSpeed>-0.07</MoveSpeed>
+	<SocialImpact>0.03</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/Skirt/Skirt</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Skirt</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+
+
+<!-- Lederhose -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Lederhose</defName>
+    <label>leather pants</label>
+    <description>Leather pants (sometimes even real leather!) The punk wearing these will always feel lucky.</description>
+    <graphicData>
+      <texPath>Accessorello/Lederhose</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchDesign</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+      <Insulation_Heat>-3</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+	<MoveSpeed>-0.03</MoveSpeed>
+	<MentalBreakThreshold>-0.04</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/Darkpants/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Outlander</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+
+
+<!-- Checkers -->
+
+
+    <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_square</defName>
+    <label>checkered trousers</label>
+    <description>Checkered and ready to go!.</description>
+    <graphicData>
+      <texPath>Accessorello/Checker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchWork</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>70</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparellopanties</li>
+      <li>ApparelloResearchSet</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+	<MoveSpeed>-0.03</MoveSpeed>
+	<ResearchSpeed>0.05</ResearchSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <worngraphicPath>Accessorello/Checker/Pants</worngraphicPath>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <commonality>0.5</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>OutlanderTrader</li>
+        <li>Spacer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+
+
+
+</ThingDefs>
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>The Mad Rabbits of Caerbannog</name>
+  <author>ZorbaTHut</author>
+  <url>https://github.com/zorbathut/caerbannog</url>
+  <description>Allows all animal types to show up in manhunter packs.</description>
+  <targetVersion>0.16.0</targetVersion>
+</ModMetaData>

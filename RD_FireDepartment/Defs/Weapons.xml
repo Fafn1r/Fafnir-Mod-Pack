@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef Name="BaseGun" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Industrial</techLevel>
+		<smeltable>true</smeltable>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>ArtName_WeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="BaseMakeableGun" ParentName="BaseGun" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+		<weaponTags>
+			<li>FirefighterTool</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef Name="BaseHumanMakeableGun" ParentName="BaseMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>CraftableFirefighterTool</li>
+		</weaponTags>
+		<researchPrerequisites>
+			<li>Firefoam</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>bullet</label>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef Name="BaseGrenadeProjectile" Abstract="True">
+		<category>Projectile</category>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Projectile_Explosive</thingClass>
+		<label>projectile</label>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile>
+			<speed>12</speed>
+			<flyOverhead>false</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Firefoam Launcher ========================== -->
+	
+		<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_FoamLauncher</defName>
+		<label>firefoam capsule</label>
+		<graphicData>
+			<texPath>Things/FirefoamGrenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<explosionRadius>9.9</explosionRadius >
+			<damageDef>Extinguish</damageDef>
+			<damageAmountBase>1000</damageAmountBase>
+			<explosionDelay>20</explosionDelay>
+			<preExplosionSpawnThingDef>FilthFireFoam</preExplosionSpawnThingDef>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_FoamLauncher</defName>
+		<label>doomsday firefoam capsule launcher</label>
+		<description>A single-use rocket launcher for extinguishing large fires.</description>
+		<graphicData>
+			<texPath>Things/FoamLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>55000</WorkToMake>
+			<Mass>4</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.86</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>170</Steel>
+			<Component>8</Component>
+			<MortarShell>1</MortarShell>
+		</costList>
+		<techLevel>Spacer</techLevel>
+		<destroyOnDrop>false</destroyOnDrop>
+		<verbs>
+			<li>
+				<verbClass>Verb_ShootOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_FoamLauncher</projectileDef>
+				<forcedMissRadius>0.0</forcedMissRadius>
+				<warmupTime>2</warmupTime>
+				<range>40</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ShotIncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<onlyManualCast>true</onlyManualCast>
+				<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+<!-- ====================== Firefoam grenade ============================ -->
+<!-- ============ Stolen from Firefoam Grenades by Nattiejim ============ -->
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_GrenadeExtinguisher</defName>
+		<label>extinguisher grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/FirefoamGrenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>5.5</explosionRadius >
+			<damageDef>Extinguish</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<explosionDelay>100</explosionDelay>
+			<preExplosionSpawnThingDef>FilthFireFoam</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Weapon_FoamGrenade</defName>
+		<label>firefoam grenades</label>
+		<description>Throw them at fires to suppress them.</description>
+		<graphicData>
+			<texPath>Things/FirefoamGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractGrenade</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<WorkToMake>55000</WorkToMake>
+			<MarketValue>350</MarketValue>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>170</Steel>
+			<Component>8</Component>
+			<Weapon_GrenadeFrag>1</Weapon_GrenadeFrag>
+		</costList>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw firefoam grenade</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>1.0</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<projectileDef>Proj_GrenadeExtinguisher</projectileDef>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+<!-- ==================== T-9 incendiary launcher ========================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_FireFoam</defName>
+		<label>incendiary bolt</label>
+		<graphicData>
+			<texPath>Things/Foam</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>40</speed>
+			<damageDef>Extinguish</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<explosionRadius>2.1</explosionRadius>
+			<preExplosionSpawnThingDef>FilthFireFoam</preExplosionSpawnThingDef>
+			<explosionSpawnChance>0.5</explosionSpawnChance>
+			<soundExplode>Extinguisher</soundExplode>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_FireExtinguisher</defName>
+		<label>fire extinguisher</label>
+		<description>A tank of pressurized firefoam. Spray on fires to extinguish.</description>
+		<graphicData>
+			<texPath>Things/Extinguisher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>22000</WorkToMake>
+			<Mass>3.4</Mass>
+			<AccuracyTouch>0.79</AccuracyTouch>
+			<AccuracyShort>0.42</AccuracyShort>
+			<AccuracyMedium>0.18</AccuracyMedium>
+			<AccuracyLong>0.06</AccuracyLong>
+			<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>75</Steel>
+			<Component>4</Component>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_FireFoam</projectileDef>
+				<ai_IsIncendiary>false</ai_IsIncendiary>
+				<warmupTime>0.1</warmupTime>
+				<range>5</range>
+				<burstShotCount>1</burstShotCount>
+				<!--<soundCast>ShotIncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>-->
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	
+</ThingDefs>

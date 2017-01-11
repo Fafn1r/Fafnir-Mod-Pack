@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+
+	<RecipeDef>
+		<defName>MakeCloth</defName>
+		<label>make cloth</label>
+		<description>Make cloth from raw cotton. \n\nMakes 20 cloth.</description>
+		<jobString>Making cloth.</jobString>
+		<workAmount>2000</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCotton</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCotton</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cloth>20</Cloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeLinen</defName>
+		<label>make linen cloth</label>
+		<description>Make linen cloth from raw flax. \n\nMakes 10 cloth.</description>
+		<jobString>Making linen cloth.</jobString>
+		<workAmount>800</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawFlax</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawFlax</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Flaxcloth>10</Flaxcloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+
+  <RecipeDef>
+    <defName>MakeHempCloth</defName>
+    <label>make hemp cloth</label>
+    <description>Turn smokeleaf leaves into a hemp cloth.</description>
+    <jobString>Making hemp cloth.</jobString>
+    <workSpeedStat>TailoringSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workAmount>450</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafLeaves</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SmokeleafLeaves</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <HempCloth>10</HempCloth>
+    </products>
+    <workSkill>Crafting</workSkill>
+	 <recipeUsers>
+         <li>TableLoom</li>
+      </recipeUsers>
+  </RecipeDef>
+
+
+	<RecipeDef>
+		<defName>MakeSynthreadCloth</defName>
+		<label>make ten synthread cloth</label>
+		<description>Make synthread cloth from raw cotton and fax. \n\nMakes 10 cloth.</description>
+		<jobString>Making synthread cloth.</jobString>
+		<workAmount>1200</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCotton</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawFlax</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCotton</li>
+				<li>RawFlax</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Synthread>10</Synthread>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeDevilstrand</defName>
+		<label>make devilstrand cloth</label>
+		<description>Make devilstrand cloth from raw devilstrand. \n\nMakes 15 cloth.</description>
+		<jobString>Making devilstrand cloth.</jobString>
+		<workAmount>1500</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawDevilstrand</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawDevilstrand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DevilstrandCloth>12</DevilstrandCloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeHyperweaveCloth</defName>
+		<label>make hyperweave cloth</label>
+		<description>Make hyperweave cloth from mixing raw cotton, flax, and devilstrand. \n\nMakes 15 cloths.</description>
+		<jobString>Making hyperweave cloth.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCotton</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawFlax</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawDevilstrand</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCotton</li>
+				<li>RawFlax</li>
+				<li>RawDevilstrand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Hyperweave>15</Hyperweave>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Makeblendedleather</defName>
+		<label>make blended leather</label>
+		<description>Blend leather from smaller pieces of leather scrap. \n\nMakes 20 leather.</description>
+		<jobString>Blending leather.</jobString>
+		<workAmount>700</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+	     <allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+		  			<categories>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<BleadedLeather>20</BleadedLeather>
+		</products>
+		<workSkill>Crafting</workSkill>
+	 <recipeUsers>
+         <li>TableLoom</li>
+      </recipeUsers>
+
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Makeblendedleatherhad</defName>
+		<label>hand-make blended leather</label>
+		<description>Blend leather from smaller pieces of leather scrap. \n\nMakes 5 leather.</description>
+		<jobString>Blending leather.</jobString>
+		<workAmount>500</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+	     <allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+		  			<categories>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<BleadedLeather>5</BleadedLeather>
+		</products>
+		<workSkill>Crafting</workSkill>
+	 <recipeUsers>
+         <li>CraftingSpot</li>
+      </recipeUsers>
+
+	</RecipeDef>
+
+
+  <RecipeDef>
+    <defName>SalvageApparel</defName>
+    <label>salvage apparel</label>
+    <description>Salvage unwanted apparel into raw materials.</description>
+    <jobString>Salvaging apparel.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>TailoringSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Apparel</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Apparel</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+         <li>TableLoom</li>
+    </recipeUsers>
+  </RecipeDef>
+
+
+</RecipeDefs>

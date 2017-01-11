@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorkGivers>
+
+   <WorkGiverDef>
+    <defName>DoBillsBionicWorkbench</defName>
+	<label>Craft medical item</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>130</priorityInType>
+    <fixedBillGiverDefs>
+	  <li>BionicWorkbench</li>
+	</fixedBillGiverDefs>
+    <verb>create</verb>
+    <gerund>creating</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+   
+   <WorkGiverDef>
+    <defName>DoBillsAdvancedMedicalStation</defName>
+	<label>Craft medical item</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>130</priorityInType>
+    <fixedBillGiverDefs>
+	  <li>AdvancedMedicalStation</li>
+	</fixedBillGiverDefs>
+    <verb>create</verb>
+    <gerund>creating</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</WorkGivers>

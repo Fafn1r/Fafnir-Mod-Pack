@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--
+   <DesignationCategoryDef>
+    <DefName>VGBrewing</DefName>
+    <label>Brewing</label>
+    <description>Place for all your alchol needs .</description>
+    <order>85</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+ -->
+
+  <DesignationCategoryDef>
+    <DefName>FoodProduction</DefName>
+    <label>Food</label>
+    <description>Things for food production.</description>
+    <order>550</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_SmoothFloor</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  
+</Defs>

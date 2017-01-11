@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RecipeDefs>
+
+
+
+  
+   <RecipeDef>
+      <defName>BakeBread</defName>
+      <label>bake three breads</label>
+      <description>Bake bread from flour. \n\nMakes 3 Bread.</description>
+      <jobString>Baking bread.</jobString>  
+      <allowMixingIngredients>true</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Flour</li>
+               </thingDefs>
+            </filter>
+            <count>4</count>
+         </li>
+      </ingredients>
+      <products>
+         <Bread>3</Bread>
+      </products>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Flour</li>
+         </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+      </fixedIngredientFilter>
+      <workAmount>700</workAmount>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>Oven</li>
+      </recipeUsers>
+      </RecipeDef>
+   
+      <RecipeDef>
+      <defName>Bakesweetroll</defName>
+      <label>bake four sweet rolls</label>
+      <description>A sweet roll covered in sugary icying. \n\nMakes 4 servings. \n\nFood Effects: Consciousness and Moving.</description>
+      <jobString>Baking sweet rolls.</jobString>  
+      <allowMixingIngredients>true</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Flour</li>
+               </thingDefs>
+            </filter>
+            <count>12</count>
+         </li>
+		<li>
+            <filter>
+               <thingDefs>
+                  <li>Sugar</li>
+               </thingDefs>
+            </filter>
+            <count>5</count>
+         </li>
+      </ingredients>
+      <products>
+         <sweetbun>4</sweetbun>
+      </products>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Flour</li>
+		<li>Sugar</li>
+         </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+
+      </fixedIngredientFilter>
+      <workAmount>900</workAmount>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>Oven</li>
+      </recipeUsers>
+      </RecipeDef>
+
+      <RecipeDef>
+      <defName>Bakepizza</defName>
+      <label>bake three pizzas</label>
+      <description>Bake pizza. \n\nMakes 3 servings. \n\nFood Effects: Consciousness and Metabolism.</description>
+      <jobString>Baking pizza.</jobString>  
+      <allowMixingIngredients>true</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Flour</li>
+               </thingDefs>
+            </filter>
+            <count>8</count>
+         </li>
+		<li>
+            <filter>
+               <thingDefs>
+                  <li>cheese</li>
+               </thingDefs>
+            </filter>
+            <count>4</count>
+         </li>
+		<li>
+            <filter>
+               <thingDefs>
+                  <li>RawTomatoes</li>
+               </thingDefs>
+            </filter>
+            <count>4</count>
+         </li>
+	     <li>
+		<filter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+		</filter>
+		<count>10</count>
+		</li>
+      </ingredients>
+      <products>
+         <pizza>3</pizza>
+      </products>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Flour</li>
+		 <li>cheese</li>
+            <li>RawTomatoes</li>
+         </thingDefs>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+      </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+         <thingDefs>
+            <li>Flour</li>
+		 <li>cheese</li>
+            <li>RawTomatoes</li>
+         </thingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+      <workAmount>750</workAmount>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>Oven</li>
+      </recipeUsers>
+      </RecipeDef>
+
+<RecipeDef>
+	<defName>BakeCookies</defName>
+	<label>bake cookies</label>
+	<description>Bake six cookies. \n\nMakes 6 cookies.</description>
+	<jobString>Baking cookies.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<workAmount>800</workAmount>
+	<soundWorking>Recipe_CookMeal</soundWorking>     
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Oven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Chocolate</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>8</count>
+	  </li>
+	  <li>
+	    <filter>
+      <categories>
+  		    <li>EggsUnfertilized</li>
+		    <li>EggsFertilized</li>
+      </categories>
+	    </filter>
+	    <count>1</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Flour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>3</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+      <categories>
+  		    <li>EggsUnfertilized</li>
+		    <li>EggsFertilized</li>
+      </categories>
+	  <thingDefs>
+	    <li>Chocolate</li>
+	    <li>Flour</li>
+	    <li>Sugar</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+  		    <li>EggsUnfertilized</li>
+      </categories>
+	  <thingDefs>
+	    <li>Chocolate</li>
+	    <li>Flour</li>
+	    <li>Sugar</li>
+	  </thingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+    </defaultIngredientFilter>
+	<products>
+	  <cookie>6</cookie>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+    <RecipeDef>
+	<defName>BakeBlueberryPie</defName>
+	<label>bake three pies</label>
+	<description>Bake a tasty fruit filled pie. \n\nMakes 3 pie slices.</description>
+	<jobString>Baking pie.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>1000</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Oven</li>
+      </recipeUsers>
+
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Flour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>4</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>2</count>
+	  </li>
+	<li>
+		<filter>
+			<categories>
+				<li>FruitFoodRaw</li>
+			</categories>
+		</filter>
+	    <count>8</count>
+     </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+	    <li>Flour</li>
+	  </thingDefs>
+	  <categories>
+		<li>FruitFoodRaw</li>
+	  </categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+
+	</fixedIngredientFilter>
+	<products>
+	  <BlueberryPie>3</BlueberryPie>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+  
+   <RecipeDef>
+	<defName>BakePumpkinPie</defName>
+	<label>bake three pumpkin pies</label>
+	<description>Bake a tasty pie. \n\nMakes 3 pie slices.</description>
+	<jobString>Baking pie.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>1000</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Oven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Flour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>6</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>4</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawpumpkin</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+	    <li>Flour</li>
+	    <li>Rawpumpkin</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <PumpkinPie>3</PumpkinPie>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>DryFruit</defName>
+	<label>dehydrate ten fruits</label>
+	<description>Dries out fruit to increase its lifespan.</description>
+	<jobString>Dehydrating fruit.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+     <soundWorking>Recipe_CookMeal</soundWorking>
+     <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+         <li>Oven</li>
+      </recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>FruitFoodRaw</li>
+				</categories>
+			</filter>
+		<count>2</count>
+	   	</li>
+
+	</ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+		<li>FruitFoodRaw</li>
+	  </categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FruitFoodRaw</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>driedfruit</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+	<products>
+	  <driedfruit>10</driedfruit>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+   <RecipeDef>
+	<defName>Bakepolenta</defName>
+	<label>bake a polenta loaf</label>
+	<description>Bake a tasty polenta loaf. \n\nMakes 1 slices.</description>
+	<jobString>Baking polenta.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<workAmount>1000</workAmount>
+     <soundWorking>Recipe_CookMeal</soundWorking>          
+	<recipeUsers>
+         <li>Oven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Flour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>2</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawPolenta</li>
+	      </thingDefs>
+	    </filter>
+	    <count>1</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Flour</li>
+	    <li>RawPolenta</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <bakedpolenta>1</bakedpolenta>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+   <RecipeDef>
+	<defName>BakeCornbread</defName>
+	<label>bake two cornbread</label>
+	<description>Bake a tasty cornbread loaf. \n\nMakes 2 loafs.</description>
+	<jobString>Baking cornbread.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<workAmount>1000</workAmount>
+     <soundWorking>Recipe_CookMeal</soundWorking>          
+	<recipeUsers>
+         <li>Oven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Flour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>4</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Cornmeal</li>
+	      </thingDefs>
+	    </filter>
+	    <count>8</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Flour</li>
+	    <li>Cornmeal</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <Cornbread>2</Cornbread>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+   <RecipeDef>
+	<defName>BakeCornbreadmuffin</defName>
+	<label>bake three cornbread muffins</label>
+	<description>Bake some tasty cornbread muffins. \n\nMakes 3 muffins.</description>
+	<jobString>Baking cornbread muffins.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<workAmount>1500</workAmount>
+     <soundWorking>Recipe_CookMeal</soundWorking>          
+	<recipeUsers>
+         <li>Oven</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Flour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>8</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Cornmeal</li>
+	      </thingDefs>
+	    </filter>
+	    <count>6</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Flour</li>
+	    <li>Cornmeal</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <Cornbreadmuffin>3</Cornbreadmuffin>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+    <RecipeDef>
+	<defName>Bakemuffin</defName>
+	<label>bake six muffins</label>
+	<description>Bake some tasty fruit filled muffins. \n\nMakes 6 muffins.</description>
+	<jobString>Baking muffins.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+     <workAmount>1500</workAmount>
+     <soundWorking>Recipe_CookMeal</soundWorking>          
+	<recipeUsers>
+         <li>Oven</li>
+      </recipeUsers>
+
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Flour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>8</count>
+	  </li>
+	  <li>
+	    <filter>
+      <categories>
+  		    <li>EggsUnfertilized</li>
+		    <li>EggsFertilized</li>
+      </categories>
+	    </filter>
+	    <count>1</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>4</count>
+	  </li>
+	<li>
+		<filter>
+			<categories>
+				<li>FruitFoodRaw</li>
+			</categories>
+		</filter>
+	    <count>6</count>
+     </li>
+
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Sugar</li>
+	    <li>Flour</li>
+	  </thingDefs>
+	  <categories>
+	    <li>FruitFoodRaw</li>
+	    <li>EggsUnfertilized</li>
+	    <li>EggsFertilized</li>
+	  </categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+  	    <li>FruitFoodRaw</li>
+	    <li>EggsUnfertilized</li>
+      </categories>
+	  <thingDefs>
+	    <li>Flour</li>
+	    <li>Sugar</li>
+	  </thingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+    </defaultIngredientFilter>
+	<products>
+	  <muffin>6</muffin>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+    <RecipeDef>
+	<defName>Bakechocomuffin</defName>
+	<label>bake four choccolate muffins</label>
+	<description>Bake some tasty chocolate filled muffins. \n\nMakes 4 muffins.</description>
+	<jobString>Baking chocolate muffins.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+     <workAmount>1500</workAmount>
+     <soundWorking>Recipe_CookMeal</soundWorking>          
+	<recipeUsers>
+         <li>Oven</li>
+      </recipeUsers>
+
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Flour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>4</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>2</count>
+	  </li>
+	  <li>
+	    <filter>
+      <categories>
+  		    <li>EggsUnfertilized</li>
+		    <li>EggsFertilized</li>
+      </categories>
+	    </filter>
+	    <count>1</count>
+	  </li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Chocolate</li>
+	      </thingDefs>
+	    </filter>
+	    <count>4</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+      <categories>
+  		    <li>EggsUnfertilized</li>
+		    <li>EggsFertilized</li>
+      </categories>
+	  <thingDefs>
+	    <li>Flour</li>
+	    <li>Sugar</li>
+	    <li>Chocolate</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+  		    <li>EggsUnfertilized</li>
+      </categories>
+	  <thingDefs>
+	    <li>Chocolate</li>
+	    <li>Flour</li>
+	    <li>Sugar</li>
+	  </thingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+    </defaultIngredientFilter>
+	<products>
+	  <chocomuffin>4</chocomuffin>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+</RecipeDefs>

@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Abstract bases -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <ThingDef Name="BedBase" ParentName="FurnitureBase" Abstract="True">
+		<ThingClass>Building_Bed</ThingClass>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>8</Beauty>
+      <WorkToBuild>870</WorkToBuild>
+      <Mass>50</Mass>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.75</Comfort>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+    </statBases>
+		<Size>(1,2)</Size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<Bed_HealPerDay>7</Bed_HealPerDay>
+		</building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>sd_medicaddons_medieval_surg_washpan</li>  
+          <li>sd_medicaddons_medieval_surg_instruments</li>
+          <li>sd_medicaddons_medieval_surg_lamp</li>
+          <li>VitalsMonitor</li>
+          <li>sd_medicaddons_industrial_surg_instruments</li>
+          <li>sd_medicaddons_industrial_surg_lamp</li>
+          <li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+          <li>sd_medicaddons_spacer_surg_instruments</li>
+          <li>sd_medicaddons_spacer_surg_lamp</li>
+          <li>ANON2Dresser</li>
+          <li>ANON2EndTable</li>
+          <li>ANON2EndTableLight</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+  
+  <ThingDef Name="DoubleBedBase" ParentName="ArtableFurnitureBase" Abstract="True">
+		<ThingClass>Building_Bed</ThingClass>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>1740</WorkToBuild>
+      <Mass>85</Mass>
+      <Comfort>0.75</Comfort>
+      <Beauty>8</Beauty>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+    </statBases>
+    <Size>(2,2)</Size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+    <building>
+      <Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+      <Bed_HealPerDay>7</Bed_HealPerDay>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>sd_medicaddons_medieval_surg_washpan</li>  
+          <li>sd_medicaddons_medieval_surg_instruments</li>
+          <li>sd_medicaddons_medieval_surg_lamp</li>
+          <li>VitalsMonitor</li>
+          <li>sd_medicaddons_industrial_surg_instruments</li>
+          <li>sd_medicaddons_industrial_surg_lamp</li>
+          <li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+          <li>sd_medicaddons_spacer_surg_instruments</li>
+          <li>sd_medicaddons_spacer_surg_lamp</li>
+          <li>ANON2Dresser</li>
+          <li>ANON2EndTable</li>
+          <li>ANON2EndTableLight</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <PathCost>60</PathCost>
+    <LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+    <StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+    <CastEdgeShadows>True</CastEdgeShadows>
+    <Passability>PassThroughOnly</Passability>
+    <DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+  
+  <ThingDef Name="RoyalBedBase" ParentName="ArtableFurnitureBase" Abstract="True">
+		<ThingClass>Building_Bed</ThingClass>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>4500</WorkToBuild>
+      <Mass>90</Mass>
+      <Beauty>50</Beauty>
+      <BedRestEffectiveness>1.05</BedRestEffectiveness>
+      <Comfort>0.90</Comfort>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+    </statBases>
+    <Size>(2,2)</Size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>110</costStuffCount>
+    <costList>
+      <Gold>50</Gold>
+    </costList>
+    <building>
+      <Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+      <Bed_HealPerDay>8</Bed_HealPerDay>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>sd_medicaddons_medieval_surg_washpan</li>  
+          <li>sd_medicaddons_medieval_surg_instruments</li>
+          <li>sd_medicaddons_medieval_surg_lamp</li>
+          <li>VitalsMonitor</li>
+          <li>sd_medicaddons_industrial_surg_instruments</li>
+          <li>sd_medicaddons_industrial_surg_lamp</li>
+          <li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+          <li>sd_medicaddons_spacer_surg_instruments</li>
+          <li>sd_medicaddons_spacer_surg_lamp</li>
+          <li>ANON2Dresser</li>
+          <li>ANON2EndTable</li>
+          <li>ANON2EndTableLight</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <PathCost>60</PathCost>
+    <LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+    <StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+    <CastEdgeShadows>True</CastEdgeShadows>
+    <Passability>PassThroughOnly</Passability>
+    <DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+  
+  
+  
+	<!-- Single beds -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+	<ThingDef ParentName="BedBase">
+		<defName>BedRed</defName>
+		<Label>bed (red)</Label>
+		<Description>A cozy mattress and red sheets on a frame for resting.</Description>
+    <graphicData>
+      <texPath>Things/Building/BedRed</texPath>
+    </graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BedBase">
+		<defName>BedYellow</defName>
+		<Label>bed (yellow)</Label>
+		<Description>A cozy mattress and yellow sheets on a frame for resting.</Description>
+    <graphicData>
+      <texPath>Things/Building/BedYellow</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BedBase">
+		<defName>BedGreen</defName>
+		<Label>bed (green)</Label>
+		<Description>A cozy mattress and green sheets on a frame for resting.</Description>
+    <graphicData>
+      <texPath>Things/Building/BedGreen</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BedBase">
+		<defName>BedBlue</defName>
+		<Label>bed (blue)</Label>
+		<Description>A cozy mattress and blue sheets on a frame for resting.</Description>
+    <graphicData>
+      <texPath>Things/Building/BedBlue</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BedBase">
+		<defName>BedPurple</defName>
+		<Label>bed (purple)</Label>
+		<Description>A cozy mattress and purple sheets on a frame for resting.</Description>
+    <graphicData>
+      <texPath>Things/Building/BedPurple</texPath>
+    </graphicData>
+	</ThingDef>
+
+
+
+	<!-- Double beds -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedRed</defName>
+		<Label>double bed (red)</Label>
+		<Description>A simple double-wide bed that fits two people. Red sheets.</Description>
+    <graphicData>
+      <texPath>Things/Building/DoubleBedRed</texPath>
+    </graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedYellow</defName>
+		<Label>double bed (yellow)</Label>
+		<Description>A simple double-wide bed that fits two people. Yellow sheets.</Description>
+    <graphicData>
+      <texPath>Things/Building/DoubleBedYellow</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedGreen</defName>
+		<Label>double bed (green)</Label>
+		<Description>A simple double-wide bed that fits two people. Green sheets.</Description>
+    <graphicData>
+      <texPath>Things/Building/DoubleBedGreen</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedBlue</defName>
+		<Label>double bed (blue)</Label>
+		<Description>A simple double-wide bed that fits two people. Blue sheets.</Description>
+    <graphicData>
+      <texPath>Things/Building/DoubleBedBlue</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedPurple</defName>
+		<Label>double bed (purple)</Label>
+		<Description>A simple double-wide bed that fits two people. Purple sheets.</Description>
+    <graphicData>
+      <texPath>Things/Building/DoubleBedPurple</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	
+  
+	<!-- Royal beds -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <ThingDef ParentName="RoyalBedBase">
+    <defName>RoyalBedRed</defName>
+    <label>royal bed (red)</label>
+    <Description>A luxurious bed fit for the highborn, topped with crisp red sheets.</Description>
+    <graphicData>
+      <texPath>Things/Building/RoyalBedRed</texPath>
+    </graphicData>
+  </ThingDef>
+	
+  <ThingDef ParentName="RoyalBedBase">
+    <defName>RoyalBedYellow</defName>
+    <label>royal bed (yellow)</label>
+    <Description>A luxurious bed fit for the highborn, topped with crisp yellow sheets.</Description>
+    <graphicData>
+      <texPath>Things/Building/RoyalBedYellow</texPath>
+    </graphicData>
+  </ThingDef>
+		
+  <ThingDef ParentName="RoyalBedBase">
+    <defName>RoyalBedRedGreen</defName>
+    <label>royal bed (green)</label>
+    <Description>A luxurious bed fit for the highborn, topped with crisp green sheets.</Description>
+    <graphicData>
+      <texPath>Things/Building/RoyalBedGreen</texPath>
+    </graphicData>
+  </ThingDef>
+	
+  <ThingDef ParentName="RoyalBedBase">
+    <defName>RoyalBedRedBlue</defName>
+    <label>royal bed (blue)</label>
+    <Description>A luxurious bed fit for the highborn, topped with crisp blue sheets.</Description>
+    <graphicData>
+      <texPath>Things/Building/RoyalBedBlue</texPath>
+    </graphicData>
+  </ThingDef>
+	
+  <ThingDef ParentName="RoyalBedBase">
+    <defName>RoyalBedRedPurple</defName>
+    <label>royal bed (purple)</label>
+    <Description>A luxurious bed fit for the highborn, topped with crisp purple sheets.</Description>
+    <graphicData>
+      <texPath>Things/Building/RoyalBedPurple</texPath>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

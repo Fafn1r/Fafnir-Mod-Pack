@@ -1,0 +1,38 @@
+personal changelog for mod "[sd] spaceship"
+
+- 14/10/2016
+
+	- added base abstract basebuilding
+	- changed xml thingdef from <gamedata> to <Defs>
+	- added better section markers in thingdef xml
+	- added german language file
+	- renamed fill parts to _b (beam) and _s (ship) at the end to remove error message
+
+- 15/10/2016
+
+	- added linkable ship beam
+	- made all ship parts minifieable
+
+- 22/10/2016
+	
+	- added 2x3 fill part
+
+- 22/12/2016
+
+	- updated for a16
+	- changed filestucture, texture folder structure
+	- added custom abstract (shippart)
+	- made all shippart walkthrough (150 pathcost), place not under roof, blockwind
+	- set block light to false to remove the bad lightning effect when using darkness mods
+	- added override for vanilla cryo casket, removed on beam placeworker, set interact spot into casket
+	- set cockpit interact spot into the cockpit
+	- set dragable beam to override the vanilla beam
+	- adjusted costs to new shippart costs (resulted in mostly higher component costs, vanilla parts as a blueprint for costs)
+
+- 25/12/2016
+
+	- updated german language file (added missing 2x3 fillpart)
+
+- 07/01/2017
+
+	- fixed the worktobuild xml tag, used old worktomake, that resulted in instant build

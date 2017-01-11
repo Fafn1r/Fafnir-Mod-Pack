@@ -1,0 +1,11 @@
+  <MapConditionDefs>
+
+ <MapConditionDef>
+    <defName>Eclipse</defName>
+<conditionClass>Realnight.MapCondition_Eclipse</conditionClass>
+    <label>eclipse</label>
+    <description>An eclipse is shadowing the surface. It will be dark, even during the daytime.</description>
+    <endMessage>The eclipse is ending.</endMessage>
+  </MapConditionDef>
+  
+ </MapConditionDefs>

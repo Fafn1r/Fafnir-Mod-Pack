@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Dubs Rimkit(Medkit)</name>
+	<author>Dubwise56</author>
+	<url></url>
+	<targetVersion>0.16.1393</targetVersion>
+	<description>Medkit accessory which allows the wearer to treat their own injuries, but not perform surgery. Also increases medical operation speed.</description>
+</ModMetaData>

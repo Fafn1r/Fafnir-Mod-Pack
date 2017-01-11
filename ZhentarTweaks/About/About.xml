@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<ModMetaData>
+		<name>Zhentar's Vanilla Tweaks</name>
+		<author>Zhentar</author>
+		<url></url>
+		<targetVersion>0.16.0</targetVersion>
+		<description>Various tweaks to Vanilla behaviors</description>
+</ModMetaData>

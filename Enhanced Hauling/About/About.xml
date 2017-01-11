@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>AC-Enhanced Hauling</name>
+	<author>AlcoholV</author>
+	<url>https://github.com/AlcoholV/Rim.AcEnhancedHauling</url>
+	<targetVersion>0.16.0</targetVersion>
+	<description>v1.03
+Instead of haul one by one, colonists haul as possible as they can and store to the nearest storage.
+
+If a stockpile is farther than working ground or the colonists is incapable of hauling, they work as vanilla.
+  </description>
+</ModMetaData>

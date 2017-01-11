@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+<RecipeDef>
+	<defName>Fruitdrink</defName>
+	<label>make fruit drink</label>
+	<description>Press fruit into a juicy drink.</description>
+	<jobString>Pressing fruit.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+     <soundWorking>Recipe_CookMeal</soundWorking>
+     <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+	<ingredients>
+	  <li>
+		<filter>
+			<categories>
+					<li>FruitFoodRaw</li>
+			</categories>
+		</filter>
+		<count>20</count>
+	   </li>
+
+	</ingredients>
+	<fixedIngredientFilter>
+	  	<categories>
+			<li>FruitFoodRaw</li>
+		</categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <Fruitdrink>4</Fruitdrink>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+
+<RecipeDef>
+	<defName>MakeChocolatemilk</defName>
+	<label>make chocomilk</label>
+	<description>Blend chocolate and milk.</description>
+	<jobString>Mixing milk.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+<workAmount>800</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Chocolate</li>
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>soymilk</li>
+		   <li>Milk</li>
+	        <li>coconutmilk</li>				
+	      </thingDefs>
+	    </filter>
+	    <count>5</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Chocolate</li>
+	    <li>soymilk</li> 
+	    <li>Milk</li>
+          <li>coconutmilk</li>				
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+
+	</fixedIngredientFilter>
+	<products>
+	  <Chocomilk>4</Chocomilk>
+	</products>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Makehealthdrink</defName>
+	<label>make health drink</label>
+	<description>Combine herbs and fruit into a healthy drink.</description>
+	<jobString>Making health drink.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>1200</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>DrugLab</li>
+      </recipeUsers>
+	<ingredients>
+	<li>
+	    <filter>
+	      <thingDefs>
+	        <li>aloe</li>
+	      </thingDefs>
+	    </filter>
+	    <count>2</count>
+	  </li>
+	  <li>
+		<filter>
+			<categories>
+				<li>FruitFoodRaw</li>
+			</categories>
+		</filter>
+		<count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	   	<thingDefs>
+	        <li>aloe</li>
+       	</thingDefs>
+		<categories>
+		   <li>FruitFoodRaw</li>
+		</categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <Healthdrink>1</Healthdrink>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+
+
+
+
+<RecipeDef>
+	<defName>Distillcider</defName>
+	<label>distill Shinzee's apple cider</label>
+	<description>Distill a bottle of apple cider.</description>
+	<jobString>Distilling apple cider.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+
+	<workAmount>800</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawapple</li>
+	      </thingDefs>
+	    </filter>
+	    <count>20</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Rawapple</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <cider>4</cider>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Distillrum</defName>
+	<label>distill REinstein's Rum</label>
+	<description>Distill a bottle of rum.</description>
+	<jobString>Distilling rum.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+	
+<workAmount>800</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawsugarcane</li>
+	      </thingDefs>
+	    </filter>
+	    <count>20</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Rawsugarcane</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <rum>4</rum>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>PressWine</defName>
+	<label>Make Ramsi's wine</label>
+	<description>make a bottle of wine.</description>
+	<jobString>Pressing grapes.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+	
+<workAmount>800</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawgrape</li>
+	      </thingDefs>
+	    </filter>
+	    <count>20</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Rawgrape</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <Wine>4</Wine>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+<RecipeDef>
+	<defName>DistillStrawberryWine</defName>
+	<label>make Spoon's Berry wine</label>
+	<description>Distill a bottle of strawberry wine.</description>
+	<jobString>Distilling strawberry wine.</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+
+	<workAmount>800</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawBerries</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawBerries</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <strawberrywine>4</strawberrywine>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>DistillSaki</defName>
+	<label>make WHiZ  saki</label>
+	<description>Distill a bottle of saki.</description>
+	<jobString>Distilling saki</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+
+	<workAmount>800</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawRice</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawRice</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <saki>4</saki>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>DistillVodka</defName>
+	<label>Make Syntria vodka</label>
+	<description>Distill a bottle of vodka from potatoes.</description>
+	<jobString>Distilling vodka</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+
+	<workAmount>1000</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawPotatoes</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawPotatoes</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <vodka>4</vodka>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+	
+<RecipeDef>
+	<defName>DistillTequila</defName>
+	<label>Make Kitty's tequila</label>
+	<description>Distill a bottle of tequila from agave.</description>
+	<jobString>Distilling tequila</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+
+	<workAmount>1000</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawAgave</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawAgave</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <tequila>4</tequila>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+<RecipeDef>
+	<defName>DistillWhisky</defName>
+	<label>Make Quill18's whiskey</label>
+	<description>Distill a bottle of whiskey from corn.</description>
+	<jobString>Distilling whiskey</jobString>
+	<workSpeedStat>BrewingSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Brewing</soundWorking>
+          <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>Brewery</li>
+      </recipeUsers>
+
+	<workAmount>1000</workAmount>
+          <targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>RawCorn</li>
+	      </thingDefs>
+	    </filter>
+	    <count>25</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>RawCorn</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <whisky>4</whisky>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+</Defs>

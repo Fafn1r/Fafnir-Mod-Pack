@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <name>Shutdown All</name>
+
+    <author>TheUbie</author>
+
+    <url>http://infinitepossibilitygames.com/rimworld/shutdown-all/</url>
+
+    <targetVersion>0.16.1393</targetVersion>
+
+<description>
+A designator to quickly add a shutdown medical task to downed mechanoids.
+
+[Version 1.1.0]
+</description>
+
+</ModMetaData>

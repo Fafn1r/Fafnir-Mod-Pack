@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef>
+    <defName>RefineNeutroglycerin</defName>
+    <label>make neutroamine</label>
+    <description>Make neutroamine from neutroglycerin.</description>
+    <jobString>Making neutroamine.</jobString>
+    <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>FSX</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Neutroamine>1</Neutroamine>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>DrugProduction</researchPrerequisite>
+	<skillRequirements>
+      <li>
+        <skill>Crafting</skill>
+        <minLevel>8</minLevel>
+      </li>
+	</skillRequirements>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+  </RecipeDef>
+
+    <RecipeDef>
+    <defName>RefineNeutroglycerinBulk</defName>
+    <label>make neutroamine in bulk</label>
+    <description>Make neutroamine from neutroglycerin.</description>
+    <jobString>Making neutroamine x5.</jobString>
+    <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>6500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>FSX</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Neutroamine>1</Neutroamine>
+    </products>
+    <workSkill>Crafting</workSkill>
+  <researchPrerequisite>DrugProduction</researchPrerequisite>
+  <skillRequirements>
+      <li>
+        <skill>Crafting</skill>
+        <minLevel>8</minLevel>
+      </li>
+  </skillRequirements>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+  </RecipeDef>
+
+    <RecipeDef>
+    <defName>MakeMedicineBulk</defName>
+    <label>make medicine in bulk</label>
+    <description>Make medicine from herbal medicine, neutroamine and cloth. Makes 5.</description>
+    <jobString>Making medicine in bulk.</jobString>
+    <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HerbalMedicine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>HerbalMedicine</li>
+        <li>Neutroamine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Medicine>5</Medicine>
+    </products>
+    <workSkill>Medicine</workSkill>
+  <researchPrerequisite>MedicineProduction</researchPrerequisite>
+  <skillRequirements>
+    <li>
+      <skill>Medicine</skill>
+      <minLevel>6</minLevel>
+    </li>
+    <li>
+      <skill>Crafting</skill>
+      <minLevel>5</minLevel>
+    </li>
+  </skillRequirements>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+  </RecipeDef>
+
+</RecipeDefs>

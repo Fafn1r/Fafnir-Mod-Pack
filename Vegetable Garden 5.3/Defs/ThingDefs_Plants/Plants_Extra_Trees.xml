@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!--============================ Vanilla Trees ============================-->
+
+
+
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreeOak</defName>
+    <label>oak tree</label>
+    <description>A strong hardwood tree. Slow-going, but its wood is very strong.</description>
+    <graphicData>
+      <texPath>Things/Plant/TreeOak</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <Beauty>5</Beauty>
+    </statBases>
+    <plant>
+      <leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
+      <growDays>30</growDays>
+      <harvestWork>1000</harvestWork>
+      <harvestYield>50</harvestYield>
+        <sowTags>
+        <li>Ground</li>
+      </sowTags>
+  </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreePoplar</defName>
+    <label>poplar tree</label>
+    <description>A softwood tree. Grows fast, but yield little useful wood.</description>
+    <graphicData>
+      <texPath>Things/Plant/TreePoplar</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+    <ingestible>
+      <nutrition>0.75</nutrition>
+    </ingestible>
+    <plant>
+      <leaflessGraphicPath>Things/Plant/TreePoplar_Leafless</leaflessGraphicPath>
+      <growDays>15.05</growDays>
+      <harvestWork>650</harvestWork>
+      <harvestYield>30</harvestYield>
+       <sowTags>
+        <li>Ground</li>
+      </sowTags>
+   </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreePine</defName>
+    <label>pine tree</label>
+    <description>A large conifer.</description>
+    <graphicData>
+      <texPath>Things/Plant/TreePine</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.2, 0.3, 0.2)</volume>
+        </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>5</Beauty>
+    </statBases>
+    <ingestible>
+      <nutrition>1</nutrition>
+    </ingestible><plant>
+      <visualSizeRange>
+        <min>1.3</min>
+        <max>3.0</max>
+      </visualSizeRange>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestYield>30</harvestYield>
+        <sowTags>
+        <li>Ground</li>
+      </sowTags>
+  </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreeBirch</defName>
+    <label>birch tree</label>
+    <description>A northern tree known for its thin, paper-like bark.</description>
+    <graphicData>
+      <texPath>Things/Plant/TreeBirch</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+    <ingestible>
+      <nutrition>1</nutrition>
+    </ingestible>
+	<plant>
+      <leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestYield>30</harvestYield>
+      <leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
+       <sowTags>
+        <li>Ground</li>
+      </sowTags>
+   </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreeTeak</defName>
+    <label>teak tree</label>
+    <description>A very strong hardwood tree, used in ancient times to build sailing ships.</description>
+    <graphicData>
+      <texPath>Things/Plant/TreeTeak</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <Beauty>5</Beauty>
+    </statBases>
+    <plant>
+      <leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
+      <growDays>32.5</growDays>
+      <harvestWork>1200</harvestWork>
+      <harvestYield>60</harvestYield>
+      <visualSizeRange>
+        <min>1.3</min>
+        <max>2.4</max>
+      </visualSizeRange>
+       <sowTags>
+        <li>Ground</li>
+      </sowTags>
+   </plant>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreeCecropia</defName>
+    <label>cecropia tree</label>
+    <description>One of the most common rainforest trees. Grows very fast, but yields little usable wood.</description>
+    <graphicData>
+      <texPath>Things/Plant/TreeCecropia</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <growDays>10</growDays>
+      <harvestWork>550</harvestWork>
+      <harvestYield>20</harvestYield>
+       <sowTags>
+        <li>Ground</li>
+      </sowTags>
+   </plant>
+  </ThingDef>
+
+
+  <!--============================ New Trees ============================-->
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreeWeepingWillow</defName>
+    <label>weeping willow tree</label>
+    <description>Ornamental trees that has long, thin branches the hang down.</description>
+    <graphicData>
+      <texPath>Things/Tree/TreeWeepingWillow</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+    <ingestible>
+      <nutrition>1</nutrition>
+    </ingestible><plant>
+      <leaflessGraphicPath>Things/Tree/Tree_Leafless/TreeWeepingWillow_Leafless</leaflessGraphicPath>
+      <growDays>15</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestYield>10</harvestYield>
+      <wildBiomes>
+        <BorealForest>0.03</BorealForest>
+	</wildBiomes>
+      <sowResearchPrerequisites>
+        <li>flowersandtrees</li>
+      </sowResearchPrerequisites>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreeJapaneseMaple</defName>
+    <label>japanese maple tree</label>
+    <description>These beautiful trees have branches that twist and turn unpredictably and brilliant orange and red foliage that draws the eye.</description>
+    <graphicData>
+      <texPath>Things/Tree/TreeJapaneseMaple</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+    <ingestible>
+      <nutrition>1</nutrition>
+    </ingestible><plant>
+      <leaflessGraphicPath>Things/Tree/Tree_Leafless/TreeJapaneseMaple_Leafless</leaflessGraphicPath>
+      <growDays>18</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestYield>20</harvestYield>
+       <sowResearchPrerequisites>
+        <li>flowersandtrees</li>
+      </sowResearchPrerequisites>
+       <sowTags>
+        <li>Ground</li>
+      </sowTags>
+  </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreeIronwood</defName>
+    <label>ironwood tree</label>
+    <description>Ironwood trees got their name from the legendary strength of the wood. This is the most commonly used material for making spears and tools.</description>
+    <graphicData>
+      <texPath>Things/Tree/TreeIronwood</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+    <ingestible>
+      <nutrition>1</nutrition>
+    </ingestible>
+    <plant>
+      <leaflessGraphicPath>Things/Tree/Tree_Leafless/TreeIronwood_Leafless</leaflessGraphicPath>
+      <growDays>25</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestYield>75</harvestYield>
+	<wildBiomes>
+		<TemperateForest>0.025</TemperateForest>
+    		<BorealForest>0.025</BorealForest>
+	</wildBiomes>
+       <sowResearchPrerequisites>
+        <li>flowersandtrees</li>
+      </sowResearchPrerequisites>
+   </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreeCherryBlossom</defName>
+    <label>cherry blossom tree</label>
+    <description>Cherry blossom trees are not just a good source of building materials, they are also one of the most beautiful trees to have in your lawn.</description>
+    <graphicData>
+      <texPath>Things/Tree/TreeCherryBlossom</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+    <ingestible>
+      <nutrition>1</nutrition>
+    </ingestible><plant>
+      <leaflessGraphicPath>Things/Tree/Tree_Leafless/TreeCherryBlossom_Leafless</leaflessGraphicPath>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestYield>30</harvestYield>
+      <sowResearchPrerequisites>
+        <li>flowersandtrees</li>
+      </sowResearchPrerequisites>
+        <sowTags>
+        <li>Ground</li>
+      </sowTags>
+  </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreeCamellia</defName>
+    <label>camellia tree</label>
+    <description>This small ornamental tree has beautiful flowers that have been known to stay healthy even through tough winter conditions.</description>
+    <graphicData>
+      <texPath>Things/Tree/TreeCamellia</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+    <ingestible>
+      <nutrition>1</nutrition>
+    </ingestible><plant>
+      <leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestYield>30</harvestYield>
+	<wildBiomes>
+		<TemperateForest>0.03</TemperateForest>
+		<TropicalRainforest>0.03</TropicalRainforest>
+	</wildBiomes>
+       <sowResearchPrerequisites>
+        <li>flowersandtrees</li>
+      </sowResearchPrerequisites>
+   </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreeAcacia</defName>
+    <label>acacia tree</label>
+    <description>Acacia trees are hardy and can grow in the toughest desert environments. They don't provide much wood and they have sharp thorns too.</description>
+    <graphicData>
+      <texPath>Things/Tree/TreeAcacia</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+    <ingestible>
+      <nutrition>1</nutrition>
+    </ingestible><plant>
+      <leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
+      <growDays>15</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestYield>12</harvestYield>
+<wildBiomes>
+	<AridShrubland>0.25</AridShrubland>
+	<Desert>0.35</Desert>
+</wildBiomes>
+        <sowResearchPrerequisites>
+        <li>flowersandtrees</li>
+      </sowResearchPrerequisites>
+  </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_TreewoodBase">
+    <defName>PlantTreePalm</defName>
+    <label>palm tree</label>
+    <description>Palm trees are hardy and can grow in the toughest desert environments.</description>
+    <graphicData>
+      <texPath>Things/Tree/TreePalm</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+    <ingestible>
+      <nutrition>1</nutrition>
+    </ingestible><plant>
+      <leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
+      <growDays>15</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestYield>12</harvestYield>
+<wildBiomes>
+	<AridShrubland>0.25</AridShrubland>
+	<Desert>0.15</Desert>
+</wildBiomes>
+        <sowResearchPrerequisites>
+        <li>flowersandtrees</li>
+      </sowResearchPrerequisites>
+  </plant>
+  </ThingDef>
+
+
+
+</Defs>

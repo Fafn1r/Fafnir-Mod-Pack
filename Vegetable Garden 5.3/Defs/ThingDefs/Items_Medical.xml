@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+	<!-- =========== bases =========== -->
+
+
+
+
+   <ThingDef ParentName="VG_ResourceBase">
+    <defName>aloe</defName>
+    <label>aloe</label>
+    <description>A bundle of aloe leaves.</description>
+    <thingClass>Medicine</thingClass>
+    <graphicData>
+      <texPath>Things/Veg/aloe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>7.5</MarketValue>
+      <Flammability>1.0</Flammability>
+      <MedicalPotency>0.04</MedicalPotency>
+      <DeteriorationRate>5</DeteriorationRate>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <tickerType>Rare</tickerType>    
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="VG_ResourceBase">
+    <defName>Bandagekit</defName>
+    <label>Bandage Kit</label>
+    <description>A pack of bandages made from cloth. Less potent than medical kits.</description>
+    <thingClass>Medicine</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Bandagekit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>5</MarketValue>
+      <Flammability>1.0</Flammability>
+      <MedicalPotency>0.4</MedicalPotency>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>350</WorkToMake>
+      <Mass>0.2</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <tickerType>Rare</tickerType>
+    <costList>
+      <Cloth>10</Cloth>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+      <workSkill>Medicine</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+        <li>HandTailoringBench</li>
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <li>
+          <skill>Medicine</skill>
+          <minLevel>2</minLevel>
+        </li>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>2</minLevel>
+        </li>
+      </skillRequirements>
+    </recipeMaker>
+
+  </ThingDef>
+
+
+  <ThingDef ParentName="VG_ResourceBase">
+    <defName>Herbmedicine</defName>
+    <label>basic medicine kit</label>
+    <description>A pack of mix herbs. Less potent than industrial pharmaceuticals. \n\nMade from aloe and cloth.</description>
+    <thingClass>Medicine</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Herbmeds</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Flammability>1.0</Flammability>
+      <MedicalPotency>0.6</MedicalPotency>
+      <DeteriorationRate>5</DeteriorationRate>
+      <WorkToMake>600</WorkToMake>
+      <Mass>0.35</Mass>
+  </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <tickerType>Rare</tickerType>    
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <costList>
+      <aloe>10</aloe>
+      <Bandagekit>5</Bandagekit>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+      <workSkill>Medicine</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <skillRequirements>
+        <li>
+          <skill>Medicine</skill>
+          <minLevel>4</minLevel>
+        </li>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>2</minLevel>
+        </li>
+      </skillRequirements>
+    </recipeMaker>
+
+  </ThingDef>
+
+
+  <ThingDef ParentName="VG_ResourceBase">
+    <defName>Healthdrink</defName>
+    <label>antibiotics</label>
+    <description>A drink made from fruit and medicine to aid in recovery from sickness.</description>
+    <thingClass>Medicine</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Healthdrink</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>15</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>5</DeteriorationRate>
+      <Mass>0.04</Mass>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <tickerType>Rare</tickerType>  
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <drugCategory>Medical</drugCategory>
+      <preferability>NeverForNutrition</preferability>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MedicalDrink</hediffDef>
+          <severity>0.25</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <addictiveness>0</addictiveness>
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>
+          <min>0.08</min>
+          <max>0.14</max>
+        </overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Resources>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+
+  <RecipeDef>
+    <defName>ExtractRawSteelLeaf</defName>
+    <label>smelt metal from Steel Shrooms</label>
+    <description>Use heat and strong electromagnets to separate useful metal from Steel Shrooms. \n\nMakes 4 steel from 16 shrooms.</description>
+    <jobString>Smelting metal from plants.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+       <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawSteelLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawSteelLeaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Steel>4</Steel>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>8</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+  <RecipeDef>
+    <defName>ExtractRawPlasteelLeaf</defName>
+    <label>smelt metal from Plasteel Bulb Chunks</label>
+    <description>Use heat and strong electromagnets to separate useful metal from Plasteel Bulb Chunks. \n\nMakes 4 Plasteel from 16 bulbs.</description>
+    <jobString>Smelting metal from plants.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+       <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPlasteelLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawPlasteelLeaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Plasteel>4</Plasteel>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+  <RecipeDef>
+    <defName>ExtractRawGoldLeaf</defName>
+    <label>smelt metal from Gold Fern Leaves</label>
+    <description>Use heat and strong electromagnets to separate useful metal from Gold Fern Leaves. \n\nMakes 4 Gold from 16 leaves.</description>
+    <jobString>Smelting metal from plants.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+       <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawGoldLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawGoldLeaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Gold>4</Gold>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+  <RecipeDef>
+    <defName>ExtractRawSilverLeaf</defName>
+    <label>smelt metal from Silver Flower Petals</label>
+    <description>Use heat and strong electromagnets to separate useful metal from Silver Flower Petals. \n\nMakes 4 Silver from 16 petals.</description>
+    <jobString>Smelting metal from plants.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+       <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawSilverLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawSilverLeaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Silver>4</Silver>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>12</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+  <RecipeDef>
+    <defName>ExtractRawUraniumLeaf</defName>
+    <label>smelt metal from Uranium Root Bulbs</label>
+    <description>Use heat and strong electromagnets to separate useful metal from Uranium Root Bulbs. \n\nMakes 4 Uranium from 16 bulbs.</description>
+    <jobString>Smelting metal from plants.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+       <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawUraniumLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawUraniumLeaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Uranium>4</Uranium>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>14</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+
+  <RecipeDef>
+    <defName>ExtractBulkSteelLeaf</defName>
+    <label>bulk smelt metal from Steel Shrooms</label>
+    <description>Use heat and strong electromagnets to separate useful metal from Steel Shrooms. \n\nMakes 16 steel from 64 shrooms.</description>
+    <jobString>Smelting metal from plants.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+       <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawSteelLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>64</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawSteelLeaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Steel>16</Steel>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>8</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+  <RecipeDef>
+    <defName>ExtractBulkPlasteelLeaf</defName>
+    <label>bulk smelt metal from Plasteel Bulb Chunks</label>
+    <description>Use heat and strong electromagnets to separate useful metal from Plasteel Bulb Chunks. \n\nMakes 16 Plasteel from 64 bulds.</description>
+    <jobString>Smelting metal from plants.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+       <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPlasteelLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>64</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawPlasteelLeaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Plasteel>16</Plasteel>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+  <RecipeDef>
+    <defName>ExtractbulkGoldLeaf</defName>
+    <label>bulk smelt metal from Gold Fern Leaves</label>
+    <description>Use heat and strong electromagnets to separate useful metal from Gold Fern Leaves. \n\nMakes 16 Gold from 64 leaves.</description>
+    <jobString>Smelting metal from plants.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+       <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawGoldLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>64</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawGoldLeaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Gold>16</Gold>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+  <RecipeDef>
+    <defName>ExtractBulkSilverLeaf</defName>
+    <label>bulk smelt metal from Silver Flower Petals</label>
+    <description>Use heat and strong electromagnets to separate useful metal from Silver Flower Petals. \n\nMakes 16 Silver from 64 petals.</description>
+    <jobString>Smelting metal from plants.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+       <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawSilverLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>64</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawSilverLeaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Silver>16</Silver>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>12</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+  <RecipeDef>
+    <defName>ExtractBulkUraniumLeaf</defName>
+    <label>bulk smelt metal from Uranium Root Bulbs</label>
+    <description>Use heat and strong electromagnets to separate useful metal from Uranium Root Bulbs. \n\nMakes 16 Uranium from 64 bulbs.</description>
+    <jobString>Smelting metal from plants.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+       <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawUraniumLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>64</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawUraniumLeaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Uranium>16</Uranium>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>14</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+
+</RecipeDefs>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>MakeRepairKit</defName>
+		<label>make repair kits</label>
+		<description>Craft 10 repair kits.</description>
+		<jobString>Making repair kits.</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<workAmount>1200</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RepairKit>10</RepairKit>
+		</products>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RepairItem</defName>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>RepairItemApparel</defName>
+		<label>repair apparel</label>
+		<description>Repair apparel item at a repairing bench.</description>
+		<jobString>repairing apparel item</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<workAmount>1200</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Apparel</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products />
+		<recipeUsers>
+			<li>ElectricTableRepair</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RepairItemMisc</defName>
+		<label>repair misc</label>
+		<description>Repair misc item at a repairing bench.</description>
+		<jobString>repairing misc item</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<workAmount>1200</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Items</li>
+					</categories>
+					<thingDefs>
+						<li>MortarShell</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Items</li>
+			</categories>
+			<thingDefs>
+				<li>MortarShell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products />
+		<recipeUsers>
+			<li>ElectricTableRepair</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RepairItemWeapon</defName>
+		<label>repair weapon</label>
+		<description>Repair weapon item at a repairing bench.</description>
+		<jobString>repairing weapon item</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<workAmount>1200</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Weapons</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products />
+		<recipeUsers>
+			<li>ElectricTableRepair</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</RecipeDefs>

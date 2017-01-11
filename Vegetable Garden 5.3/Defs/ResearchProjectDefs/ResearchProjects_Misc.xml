@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+
+	<!--============================== Main Categories ==============================-->
+
+	<ResearchProjectDef>
+		<defName>agriculture</defName>
+		<label>agriculture I</label>
+		<description>Researches plant genetics to unlock new and exciting new types of plants to grow! \n\n Unlocks a new tier of vegetables to grow. \n\n Unlocks sowing of Eggplants, Beans, Pumpkins, Squash, Tomatoes, Red Lentils, and Mushrooms. Also unlocked research for extra flowers and trees.</description>
+		<baseCost>300</baseCost>
+		    <techLevel>Neolithic</techLevel>
+ 		<researchViewX>0</researchViewX>
+ </ResearchProjectDef>
+
+
+	<ResearchProjectDef>
+		<defName>agricultureII</defName>
+		<label>agriculture II</label>
+		<description>Researches plant genetics to unlock new and exciting new types of plants to grow! \n\n Unlocks a new fruits to grow. Fruit has a higher nutrition and requires less to make meals. \n\n Unlocks sowing of Pinneapples, Grapes, Cloudberries, Gooseberries, Agave, Strawberries, Blueberries, and Watermelons. </description>
+		<baseCost>300</baseCost>
+		    <techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>agriculture</li>
+		</prerequisites>
+ 		<researchViewX>1</researchViewX>
+  </ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>agricultureIII</defName>
+		<label>agriculture III</label>
+		<description>Researches plant genetics to unlock new and exciting new types of plants to grow! \n\n Unlocks new fruit trees to grow. Fruit trees have a longer grow time but a higher yield. \n\n Unlocks sowing of Apple, Banana,Cherries, Olives, Orange, Peach, Date, and Fig trees.</description>
+		<baseCost>300</baseCost>
+		    <techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>agricultureII</li>
+		</prerequisites>
+ 		<researchViewX>2</researchViewX>
+ 	 </ResearchProjectDef>
+
+
+	<ResearchProjectDef>
+		<defName>flowersandtrees</defName>
+		<label>Flowers and Trees</label>
+		<description>Researches extra Flowers and Trees to plant.</description>
+		<baseCost>200</baseCost>
+		    <techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>agriculture</li>
+		</prerequisites>
+ 		<researchViewX>1</researchViewX>
+ 	 </ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>resourceleafs</defName>
+		<label>Resource Plants</label>
+		<description>Researches plants the absorb minerals from the ground. That can be extracted in a smelter.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>7</researchViewX>
+ 	 </ResearchProjectDef>
+
+
+
+	<ResearchProjectDef>
+		<defName>CookingI</defName>
+		<label>Advanced Cooking</label>
+		<description>Researches methods of advanced cooking machines. \nUnlocks the electric cooking stove, Sweets table, for makes Milk based treats and candies.</description>
+		<baseCost>500</baseCost>
+		    <techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
+
+	</ResearchProjectDef>
+
+
+	<ResearchProjectDef>
+		<defName>SoilReclam</defName>
+		<label>Soil Reclamation I</label>
+		<description>Researches methods of making farmable soil. \n\nUnlocks placing soil on smoothed stone and other finished flooring. \n\nUnlocks Floor menus Place Soil and Garden Soil.</description>
+		<baseCost>800</baseCost>
+		    <techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>SoilReclamII</defName>
+		<label>Soil Reclamation II</label>
+		<description>Researches methods of turning sand, marshy soil, mud, marsh, ice, gravel into farmable soil. \n\nUnlocks Plow soil, to greatly increase crop growth. \n\nUnlocks Floor menus to Plow Soil and Reclaim Soil.</description>
+		<baseCost>1700</baseCost>
+		    <techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SoilReclam</li>
+			<li>MultiAnalyzer</li>
+		</prerequisites>
+		<researchViewX>9</researchViewX>
+	</ResearchProjectDef>
+
+
+  <ResearchProjectDef>
+    <defName>AdvancedHydroponics</defName>
+    <label>advanced hydroponics</label>
+    <description>Allows you to build advanced hydroponics tables to rapidly grow crops indoors regardless of the terrain or weather outside. Tables cost more to make, require power, and provide light. And crops grow at a faster rate.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Hydroponics</li>
+    </prerequisites>
+		<researchViewX>8</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>HeatedSunlamps</defName>
+    <label>Heated Sunlamps</label>
+    <description>Allows you to build advanced sun lamps that prvode lamp and act as a small heater to grow crops.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
+  </ResearchProjectDef>
+
+
+</ResearchProjectDefs>

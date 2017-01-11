@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>PlayerPawnsArriveMethodCrash</defName>
+    <label>arrival method</label>
+    <category>Fixed</category>
+    <scenPartClass>CrashLanding.ScenPart_PlayerPawnsArriveMethodCrash</scenPartClass>
+    <summaryPriority>470</summaryPriority>
+  </ScenPartDef>
+
+<!-- does not used anymore
+  <ScenPartDef>
+    <defName>BigShipCrashEvent</defName>
+    <label>Starting event</label>
+    <category>Misc</category>
+    <scenPartClass>CrashLanding.ScenPart_BigShipCrashEvent</scenPartClass>
+  </ScenPartDef>
+-->
+</Defs>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+   <!--================================ medieval wash pan ======================================-->
+  
+  <ThingDef ParentName="sd_facilitiesBase">
+    <defName>sd_medicaddons_medieval_surg_washpan</defName>
+    <label>medieval wash pan</label>
+    <graphicData>
+      <texPath>sd_medicaddons/medievalfacilities/sd_medicaddons_medieval_surg_washpan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <offset>(0,0,-0.3)</offset>
+        <volume>(0.5, 0.3, 0.4)</volume>
+      </shadowData>
+    </graphicData>
+    <researchPrerequisites>
+		<li>sd_medicaddons_research_medieval_med</li>
+	</researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>The most simple device to keep your doctors hands clean. Needs to be placed adjacent to a bed. One bed can be linked to only one of the same kind, but multiple beds can use the same one.</description>
+    <size>(1,1)</size>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+	<costStuffCount>50</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <MedicalTendQualityOffset>0.02</MedicalTendQualityOffset>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+      </li>
+    </comps>
+	<rotatable>False</rotatable>
+	<CastEdgeShadows>False</CastEdgeShadows>
+  </ThingDef>
+  
+  <!--================================ medieval surgery instruments ======================================-->
+  
+  <ThingDef ParentName="sd_facilitiesBase">
+    <defName>sd_medicaddons_medieval_surg_instruments</defName>
+    <label>medieval surgery instruments</label>
+    <graphicData>
+      <texPath>sd_medicaddons/medievalfacilities/sd_medicaddons_medieval_surg_instruments</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <offset>(0,0,-0.3)</offset>
+        <volume>(0.5, 0.3, 0.4)</volume>
+      </shadowData>
+    </graphicData>
+    <researchPrerequisites>
+		<li>sd_medicaddons_research_medieval_med</li>
+	</researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>The fear of an operation with these instruments will speed up the recovery of your colonists. Needs to be placed adjacent to a bed. One bed can be linked to only one of the same kind, but multiple beds can use the same one.</description>
+    <size>(1,1)</size>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+	<costStuffCount>50</costStuffCount>
+	<costList>
+		<Steel>25</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+      <MedicalTendQualityOffset>-0.01</MedicalTendQualityOffset>
+          <ImmunityGainSpeedFactor>0.02</ImmunityGainSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+      </li>
+    </comps>
+	<CastEdgeShadows>False</CastEdgeShadows>
+  </ThingDef>
+  
+  <!--================================ medieval surgery lamp ======================================-->
+  
+  <ThingDef ParentName="sd_facilitiesBase">
+    <defName>sd_medicaddons_medieval_surg_lamp</defName>
+    <label>medieval surgery lamp</label>
+    <graphicData>
+      <texPath>sd_medicaddons/medievalfacilities/sd_medicaddons_medieval_surg_lamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <offset>(0,0,-0.3)</offset>
+        <volume>(0.5, 0.3, 0.4)</volume>
+      </shadowData>
+    </graphicData>
+    <researchPrerequisites>
+		<li>sd_medicaddons_research_medieval_med</li>
+	</researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Let there be light and the doctor suddenly realized he was amputating the healthy leg. Needs to be placed adjacent to a bed. One bed can be linked to only one of the same kind, but multiple beds can use the same one.</description>
+    <size>(1,1)</size>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+	<costStuffCount>50</costStuffCount>
+	<costList>
+		<Steel>25</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <MedicalTendQualityOffset>0.02</MedicalTendQualityOffset>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+      </li>
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.2</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+        <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </fuelFilter>
+        <destroyOnNoFuel>true</destroyOnNoFuel>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <overlightRadius>3.5</overlightRadius>
+        <glowRadius>6</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+	  <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>3.5</heatPerSecond>
+        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_FireOverlay">
+        <fireSize>0.15</fireSize>
+        <offset>(0,0,0.2)</offset>
+      </li>
+    </comps>
+	<rotatable>False</rotatable>
+	<CastEdgeShadows>False</CastEdgeShadows>
+  </ThingDef>
+  
+</Defs>

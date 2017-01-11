@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[T] MoreBedsVanilla (for More Furniture)</name>
+  <author>Telkir</author>
+  <url>http://ludeon.com/forums/index.php?topic=4373.0</url>
+  <targetVersion>0.16.1393</targetVersion>
+  <description>Spruce up your colonists' bedrooms with a selection of different colours for all sizes of bed. Compatible with Anonemous2's More Furniture mod - added beds will receive rest bonuses from bedroom furniture.
+
+● Beds of all sizes now have red, yellow, green, blue, and purple variants
+
+Note: Don't enable this mod as well as T-MoreBedsCloth; just pick one.
+Note: Beds added by this mod do not recolour when set to prisoner or medical use. Vanilla beds still recolour normally.</description>
+</ModMetaData>

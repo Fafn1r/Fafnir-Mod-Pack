@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+   <HediffDef Name="addedPartSimple" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+      <isBad>false</isBad>
+      <defaultLabelColor>(102,178,255)</defaultLabelColor>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+      </addedPartProps>
+   </HediffDef>
+
+   <!-- Added body parts -->
+   
+   <HediffDef ParentName="addedPartSimple">
+      <defName>SimpleProstheticHand</defName>
+      <label>simple prosthetic hand</label>
+      <spawnThingOnRemoved>SimpleProstheticHand</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>0.7</partEfficiency>
+      </addedPartProps>
+      <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <verbs>
+               <li>
+                  <verbClass>Verb_MeleeAttack</verbClass>
+                  <defaultCooldownTime>1.65</defaultCooldownTime>
+                  <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
+                  <meleeDamageDef>Blunt</meleeDamageDef>
+               </li>
+            </verbs>
+         </li>
+      </comps>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartSimple">
+      <defName>SimpleProstheticFoot</defName>
+      <label>simple prosthetic foot</label>
+      <spawnThingOnRemoved>SimpleProstheticFoot</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>0.8</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartSimple">
+      <defName>SimpleProstheticArm</defName>
+      <label>simple prosthetic arm</label>
+      <spawnThingOnRemoved>SimpleProstheticArm</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>0.7</partEfficiency>
+      </addedPartProps>
+      <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <verbs>
+               <li>
+                  <verbClass>Verb_MeleeAttack</verbClass>
+                  <defaultCooldownTime>1.65</defaultCooldownTime>
+                  <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
+                  <meleeDamageDef>Blunt</meleeDamageDef>
+               </li>
+            </verbs>
+         </li>
+      </comps>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartSimple">
+      <defName>SimpleProstheticLeg</defName>
+      <label>simple prosthetic leg</label>
+      <spawnThingOnRemoved>SimpleProstheticLeg</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>0.8</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartSimple">
+      <defName>ArtificialNose</defName>
+      <label>artificial nose</label>
+      <spawnThingOnRemoved>ArtificialNose</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+
+   <HediffDef ParentName="addedPartSimple">
+      <defName>ArtificialPelvis</defName>
+      <label>artificial pelvis</label>
+      <spawnThingOnRemoved>ArtificialPelvis</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>0.9</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+</Defs>

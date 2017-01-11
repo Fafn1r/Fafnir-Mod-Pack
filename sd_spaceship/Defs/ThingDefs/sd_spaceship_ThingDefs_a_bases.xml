@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--================================ Abstract bases ======================================-->
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+<!--================================ ship part bases ======================================-->
+
+<ThingDef ParentName="BuildingBase" Name="sd_spaceship_shippart_Base" Abstract="True">
+	<statBases>
+		<Mass>1000</Mass>
+	</statBases>
+	<building>
+      <shipPart>true</shipPart>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+    </building>
+	<placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+	<researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>False</blockLight>
+	<designationCategory>Ship</designationCategory>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+  </ThingDef>
+  
+</Defs>

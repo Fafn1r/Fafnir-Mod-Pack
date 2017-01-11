@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--================================ beam ship dragable ======================================-->
+  
+  <ThingDef ParentName="sd_spaceship_shippart_Base">
+    <defName>Ship_Beam</defName>
+    <label>ship beam</label>
+    <thingClass>Building</thingClass>
+	<uiIconPath>sd_spaceship/menu_icons/sd_spaceship_dragable_beam_menuicon</uiIconPath>
+    <graphicData>
+      <texPath>sd_spaceship/dragable_beam/sd_spaceship_beamlink</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+		<linkFlags>
+				<li>Custom1</li>
+		</linkFlags>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A structural beam around which a ship can be constructed.</description>
+    <size>(1,1)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>30</Plasteel>
+      <Component>2</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationHotkey>Misc1</designationHotkey>
+	<staticSunShadowHeight>1.0</staticSunShadowHeight>
+	<placingDraggableDimensions>1</placingDraggableDimensions>
+	<selectable>true</selectable>
+	<rotatable>true</rotatable>
+  </ThingDef>
+
+</Defs>

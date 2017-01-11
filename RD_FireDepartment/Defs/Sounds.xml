@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-SoundDef>
+
+	<SoundDef>
+		<defName>Extinguisher</defName>	
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>2</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Extinguisher</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>60</min>
+					<max>80</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.895690</min>
+					<max>1.105345</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+		<context>MapOnly</context>
+	</SoundDef>
+
+</DefPackage-SoundDef>

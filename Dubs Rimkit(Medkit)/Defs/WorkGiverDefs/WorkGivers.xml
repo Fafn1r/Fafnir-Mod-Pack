@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+  <WorkGiverDef>
+    <defName>TendSelf</defName>
+    <label>tend self in bed</label>
+    <giverClass>Dubs_Rimkit.WorkGiver_TendSelf</giverClass>
+    <workType>Doctor</workType>
+    <verb>tend self in</verb>
+    <gerund>tending self in</gerund>
+	<priorityInType>100</priorityInType>
+  </WorkGiverDef> 
+  
+  <!-- <WorkGiverDef> -->
+    <!-- <defName>PatientGoToBed</defName> -->
+    <!-- <label>recuperate in bed</label> -->
+    <!-- <giverClass>WorkGiver_PatientGoToBedRecuperate</giverClass> -->
+    <!-- <workType>PatientBedRest</workType> -->
+    <!-- <verb>get bed rest in</verb> -->
+    <!-- <gerund>getting bed rest in</gerund>   -->
+	<!-- <priorityInType>10</priorityInType> -->
+  <!-- </WorkGiverDef> -->
+  
+</WorkGivers>

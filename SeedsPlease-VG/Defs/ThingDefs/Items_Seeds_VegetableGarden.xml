@@ -1,0 +1,444 @@
+<Defs>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedSnowbeet</defName>
+    <label>snowbeet seeds</label>
+    <plant>PlantSnowbeet</plant>
+    <seed>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedeggplant</defName>
+    <label>eggplant seeds</label>
+    <plant>Planteggplant</plant>
+    <seed>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedredlentil</defName>
+    <label>redlentil seeds</label>
+    <plant>Plantredlentil</plant>
+    <seed>
+      <harvestFactor>1.0</harvestFactor>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedpumpkin</defName>
+    <label>pumpkin seeds</label>
+    <plant>Plantpumpkin</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.5</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedsquash</defName>
+    <label>squash seeds</label>
+    <plant>Plantsquash</plant>
+    <seed>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedbean</defName>
+    <label>bean seeds</label>
+    <plant>Plantbean</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedTomato</defName>
+    <label>tomato seeds</label>
+    <plant>PlantTomato</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.5</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedCarrot</defName>
+    <label>carrot seeds</label>
+    <plant>PlantCarrot</plant>
+    <seed>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedmushroom</defName>
+    <label>mushroom seeds</label>
+    <plant>Plantmushroom</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.5</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedoats</defName>
+    <label>oats seeds</label>
+    <plant>Plantoats</plant>
+    <seed>
+      <seedFactor>2.0</seedFactor>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedwheat</defName>
+    <label>wheat seeds</label>
+    <plant>Plantwheat</plant>
+    <seed>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.1</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedHaygrass</defName>
+    <label>haygrass seeds</label>
+    <plant>PlantHaygrass</plant>
+    <seed>
+      <harvestFactor>1.5</harvestFactor>
+      <seedFactor>0.5</seedFactor>
+      <baseChance>0.25</baseChance>
+      <extraChance>0.1</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedpineapple</defName>
+    <label>pineapple seeds</label>
+    <plant>Plantpineapple</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.1</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedgrape</defName>
+    <label>grape seeds</label>
+    <plant>Plantgrape</plant>
+    <seed>
+      <seedFactor>2.0</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.05</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedcloudberry</defName>
+    <label>cloudberry seeds</label>
+    <plant>Plantcloudberry</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedgooseberry</defName>
+    <label>gooseberry seeds</label>
+    <plant>Plantgooseberry</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedAgave</defName>
+    <label>agave seeds</label>
+    <plant>PlantAgave</plant>
+    <seed>
+      <harvestFactor>1.5</harvestFactor>
+      <seedFactor>0.75</seedFactor>
+      <baseChance>0.25</baseChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedStrawberry</defName>
+    <label>strawberry seeds</label>
+    <plant>PlantStrawberry</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedblueberry</defName>
+    <label>blueberry seeds</label>
+    <plant>Plantblueberry</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedwatermelon</defName>
+    <label>watermelon seeds</label>
+    <plant>Plantwatermelon</plant>
+    <seed>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.1</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedcocoa</defName>
+    <label>cocoa seeds</label>
+    <plant>Plantcocoa</plant>
+    <seed>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.1</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedsugarcane</defName>
+    <label>sugarcane seeds</label>
+    <plant>Plantsugarcane</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.1</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedTea</defName>
+    <label>tea seeds</label>
+    <plant>PlantTea</plant>
+    <seed>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedCoffee</defName>
+    <label>coffee seeds</label>
+    <plant>PlantCoffee</plant>
+    <seed>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedaloe</defName>
+    <label>aloe seeds</label>
+    <plant>Plantaloe</plant>
+    <seed>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedFlax</defName>
+    <label>flax seeds</label>
+    <plant>PlantFlax</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedSteelLeaf</defName>
+    <label>steelleaf seeds</label>
+    <plant>PlantSteelLeaf</plant>
+    <seed>
+      <seedFactor>2.0</seedFactor>
+      <baseChance>0.4</baseChance>
+      <extraChance>0.1</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedPlasteelLeaf</defName>
+    <label>plasteelleaf seeds</label>
+    <plant>PlantPlasteelLeaf</plant>
+    <statBases>
+      <MarketValue>80</MarketValue>
+    </statBases>
+    <seed>
+      <seedFactor>2.0</seedFactor>
+      <baseChance>0.4</baseChance>
+      <extraChance>0.1</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedGoldLeaf</defName>
+    <label>goldleaf seeds</label>
+    <plant>PlantGoldLeaf</plant>
+    <statBases>
+      <MarketValue>90</MarketValue>
+    </statBases>
+    <seed>
+      <seedFactor>2.0</seedFactor>
+      <baseChance>0.45</baseChance>
+      <extraChance>0.15</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedSilverLeaf</defName>
+    <label>silverleaf seeds</label>
+    <plant>PlantSilverLeaf</plant>
+    <statBases>
+      <MarketValue>75</MarketValue>
+    </statBases>
+    <seed>
+      <seedFactor>2.0</seedFactor>
+      <baseChance>0.35</baseChance>
+      <extraChance>0.15</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedUraniumLeaf</defName>
+    <label>uraniumleaf seeds</label>
+    <plant>PlantUraniumLeaf</plant>
+    <statBases>
+      <MarketValue>85</MarketValue>
+    </statBases>
+    <seed>
+      <seedFactor>2.5</seedFactor>
+      <baseChance>0.35</baseChance>
+      <extraChance>0.15</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seedbamboo</defName>
+    <label>bamboo seeds</label>
+    <plant>Plantbamboo</plant>
+    <seed>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.1</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedTobacco</defName>
+    <label>tobacco seeds</label>
+    <plant>PlantTobacco</plant>
+    <seed>
+      <seedFactor>1.5</seedFactor>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.25</extraChance>
+      <harvestFactor>1.0</harvestFactor>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedTreeWeepingWillow</defName>
+    <label>treeweepingwillow seeds</label>
+    <plant>PlantTreeWeepingWillow</plant>
+    <seed>
+      <seedFactor>2.0</seedFactor>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedTreeJapaneseMaple</defName>
+    <label>treejapanesemaple seeds</label>
+    <plant>PlantTreeJapaneseMaple</plant>
+    <seed>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.1</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedTreeIronwood</defName>
+    <label>treeironwood seeds</label>
+    <plant>PlantTreeIronwood</plant>
+    <seed>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedTreeCherryBlossom</defName>
+    <label>treecherryblossom seeds</label>
+    <plant>PlantTreeCherryBlossom</plant>
+    <seed>
+      <seedFactor>2.0</seedFactor>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedTreeCamellia</defName>
+    <label>treecamellia seeds</label>
+    <plant>PlantTreeCamellia</plant>
+    <seed>
+      <seedFactor>2.0</seedFactor>
+      <baseChance>0.5</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedTreeAcacia</defName>
+    <label>treeacacia seeds</label>
+    <plant>PlantTreeAcacia</plant>
+    <seed>
+      <seedFactor>2.0</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>SeedTreePalm</defName>
+    <label>treepalm seeds</label>
+    <plant>PlantTreePalm</plant>
+    <seed>
+      <seedFactor>2.0</seedFactor>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.25</extraChance>
+    </seed>
+  </SeedsPlease.SeedDef>
+
+</Defs>

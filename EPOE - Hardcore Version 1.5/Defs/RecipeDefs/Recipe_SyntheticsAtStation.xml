@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RecipeDefs>
+
+	<RecipeDef Abstract="True" Name="RecipeSyntheticOrgan">
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+		<workSkill>Crafting</workSkill>
+		<workAmount>18000</workAmount>
+		<researchPrerequisite>SyntheticOrgans</researchPrerequisite>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeSyntheticOrgan">
+		<defName>CreateJoywire</defName>
+		<label>Craft joywire</label>
+		<description>Creates a joywire. Needs gold and plasteel for high quality circuitry.</description>
+		<jobString>Creating implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gold</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Joywire>1</Joywire>
+		</products>
+		<researchPrerequisite>Neuroscience</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeSyntheticOrgan">
+		<defName>CreatePainstopper</defName>
+		<label>Craft painstopper</label>
+		<description>Creates a painstopper implant. Needs gold and plasteel for high quality circuitry.</description>
+		<jobString>Creating implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gold</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Painstopper>1</Painstopper>
+		</products>
+		<researchPrerequisite>Neuroscience</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeSyntheticOrgan">
+		<defName>CreateSyntheticLung</defName>
+		<label>Create synthetic lung</label>
+		<description>Creates a synthetic lung from hyperweave and plasteel</description>
+		<jobString>Creating synthetic organ.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Hyperweave</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SyntheticLung>1</SyntheticLung>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeSyntheticOrgan">
+		<defName>CreateSyntheticStomach</defName>
+		<label>Create synthetic stomach</label>
+		<description>Creates a synthetic stomach from hyperweave and plasteel</description>
+		<jobString>Creating synthetic organ.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Hyperweave</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SyntheticStomach>1</SyntheticStomach>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeSyntheticOrgan">
+		<defName>CreateSyntheticLiver</defName>
+		<label>Create synthetic liver</label>
+		<description>Creates a synthetic liver from hyperweave and plasteel</description>
+		<jobString>Creating synthetic organ.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Hyperweave</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SyntheticLiver>1</SyntheticLiver>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeSyntheticOrgan">
+		<defName>CreateSyntheticKidney</defName>
+		<label>Create synthetic kidney</label>
+		<description>Creates a synthetic kidney from hyperweave and plasteel</description>
+		<jobString>Creating synthetic organ.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Hyperweave</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SyntheticKidney>1</SyntheticKidney>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeSyntheticOrgan">
+		<defName>CreateSyntheticHeart</defName>
+		<label>Create synthetic heart</label>
+		<description>Creates a synthetic heart from hyperweave and plasteel.</description>
+		<jobString>Creating synthetic organ.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Hyperweave</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SyntheticHeart>1</SyntheticHeart>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RecipeSyntheticOrgan">
+		<defName>CreateSyntheticSkin</defName>
+		<label>Create synthetic skin</label>
+		<description>Creates synthetic skin from hyperweave.</description>
+		<jobString>Creating synthetic organ.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Hyperweave</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SyntheticSkin>1</SyntheticSkin>
+		</products>
+	</RecipeDef>
+
+</RecipeDefs>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--================================ vanilla cryo casket override ======================================--> 
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Ship_CryptosleepCasket</defName>
+    <label>ship cryptosleep casket</label>
+    <thingClass>Building_CryptosleepCasket</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <researchPrerequisites><li>ShipCryptosleep</li></researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <WorkToBuild>8000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A cryptosleep casket hardened against the dangers of space. Capable of maintaining a person in cryptosleep for centuries in a space environment and surviving atmospheric re-entry.</description>
+    <size>(1,2)</size>
+    <designationCategory>Ship</designationCategory>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,0)</interactionCellOffset>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <placeWorkers>
+      <!-- <li>PlaceWorker_HeadOnShipBeam</li>  removed for easier placement -->
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <isPlayerEjectable>true</isPlayerEjectable>
+    </building>
+    <costList>
+		<Steel>500</Steel>
+		<Uranium>5</Uranium>
+		<Component>10</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <designationHotkey>Misc2</designationHotkey>
+  </ThingDef>
+
+</Defs>

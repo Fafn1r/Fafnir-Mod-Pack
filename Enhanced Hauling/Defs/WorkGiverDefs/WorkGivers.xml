@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+  <!-- ============= Cooking ============= -->
+
+  <WorkGiverDef>
+    <defName>DoBillsCook</defName>
+    <label>cook meals at stove</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </fixedBillGiverDefs>
+    <verb>cook</verb>
+    <gerund>cooking</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>DoBillsCookCampfire</defName>
+    <label>cook meals at campfire</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>97</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Campfire</li>
+    </fixedBillGiverDefs>
+    <verb>cook</verb>
+    <gerund>cooking</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>DoBillsBrew</defName>
+    <label>brew liquors</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>30</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Brewery</li>
+    </fixedBillGiverDefs>
+    <verb>brew</verb>
+    <gerund>brewing</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <!-- ============= Construction ============= -->
+
+  <WorkGiverDef>
+    <defName>ConstructDeliverResourcesToFrames</defName>
+    <label>deliver resources to frames</label>
+    <giverClass>AlcoholV.WorkGiver_ConstructDeliverResourcesToFrames</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>40</priorityInType>
+    <verb>work on</verb>
+    <gerund>working on</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByNonColonists>true</canBeDoneByNonColonists>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>ConstructDeliverResourcesToBlueprints</defName>
+    <label>deliver resources to blueprints</label>
+    <giverClass>AlcoholV.WorkGiver_ConstructDeliverResourcesToBlueprints</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>30</priorityInType>
+    <verb>work on</verb>
+    <gerund>working on</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByNonColonists>true</canBeDoneByNonColonists>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <!-- ============= Smithing ============= -->
+
+  <WorkGiverDef>
+    <defName>DoBillsMakeWeapons</defName>
+    <label>make weapons</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>115</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </fixedBillGiverDefs>
+    <verb>smith</verb>
+    <gerund>smithing at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>DoBillsMachiningTable</defName>
+    <label>do bills at machining table</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>75</priorityInType>
+    <fixedBillGiverDefs>
+      <li>TableMachining</li>
+    </fixedBillGiverDefs>
+    <verb>work</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>DoBillsComponentAssemblyBench</defName>
+    <label>assemble components</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>50</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ComponentAssemblyBench</li>
+    </fixedBillGiverDefs>
+    <verb>produce components</verb>
+    <gerund>producing components at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <!-- ============= Tailoring ============= -->
+
+  <WorkGiverDef>
+    <defName>DoBillsMakeApparel</defName>
+    <label>tailor apparel</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Tailoring</workType>
+    <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </fixedBillGiverDefs>
+    <verb>tailor</verb>
+    <gerund>tailoring at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <!-- ============= Art ============= -->
+
+  <WorkGiverDef>
+    <defName>DoBillsSculpt</defName>
+    <label>sculpt</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Art</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>TableSculpting</li>
+    </fixedBillGiverDefs>
+    <verb>sculpt</verb>
+    <gerund>sculpting at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <!-- ============= Crafting ============= -->
+
+  <WorkGiverDef>
+    <defName>DoBillsUseCraftingSpot</defName>
+    <label>do bills at crafting spot</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>CraftingSpot</li>
+    </fixedBillGiverDefs>
+    <verb>craft</verb>
+    <gerund>crafting at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>DoBillsRefinery</defName>
+    <label>works at refinery</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>97</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Refinery</li>
+    </fixedBillGiverDefs>
+    <verb>refine chemicals</verb>
+    <gerund>refine chemicals at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>DoBillsProduceDrugs</defName>
+    <label>produce drugs</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>95</priorityInType>
+    <fixedBillGiverDefs>
+      <li>DrugLab</li>
+    </fixedBillGiverDefs>
+    <verb>produce drugs</verb>
+    <gerund>produce drugs at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <!-- ============= Hauling ============= -->
+  <WorkGiverDef>
+    <defName>DoBillsHaulCampfire</defName>
+    <label>do bills at campfire</label>
+    <giverClass>AlcoholV.WorkGiver_DoBill</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>30</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Campfire</li>
+    </fixedBillGiverDefs>
+    <verb>work at</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+
+  <!-- DeliverResources work givers for Haulers, only active for buildings with total material cost over 0 --><!--
+
+  <WorkGiverDef>
+    <defName>HaulDeliverResourcesToFrames</defName>
+    <label>deliver resources to frames (hauler)</label>
+    <giverClass>AlcoholV.WorkGiver_ConstructDeliverResourcesToFrames</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>47</priorityInType>
+    <verb>deliver resources to</verb>
+    <gerund>delivering resources to</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>HaulDeliverResourcesToBlueprints</defName>
+    <label>deliver resources to blueprints (hauler)</label>
+    <giverClass>AlcoholV.WorkGiver_ConstructDeliverResourcesToBlueprints</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>45</priorityInType>
+    <verb>deliver resources to</verb>
+    <gerund>delivering resources to</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>-->
+  
+  
+</WorkGivers>

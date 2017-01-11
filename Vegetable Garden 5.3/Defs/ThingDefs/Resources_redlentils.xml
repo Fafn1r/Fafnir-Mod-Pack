@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+  
+
+  <ThingDef ParentName="VG_PlantProductBase">
+    <defName>RawRedLentil</defName>
+    <label>red lentil</label>
+    <description>Raw protein-rich lentil. Used in place of meat in recipes.</description>
+    <graphicData>
+      <texPath>Things/Veg/redlentil</texPath>
+    </graphicData>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>5</MarketValue>
+   	 <Mass>0.03</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>Meat</foodType>
+      <nutrition>0.12</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+
+  </ThingDef>
+
+  <ThingDef ParentName="VG_PlantProductBase">
+    <defName>SaltedMeat</defName>
+    <label>salted meat</label>
+    <description>Meat that has been cured with salt.</description>
+    <graphicData>
+      <texPath>Things/Item/SaltedMeat</texPath>
+    </graphicData>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>5</MarketValue>
+   		     <Mass>0.025</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>80</daysToRotStart>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <nutrition>0.05</nutrition>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <optimalityOffset>16</optimalityOffset>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <preferability>MealAwful</preferability>
+ 	 <tasteThought></tasteThought>
+      <ingestSound>Meal_Eat</ingestSound>
+  </ingestible>
+
+  </ThingDef>
+
+
+</Resources>

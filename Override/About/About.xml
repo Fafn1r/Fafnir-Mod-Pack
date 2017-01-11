@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Override</name>
+    <author>notfood</author>
+    <targetVersion>0.16.0</targetVersion>
+    <description>If it has a name, you can change it.</description>
+</ModMetaData>

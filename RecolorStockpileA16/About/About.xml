@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <name>Recolor Stockpile</name>
+
+    <author>TheUbie</author>
+
+    <url>http://infinitepossibilitygames.com/rimworld/recolor-stockpile/</url>
+
+    <targetVersion>0.16.1393</targetVersion>
+
+<description>
+Adds an option to pick what color stockpile you are placing.  Now with Growing Zone support.
+
+[Version 1.1.0]
+</description>
+
+</ModMetaData>

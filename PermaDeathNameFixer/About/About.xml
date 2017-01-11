@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>PermaDeathNameFixer (A16)</name>
+  <author>erdelf</author>
+  <targetVersion>0.16.0</targetVersion>
+  <description>
+  (This mod includes some CCL code. Thanks to 1000101. As soon as CCL comes out, it will be required.)
+  
+  This mod fixes the permadeath savefile name to the colony name. It will do that when you name your colony and it will check everytime you load the save, so you can even apply it to saves that are already named.
+    </description>
+</ModMetaData>

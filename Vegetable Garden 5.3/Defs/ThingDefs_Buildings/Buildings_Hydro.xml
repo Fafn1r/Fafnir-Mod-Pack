@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Planterbox</defName>
+    <label>Planter Box</label>
+    <description>Crude box filled with soil, that allows you to grow anywhere. Growth rate is reduced to 60% Does not require power.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Planterbox</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.30</fillPercent>
+    <statBases>
+      <WorkToBuild>2800</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(1,4)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <fertility>0.60</fertility>
+    <building>
+      <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>FoodProduction</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ModularPlanterbox</defName>
+    <label>Modular Planter Box</label>
+    <description>Crude box filled with soil, that allows you to grow anywhere. Growth rate is reduced to 60% Does not require power. Modular allows you to make 1x1 connected boxes of any size.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/PlanterModular_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Sandbags</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>Things/Building/PlanterIcon</uiIconPath>
+    <pathCost>40</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.30</fillPercent>
+    <statBases>
+      <WorkToBuild>650</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>13</costStuffCount>
+    <fertility>0.60</fertility>
+    <building>
+      <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>FoodProduction</designationCategory>
+  </ThingDef>
+
+      
+  <ThingDef ParentName="BuildingBase">
+    <defName>HydroponicsBasin</defName>
+    <label>hydroponics basin</label>
+    <description>Grows plants quickly in an artificial nutrient bath. Requires power to work; plants will die if power is cut.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <constructEffect>ConstructMetal</constructEffect>
+    <fillPercent>0.30</fillPercent>
+    <statBases>
+      <WorkToBuild>2800</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(1,4)</size>
+    <costList>
+      <Steel>100</Steel>
+      <Component>3</Component>
+    </costList>
+    <fertility>2.2</fertility>
+    <building>
+      <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>70</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <researchPrerequisites><li>Hydroponics</li></researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>FoodProduction</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ModularHydroponicsBasin</defName>
+    <label>Modular Hydroponics Basin</label>
+    <description>Grows plants quickly in an artificial nutrient bath. Requires power to work; plants will die if power is cut.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/HydroModular_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Sandbags</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>Things/Building/HydroIcon</uiIconPath>
+    <pathCost>40</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <constructEffect>ConstructMetal</constructEffect>
+    <fillPercent>0.30</fillPercent>
+    <statBases>
+      <WorkToBuild>700</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Steel>25</Steel>
+      <Component>1</Component>
+    </costList>
+    <fertility>2.2</fertility>
+    <building>
+      <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>18</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <researchPrerequisites><li>Hydroponics</li></researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>FoodProduction</designationCategory>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ADVHydroponicsBasin</defName>
+    <label>Advanced hydroponics basin</label>
+    <description>Grows plants more quickly in an artificial nutrient bath. Requires more power to work then basic basin; plants will die if power is cut. Provides it's own light.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <constructEffect>ConstructMetal</constructEffect>
+    <fillPercent>0.30</fillPercent>
+    <statBases>
+      <WorkToBuild>2800</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(1,4)</size>
+    <costList>
+      <Steel>200</Steel>
+      <Component>4</Component>
+    </costList>
+    <fertility>3</fertility>
+    <building>
+      <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>3.5</overlightRadius>
+        <glowRadius>3.0</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>AdvancedHydroponics</li></researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>FoodProduction</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ADVModularHydroponicsBasin</defName>
+    <label> Adv. Modular hydroponics basin</label>
+    <description>Grows plants more quickly in an artificial nutrient bath. Requires more power to work then basic basin; plants will die if power is cut. Provides it's own light.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/HydroModular_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Sandbags</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>Things/Building/HydroIcon</uiIconPath>
+    <pathCost>40</pathCost>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <constructEffect>ConstructMetal</constructEffect>
+    <fillPercent>0.30</fillPercent>
+    <statBases>
+      <WorkToBuild>700</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Steel>50</Steel>
+      <Component>1</Component>
+    </costList>
+    <fertility>3</fertility>
+    <building>
+      <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>1.25</overlightRadius>
+        <glowRadius>1</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>AdvancedHydroponics</li></researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>FoodProduction</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Composterbox</defName>
+    <label>Composter Box</label>
+    <description>Crude box filled with soil and plant matter that allows the "growth" of fertilizer</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Planterbox</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.30</fillPercent>
+    <statBases>
+      <WorkToBuild>2800</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(2,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <fertility>1</fertility>
+    <building>
+      <defaultPlantToGrow>Plant_Fertilizer</defaultPlantToGrow>
+      <sowTag>Composter</sowTag>
+ </building>
+ <tickerType>Rare</tickerType>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>FoodProduction</designationCategory>
+  </ThingDef>
+
+</ThingDefs>

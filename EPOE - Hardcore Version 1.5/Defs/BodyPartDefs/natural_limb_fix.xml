@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BodyPartDefs>
+
+	<BodyPartDef>
+		<defName>LeftArm</defName>
+	    <label>left arm</label>
+	    <hitPoints>30</hitPoints>
+	    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+	    <skinCovered>true</skinCovered>
+	    <activities>
+	      <li>Manipulation_way1</li>
+	    </activities>
+	    <spawnThingOnRemoved>Arm</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<BodyPartDef>
+	    <defName>RightArm</defName>
+	    <label>right arm</label>
+	    <hitPoints>30</hitPoints>
+	    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+	    <skinCovered>true</skinCovered>
+	    <activities>
+	      <li>Manipulation_way1</li>
+	    </activities>
+	    <spawnThingOnRemoved>Arm</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<BodyPartDef>
+	    <defName>LeftLeg</defName>
+	    <label>left leg</label>
+	    <hitPoints>30</hitPoints>
+	    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+	    <skinCovered>true</skinCovered>
+	    <activities>
+	      <li>Moving_leftWay1</li>
+	    </activities>
+	    <spawnThingOnRemoved>Leg</spawnThingOnRemoved>
+	</BodyPartDef>
+
+  	<BodyPartDef>
+	    <defName>RightLeg</defName>
+	    <label>right leg</label>
+	    <hitPoints>30</hitPoints>
+	    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+	    <skinCovered>true</skinCovered>
+	    <activities>
+	      <li>Moving_rightWay1</li>
+	    </activities>
+	    <spawnThingOnRemoved>Leg</spawnThingOnRemoved>
+  	</BodyPartDef>	
+
+</BodyPartDefs>

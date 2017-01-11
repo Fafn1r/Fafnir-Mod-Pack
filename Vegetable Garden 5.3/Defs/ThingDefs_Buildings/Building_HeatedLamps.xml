@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+
+
+<ThingDef ParentName="BuildingBase">
+    <defName>HeatedSunLamp</defName>
+    <label>heated sun lamp</label>
+        <thingClass>VGDrinks.Building_SunLampHeatController</thingClass>
+    <tickerType>Rare</tickerType>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/HeatedSunLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.2, 0.4, 0.2)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>330</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <description>Lights an area brightly enough to grow crops. Also is a small heater that will keep your room warm.</description>
+    <costList>
+      <Steel>130</Steel>
+      <Component>3</Component>
+    </costList>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>7.0</overlightRadius>
+        <glowRadius>14</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+	 <li Class="CompProperties_TempControl">
+      <energyPerSecond>21</energyPerSecond>
+      </li>
+    </comps>
+    <!-- Determined by trial and error
+    This value isn't perfect because these radii use different algorithms
+    but it matches in this case-->
+    <specialDisplayRadius>5.8</specialDisplayRadius>
+    <designationCategory>FoodProduction</designationCategory>
+    <rotatable>false</rotatable>
+    <researchPrerequisites>
+		<li>HeatedSunlamps</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+		<defName>HeatedSmallSunLamp</defName>
+		<label>small heated sun lamp</label>
+        <thingClass>VGDrinks.Building_SunLampHeatController</thingClass>
+    <tickerType>Rare</tickerType>
+		<category>Building</category>
+	
+		<graphicData>
+      <texPath>Things/Building/HeatedSunSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+       <shadowData>
+        <volume>(0.2, 0.4, 0.2)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+   </graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>220</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Lights an area brightly enough to grow crops.</description>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>120</Steel>
+ 		     <Component>2</Component>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>7.0</overlightRadius>
+        <glowRadius>5.5</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>825</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>21</energyPerSecond>
+      </li>
+    </comps>
+		<!-- Determined by trial and error
+		This value isn't perfect because these radii use different algorithms
+		but it matches in this case-->
+		<specialDisplayRadius>4.2</specialDisplayRadius>
+		<designationCategory>FoodProduction</designationCategory>
+		<rotatable>false</rotatable>
+    <researchPrerequisites>
+		<li>HeatedSunlamps</li>
+    </researchPrerequisites>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>HeatedMiniSunLamp</defName>
+		<label>mini heated sun lamp</label>
+        <thingClass>VGDrinks.Building_SunLampHeatController</thingClass>
+    <tickerType>Rare</tickerType>
+		<category>Building</category>
+	
+	<graphicData>
+      <texPath>Things/Building/HeatedSunMini</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+       <shadowData>
+        <volume>(0.2, 0.4, 0.2)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+   </graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>25</MaxHitPoints>
+			<WorkToBuild>150</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Lights an area brightly enough to grow crops.</description>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>100</Steel>
+		      <Component>1</Component>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>7.0</overlightRadius>
+        <glowRadius>4.5</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>525</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>21</energyPerSecond>
+      </li>
+    </comps>
+		<!-- Determined by trial and error
+		This value isn't perfect because these radii use different algorithms
+		but it matches in this case-->
+		<specialDisplayRadius>3.2</specialDisplayRadius>
+		<designationCategory>FoodProduction</designationCategory>
+		<rotatable>false</rotatable>
+    <researchPrerequisites>
+		<li>HeatedSunlamps</li>
+    </researchPrerequisites>
+	</ThingDef>
+
+
+</Buildings>

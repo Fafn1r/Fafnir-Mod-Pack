@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Outfitter A16 - Infused</name>
+  <author>Killface</author>
+  <url></url>
+  <targetVersion>0.16.1386</targetVersion>
+  <description>Patch for Outfitter A16 + Infused. Load order: Infused, Outfitter, this mod.
+  </description>
+</ModMetaData>

@@ -1,0 +1,5 @@
+
+*.suo
+*.cache
+/Source/CombatRealism/_DLLs
+/Source/CombatRealism/Combat_Realism.csproj.user

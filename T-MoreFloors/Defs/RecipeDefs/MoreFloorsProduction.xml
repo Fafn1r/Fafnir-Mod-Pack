@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>MakeWoolCloth</defName>
+		<label>make wool cloth</label>
+		<description>Weaves any type of wool on a loom to create woven cloth.</description>
+		<jobString>Weaving wool.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MegaslothWool</li>
+            <li>MuffaloWool</li>
+            <li>CamelHair</li>
+            <li>AlpacaWool</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MegaslothWool</li>
+        <li>MuffaloWool</li>
+        <li>CamelHair</li>
+        <li>AlpacaWool</li>
+      </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<WoolCloth>5</WoolCloth>
+		</products>
+	</RecipeDef>
+	
+</RecipeDefs>

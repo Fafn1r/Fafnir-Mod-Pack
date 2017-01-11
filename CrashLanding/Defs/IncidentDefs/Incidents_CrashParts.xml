@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>CryptoSleepBlockCrashIncident</defName>
+    <label>cryptosleep block crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_CryptoSleepBlockCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>SimpleShipPartCrashIncident</defName>
+    <label>simple ship part crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_SimpleShipPartCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>FoodCargoContainerCrashIncident</defName>
+    <label>food container crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_FoodCargoContainerCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>ResourcesCargoContainerCrashIncident</defName>
+    <label>resource container crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_ResourcesCargoContainerCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>MedicineCargoContainerCrashIncident</defName>
+    <label>medicine container crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_MedicineCargoContainerCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>ContrabandCargoContainerCrashIncident</defName>
+    <label>contraband container crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_ContrabandCargoContainerCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>ArtCargoContainerCrashIncident</defName>
+    <label>art container crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_ArtCargoContainerCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>FurnitureCargoContainerCrashIncident</defName>
+    <label>furniture container crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_FurnitureCargoContainerCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>ApparelCargoContainerCrashIncident</defName>
+    <label>apparel container crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_ApparelCargoContainerCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>MixedCargoContainerCrashIncident</defName>
+    <label>mixed goods container crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_MixedCargoContainerCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>WeaponSafeCrashIncident</defName>
+    <label>weapon deck crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_WeaponSafeCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>ShipEngineCrashIncident</defName>
+    <label>ship endine crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_ShipEngineCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>ShipReactorCrashIncident</defName>
+    <label>ship reactor container crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_ShipReactorCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>ShipAICoreIncident</defName>
+    <label>ship ai core container crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_ShipAICoreCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>AnimalPensCrashIncident</defName>
+    <label>animal pens crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_AnimalPensCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>AnimalPensDomesticCrashIncident</defName>
+    <label>domestic animal pens crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_AnimalPensDomesticCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>AlienNestCrashIncident</defName>
+    <label>alien nest crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_AlienNestCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>PrisonBlockCrashIncident</defName>
+    <label>prison block crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_PrisonBlockCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>ProductionModuleCrashIncident</defName>
+    <label>production module crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_ProductionModuleCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>HighTechModuleCrashIncident</defName>
+    <label>high tech module crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_HighTechModuleCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>NutrientDispenserCrashIncident</defName>
+    <label>nutrient dispenser crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_NutrientDispenserCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+  <IncidentDef>
+    <defName>BatteriesModuleCrashIncident</defName>
+    <label>batteries module crash [CrashLanding mod]</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>CrashLanding.IncidentWorker_BatteriesModuleCrash</workerClass>
+    <baseChance>0</baseChance>
+  </IncidentDef> 
+
+</Defs>

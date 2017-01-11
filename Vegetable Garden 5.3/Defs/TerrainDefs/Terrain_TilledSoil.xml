@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef>
+    <defName>SoilTilled</defName>
+    <label>garden soil</label>
+	<Description>Till soil to make a small improvement in soil growing condition.</Description>
+    <texturePath>Things/floor/FarmSoil</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>335</RenderPrecedence>
+    <PathCost>5</PathCost>
+    <statBases>
+      <Beauty>0</Beauty>
+	  <WorkToBuild>1000</WorkToBuild>
+    </statBases>
+	<designationCategory>FoodProduction</designationCategory>
+	<constructEffect>ConstructDirt</constructEffect>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>1.2</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+	<acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+	<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+    <CostList>
+      <RawFertilizer>10</RawFertilizer>
+    </CostList>
+	<researchPrerequisites>
+      <li>SoilReclam</li>
+    </researchPrerequisites>
+
+  </TerrainDef>
+  
+  <TerrainDef>
+    <defName>PlaceSoil</defName>
+    <label>Place Soil</label>
+	<Description>Places dirt onto smoothed floors to grow crops.</Description>
+    <texturePath>Terrain/Surfaces/Soil</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>335</RenderPrecedence>
+    <PathCost>5</PathCost>
+    <statBases>
+      <Beauty>0</Beauty>
+	  <WorkToBuild>600</WorkToBuild>
+    </statBases>
+	<designationCategory>FoodProduction</designationCategory>
+	<constructEffect>ConstructDirt</constructEffect>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>1.0</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+	<acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+	<terrainAffordanceNeeded>SmoothHard</terrainAffordanceNeeded>
+	<researchPrerequisites>
+      <li>SoilReclam</li>
+    </researchPrerequisites>
+    <CostList>
+      <VG_PileofDirt>5</VG_PileofDirt>
+    </CostList>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>ReclaimSoil</defName>
+    <label>Reclaim Soil</label>
+	<Description>Digs up sand, marshy soil, mud, marsh, ice,  gravel and places dirt to grow crops.</Description>
+    <texturePath>Terrain/Surfaces/Soil</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>335</RenderPrecedence>
+    <PathCost>5</PathCost>
+    <statBases>
+      <Beauty>0</Beauty>
+	  <WorkToBuild>1000</WorkToBuild>
+    </statBases>
+	<designationCategory>FoodProduction</designationCategory>
+	<constructEffect>ConstructDirt</constructEffect>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>1.0</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+	<acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+	<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <CostList>
+      <VG_PileofDirt>10</VG_PileofDirt>
+    </CostList>
+	<researchPrerequisites>
+      <li>SoilReclamII</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>PlowSoil</defName>
+    <label>plow soil</label>
+	<Description>Plow soil for much improved growing conditions.</Description>
+    <texturePath>Things/floor/PlowSoil</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>335</RenderPrecedence>
+    <PathCost>5</PathCost>
+    <statBases>
+      <Beauty>0</Beauty>
+	  <WorkToBuild>1750</WorkToBuild>
+    </statBases>
+	<designationCategory>FoodProduction</designationCategory>
+	<constructEffect>ConstructDirt</constructEffect>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>1.6</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+	<acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+	<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+	<researchPrerequisites>
+      <li>SoilReclamII</li>
+    </researchPrerequisites>
+    <CostList>
+      <RawFertilizer>15</RawFertilizer>
+    </CostList>
+  </TerrainDef>
+
+
+  <TerrainDef>
+    <defName>Mud</defName>
+    <label>mud</label>
+    <texturePath>Terrain/Surfaces/Mud</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>330</RenderPrecedence>
+    <PathCost>12</PathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <affordances>
+      <li>Diggable</li>
+    </affordances>
+    <Fertility>0</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+    <driesTo>Soil</driesTo>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>Marsh</defName>
+    <label>marsh</label>
+    <texturePath>Terrain/Surfaces/Marsh</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>325</RenderPrecedence>
+    <PathCost>23</PathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <affordances>
+      <li>Diggable</li>
+    </affordances>
+    <Fertility>0</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+    <driesTo>Soil</driesTo>  
+</TerrainDef>
+
+
+
+
+</TerrainDefs>

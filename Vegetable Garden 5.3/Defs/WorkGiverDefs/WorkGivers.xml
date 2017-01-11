@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<WorkGivers>
+
+  <WorkGiverDef>
+  <defName>DoBillsOven</defName>
+  <label>bake goods</label>
+  <giverClass>WorkGiver_DoBill</giverClass>
+  <workType>Cooking</workType>
+  <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Oven</li>
+    </fixedBillGiverDefs>
+  <verb>bake</verb>
+  <gerund>baking</gerund>
+  <requiredCapacities>
+      <li>Manipulation</li>
+  </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+    <WorkGiverDef>
+  <defName>DoBillsCanningstove</defName>
+  <label>prep food</label>
+  <giverClass>WorkGiver_DoBill</giverClass>
+  <workType>Cooking</workType>
+  <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Canningstove</li>
+    </fixedBillGiverDefs>
+  <verb>canning</verb>
+  <gerund>canning</gerund>
+  <requiredCapacities>
+      <li>Manipulation</li>
+  </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+    <WorkGiverDef>
+  <defName>DoBillsHandCanningstove</defName>
+  <label>prep food</label>
+  <giverClass>WorkGiver_DoBill</giverClass>
+  <workType>Cooking</workType>
+  <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>HandCanningstove</li>
+    </fixedBillGiverDefs>
+  <verb>canning</verb>
+  <gerund>canning</gerund>
+  <requiredCapacities>
+      <li>Manipulation</li>
+  </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+
+ <WorkGiverDef>
+    <defName>DoBillsBake</defName>
+    <label>make candy</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>CandyTable</li>
+    </fixedBillGiverDefs>
+    <verb>candymaking</verb>
+    <gerund>candymaking</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+
+ <WorkGiverDef>
+    <defName>DoBillsFcandytable</defName>
+    <label>make candy</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>120</priorityInType>
+    <fixedBillGiverDefs>
+      <li>FueledCandyTable</li>
+    </fixedBillGiverDefs>
+    <verb>dispense</verb>
+    <gerund>dispensing</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+
+ <WorkGiverDef>
+    <defName>DoBillsGrindStone</defName>
+    <label>grind bulk grains</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+      <li>GrindStone</li>
+    </fixedBillGiverDefs>
+    <verb>mill</verb>
+    <gerund>milling</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsTableLoom</defName>
+	     <label>weave at loom</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>65</priorityInType>
+    <fixedBillGiverDefs>
+      <li>TableLoom</li>
+    </fixedBillGiverDefs>
+		<verb>make cloth</verb>
+		<gerund>making cloth</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+      <prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>DoBillsUseUnpackingSpot</defName>
+    <label>do bills at unpacking spot</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>120</priorityInType>
+    <fixedBillGiverDefs>
+      <li>VG_UnpackingSpot</li>
+    </fixedBillGiverDefs>
+    <verb>unpack</verb>
+    <gerund>unpackinging at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>DoBillsUseDiggingSpot</defName>
+    <label>do bills at digging spot</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>120</priorityInType>
+    <fixedBillGiverDefs>
+      <li>VG_DiggingSpot</li>
+    </fixedBillGiverDefs>
+    <verb>dig</verb>
+    <gerund>digging at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+</WorkGivers>
+

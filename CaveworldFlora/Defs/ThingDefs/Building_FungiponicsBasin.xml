@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <!-- ========== Fungiponics ==============-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>FungiponicsBasin</defName>
+    <label>fungiponics basin</label>
+    <description>Derived from the hydroponics basins, the fungiponics basin is designed to grow cave plants. Does only require some initial organic matter to start growing. Sowing mushrooms is difficult and those plants grow at their own pace!</description>
+    <thingClass>CaveworldFlora.Building_FungiponicsBasin</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/FungiponicsBasin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <constructEffect>ConstructWood</constructEffect>
+    <fillPercent>0.10</fillPercent>
+    <statBases>
+      <WorkToBuild>4000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+    <size>(3,3)</size>
+    <costList>
+      <WoodLog>100</WoodLog>
+      <RawPotatoes>50</RawPotatoes>
+    </costList>
+    <fertility>1.0</fertility>
+    <building>
+      <defaultPlantToGrow>Glowbulb</defaultPlantToGrow>
+      <sowTag>Fungiponics</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <comps>
+        <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>ResearchFungiponics</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>CaveworldFlora.PlaceWorker_FungiponicsBasin</li>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>FoodProduction</designationCategory>
+  </ThingDef>
+
+</ThingDefs>

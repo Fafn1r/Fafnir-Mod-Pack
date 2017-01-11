@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!-- Square slab flooring -->
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <FloorStoneSlabsSandstone.label>바위판 (사암)</FloorStoneSlabsSandstone.label>
+  <FloorStoneSlabsGranite.label>바위판 (화강암)</FloorStoneSlabsGranite.label>
+  <FloorStoneSlabsLimestone.label>바위판 (석회암)</FloorStoneSlabsLimestone.label>
+  <FloorStoneSlabsSlate.label>바위판 (점판암)</FloorStoneSlabsSlate.label>
+  <FloorStoneSlabsMarble.label>바위판 (대리석)</FloorStoneSlabsMarble.label>
+
+  <FloorStoneSlabsSandstone.description>평범한 바위판으로 만든 바닥입니다. 만들기 쉽고 기능적입니다.</FloorStoneSlabsSandstone.description>
+  <FloorStoneSlabsGranite.description>평범한 바위판으로 만든 바닥입니다. 만들기 쉽고 기능적입니다.</FloorStoneSlabsGranite.description>
+  <FloorStoneSlabsLimestone.description>평범한 바위판으로 만든 바닥입니다. 만들기 쉽고 기능적입니다.</FloorStoneSlabsLimestone.description>
+  <FloorStoneSlabsSlate.description>평범한 바위판으로 만든 바닥입니다. 만들기 쉽고 기능적입니다.</FloorStoneSlabsSlate.description>
+  <FloorStoneSlabsMarble.description>평범한 바위판으로 만든 바닥입니다. 만들기 쉽고 기능적입니다.</FloorStoneSlabsMarble.description>
+
+<!-- Rough stone flooring -->
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <FloorStoneRoughSandstone.label>거친 돌바닥 (사암)</FloorStoneRoughSandstone.label>
+  <FloorStoneRoughGranite.label>거친 돌바닥 (화강암)</FloorStoneRoughGranite.label>
+  <FloorStoneRoughLimestone.label>거친 돌바닥 (석회암)</FloorStoneRoughLimestone.label>
+  <FloorStoneRoughSlate.label>거친 돌바닥 (점판암)</FloorStoneRoughSlate.label>
+  <FloorStoneRoughMarble.label>거친 돌바닥 (대리석)</FloorStoneRoughMarble.label>
+
+  <FloorStoneRoughSandstone.description>적은 양의 돌로 만들 수 있는 거친 바닥입니다. 보기에 그저 그렇고 만드는 시간이 좀 걸립니다.</FloorStoneRoughSandstone.description>
+  <FloorStoneRoughGranite.description>적은 양의 돌로 만들 수 있는 거친 바닥입니다. 보기에 그저 그렇고 만드는 시간이 좀 걸립니다.</FloorStoneRoughGranite.description>
+  <FloorStoneRoughLimestone.description>적은 양의 돌로 만들 수 있는 거친 바닥입니다. 보기에 그저 그렇고 만드는 시간이 좀 걸립니다.</FloorStoneRoughLimestone.description>
+  <FloorStoneRoughSlate.description>적은 양의 돌로 만들 수 있는 거친 바닥입니다. 보기에 그저 그렇고 만드는 시간이 좀 걸립니다.</FloorStoneRoughSlate.description>
+  <FloorStoneRoughMarble.description>적은 양의 돌로 만들 수 있는 거친 바닥입니다. 보기에 그저 그렇고 만드는 시간이 좀 걸립니다.</FloorStoneRoughMarble.description>
+
+<!-- Hexagonal flooring -->
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <FloorStoneHexSandstone.label>육각 타일 (사암)</FloorStoneHexSandstone.label>
+  <FloorStoneHexGranite.label>육각 타일 (화강암)</FloorStoneHexGranite.label>
+  <FloorStoneHexLimestone.label>육각 타일 (석회암)</FloorStoneHexLimestone.label>
+  <FloorStoneHexSlate.label>육각 타일 (점판암)</FloorStoneHexSlate.label>
+  <FloorStoneHexMarble.label>육각 타일 (대리석)</FloorStoneHexMarble.label>
+
+  <FloorStoneHexSandstone.description>시선을 사로잡는 육각형 타일로 만든 바위 바닥입니다.</FloorStoneHexSandstone.description>
+  <FloorStoneHexGranite.description>시선을 사로잡는 육각형 타일로 만든 바위 바닥입니다.</FloorStoneHexGranite.description>
+  <FloorStoneHexLimestone.description>시선을 사로잡는 육각형 타일로 만든 바위 바닥입니다.</FloorStoneHexLimestone.description>
+  <FloorStoneHexSlate.description>시선을 사로잡는 육각형 타일로 만든 바위 바닥입니다.</FloorStoneHexSlate.description>
+  <FloorStoneHexMarble.description>시선을 사로잡는 육각형 타일로 만든 바위 바닥입니다.</FloorStoneHexMarble.description>
+
+<!-- Mosaic flooring -->
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <FloorStoneMosaicSandstone.label>모자이크 타일 (사암)</FloorStoneMosaicSandstone.label>
+  <FloorStoneMosaicGranite.label>모자이크 타일 (화강암)</FloorStoneMosaicGranite.label>
+  <FloorStoneMosaicLimestone.label>모자이크 타일 (석회암)</FloorStoneMosaicLimestone.label>
+  <FloorStoneMosaicSlate.label>모자이크 타일 (점판암)</FloorStoneMosaicSlate.label>
+  <FloorStoneMosaicMarble.label>모자이크 타일 (대리석)</FloorStoneMosaicMarble.label>
+
+  <FloorStoneMosaicSandstone.description>매력적인 모자이크 패턴의 바닥입니다.</FloorStoneMosaicSandstone.description>
+  <FloorStoneMosaicGranite.description>매력적인 모자이크 패턴의 바닥입니다.</FloorStoneMosaicGranite.description>
+  <FloorStoneMosaicLimestone.description>매력적인 모자이크 패턴의 바닥입니다.</FloorStoneMosaicLimestone.description>
+  <FloorStoneMosaicSlate.description>매력적인 모자이크 패턴의 바닥입니다.</FloorStoneMosaicSlate.description>
+  <FloorStoneMosaicMarble.description>매력적인 모자이크 패턴의 바닥입니다.</FloorStoneMosaicMarble.description>
+
+<!-- Random stone flooring -->
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <FloorStoneRandomSandstone.label>불규칙 타일 (사암)</FloorStoneRandomSandstone.label>
+  <FloorStoneRandomGranite.label>불규칙 타일 (화강암)</FloorStoneRandomGranite.label>
+  <FloorStoneRandomLimestone.label>불규칙 타일 (석회암)</FloorStoneRandomLimestone.label>
+  <FloorStoneRandomSlate.label>불규칙 타일 (점판암)</FloorStoneRandomSlate.label>
+  <FloorStoneRandomMarble.label>불규칙 타일 (대리석)</FloorStoneRandomMarble.label>
+
+  <FloorStoneRandomSandstone.description>투박하고 불규칙적인 무늬의 바위판을 신중하게 놓아 만든 바닥입니다. 모자이크 바닥보다 적은 양의 재료가 필요하지만 힘이 더 듭니다.</FloorStoneRandomSandstone.description>
+  <FloorStoneRandomGranite.description>투박하고 불규칙적인 무늬의 바위판을 신중하게 놓아 만든 바닥입니다. 모자이크 바닥보다 적은 양의 재료가 필요하지만 힘이 더 듭니다.</FloorStoneRandomGranite.description>
+  <FloorStoneRandomLimestone.description>투박하고 불규칙적인 무늬의 바위판을 신중하게 놓아 만든 바닥입니다. 모자이크 바닥보다 적은 양의 재료가 필요하지만 힘이 더 듭니다.</FloorStoneRandomLimestone.description>
+  <FloorStoneRandomSlate.description>투박하고 불규칙적인 무늬의 바위판을 신중하게 놓아 만든 바닥입니다. 모자이크 바닥보다 적은 양의 재료가 필요하지만 힘이 더 듭니다.</FloorStoneRandomSlate.description>
+  <FloorStoneRandomMarble.description>투박하고 불규칙적인 무늬의 바위판을 신중하게 놓아 만든 바닥입니다. 모자이크 바닥보다 적은 양의 재료가 필요하지만 힘이 더 듭니다.</FloorStoneRandomMarble.description>
+
+</LanguageData>

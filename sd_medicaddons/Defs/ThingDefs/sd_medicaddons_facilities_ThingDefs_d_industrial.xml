@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--================================ industrial surgery instruments ======================================-->
+  
+  <ThingDef ParentName="sd_facilitiesBase">
+    <defName>sd_medicaddons_industrial_surg_instruments</defName>
+    <label>industrial surgery instruments</label>
+    <graphicData>
+      <texPath>sd_medicaddons/industrialfacilities/sd_medicaddons_industrial_surg_instruments</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <researchPrerequisites>
+		<li>sd_medicaddons_research_industrial_med</li>
+	</researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>These instruments still look scary, but will not affect your treatment chances. Needs to be placed adjacent to a bed. One bed can be linked to only one of the same kind, but multiple beds can use the same one.</description>
+    <size>(1,1)</size>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+	<costStuffCount>75</costStuffCount>
+	<costList>
+		<Steel>25</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+      <MedicalTendQualityOffset>0.02</MedicalTendQualityOffset>
+          <ImmunityGainSpeedFactor>0.02</ImmunityGainSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!--================================ industrial surgery lamp ======================================-->
+  
+  <ThingDef ParentName="sd_facilitiesBase">
+    <defName>sd_medicaddons_industrial_surg_lamp</defName>
+    <label>industrial surgery lamp</label>
+    <graphicData>
+      <texPath>sd_medicaddons/industrialfacilities/sd_medicaddons_industrial_surg_lamp</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <researchPrerequisites>
+		<li>sd_medicaddons_research_industrial_med</li>
+	</researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Shining a light on things gets a whole new meaning if you are standing over an open body during an operation. Needs to be placed adjacent to a bed. One bed can be linked to only one of the same kind, but multiple beds can use the same one.</description>
+    <size>(1,1)</size>
+	<costList>
+		<Steel>100</Steel>
+		<Component>1</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+      <MedicalTendQualityOffset>0.06</MedicalTendQualityOffset>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+      </li>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_Glower">
+        <overlightRadius>3.5</overlightRadius>
+        <glowRadius>6</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

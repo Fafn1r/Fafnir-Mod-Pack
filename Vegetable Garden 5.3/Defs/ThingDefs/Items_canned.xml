@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ThingDefs>
+   
+  <ThingDef ParentName="VG_MealBase">
+    <defName>MealCannedFood</defName>
+    <label>canned meal</label>
+    <description>A meal preserved in cans to prevent it going bad.</description>
+    <stackLimit>75</stackLimit>
+    <graphicData>
+      <texPath>Things/Item/Meal/Cannedfood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>17</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.7</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_ResourceBase">
+    <defName>CannedVeg</defName>
+    <label>canned vegetables</label>
+    <description>Vegetables that have been cooked and preserved in a can to prevent spoilage.</description>
+    <graphicData>
+      <texPath>Things/Item/canveg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>5</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>10</DeteriorationRate>
+      <Mass>0.4</Mass>
+    </statBases>
+    <thingCategories>
+      <li>PlantFoodRaw</li>
+    </thingCategories>
+    <ingestible>
+	<foodType>VegetableOrFruit</foodType>
+	<preferability>MealSimple</preferability>
+			<tasteThought></tasteThought>
+      <nutrition>0.40</nutrition>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="VG_ResourceBase">
+    <defName>CannedMeat</defName>
+    <label>canned meat</label>
+    <description>Meat that have been cooked and preserved in a can to prevent spoilage.</description>
+    <graphicData>
+      <texPath>Things/Item/canmeat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>5</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>10</DeteriorationRate>
+       <Mass>0.4</Mass>
+   </statBases>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <ingestible>
+	<foodType>Meat</foodType>
+	<preferability>MealSimple</preferability>
+			<tasteThought></tasteThought>
+      <nutrition>0.40</nutrition>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+
+</ThingDefs>

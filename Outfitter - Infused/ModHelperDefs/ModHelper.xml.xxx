@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <CommunityCoreLibrary.ModHelperDef>
+        <defName>OutfitterInfused</defName>
+        <ModName>Outfitter Infused</ModName>		
+        <minCCLVersion>0.15.0</minCCLVersion>
+        <MapComponents>
+            <li>Outfitter.MapComponent_OutfitterInfused</li>
+        </MapComponents>
+    </CommunityCoreLibrary.ModHelperDef>
+</Defs>

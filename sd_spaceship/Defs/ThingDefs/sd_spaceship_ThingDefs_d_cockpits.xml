@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--================================ cockpit ======================================--> 
+
+  <ThingDef ParentName="sd_spaceship_shippart_Base">
+    <defName>sd_spaceship_cockpit</defName>
+    <label>ship cockpit</label>
+    <thingClass>Building_CryptosleepCasket</thingClass>
+    <graphicData>
+      <texPath>sd_spaceship/cockpits/sd_spaceship_cockpit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,2)</drawSize>
+    </graphicData>
+    <researchPrerequisites>
+		<li>ShipCryptosleep</li>
+	</researchPrerequisites>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <WorkToBuild>8000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+	  <Mass>2000</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A cryptosleep casket hardened against the dangers of space. Capable of maintaining a person in cryptosleep for centuries in a space environment and surviving atmospheric re-entry.</description>
+    <size>(1,2)</size>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <building>
+      <shipPart>true</shipPart>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <isPlayerEjectable>true</isPlayerEjectable>
+    </building>
+    <costList>
+		<Steel>500</Steel>
+		<Uranium>5</Uranium>
+		<Component>10</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationHotkey>Misc2</designationHotkey>
+	<selectable>true</selectable>
+	<rotatable>true</rotatable>
+  </ThingDef>
+
+</Defs>

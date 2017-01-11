@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Reuse pods</name>
+  <author>Wishmaster</author>
+  <targetversion>0.16.1393</targetversion>
+  <description>
+	Requires HugsLib.
+
+	Allows you to reuse pods under certain conditions.
+
+	Target your pods within 20 tiles or both a Landing Controler and a Pod Launcher. 
+	One pod launcher is required for every arriving pods. Remaining pods will vanish.
+  </description>
+	<url>https://ludeon.com/forums/index.php?topic=27315.0</url>
+</ModMetaData>

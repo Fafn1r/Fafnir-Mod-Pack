@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef>
+    <defName>FertilizerCorpse</defName>
+    <label>cremate into fertilizer</label>
+    <description>Cremate a corpse into fertilizer. Be default everything is set to off.</description>
+    <jobString>Cremating.</jobString>
+    <workAmount>300</workAmount>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+	<RawFertilizer>25</RawFertilizer>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+      <exceptedCategories>
+        <li>CorpsesMechanoid</li>
+      </exceptedCategories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <specialFiltersToAllow>
+        <li>AllowCorpsesColonist</li>
+        <li>AllowCorpsesStranger</li>
+      </specialFiltersToAllow>
+    </defaultIngredientFilter>
+      <recipeUsers>
+        <li>ElectricCrematorium</li>
+      </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>FertilizerCorpseCampfire</defName>
+    <label>cremate into fertilizer</label>
+    <description>Cremate a corpse into fertilizer at a campfire. Much less effective then the Crematorium. And less efficient. Be default everything is set to off.</description>
+    <jobString>Cremating.</jobString>
+    <workAmount>900</workAmount>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+	<RawFertilizer>12</RawFertilizer>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+      <exceptedCategories>
+        <li>CorpsesMechanoid</li>
+      </exceptedCategories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <specialFiltersToAllow>
+        <li>AllowCorpsesColonist</li>
+        <li>AllowCorpsesStranger</li>
+      </specialFiltersToAllow>
+    </defaultIngredientFilter>
+      <recipeUsers>
+        <li>Campfire</li>
+      </recipeUsers>
+  </RecipeDef>
+
+
+</RecipeDefs>

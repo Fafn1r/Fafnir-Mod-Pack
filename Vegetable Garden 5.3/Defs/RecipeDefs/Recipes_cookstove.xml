@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RecipeDefs>
+
+
+  <RecipeDef Name="CookMealSimple">
+    <defName>CookMealSimple</defName>
+    <label>cook simple meal</label>
+    <description>Cooks a straightforward meal from one ingredient.</description>
+    <jobString>Cooking simple meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>FoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <MealSimple>1</MealSimple>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+          <li>Megaspider_Meat</li>
+    </exceptedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+	<RecipeDef ParentName="CookMealSimple">
+		<defName>CookMealSimpleCampfire</defName>
+    <workAmount>1000</workAmount> <!-- other meals use WorkToMake stat -->
+	</RecipeDef>
+
+  <RecipeDef>
+		<defName>CookMealFine</defName>
+		<label>cook fine meal</label>
+		<description>Cooks a somewhat complex meal from a combination of raw meat and raw plant ingredients.</description>
+		<jobString>Cooking fine meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+			           	<li>CookingSupplies</li>
+					</categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealFine>1</MealFine>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+				<li>Human_Meat</li>
+	        <li>Megaspider_Meat</li>
+		</exceptedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+
+	<RecipeDef>
+		<defName>CookMealLavish</defName>
+		<label>cook lavish meal</label>
+		<description>Cooks a very complex meal from a combination of raw meat and raw plant ingredients. Much of the ingredients are wasted.</description>
+		<jobString>Cooking lavish meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+			           	<li>CookingSupplies</li>
+					</categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealLavish>1</MealLavish>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+				<li>Human_Meat</li>
+	        <li>Megaspider_Meat</li>
+		</exceptedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+
+	<RecipeDef>
+		<defName>CookMealSimple_Bulk</defName>
+		<label>cook four simple meals</label>
+		<description>Cooks a straightforward meal from one ingredient. Makes enough for 4 meals.</description>
+		<jobString>Cooking four simple meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>1000</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+	<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+						
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealSimple>4</MealSimple>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+				<li>Human_Meat</li>
+	        <li>Megaspider_Meat</li>
+		</exceptedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>4</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CookMealFine_Bulk</defName>
+		<label>cook four fine meals</label>
+		<description>Cooks a somewhat complex meal from a combination of raw meat and raw plant ingredients. Makes enough for 4 meals.</description>
+		<jobString>Cooking four fine meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>1400</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+	<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+				            <li>AnimalProductRaw</li>
+
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+				           <li>CookingSupplies</li>
+				</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealFine>4</MealFine>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+				<li>Human_Meat</li>
+	        <li>Megaspider_Meat</li>
+		</exceptedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>8</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CookMealLavish_Bulk</defName>
+		<label>cook four lavish meals</label>
+		<description>Cooks a very complex meal from a combination of raw meat and raw plant ingredients. Much of the ingredients are wasted. Makes enough for 4 meals.</description>
+		<jobString>Cooking four lavish meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>2200</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+	<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+				            <li>AnimalProductRaw</li>
+
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					     <li>CookingSupplies</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealLavish>4</MealLavish>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+				<li>Human_Meat</li>
+	        <li>Megaspider_Meat</li>
+		</exceptedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>12</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+   
+      <RecipeDef>
+		<defName>Stirfrymeal</defName>
+		<label>cook four stir-fried meals</label>
+		<description>Cooks a stir-fried meal from a combination of raw meat and raw plant ingredients. \n\nMakes enough for 4 meals.  \n\nFood Effects: Manipulation and Blood Filtration.</description>
+		<jobString>Cooking stir-fried meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>1500</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+				            <li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+				           <li>CookingSupplies</li>
+				</categories>
+				</filter>
+				<count>1</count>
+</li>
+
+		</ingredients>
+		<products>
+			<stirfry>4</stirfry>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<exceptedThingDefs>
+	     		 <li>Megaspider_Meat</li>
+			<li>Human_Meat</li>
+			</exceptedThingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>7</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Cookstewpot</defName>
+		<label>cook eight pots of stew</label>
+		<description>Slow cooks a pot of stew from a combination of raw meat and raw plant ingredients. \n\nMakes enough for 8 meals. \n\nFood Effects: Consciousness, Metabolism, Blood Filtration, and Blood Pumping.</description>
+		<jobString>Slow cooking stew.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>2000</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+				           <li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+			           	<li>CookingSupplies</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<bowlstew>8</bowlstew>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+		</fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+            <li>Megaspider_Meat</li>
+  </exceptedThingDefs>
+    </defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</skillRequirements>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+
+<RecipeDef>
+      <defName>CookGrillcheese</defName>
+      <label>cook two grilled cheeses</label>
+      <description>Two slices of bread grilled with cheese melt in the middle. \n\nMakes 2 servings. \n\nFood Effects: Metabolism.</description>
+      <jobString>Toasting bread.</jobString>  
+      <allowMixingIngredients>true</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Bread</li>
+               </thingDefs>
+            </filter>
+            <count>4</count>
+         </li>
+		<li>
+            <filter>
+               <thingDefs>
+                  <li>cheese</li>
+               </thingDefs>
+            </filter>
+            <count>2</count>
+         </li>
+      </ingredients>
+      <products>
+         <grilledcheese>2</grilledcheese>
+      </products>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Bread</li>
+		<li>cheese</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+      </fixedIngredientFilter>
+      <workAmount>1000</workAmount>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+      </RecipeDef>
+
+<RecipeDef>
+      <defName>GrillPolenta</defName>
+      <label>grill two polenta</label>
+      <description>Grilled slices of Polenta. \n\nMakes 2 servings. \n\nFood Effects: Metabolism.</description>
+      <jobString>Grilling polenta.</jobString>  
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>RawPolenta</li>
+               </thingDefs>
+            </filter>
+            <count>8</count>
+         </li>
+      </ingredients>
+      <products>
+         <grilledpolenta>2</grilledpolenta>
+      </products>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>RawPolenta</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+      </fixedIngredientFilter>
+      <workAmount>800</workAmount>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+      </RecipeDef>
+
+
+      <RecipeDef>
+      <defName>Cookgrilledsandwich</defName>
+      <label>cook two cheeseburgers</label>
+      <description>Two slices of bread with grilled meat and cheese melt. \n\nMakes 2 servings. \n\nFood Effects: Metabolism.</description>
+      <jobString>Grilling sandwich.</jobString>  
+      <allowMixingIngredients>true</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Bread</li>
+               </thingDefs>
+            </filter>
+            <count>2</count>
+         </li>
+		<li>
+            <filter>
+               <thingDefs>
+                  <li>cheese</li>
+               </thingDefs>
+            </filter>
+            <count>2</count>
+         </li>
+	     <li>
+		<filter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+		</filter>
+		<count>6</count>
+		</li>
+      </ingredients>
+      <products>
+         <grilledmeat>2</grilledmeat>
+      </products>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Bread</li>
+		 <li>cheese</li>
+          </thingDefs>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+      </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+         <thingDefs>
+            <li>Bread</li>
+		 <li>cheese</li>
+         </thingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+         <li>Megaspider_Meat</li>
+     </exceptedThingDefs>
+    </defaultIngredientFilter>
+
+      <workAmount>1000</workAmount>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+      </RecipeDef>
+
+      <RecipeDef>
+      <defName>CookTacos</defName>
+      <label>cook five tacos</label>
+      <description>Meat and Cheese in a Corn shell. \n\n Makes 5 servings. \n\nFood Effects: Manipulation and Metabolism.</description>
+      <jobString>Preparing tacos.</jobString>  
+      <allowMixingIngredients>true</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Cornmeal</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+		<li>
+            <filter>
+               <thingDefs>
+                  <li>cheese</li>
+               </thingDefs>
+            </filter>
+            <count>4</count>
+         </li>
+	     <li>
+		<filter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+		</filter>
+		<count>10</count>
+		</li>
+      </ingredients>
+      <products>
+         <Tacos>5</Tacos>
+      </products>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Cornmeal</li>
+		 <li>cheese</li>
+          </thingDefs>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+      </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+         <thingDefs>
+            <li>Cornmeal</li>
+		 <li>cheese</li>
+         </thingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+           <li>Megaspider_Meat</li>
+   </exceptedThingDefs>
+    </defaultIngredientFilter>
+      <workAmount>1000</workAmount>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+      </RecipeDef>
+
+<RecipeDef>
+	<defName>CookPorridge</defName>
+	<label>cook two porridges</label>
+	<description>A simple porridge cooked from grains. \n\nMakes 2 servings. \n\nFood Effects: Sight and Blood Filtration.</description>
+	<jobString>Making porridge.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+	<workAmount>900</workAmount>
+     <soundWorking>Recipe_CookMeal</soundWorking>          	<allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Rawwheat</li>
+	        <li>RawCorn</li>
+	        <li>RawRice</li>
+	        <li>Rawoats</li>
+	      </thingDefs>
+	    </filter>
+	    <count>0.7</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Rawwheat</li>
+	    <li>RawCorn</li>
+	    <li>RawRice</li>
+	    <li>Rawoats</li>
+	  </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+	</fixedIngredientFilter>
+	<products>
+	  <Porridge>2</Porridge>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+  <RecipeDef>
+    <defName>VG_MakebulkKibble</defName>
+    <label>make bulk kibble</label>
+    <description>Make animal kibble by combining raw meat and plants.</description>
+    <jobString>Making kibble.</jobString>
+    <workAmount>900</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+          <thingDefs>
+            <li>Hay</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Kibble>200</Kibble>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <thingDefs>
+        <li>Hay</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Foods</li>
+      </categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>InsectJelly</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef Name="MakePemmican">
+    <defName>VG_MakebulkPemmican</defName>
+    <label>make bulk pemmican</label>
+    <description>Make pemmican, a preserved combination of meat and plant food. It doesn't taste amazing, but lasts a year without refrigeration.</description>
+    <jobString>Making pemmican.</jobString>
+    <workAmount>1800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Pemmican>72</Pemmican>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <exceptedCategories>
+        <li>AnimalProductRaw</li>
+      </exceptedCategories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+        <li>Megaspider_Meat</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Pemmican</researchPrerequisite>
+  	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+      </recipeUsers>
+</RecipeDef>
+
+
+</RecipeDefs>

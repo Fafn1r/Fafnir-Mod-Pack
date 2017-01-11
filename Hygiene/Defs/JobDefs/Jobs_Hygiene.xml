@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<JobDefs>
+
+  <JobDef>
+    <defName>WashSelf</defName>
+    <driverClass>Hygiene.JobDriver_WashSelf</driverClass>
+    <reportString>cleaning self.</reportString>
+    <canCheckOverrideOnDamage>true</canCheckOverrideOnDamage>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+  
+  <JobDef>
+    <defName>BathePatient</defName>
+    <driverClass>Hygiene.JobDriver_BathePatient</driverClass>
+    <reportString>bathing TargetA.</reportString>
+  </JobDef>
+  
+</JobDefs>

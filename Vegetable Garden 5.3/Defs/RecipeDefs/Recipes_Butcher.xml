@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+
+
+	<RecipeDef>
+		<defName>MakeSilage</defName>
+		<label>make silage</label>
+		<description>Make silage from hay and raw grains.</description>
+		<jobString>Making silage.</jobString>
+		<workSpeedStat>BrewingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>300</workAmount>
+		<ingredients>
+			<li>
+			    <filter>
+			      <thingDefs>
+	 		        <li>Rawwheat</li>
+			        <li>RawCorn</li>
+			        <li>RawRice</li>
+			        <li>Rawoats</li>
+	     			 </thingDefs>
+	  		    </filter>
+			<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			    <li>Rawwheat</li>
+			    <li>RawCorn</li>
+			    <li>RawRice</li>
+			    <li>Rawoats</li>
+			    <li>Hay</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Silage>75</Silage>
+		</products>
+		<workSkill>Cooking</workSkill>
+  		<recipeUsers>
+			<li>TableButcher</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeFertilizer</defName>
+		<label>make fertilizer</label>
+		<description>Make fertilizer from wood and soil.</description>
+		<jobString>Making fertilizer.</jobString>
+		<workSpeedStat>BrewingSpeed</workSpeedStat>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>800</workAmount>
+		<ingredients>
+			<li>
+			    <filter>
+			      <thingDefs>
+			        <li>WoodLog</li>
+	     			 </thingDefs>
+	  		    </filter>
+			<count>10</count>
+			</li>
+			<li>
+			    <filter>
+			      <thingDefs>
+			        <li>VG_PileofDirt</li>
+	     			 </thingDefs>
+	  		    </filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			    <li>WoodLog</li>
+     			    <li>VG_PileofDirt</li>
+			</thingDefs>
+	      <specialFiltersToDisallow>
+     			   <li>AllowNonSmeltableWeapons</li>
+	      </specialFiltersToDisallow>
+	     </fixedIngredientFilter>
+		<products>
+			<RawFertilizer>30</RawFertilizer>
+		</products>
+		<workSkill>Crafting</workSkill>
+  		<recipeUsers>
+			<li>TableButcher</li>
+		</recipeUsers>
+	</RecipeDef>
+
+
+
+	<RecipeDef>
+		<defName>VG_DigSoil</defName>
+		<label>dig soil</label>
+		<description>Dig up pile of soil. Used in making fertilizer</description>
+		<jobString>Digging Soil.</jobString>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<effectWorking>Cremate</effectWorking>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>1000</workAmount>
+		<products>
+			<VG_PileofDirt>10</VG_PileofDirt>
+		</products>
+		<workSkill>Crafting</workSkill>
+  		<recipeUsers>
+			<li>VG_DiggingSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+
+
+
+
+</RecipeDefs>

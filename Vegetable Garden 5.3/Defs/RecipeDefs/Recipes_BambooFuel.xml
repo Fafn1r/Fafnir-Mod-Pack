@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>MakeChemfuelFromBamboo</defName>
+		<label>make chemfuel from bamboo</label>
+		<description>Make a batch of chemfuel by gasifying bamboo.</description>
+		<jobString>Refining chemfuel from wood.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Bamboo</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Bamboo</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Chemfuel>35</Chemfuel>
+		</products>
+		<workSkill>Crafting</workSkill>
+	<recipeUsers>
+         <li>Refinery</li>
+      </recipeUsers>
+
+	</RecipeDef>
+
+
+</RecipeDefs>

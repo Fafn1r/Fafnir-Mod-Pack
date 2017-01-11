@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+	
+  <TerrainDef Name="FloorBaseCarpet" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>135</WorkToBuild>
+      <Beauty>2</Beauty>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+	  <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="FloorBaseCarpet" Name="FloorBaseCarpetPlain" Abstract="True">
+    <texturePath>Terrain/Surfaces/Carpet</texturePath>
+    <CostList>
+      <Cloth>7</Cloth>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="FloorBaseCarpet" Name="FloorBaseCarpetCheck" Abstract="True">
+    <CostList>
+      <Cloth>7</Cloth>
+    </CostList>
+    <texturePath>Terrain/Surfaces/CheckCarpet</texturePath>
+    <designationCategory>MoreFloors</designationCategory>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="FloorBaseCarpet" Name="FloorBaseCarpetWool" Abstract="True">
+    <CostList>
+      <WoolCloth>4</WoolCloth>
+    </CostList>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+    <texturePath>Terrain/Surfaces/WoolCarpet</texturePath>
+    <designationCategory>MoreFloors</designationCategory>
+  </TerrainDef>
+
+
+
+	<!-- Normal cloth carpet - new colours -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
+
+	<TerrainDef ParentName="FloorBaseCarpetPlain">
+		<DefName>CarpetOrange</DefName>
+		<Label>orange carpet</Label>
+		<RenderPrecedence>199</RenderPrecedence>
+		<Description>Soft carpet with a vivid marigold tint.</Description>
+    <color>(155,95,80)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetPlain">
+		<DefName>CarpetYellow</DefName>
+		<Label>yellow carpet</Label>
+		<RenderPrecedence>198</RenderPrecedence>
+		<Description>A summery yellow-coloured carpet.</Description>
+    <color>(170,160,90)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBaseCarpetPlain">
+		<DefName>CarpetTurquoise</DefName>
+		<Label>turquoise carpet</Label>
+		<RenderPrecedence>197</RenderPrecedence>
+		<Description>A soothing blue-green carpet.</Description>
+    <color>(60,105,105)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBaseCarpetPlain">
+		<DefName>CarpetPurple</DefName>
+		<Label>purple carpet</Label>
+		<RenderPrecedence>196</RenderPrecedence>
+		<Description>Carpet in a majestic purple shade.</Description>
+    <color>(75,55,115)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetPlain">
+		<DefName>CarpetWhite</DefName>
+		<Label>white carpet</Label>
+		<RenderPrecedence>195</RenderPrecedence>
+		<Description>Undyed white carpet. Comfortable underfoot but stains easily.</Description>
+    <color>(240,240,240)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetPlain">
+		<DefName>CarpetBlack</DefName>
+		<Label>black carpet</Label>
+		<RenderPrecedence>194</RenderPrecedence>
+		<Description>A carpet in brooding black.</Description>
+    <color>(35,35,35)</color>
+	</TerrainDef>
+	
+	
+  
+	<!-- Checkered cloth carpet - all colours -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	
+	<TerrainDef ParentName="FloorBaseCarpetCheck">
+		<DefName>CheckCarpetRed</DefName>
+		<Label>red check carpet</Label>
+		<RenderPrecedence>190</RenderPrecedence>
+		<Description>Checkered carpet in a lovely rose hue.</Description>
+    <color>(125,50,60)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetCheck">
+		<DefName>CheckCarpetOrange</DefName>
+		<Label>orange check carpet</Label>
+		<RenderPrecedence>189</RenderPrecedence>
+		<Description>Carpeting with a checkered pattern in a vivid marigold tint.</Description>
+    <color>(155,95,80)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetCheck">
+		<DefName>CheckCarpetYellow</DefName>
+		<Label>yellow check carpet</Label>
+		<RenderPrecedence>188</RenderPrecedence>
+		<Description>Summery yellow-coloured check carpet.</Description>
+    <color>(170,160,90)</color>
+	</TerrainDef>
+  
+	<TerrainDef ParentName="FloorBaseCarpetCheck">
+		<DefName>CheckCarpetCream</DefName>
+		<Label>cream check carpet</Label>
+		<RenderPrecedence>187</RenderPrecedence>
+		<Description>Check carpet in a creamy off-white shade.</Description>
+    <color>(220,215,200)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBaseCarpetCheck">
+		<DefName>CheckCarpetGreen</DefName>
+		<Label>green check carpet</Label>
+		<RenderPrecedence>186</RenderPrecedence>
+		<Description>Naturalistic-feeling green check carpet.</Description>
+    <color>(95,110,65)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetCheck">
+		<DefName>CheckCarpetTurquoise</DefName>
+		<Label>turquoise check carpet</Label>
+		<RenderPrecedence>185</RenderPrecedence>
+		<Description>A soothing blue-green check carpet.</Description>
+    <color>(60,105,105)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBaseCarpetCheck">
+		<DefName>CheckCarpetBlue</DefName>
+		<Label>blue check carpet</Label>
+		<RenderPrecedence>184</RenderPrecedence>
+		<Description>Toe-hugging plush check carpet in a cool blue color.</Description>
+    <color>(30,70,130)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetCheck">
+		<DefName>CheckCarpetPurple</DefName>
+		<Label>purple check carpet</Label>
+		<RenderPrecedence>183</RenderPrecedence>
+		<Description>Checkered carpet in a majestic purple shade.</Description>
+    <color>(75,55,115)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetCheck">
+		<DefName>CheckCarpetWhite</DefName>
+		<Label>white check carpet</Label>
+		<RenderPrecedence>182</RenderPrecedence>
+		<Description>Undyed white check carpet. Comfortable underfoot but stains easily.</Description>
+    <color>(240,240,240)</color>
+	</TerrainDef>
+  
+	<TerrainDef ParentName="FloorBaseCarpetCheck">
+		<DefName>CheckCarpetDark</DefName>
+		<Label>dark check carpet</Label>
+		<RenderPrecedence>181</RenderPrecedence>
+		<Description>Checkered carpet in light black - or is dark white?</Description>
+    <color>(85,85,85)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetCheck">
+		<DefName>CheckCarpetBlack</DefName>
+		<Label>black check carpet</Label>
+		<RenderPrecedence>180</RenderPrecedence>
+		<Description>A check carpet in brooding black.</Description>
+    <color>(35,35,35)</color>
+	</TerrainDef>
+
+  
+  
+	<!-- Wool carpet - all colours -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	
+	<TerrainDef ParentName="FloorBaseCarpetWool">
+		<DefName>WoolCarpetRed</DefName>
+		<Label>red wool carpet</Label>
+		<RenderPrecedence>179</RenderPrecedence>
+		<Description>Wool carpeting in a lovely rose hue.</Description>
+    <color>(125,50,60)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetWool">
+		<DefName>WoolCarpetOrange</DefName>
+		<Label>orange wool carpet</Label>
+		<RenderPrecedence>178</RenderPrecedence>
+		<Description>Wool carpeting in a vivid marigold tint.</Description>
+    <color>(155,95,80)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetWool">
+		<DefName>WoolCarpetYellow</DefName>
+		<Label>yellow wool carpet</Label>
+		<RenderPrecedence>177</RenderPrecedence>
+		<Description>Summery yellow-coloured wool carpet.</Description>
+    <color>(170,160,90)</color>
+	</TerrainDef>
+  
+	<TerrainDef ParentName="FloorBaseCarpetWool">
+		<DefName>WoolCarpetCream</DefName>
+		<Label>cream wool carpet</Label>
+		<RenderPrecedence>176</RenderPrecedence>
+		<Description>Wool carpet in a creamy off-white shade.</Description>
+    <color>(220,215,200)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBaseCarpetWool">
+		<DefName>WoolCarpetGreen</DefName>
+		<Label>green wool carpet</Label>
+		<RenderPrecedence>175</RenderPrecedence>
+		<Description>Naturalistic-feeling green wool carpet.</Description>
+    <color>(95,110,65)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetWool">
+		<DefName>WoolCarpetTurquoise</DefName>
+		<Label>turquoise wool carpet</Label>
+		<RenderPrecedence>174</RenderPrecedence>
+		<Description>A soothing blue-green wool carpet.</Description>
+    <color>(60,105,105)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBaseCarpetWool">
+		<DefName>WoolCarpetBlue</DefName>
+		<Label>blue wool carpet</Label>
+		<RenderPrecedence>173</RenderPrecedence>
+		<Description>Toe-hugging plush wool carpet in a cool blue color.</Description>
+    <color>(30,70,130)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetWool">
+		<DefName>WoolCarpetPurple</DefName>
+		<Label>purple wool carpet</Label>
+		<RenderPrecedence>172</RenderPrecedence>
+		<Description>Wool carpet in a majestic purple shade.</Description>
+    <color>(75,55,115)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetWool">
+		<DefName>WoolCarpetWhite</DefName>
+		<Label>white wool carpet</Label>
+		<RenderPrecedence>171</RenderPrecedence>
+		<Description>White wool carpet. Like snow, but warmer!</Description>
+    <color>(240,240,240)</color>
+	</TerrainDef>
+  
+	<TerrainDef ParentName="FloorBaseCarpetWool">
+		<DefName>WoolCarpetDark</DefName>
+		<Label>dark wool carpet</Label>
+		<RenderPrecedence>170</RenderPrecedence>
+		<Description>Wool carpet in light black - or is dark white?</Description>
+    <color>(85,85,85)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBaseCarpetWool">
+		<DefName>WoolCarpetBlack</DefName>
+		<Label>black wool carpet</Label>
+		<RenderPrecedence>169</RenderPrecedence>
+		<Description>Wool carpet in brooding black.</Description>
+    <color>(35,35,35)</color>
+	</TerrainDef>
+
+</TerrainDefs>

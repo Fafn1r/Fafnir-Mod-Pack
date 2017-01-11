@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+  <!--============================ Resource rocks ===============================-->
+  
+  
+  <ThingDef ParentName="RockBase">
+    <defName>MineableSalt</defName>
+    <label>compacted salt</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(199,201,197)</color>
+      <colorTwo>(240,242,237)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+    </statBases>
+    <description>Salt compacted over time..</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkSalt</mineableThing>
+      <mineableYield>20</mineableYield>
+      <mineableScatterCommonality>1</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>5</min>
+        <max>10</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>ChunkSalt</defName>
+		<label>salt</label>
+		<description>Salt is used into preservation of foods.</description>
+		<graphicData>
+			<texPath>Things/Item/Salt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1</MarketValue>
+		      <Mass>0.05</Mass>
+	     </statBases>
+	    <ingestible>
+     		   <foodType>Processed</foodType>
+	        <preferability>NeverForNutrition</preferability>
+   		   <nutrition>0.01</nutrition>
+   	    </ingestible>
+	<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+  
+</ThingDefs>

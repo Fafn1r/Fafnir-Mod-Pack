@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>NeedHygiene</defName>
+    <workerClass>Hygiene.ThoughtWorker_NeedHygiene</workerClass>
+    <stages>
+      <li>
+        <label>squeaky clean</label>
+        <description>Just stepped out of the bath!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>dirty</label>
+        <description>I haven't washed myself in a while.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>very dirty</label>
+        <description>I feel gross, I need to clean myself.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+      <li>
+        <label>filthy</label>
+        <description>I'm constantly disgusted by my own unwashed body. I need to get clean right now.</description>
+        <baseMoodEffect>-25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

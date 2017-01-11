@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="PlayerFactionBasserello">
+    <homeIconPath>World/FactionHomes/DefaultHome</homeIconPath>
+    <homeIconColor>(255,220,84)</homeIconColor>
+  </FactionDef>
+  
+  <FactionDef Parent="PlayerFactionBasserello">
+    <defName>ApparelloColony</defName>
+    <label>community</label>
+    <description>Your own community.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Colonista</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <techLevel>Industrial</techLevel>
+    <backstoryCategory>Civil</backstoryCategory>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>Urban</li>
+      <li>Punk</li>
+      <li>Rural</li>
+
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  
+</Defs>

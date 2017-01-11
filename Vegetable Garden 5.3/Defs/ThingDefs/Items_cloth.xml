@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+	<!-- =========== bases =========== -->
+
+
+
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>RawCotton</defName>
+		<label>cotton fibre</label>
+		<description>Raw cotton. It can be spun into cloth or sold to a trader.</description>
+		<graphicData>
+			<texPath>Things/Item/RawCotton</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.016</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>4</DeteriorationRate>
+    </statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>RawFlax</defName>
+		<label>Raw flax</label>
+		<description>Raw flax. It can be spun into cloth or sold to a trader.</description>
+		<graphicData>
+			<texPath>Things/Item/RawFlax</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>3.75</MarketValue>
+      <Mass>0.015</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>4</DeteriorationRate>
+    </statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>RawDevilstrand</defName>
+		<label>Raw devilstrand</label>
+		<description>Raw devilstrand. It can be spun into cloth or sold to a trader.</description>
+		<graphicData>
+			<texPath>Things/Item/RawDevilstrand</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>6.4</MarketValue>
+      <Mass>0.016</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>4</DeteriorationRate>
+    </statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+  
+  <ThingDef ParentName="VG_ResourceBase">
+    <defName>HempCloth</defName>
+    <label>Hemp</label>
+    <description>Cloth woven from the stuff those guys are smoking who decided that wearing this was a good idea?.</description>
+    <graphicData>
+    <texPath>Things/Item/HempCloth</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <Color>(1,100,14)</Color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>3</MarketValue>
+      <Flammability>2.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+       <Mass>0.028</Mass>
+   </statBases>
+    <stuffProps>
+	<stuffAdjective>hemp</stuffAdjective>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <color>(1,100,14)</color>
+      <allowColorGenerators>false</allowColorGenerators>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>Cloth</defName>
+		<label>cloth</label>
+		<description>Cloth woven from organic fibers.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Cloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(162,157,152)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+		      <Mass>0.026</Mass>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(162,157,152)</color>
+			<allowColorGenerators>true</allowColorGenerators>
+			<statFactors>
+				<Beauty>1.3</Beauty>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Textiles</li>
+		</thingCategories>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<colorGeneratorInTraderStock Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>5</weight>
+					<only>RGBA(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<min>RGBA(0.3,0.3,0.3,1)</min>
+					<max>RGBA(0.9,0.9,0.9,1)</max>
+				</li>
+				<li>
+					<weight>5</weight>
+					<only>RGBA(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
+		</colorGeneratorInTraderStock>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>Synthread</defName>
+		<label>synthread</label>
+		<description>Spacer-tech synthetic fabric designed for making ordinary clothes. It is soft, light, strong, and insulates well.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Synthread</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>8</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1.5</DeteriorationRate>
+		      <Mass>0.025</Mass>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(174,219,228)</color>
+			<statOffsets>
+				<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+				<ArmorRating_Heat>0.03</ArmorRating_Heat>
+	<ArmorRating_Electric>0.03</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<Beauty>1.5</Beauty>
+				<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+				<ArmorRating_Sharp>1.65</ArmorRating_Sharp>
+				<ArmorRating_Heat>4.0</ArmorRating_Heat>
+				<ArmorRating_Electric>4.0</ArmorRating_Electric>
+				<Insulation_Cold>1.25</Insulation_Cold>
+				<Insulation_Heat>1.25</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Textiles</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>DevilstrandCloth</defName>
+		<label>devilstrand cloth</label>
+		<description>Fabric spun from microfibers extracted from silk-producing Devilstrand mushrooms. Very tough, but insulates no better than cloth.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Cloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(180,60,60)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>12</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1.5</DeteriorationRate>
+		     <Mass>0.032</Mass>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(180,60,60)</color>
+			<statOffsets>
+				<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+				<ArmorRating_Heat>0</ArmorRating_Heat>
+				<ArmorRating_Electric>0.05</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<Beauty>1.8</Beauty>
+				<WorkToMake>1.3</WorkToMake>
+				<ArmorRating_Blunt>1.3</ArmorRating_Blunt>
+				<ArmorRating_Sharp>2.0</ArmorRating_Sharp>
+				<ArmorRating_Heat>1</ArmorRating_Heat>
+				<ArmorRating_Electric>3</ArmorRating_Electric>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Textiles</li>
+		</thingCategories>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>Hyperweave</defName>
+		<label>hyperweave</label>
+		<description>High-tech nano-fibers woven into sheets. It is somewhat heavy, but is incredibly difficult to break. The secrets of its production are known only to the most advanced glitterworld cultures.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Hyperweave</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>16</MarketValue>
+			<Flammability>1.0</Flammability>
+		      <Mass>0.038</Mass>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(0,106,126)</color>
+			<statOffsets>
+				<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+				<ArmorRating_Heat>0.03</ArmorRating_Heat>
+			</statOffsets>
+			<statFactors>
+				<Beauty>2</Beauty>
+				<WorkToMake>1.8</WorkToMake>
+				<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
+				<ArmorRating_Sharp>4.0</ArmorRating_Sharp>
+				<ArmorRating_Heat>2.0</ArmorRating_Heat>
+				<ArmorRating_Electric>0</ArmorRating_Electric>
+				<Insulation_Cold>1.1</Insulation_Cold>
+				<Insulation_Heat>1.1</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Textiles</li>
+		</thingCategories>
+	</ThingDef>
+
+  <ThingDef ParentName="VG_ResourceBase">
+    <defName>Flaxcloth</defName>
+    <label>Linen Cloth</label>
+    <description>A fabric designed for making clothes. It is soft, light, and strong.</description>
+    <graphicData>
+      <texPath>Things/Item/linen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>6</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.5</DeteriorationRate>
+      <Mass>0.027</Mass>
+    </statBases>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <color>(204,153,255)</color>
+      <statOffsets>
+        <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+        <ArmorRating_Heat>0.00</ArmorRating_Heat>
+        <ArmorRating_Electric>0.00</ArmorRating_Electric>
+      </statOffsets>
+      <statFactors>
+        <ArmorRating_Blunt>2.0</ArmorRating_Blunt>
+        <ArmorRating_Sharp>2.0</ArmorRating_Sharp>
+        <ArmorRating_Heat>0</ArmorRating_Heat>
+        <ArmorRating_Electric>0</ArmorRating_Electric>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+  </ThingDef>
+
+
+  <ThingDef ParentName="VG_ResourceBase">
+    <defName>BleadedLeather</defName>
+    <label>blended leather</label>
+    <description>A piece of leather made from blending small pieces of leather.</description>
+    <graphicData>
+      <texPath>Things/Item/BlendedLeather</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>3</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.5</DeteriorationRate>
+      <Mass>0.029</Mass>
+    </statBases>
+    <stuffProps>
+      <categories>
+        <li>Leathery</li>
+      </categories>
+      <commonality>0.2</commonality>
+	<allowColorGenerators>true</allowColorGenerators>
+      <statFactors>
+        <ArmorRating_Blunt>1.25</ArmorRating_Blunt>
+        <ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+        <ArmorRating_Heat>1.5</ArmorRating_Heat>
+        <ArmorRating_Electric>4.0</ArmorRating_Electric>
+	  <Insulation_Cold>0.75</Insulation_Cold>
+	  <Insulation_Heat>0.75</Insulation_Heat>
+	  <MarketValue>1.2</MarketValue>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+
+</Resources>

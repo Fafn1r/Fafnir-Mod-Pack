@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>OSHA Compliance</name>
+  <author>ZorbaTHut</author>
+  <url>https://github.com/zorbathut/oshacompliance</url>
+  <description>Deters your colonists from standing in traps as they're being reset.</description>
+  <targetVersion>0.16.0</targetVersion>
+</ModMetaData>

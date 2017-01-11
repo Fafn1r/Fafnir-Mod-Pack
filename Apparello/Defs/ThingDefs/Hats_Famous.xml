@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+<!-- UNIQUE -->
+
+<!--Doom, Doom marine-->
+
+  <ThingDef ParentName="ApparelloRareBase">
+    <defName>Apparello_Doom</defName>
+    <label>Marine helmet</label>
+    <description>The B4D-455 class infantry helmet used by the marines during the incident at the Mars science facility. The production of these were since discontinued. A real relic of distant past</description>
+
+    <graphicData>
+      <texPath>Hats/Display/Doom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>400</MarketValue>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+      <PsychicSensitivity>-0.15</PsychicSensitivity>
+      <MentalBreakThreshold>-0.02</MentalBreakThreshold>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Doom</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.01</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Military</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+<!--Cave Story (Doukutsu Monogatari), Quote-->
+
+  <ThingDef ParentName="ApparelloRareBase">
+    <defName>Apparello_Quote</defName>
+    <label>War-engineer's Comm-link</label>
+	<description>Often referred to as redcaps. The war-engineers were in charge of keeping the supply lines up and running. 
+There's stories of one heroic Forward scout war-engineer crashlanding on a tunnelworld during a war in the local star system.. 
+Said engineer eventually escaped the planet after somehow managing to activate a nuclear device in the planet's core, which left the planet uninhabitable. 
+
+It is not known whether his tale of the Tunnelworld being under dictatorship of a powerhungry scientist was true or not.
+The ramblings about speedrunning through hell with his girlfriend on tow was big blow on his credibility.
+
+Only confirmed truth in whole story is that the tunnelworld did indeed blow up!
+	</description>
+
+    <graphicData>
+      <texPath>Hats/Display/Quote</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+      <GlobalLearningFactor>0.02</GlobalLearningFactor>
+      <FixBrokenDownBuildingFailChance>-0.25</FixBrokenDownBuildingFailChance>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Quote</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.01</commonality>
+      <tags>
+        <li>Outlander</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+
+
+<!-- Borderlands, Psycho -->    
+
+  <ThingDef ParentName="ApparelloRareBase">
+    <defName>Apparel_Psymask</defName>
+    <label>Psy Co. Gasmask™</label>
+	<description>The Psy Company's Gasmask has to be their most profiting product of all times. 
+It's built in vision sensor technology allowed the wearer to operate in thickest of toxic clouds and more importantly, survive.</description>
+
+    <graphicData>
+      <texPath>Hats/Display/Psymask</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>558</MarketValue>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracy>0.02</ShootingAccuracy>
+      <MoveSpeed>-0.02</MoveSpeed>
+      <ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Psymask</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.01</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Military</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+<!--Zorro, Zorro-->
+
+  <ThingDef ParentName="ApparelloRareBase">
+    <defName>Apparello_Zorro</defName>
+    <label>Wanderer's Hat and mask</label>
+    <description>This apparel is fashioned after the famed hat used by the legendary vigilante El Fox - 'En garde, noble foe! You cannot avoid justice- The vigilante justice!'</description>
+
+    <graphicData>
+      <texPath>Hats/Display/Zorro</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+      <Insulation_Heat>4</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.20</SocialImpact>
+      <MeleeHitChance>0.15</MeleeHitChance>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+        <li>Eyes</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Zorro</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.01</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Military</li>
+        <li>PersonalShield</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+<!-- Turtles, Footclan-->
+
+  <ThingDef ParentName="ApparelloRareBase">
+    <defName>Apparello_Footy</defName>
+    <label>Clan marked balaclava</label>
+    <description>Without proper methods of finding out, You'll be forever uncertain whether this balaclava is the real deal or not, But the marking on the forehead strongly suggests it indeed is a remnant of the ancient clan of fighters</description>
+
+    <graphicData>
+      <texPath>Hats/Display/Footy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+      <Insulation_Heat>4</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeHitChance>0.20</MeleeHitChance>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Footy</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.01</commonality>
+      <tags>
+        <li>Outlander</li>
+        <li>Military</li>
+        <li>PersonalShield</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Not so UNIQUE -->
+
+
+
+
+<!-- Mass Effect, Tali Zorah -->  
+
+  <ThingDef ParentName="ApparelloMakeableBase">
+    <defName>Apparello_Meffect</defName>
+    <label>Fancy Enviro-Headgear</label>
+    <description>Warm and cozy and most importantly airtight headgear designed for deep-space explorers to combat the hostile bacteria on uninhabitable planets.</description>
+
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>ApparelloResearchLPOW</researchPrerequisite>
+    </recipeMaker>
+
+    <costList>
+      <Apparello_Meffectwo>1</Apparello_Meffectwo>
+      <DevilstrandCloth>20</DevilstrandCloth>
+    </costList>
+
+    <graphicData>
+      <texPath>Hats/Display/Tali</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <thingCategories>
+      <li>Apparellohats</li>
+      <li>ApparelloSocialSet</li>
+    </thingCategories>
+
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <WorkToMake>7000</WorkToMake>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Electric>-1</ArmorRating_Electric>
+      <Insulation_Heat>5</Insulation_Heat>
+      <Insulation_Cold>-5</Insulation_Cold>
+      <MaxHitPoints>200</MaxHitPoints>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.15</SocialImpact>
+      <MoveSpeed>-0.02</MoveSpeed>
+      <PsychicSensitivity>-0.05</PsychicSensitivity>
+      <MentalBreakThreshold>-0.01</MentalBreakThreshold>
+      <GlobalLearningFactor>0.02</GlobalLearningFactor>
+      <ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Tali</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.2</commonality>
+      <tags>
+        <li>Spacer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+<!-- cowless -->
+  <ThingDef ParentName="ArmorMakeableBase">
+    <defName>Apparello_Meffectwo</defName>
+    <label>Enviro-Headgear</label>
+    <description>Mostly airtight headgear designed for deep-space explorers to combat the hostile bacteria on uninhabitable planets.</description>
+
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>ApparelloResearchLPOW</researchPrerequisite>
+    </recipeMaker>
+
+    <costList>
+      <Component>4</Component>
+      <Plasteel>90</Plasteel>
+    </costList>
+
+    <graphicData>
+      <texPath>Hats/Display/Envy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <thingCategories>
+      <li>Apparellohats</li>
+    </thingCategories>
+
+    <statBases>
+      <MarketValue>1700</MarketValue>
+      <WorkToMake>7000</WorkToMake>
+      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <ArmorRating_Electric>-1</ArmorRating_Electric>
+      <Insulation_Heat>3</Insulation_Heat>
+      <Insulation_Cold>-3</Insulation_Cold>
+      <MaxHitPoints>200</MaxHitPoints>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.02</MoveSpeed>
+      <PsychicSensitivity>-0.05</PsychicSensitivity>
+      <MentalBreakThreshold>-0.01</MentalBreakThreshold>
+      <GlobalLearningFactor>0.01</GlobalLearningFactor>
+      <ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Envy</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.2</commonality>
+      <tags>
+        <li>Spacer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+<!-- MDK, Kurt Hectic -->  
+
+  <ThingDef ParentName="ApparelloMakeableBase">
+    <defName>Apparello_Kurt</defName>
+    <label>Aerocowl MkII</label>
+    <description>The ingenious aerodynamic miracle by Kurtech. It's not really a cowl anymore but at this point it's too late to rename it.</description>
+
+    <costList>
+      <Component>2</Component>
+      <Apparello_Kurtlite>1</Apparello_Kurtlite>
+      <Plasteel>40</Plasteel>
+    </costList>
+
+    <recipeMaker>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+    </recipeMaker>
+
+    <graphicData>
+      <texPath>Hats/Display/Kurt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <thingCategories>
+      <li>Apparellohats</li>
+      <li>ApparelloSetRachel</li>
+    </thingCategories>
+
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <WorkToMake>7000</WorkToMake>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <Insulation_Cold>-4</Insulation_Cold>
+      <MaxHitPoints>310</MaxHitPoints>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.02</MoveSpeed>
+      <ShootingAccuracy>0.15</ShootingAccuracy>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Kurt</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.2</commonality>
+      <tags>
+        <li>Crafted</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+<!-- MDK, Kurt Hectic -->  
+
+  <ThingDef ParentName="ArmorelloMakeableBase">
+    <defName>Apparello_Kurtlite</defName>
+    <label>Aerocowl</label>
+    <description>The ingenious aerodynamic miracle by Kurtech.</description>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchLPOW</researchPrerequisite>
+    </recipeMaker>
+
+    <costList>
+      <Component>4</Component>
+      <Plasteel>60</Plasteel>
+    </costList>
+
+    <graphicData>
+      <texPath>Hats/Display/KurtLight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <thingCategories>
+      <li>Apparellohats</li>
+      <li>ApparelloSetRachel</li>
+    </thingCategories>
+
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <WorkToMake>7000</WorkToMake>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.02</MoveSpeed>
+      <ShootingAccuracy>0.02</ShootingAccuracy>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/KurtLight</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.2</commonality>
+      <tags>
+        <li>Military</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+
+<!-- Mega Man, Mega Man -->
+
+  <ThingDef ParentName="ApparelloVanillaBase">
+    <defName>Apparello_Rockman</defName>
+    <label>Shuttle pilot helm</label>
+	<description>All the famous shuttle pilots wore one of these, some were more adorned than others. This is one of the more practical and basic ones.</description>
+
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchDesign</researchPrerequisite>
+    </recipeMaker>
+
+    <graphicData>
+      <texPath>Hats/Display/Rockman</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <thingCategories>
+      <li>Apparellohats</li>
+    </thingCategories>
+
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>-0.2</PsychicSensitivity>
+      <GlobalLearningFactor>0.01</GlobalLearningFactor>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Rockman</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.2</commonality>
+      <tags>
+        <li>Spacer</li>
+        <li>Outlander</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+
+<!-- Mad Max beyond thuderdome, Raider -->
+
+  <ThingDef ParentName="ArmorelloMakeableBase">
+    <defName>Apparello_Raideroos</defName>
+    <label>Outlanders scrap mask</label>
+	<description>Something pulled seemingly straight out of junkyard, it has it's own kind of charm to it</description>
+
+    <costList>
+      <Cloth>10</Cloth>
+    </costList>
+    <costStuffCount>40</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+
+    <graphicData>
+      <texPath>Hats/Display/Raideroos</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <thingCategories>
+      <li>Apparellohats</li>
+    </thingCategories>
+
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.19</ArmorRating_Sharp>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>-0.20</SocialImpact>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Raideroos</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.2</commonality>
+      <tags>
+        <li>Military</li>
+        <li>Outlander</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+
+
+
+<!-- League of Legends, Master Yi (Close enough, anyway) -->    
+
+  <ThingDef ParentName="ArmorelloMakeableBase">
+    <defName>Apparello_Yi</defName>
+    <label>Infiltrator Headgear</label>
+    <description>Equipped with very intricate target tracking system and pathing analyzer. The headgear was very popular among assassins and spies of all kinds. It's a real shame the type of batteries used in this haven't been manufactured in decades. However! someone has rigged this thing up to power from kinetic dynamo</description>
+
+    <costList>
+      <Component>6</Component>
+    </costList>
+    <costStuffCount>75</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+
+    <recipeMaker>
+      <researchPrerequisite>ApparelloResearchLPOW</researchPrerequisite>
+    </recipeMaker>
+
+    <graphicData>
+      <texPath>Hats/Display/Yipot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <thingCategories>
+      <li>Apparellohats</li>
+      <li>ApparelloSetRachel</li>
+    </thingCategories>
+
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+      <ArmorRating_Electric>-1</ArmorRating_Electric>
+      <MaxHitPoints>300</MaxHitPoints>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.05</AimingDelayFactor>
+      <ShootingAccuracy>0.05</ShootingAccuracy>
+      <MoveSpeed>-0.02</MoveSpeed>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+        <li>Eyes</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Yipot</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.2</commonality>
+      <tags>
+        <li>Spacer</li>
+        <li>Military</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+<!-- Psychonauts, Razputin -->     
+
+  <ThingDef ParentName="ApparelloMakeableBase">
+    <defName>Apparello_Raz</defName>
+    <label>Joywirer's Cap</label>
+    <description>Hardened leather and snazzy goggles. it's almost as if you could pilot your way through someone's psyche with this cap equipped!</description>
+
+    <costList>
+      <Steel>2</Steel>
+      <Component>2</Component>
+      <Apparello_Rockman>1</Apparello_Rockman>
+    </costList>
+
+    <graphicData>
+      <texPath>Hats/Display/Raznaut</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <thingCategories>
+      <li>Apparellohats</li>
+      <li>ApparelloMedicalSet</li>
+    </thingCategories>
+
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+      <ArmorRating_Electric>-1</ArmorRating_Electric>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>-0.40</PsychicSensitivity>
+      <HealingQuality>0.08</HealingQuality>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Hats/Raznaut</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>0.2</commonality>
+      <tags>
+        <li>Outlander</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>4</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ThingDefs>

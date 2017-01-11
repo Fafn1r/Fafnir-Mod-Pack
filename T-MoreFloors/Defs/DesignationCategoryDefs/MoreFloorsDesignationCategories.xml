@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignationCategoryDef>
+    <DefName>MoreFloors</DefName>
+    <label>more floors</label>
+    <description>More flooring.</description>
+    <order>195</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_SmoothFloor</li>
+      <li>Designator_RemoveFloor</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+</Defs>

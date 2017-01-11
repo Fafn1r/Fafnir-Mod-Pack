@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DesignationCategoryDef>
+		<defName>OrdersShutdownAll</defName>
+		<label>OrdersShutdownAll(shouldbehidden)</label>
+		<description>Designate specific interactions with specific things.</description>
+		<order>9000</order>
+		<specialDesignatorClasses>
+			<li>ShutdownAll.Designator_Shutdown</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+</Defs>

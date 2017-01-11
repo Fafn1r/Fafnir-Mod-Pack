@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ThingDefs>
+   
+   <ThingDef ParentName="BenchBase"> <!-- I really wonder if anyone ever reads this -->
+      <DefName>BionicWorkbench</DefName>
+      <label>bionic workbench</label>
+      <ThingClass>Building_WorkTable</ThingClass>
+      <Description>A workbench equipped for the production of simple to high tech bionics.</Description>
+      <graphicData>
+         <texPath>Things/Building/Production/TableBionic</texPath>
+         <graphicClass>Graphic_Multi</graphicClass>
+         <drawSize>(3.5,1.5)</drawSize>
+      </graphicData>
+      <CostList>
+         <Steel>150</Steel>
+         <Component>3</Component>
+      </CostList>
+      <AltitudeLayer>Building</AltitudeLayer>
+      <fillPercent>0.5</fillPercent>
+      <useHitPoints>True</useHitPoints>
+      <statBases>
+         <WorkToMake>1500</WorkToMake>
+         <MaxHitPoints>200</MaxHitPoints>
+         <Flammability>1.0</Flammability>
+         <Cleanliness>-2</Cleanliness>
+      </statBases>
+      <minifiedDef>MinifiedFurniture</minifiedDef>
+      <Size>(3,1)</Size>
+      <DesignationCategory>Production</DesignationCategory>
+      <Passability>PassThroughOnly</Passability>
+      <pathCost>70</pathCost>
+      <hasInteractionCell>True</hasInteractionCell>
+      <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+      <surfaceType>Item</surfaceType>
+      <recipes>
+         <li>CreateSimpleProstheticLeg</li>
+         <li>CreateSimpleProstheticArm</li>
+         <li>CreateSimpleProstheticHand</li>
+         <li>CreateSimpleProstheticFoot</li>
+         <li>CreateArtificialPelvis</li>
+         <li>CreateArtificialNose</li>
+         <li>CreatePowerArm</li>
+         <li>CreateBionicArm</li>
+         <li>CreateBionicLeg</li>
+         <li>CreateBionicHand</li>
+         <li>CreateBionicFoot</li>
+         <li>CreateBionicSpine</li>
+         <li>CreateBionicEye</li>
+         <li>CreateBionicEar</li>
+         <li>CreateBionicJaw</li>
+      </recipes>
+      <inspectorTabs>
+         <li>ITab_Bills</li>
+      </inspectorTabs>
+      <comps>
+         <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <startElectricalFires>true</startElectricalFires>
+            <basePowerConsumption>450</basePowerConsumption>
+         </li>
+         <li Class="CompProperties_Flickable"/>
+         <li Class="CompProperties_AffectedByFacilities">
+            <linkableFacilities>
+               <li>ToolCabinet</li>
+            </linkableFacilities>
+         </li>
+         <li Class="CompProperties_Breakdownable"/>
+      </comps>
+      <building>
+         <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      </building>
+      <constructEffect>ConstructMetal</constructEffect>
+      <researchPrerequisites>
+         <li>SimpleProsthetics</li>
+      </researchPrerequisites>
+      <placeWorkers>
+         <li>PlaceWorker_ShowFacilitiesConnections</li>
+      </placeWorkers>
+   </ThingDef>
+   
+</ThingDefs>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--================================ fill parts ======================================-->
+  
+  <ThingDef ParentName="sd_spaceship_shippart_Base">
+    <defName>sd_spaceship_fill1x1_b</defName>
+    <label>ship fill 1x1</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>sd_spaceship/fillparts/sd_spaceship_fill1x1_b</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A structural beam around which a ship can be constructed.</description>
+    <size>(1,1)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>30</Plasteel>
+      <Component>2</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationHotkey>Misc1</designationHotkey>
+	<staticSunShadowHeight>1.0</staticSunShadowHeight>
+	<selectable>true</selectable>
+	<rotatable>true</rotatable>
+  </ThingDef>
+  
+  <ThingDef ParentName="sd_spaceship_shippart_Base">
+    <defName>sd_spaceship_fill2x2_s</defName>
+    <label>ship fill 2x2</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>sd_spaceship/fillparts/sd_spaceship_fill2x2_s</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>6000</WorkToBuild>
+      <MaxHitPoints>400</MaxHitPoints>
+	  <Mass>4000</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A structural beam around which a ship can be constructed.</description>
+    <size>(2,2)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <costList>
+      <Steel>160</Steel>
+      <Plasteel>120</Plasteel>
+      <Component>8</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <designationHotkey>Misc1</designationHotkey>
+	<selectable>true</selectable>
+	<rotatable>true</rotatable>
+  </ThingDef>
+  
+  <ThingDef ParentName="sd_spaceship_shippart_Base">
+    <defName>sd_spaceship_fill2x3_s</defName>
+    <label>ship fill 2x3</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>sd_spaceship/fillparts/sd_spaceship_fill2x3_s</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>6000</WorkToBuild>
+      <MaxHitPoints>400</MaxHitPoints>
+	  <Mass>6000</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A structural beam around which a ship can be constructed.</description>
+    <size>(2,3)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <costList>
+      <Steel>240</Steel>
+      <Plasteel>180</Plasteel>
+      <Component>12</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <designationHotkey>Misc1</designationHotkey>
+	<selectable>true</selectable>
+	<rotatable>true</rotatable>
+  </ThingDef>
+
+</Defs>

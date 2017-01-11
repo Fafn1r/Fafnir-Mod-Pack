@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>BathingDisturbed</defName>
+	<durationDays>0.5</durationDays>
+	<stackLimit>4</stackLimit>
+	<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>disturbed bathing</label>
+        <description>I don't like getting pulled out of the bath.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>SeenBathing</defName>
+	<durationDays>1</durationDays>
+	<stackLimit>5</stackLimit>
+	<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>observed bathing</label>
+        <description>Someone saw me while I was cleaning myself! I want some privacy next time.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>ColdBath</defName>
+	<durationDays>0.5</durationDays>
+	<stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>cold bath</label>
+        <description>I had to bathe in the cold. We really need some heaters.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+	<ThoughtDef>
+		<defName>OutsideBath</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>bathed outside</label>
+				<description>I had to bathe outdoors without any protection from the elements.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Bathed</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>bathed by another person</label>
+				<description>I had to be bathed by someone else. It was humiliating.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Bathing</defName>
+		<workerClass>Hygiene.ThoughtWorker_Bathing</workerClass>
+		<stages>
+			<li>
+				<label>bathing</label>
+				<description>I'm currently bathing, so I'm supposed to be naked.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>bathing</label>
+				<description>I'm currently bathing, so I'm supposed to be naked.</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

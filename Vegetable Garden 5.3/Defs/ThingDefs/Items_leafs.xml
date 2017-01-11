@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+	<!-- =========== bases =========== -->
+
+
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>RawSteelLeaf</defName>
+		<label>steel shrooms</label>
+		<description>steel shrooms can be smelted into steel ore.</description>
+		<graphicData>
+			<texPath>Things/Veg/SteelLeaf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.5</MarketValue>
+   		     <Mass>0.05</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>RawPlasteelLeaf</defName>
+		<label>plasteel bulb chunks</label>
+		<description>plasteel bulb chunks can be smelted into plasteel ore.</description>
+		<graphicData>
+			<texPath>Things/Veg/PlasteelLeaf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.5</MarketValue>
+   		     <Mass>0.05</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>RawGoldLeaf</defName>
+		<label>gold fern leaves</label>
+		<description>gold fern leaves can be smelted into gold ore.</description>
+		<graphicData>
+			<texPath>Things/Veg/GoldLeaf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.5</MarketValue>
+	   		     <Mass>0.01</Mass>
+	</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>RawSilverLeaf</defName>
+		<label>silver flower petals</label>
+		<description>silver flower petals can be smelted into silver.</description>
+		<graphicData>
+			<texPath>Things/Veg/SilverLeaf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>.25</MarketValue>
+   		     <Mass>0.01</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="VG_ResourceBase">
+		<defName>RawUraniumLeaf</defName>
+		<label>uranium root bulbs</label>
+		<description>uranium root bulbs can be smelted into uranium.</description>
+		<graphicData>
+			<texPath>Things/Veg/UraniumLeaf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+   		     <Mass>0.01</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+
+</Resources>

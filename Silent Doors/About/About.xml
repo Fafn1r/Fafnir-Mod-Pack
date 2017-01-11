@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Silent Doors</name>
+  <author>Neonod</author>
+  <url></url>
+  <targetVersion>0.16.1393</targetVersion>
+  <description>
+  Removes the sounds from doors.
+  </description>
+</ModMetaData>

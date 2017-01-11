@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_WashingBubble</defName>
+    <graphicData>
+      <texPath>Things/Mote/Bubble</texPath>
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <mote>
+      <fadeInTime>0.08</fadeInTime>
+      <solidTime>1.4</solidTime>
+      <fadeOutTime>1.5</fadeOutTime>
+    </mote>
+  </ThingDef>
+  
+</Defs>

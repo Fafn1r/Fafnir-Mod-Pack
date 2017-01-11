@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenarioDef>
+    <defName>CrashLanding_Easy</defName>
+    <label>Crashlanding Easy</label>
+    <description>Your colonists awake in their cryptosleep sarcophagi to the sound of blaring sirens and ripping metal. Luckily, your crew manages to reach the escape pods before the ship is torn apart.\n\nSome time later, they land on this unknown rimworld.\n\nThe other colonists from on board the ship will be crash-landing hard with little chance of surviving the impact.</description>
+    <scenario>
+      <summary>Three lucky survivors, trying to save the other crew and supplies.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+        </li>
+
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+          <visible>false</visible>
+        </li>
+
+        <!-- Player pawns modifiers -->
+        <li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>0.5</chance>
+          <hediff>CryptosleepSickness</hediff>
+          <severityRange>
+            <min>1</min>
+            <max>1</max>
+          </severityRange>
+        </li>
+        
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>CrashLandingEasyStartDialog</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        
+        <!-- Crashlanding starting event-->
+	<li Class="ScenPart_CreateIncident">
+		<def>CreateIncident</def>
+		<incident>Main_BigShipCrashIncident</incident>
+	</li>
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+  
+  <ScenarioDef>
+    <defName>CrashLanding_Hard</defName>
+    <label>Crashlanding Hard</label>
+    <description>Your colonists awake in their cryptosleep sarcophagi to the sound of blaring sirens and ripping metal. Nobody is able to reach the escape pods before the ship is torn apart.\n\nAll of your colonists will crash-land hard on this unknown rimworld.\n\nThere is a chance that all of your colonists will land incapacitated or dead. You'll need to accept the fate of your crew.\n\nNot all crash landings have a happy ending.</description>
+    <scenario>
+      <summary>Every colonist will be wounded. Try to save them and the rest of the crew.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+        </li>
+
+        <!-- Player starting stuff spawn method-->
+        <li Class="CrashLanding.ScenPart_PlayerPawnsArriveMethodCrash">
+          <def>PlayerPawnsArriveMethodCrash</def>
+          <visible>false</visible>
+        </li>
+
+        <!-- Crashlanding starting event-->
+	<li Class="ScenPart_CreateIncident">
+		<def>CreateIncident</def>
+		<incident>Main_BigShipCrashIncident</incident>
+	</li>
+
+        <!-- Player pawns modifiers -->
+        <li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>0.5</chance>
+          <hediff>CryptosleepSickness</hediff>
+          <severityRange>
+            <min>1</min>
+            <max>1</max>
+          </severityRange>
+        </li>
+        
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>CrashLandingHardStartDialog</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        
+      </parts>
+    </scenario>
+  </ScenarioDef>
+  
+</Defs>

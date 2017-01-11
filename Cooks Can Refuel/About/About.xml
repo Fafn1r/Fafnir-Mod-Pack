@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Cooks Can Refuel</name>
+	<author>Dingo</author>
+	<url>https://ludeon.com/forums/index.php?topic=26077</url>
+	<targetVersion>0.16.0</targetVersion>
+	<description>Allows cooks to refuel any fuel-powered food production workstations (including those added by mods).
+
+No more chefs being lazy because your haulers are busy!</description>
+</ModMetaData>

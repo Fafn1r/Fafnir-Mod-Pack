@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <sd_spaceship_wing1x1_left.label>Raumschiff Flügel</sd_spaceship_wing1x1_left.label>
+  <sd_spaceship_wing1x1_left.description>Das strukturell tragende Bauteil eines Raumschiffes. Alle weiteren Bauteile werden hier angefügt.</sd_spaceship_wing1x1_left.description>
+
+  <sd_spaceship_wing1x1_right.label>Raumschiff Flügel</sd_spaceship_wing1x1_right.label>
+  <sd_spaceship_wing1x1_right.description>Das strukturell tragende Bauteil eines Raumschiffes. Alle weiteren Bauteile werden hier angefügt.</sd_spaceship_wing1x1_right.description>
+
+  <sd_spaceship_wing1x2_left.label>Raumschiff Flügel</sd_spaceship_wing1x2_left.label>
+  <sd_spaceship_wing1x2_left.description>Das strukturell tragende Bauteil eines Raumschiffes. Alle weiteren Bauteile werden hier angefügt.</sd_spaceship_wing1x2_left.description>
+
+  <sd_spaceship_wing1x2_right.label>Raumschiff Flügel</sd_spaceship_wing1x2_right.label>
+  <sd_spaceship_wing1x2_right.description>Das strukturell tragende Bauteil eines Raumschiffes. Alle weiteren Bauteile werden hier angefügt.</sd_spaceship_wing1x2_right.description>
+
+  
+  
+  <sd_spaceship_fill1x1_b.label>Raumschiff Träger</sd_spaceship_fill1x1_b.label>
+  <sd_spaceship_fill1x1_b.description>Das strukturell tragende Bauteil eines Raumschiffes. Alle weiteren Bauteile werden hier angefügt.</sd_spaceship_fill1x1_b.description>
+
+  <sd_spaceship_fill2x2_s.label>Raumschiff Träger</sd_spaceship_fill2x2_s.label>
+  <sd_spaceship_fill2x2_s.description>Das strukturell tragende Bauteil eines Raumschiffes. Alle weiteren Bauteile werden hier angefügt.</sd_spaceship_fill2x2_s.description>
+  
+  <sd_spaceship_fill2x3_s.label>Raumschiff Träger</sd_spaceship_fill2x3_s.label>
+  <sd_spaceship_fill2x3_s.description>Das strukturell tragende Bauteil eines Raumschiffes. Alle weiteren Bauteile werden hier angefügt.</sd_spaceship_fill2x3_s.description>
+  
+  
+  
+  <sd_spaceship_cockpit.label>Raumschiff Kryokapsel</sd_spaceship_cockpit.label>
+  <sd_spaceship_cockpit.description>Eine Kryoschlafkapsel, die gegen die Widrigkeiten eines Raumfluges schützt. Sie kann eine Person im Kryoschlaf über Jahrhunderte hinweg versorgen und übersteht sogar einen Atmosphären-Wiedereintritt.</sd_spaceship_cockpit.description>
+
+  <sd_spaceship_1x2engine.label>Raumschiff Triebwerk</sd_spaceship_1x2engine.label>
+  <sd_spaceship_1x2engine.description>Ein Antimaterie-Triebwerk, welches in der Lage ist, ein Raumschiff in den Orbit und auf eine interstellare Route zu bringen.</sd_spaceship_1x2engine.description>
+
+</LanguageData>

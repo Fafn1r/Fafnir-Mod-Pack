@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef Name="FloorPlasteel">
+    <defName>FloorPlasteel</defName>
+		<Label>plasteel floor</Label>
+  	<Description>This high-tech floor never gets dirty and so is suitable for use in sterile environments. It's also pleasing to look at (in a slick, space-age sort of way). Expensive and takes a considerable time to build.</Description>
+		<texturePath>Terrain/Surfaces/PlasteelFloor</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <Cleanliness>0.6</Cleanliness>
+      <WorkToBuild>1200</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <CostList>
+      <Plasteel>8</Plasteel>
+      <Component>1</Component>
+    </CostList>
+    <designationCategory>MoreFloors</designationCategory>
+    <Fertility>0</Fertility>
+	  <constructEffect>ConstructMetal</constructEffect>
+    <AcceptTerrainSourceFilth>False</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+</TerrainDefs>
