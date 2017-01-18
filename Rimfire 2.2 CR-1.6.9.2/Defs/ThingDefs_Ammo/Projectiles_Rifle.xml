@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+	
+	<!-- ==================== .56-56 Spencer rimfire ========================== -->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_5656Spencer</defName>
+		<label>.56-56 Spencer rimfire bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<speed>63</speed>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetration>0.15</armorPenetration>
+			<dropsCasings>true</dropsCasings>
+		</projectile>
+	</ThingDef>
+ 
+</ThingDefs>

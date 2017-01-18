@@ -25,7 +25,7 @@
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>RawFertilizer</harvestedThingDef>
       <harvestDestroys>true</harvestDestroys>
-      <harvestYield>45</harvestYield>
+      <harvestYield>40</harvestYield>
       <sowTags>
         <li>Composter</li>
       </sowTags>
@@ -37,6 +37,8 @@
         <max>1.05</max>
       </visualSizeRange>
     </plant>
+    <minLight>-999</minLight>
+    <maxLight>999</maxLight>
    </ThingDef>
 
 

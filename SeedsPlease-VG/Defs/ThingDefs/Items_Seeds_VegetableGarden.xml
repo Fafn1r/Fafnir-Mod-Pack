@@ -5,7 +5,7 @@
     <label>snowbeet seeds</label>
     <plant>PlantSnowbeet</plant>
     <seed>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -15,7 +15,7 @@
     <label>eggplant seeds</label>
     <plant>Planteggplant</plant>
     <seed>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -27,7 +27,7 @@
     <seed>
       <harvestFactor>1.0</harvestFactor>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -38,7 +38,7 @@
     <plant>Plantpumpkin</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.5</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -48,7 +48,7 @@
     <label>squash seeds</label>
     <plant>Plantsquash</plant>
     <seed>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -59,7 +59,7 @@
     <plant>Plantbean</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -70,7 +70,7 @@
     <plant>PlantTomato</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.5</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -80,7 +80,7 @@
     <label>carrot seeds</label>
     <plant>PlantCarrot</plant>
     <seed>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -91,7 +91,7 @@
     <plant>Plantmushroom</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.5</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -102,7 +102,7 @@
     <plant>Plantoats</plant>
     <seed>
       <seedFactor>2.0</seedFactor>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -112,7 +112,7 @@
     <label>wheat seeds</label>
     <plant>Plantwheat</plant>
     <seed>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.1</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -124,7 +124,7 @@
     <seed>
       <harvestFactor>1.5</harvestFactor>
       <seedFactor>0.5</seedFactor>
-      <baseChance>0.25</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.1</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -134,7 +134,7 @@
     <plant>Plantpineapple</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.1</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -145,7 +145,7 @@
     <plant>Plantgrape</plant>
     <seed>
       <seedFactor>2.0</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.05</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -156,7 +156,7 @@
     <plant>Plantcloudberry</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -167,7 +167,7 @@
     <plant>Plantgooseberry</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -178,7 +178,7 @@
     <plant>PlantAgave</plant>
     <seed>
       <harvestFactor>1.5</harvestFactor>
-      <seedFactor>0.75</seedFactor>
+      <seedFactor>1</seedFactor>
       <baseChance>0.25</baseChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -189,7 +189,7 @@
     <plant>PlantStrawberry</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -200,7 +200,7 @@
     <plant>Plantblueberry</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -210,7 +210,7 @@
     <label>watermelon seeds</label>
     <plant>Plantwatermelon</plant>
     <seed>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.1</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -220,7 +220,7 @@
     <label>cocoa seeds</label>
     <plant>Plantcocoa</plant>
     <seed>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.1</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -231,7 +231,7 @@
     <plant>Plantsugarcane</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.1</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -241,7 +241,7 @@
     <label>tea seeds</label>
     <plant>PlantTea</plant>
     <seed>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -251,7 +251,7 @@
     <label>coffee seeds</label>
     <plant>PlantCoffee</plant>
     <seed>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -261,7 +261,7 @@
     <label>aloe seeds</label>
     <plant>Plantaloe</plant>
     <seed>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -272,7 +272,7 @@
     <plant>PlantFlax</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -283,7 +283,7 @@
     <plant>PlantSteelLeaf</plant>
     <seed>
       <seedFactor>2.0</seedFactor>
-      <baseChance>0.4</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.1</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -297,7 +297,7 @@
     </statBases>
     <seed>
       <seedFactor>2.0</seedFactor>
-      <baseChance>0.4</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.1</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -311,7 +311,7 @@
     </statBases>
     <seed>
       <seedFactor>2.0</seedFactor>
-      <baseChance>0.45</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.15</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -325,7 +325,7 @@
     </statBases>
     <seed>
       <seedFactor>2.0</seedFactor>
-      <baseChance>0.35</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.15</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -339,7 +339,7 @@
     </statBases>
     <seed>
       <seedFactor>2.5</seedFactor>
-      <baseChance>0.35</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.15</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -349,7 +349,7 @@
     <label>bamboo seeds</label>
     <plant>Plantbamboo</plant>
     <seed>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.1</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -360,7 +360,7 @@
     <plant>PlantTobacco</plant>
     <seed>
       <seedFactor>1.5</seedFactor>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
       <harvestFactor>1.0</harvestFactor>
     </seed>
@@ -372,7 +372,7 @@
     <plant>PlantTreeWeepingWillow</plant>
     <seed>
       <seedFactor>2.0</seedFactor>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -382,7 +382,7 @@
     <label>treejapanesemaple seeds</label>
     <plant>PlantTreeJapaneseMaple</plant>
     <seed>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.1</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -392,7 +392,7 @@
     <label>treeironwood seeds</label>
     <plant>PlantTreeIronwood</plant>
     <seed>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -403,7 +403,7 @@
     <plant>PlantTreeCherryBlossom</plant>
     <seed>
       <seedFactor>2.0</seedFactor>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -414,7 +414,7 @@
     <plant>PlantTreeCamellia</plant>
     <seed>
       <seedFactor>2.0</seedFactor>
-      <baseChance>0.5</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -425,7 +425,7 @@
     <plant>PlantTreeAcacia</plant>
     <seed>
       <seedFactor>2.0</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>
@@ -436,7 +436,7 @@
     <plant>PlantTreePalm</plant>
     <seed>
       <seedFactor>2.0</seedFactor>
-      <baseChance>0.75</baseChance>
+      <baseChance>1</baseChance>
       <extraChance>0.25</extraChance>
     </seed>
   </SeedsPlease.SeedDef>

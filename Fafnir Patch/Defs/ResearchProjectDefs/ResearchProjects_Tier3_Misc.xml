@@ -13,8 +13,8 @@
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>7</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>14</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -27,8 +27,8 @@
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>6</researchViewX>
-		<researchViewY>3</researchViewY>
+		<researchViewX>14</researchViewX>
+		<researchViewY>0.5</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -41,8 +41,8 @@
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>8</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>16</researchViewX>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -55,8 +55,8 @@
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>6</researchViewX>
-		<researchViewY>0.8</researchViewY>
+		<researchViewX>16</researchViewX>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -69,8 +69,8 @@
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>7</researchViewX>
-		<researchViewY>1.6</researchViewY>
+		<researchViewX>16</researchViewX>
+		<researchViewY>4</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -84,8 +84,8 @@
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>6</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewX>16</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -98,8 +98,8 @@
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>8</researchViewX>
-		<researchViewY>2</researchViewY>
+		<researchViewX>18</researchViewX>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 
 </Defs>

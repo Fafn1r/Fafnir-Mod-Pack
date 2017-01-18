@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+    <ThingCategoryDef>
+		<defName>Ammo500SW</defName>
+		<label>.500 S&amp;W</label>
+		<parent>AmmoPistols</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>Ammo22LR</defName>
+		<label>.22 LR</label>
+		<parent>AmmoPistols</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>Ammo5656Spencer</defName>
+		<label>.56-56 Spencer</label>
+		<parent>AmmoRifles</parent>
+	</ThingCategoryDef>
+
+</ThingCategoryDefs>

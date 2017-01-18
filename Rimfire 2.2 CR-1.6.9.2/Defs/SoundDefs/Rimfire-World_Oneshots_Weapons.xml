@@ -1,0 +1,1945 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DefPackage>
+
+  <SoundDef>
+    <defName>RF_ShotDeringer</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Deringer</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.95</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_Volume" />          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>0.002739727</x>                  
+                    <y>-0.0003322214</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>0.5020548</x>                  
+                    <y>0.2428572</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>1.003425</x>                  
+                    <y>0.7172757</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterEcho">
+            <delay>10</delay>          
+            <decayRatio>0.1013514</decayRatio>          
+            <wetMix>0.1621623</wetMix>          
+            <dryMix>1</dryMix>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotTaurus</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/TaurusJudge</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.95</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotModelFivehundred</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Model500</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.95</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotRugerMkIII</defName> 
+    <context>MapOnly</context>  
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/RugerMkIII</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.952174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotAT2K</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/SphinxAT2000</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.952174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-6000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>0.17</decayTime>            
+              <decayHFRatio>0.1</decayHFRatio>            
+              <reflectionsLevel>-1204</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>207</reverbLevel>            
+              <reverbDelay>0.002</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotVektorCP1</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/VektorCP1</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10673.99</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-6000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>0.17</decayTime>            
+              <decayHFRatio>0.1</decayHFRatio>            
+              <reflectionsLevel>-1204</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>207</reverbLevel>            
+              <reverbDelay>0.002</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotParaOrdnanceP1445</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/ParaOrdnanceP1445</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-3300</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.54</decayHFRatio>            
+              <reflectionsLevel>-2560</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-229</reverbLevel>            
+              <reverbDelay>0.088</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>79</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotTokarevTT</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/TokarevTT</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.97</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>0</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.65</decayTime>            
+              <decayHFRatio>1.5</decayHFRatio>            
+              <reflectionsLevel>-1363</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1153</reverbLevel>            
+              <reverbDelay>0.012</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotTec9</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Tec9</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>1.35</min>        
+          <max>1.5</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-1000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_Shot93R</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/93R</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>30</min>        
+          <max>30</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>0</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.65</decayTime>            
+              <decayHFRatio>1.5</decayHFRatio>            
+              <reflectionsLevel>-1363</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1153</reverbLevel>            
+              <reverbDelay>0.012</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotTMP</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/TMP</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.952174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-4000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>0.3</decayTime>            
+              <decayHFRatio>0.1</decayHFRatio>            
+              <reflectionsLevel>-1831</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1630</reverbLevel>            
+              <reverbDelay>0.03</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotSkorpion</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Skorpion</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.002391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotMPFiveKPDW</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/MP5K</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.002391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotVector</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Vector</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10404.39</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotGreaseGun</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/GreaseGun</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotCFourHafdasa</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/TokarevTT</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotCX4</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/CX4</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>35</min>        
+          <max>35</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9852174</min>        
+          <max>1.022391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterHighPass">
+            <cutoffFrequency>50</cutoffFrequency>          
+            <highpassResonanceQ>1</highpassResonanceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2500</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.21</decayHFRatio>            
+              <reflectionsLevel>-2780</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1434</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>27</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotRugerPC9</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/RugerPC9</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.8915218</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10269.59</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotTenTwentyTwo</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/10-22</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.9515218</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-3300</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.54</decayHFRatio>            
+              <reflectionsLevel>-2560</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-229</reverbLevel>            
+              <reverbDelay>0.088</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>79</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotUSC</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/HKUSC</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9515218</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>13369.93</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotSpencer</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Spencer</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>55</min>        
+          <max>55</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9815218</min>        
+          <max>1.012391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2500</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.21</decayHFRatio>            
+              <reflectionsLevel>-2780</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1434</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>27</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotStriker</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Striker</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>45</min>        
+          <max>50</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.093522</min>        
+          <max>1.142391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterHighPass">
+            <cutoffFrequency>50</cutoffFrequency>          
+            <highpassResonanceQ>1</highpassResonanceQ>
+          </li>        
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>8786.824</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotAA12</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/AA12</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>35</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10808.78</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2500</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.21</decayHFRatio>            
+              <reflectionsLevel>-2780</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1434</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>27</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotHKCaws</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Striker</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.84</min>        
+          <max>0.9</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterEcho">
+            <delay>43.71624</delay>          
+            <decayRatio>0.304054</decayRatio>          
+            <wetMix>0.304054</wetMix>          
+            <dryMix>0.9999999</dryMix>
+          </li>        
+          <li Class="SoundFilterHighPass">
+            <cutoffFrequency>50</cutoffFrequency>          
+            <highpassResonanceQ>1</highpassResonanceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>      
+        <sustainAttack>0.1</sustainAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotGalil</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Galil</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>33</min>        
+          <max>35</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.8915218</min>        
+          <max>0.942391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>9460.814</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterHighPass">
+            <cutoffFrequency>50</cutoffFrequency>          
+            <highpassResonanceQ>1</highpassResonanceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>0</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.65</decayTime>            
+              <decayHFRatio>1.5</decayHFRatio>            
+              <reflectionsLevel>-1363</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1153</reverbLevel>            
+              <reverbDelay>0.012</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotXM8</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/XM8</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>35</min>        
+          <max>37</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.16522</min>        
+          <max>1.2391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>0</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.65</decayTime>            
+              <decayHFRatio>1.5</decayHFRatio>            
+              <reflectionsLevel>-1363</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1153</reverbLevel>            
+              <reverbDelay>0.012</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotAK47</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/AK47</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.16522</min>        
+          <max>1.2391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2500</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.21</decayHFRatio>            
+              <reflectionsLevel>-2780</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1434</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>27</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotMosin</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Mosin</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>55</min>        
+          <max>55</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.952174</min>        
+          <max>1.022391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotWA2K</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/WA2K</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>78</min>        
+          <max>78</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-3300</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.54</decayHFRatio>            
+              <reflectionsLevel>-2560</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-229</reverbLevel>            
+              <reverbDelay>0.088</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>79</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotScout</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Scout</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>45</min>        
+          <max>49</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-4000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>0.3</decayTime>            
+              <decayHFRatio>0.1</decayHFRatio>            
+              <reflectionsLevel>-1831</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1630</reverbLevel>            
+              <reverbDelay>0.03</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotDragunovSVD</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/DragunovSVD</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>60</min>        
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2500</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.21</decayHFRatio>            
+              <reflectionsLevel>-2780</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1434</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>27</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotARFifty</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/ArmaliteAR50</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>42</min>        
+          <max>43</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>12830.74</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>0</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.65</decayTime>            
+              <decayHFRatio>1.5</decayHFRatio>            
+              <reflectionsLevel>-1363</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1153</reverbLevel>            
+              <reverbDelay>0.012</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotMDFifty</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/MD50</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>49</min>        
+          <max>49</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-6000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>0.17</decayTime>            
+              <decayHFRatio>0.1</decayHFRatio>            
+              <reflectionsLevel>-1204</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>207</reverbLevel>            
+              <reverbDelay>0.002</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotHecateII</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/UltimaRatioHecateII</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>42</min>        
+          <max>42</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>        
+          <li Class="SoundFilterHighPass">
+            <cutoffFrequency>50</cutoffFrequency>          
+            <highpassResonanceQ>1</highpassResonanceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>0</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.65</decayTime>            
+              <decayHFRatio>1.5</decayHFRatio>            
+              <reflectionsLevel>-1363</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1153</reverbLevel>            
+              <reverbDelay>0.012</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotMEightyTwo</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/M82</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>60</min>        
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterHighPass">
+            <cutoffFrequency>50</cutoffFrequency>          
+            <highpassResonanceQ>1</highpassResonanceQ>
+          </li>        
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>0</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.65</decayTime>            
+              <decayHFRatio>1.5</decayHFRatio>            
+              <reflectionsLevel>-1363</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1153</reverbLevel>            
+              <reverbDelay>0.012</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotM134</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/M134</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>45</min>        
+          <max>50</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.859152</min>        
+          <max>1.950424</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotType73LMG</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Type96LMG</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>55</min>        
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-4000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>0.3</decayTime>            
+              <decayHFRatio>0.1</decayHFRatio>            
+              <reflectionsLevel>-1831</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1630</reverbLevel>            
+              <reverbDelay>0.03</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotMadsenLMG</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/MadsenLMG</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>45</min>        
+          <max>45</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.952174</min>        
+          <max>1.02391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>0</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.65</decayTime>            
+              <decayHFRatio>1.5</decayHFRatio>            
+              <reflectionsLevel>-1363</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1153</reverbLevel>            
+              <reverbDelay>0.012</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotMGSixty</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/MG60</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>60</min>        
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.952174</min>        
+          <max>1.02391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-4000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>0.3</decayTime>            
+              <decayHFRatio>0.1</decayHFRatio>            
+              <reflectionsLevel>-1831</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1630</reverbLevel>            
+              <reverbDelay>0.03</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotMilkorMGL</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/MilkorMGL</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9152174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotRPG7</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/RPG7</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40</min>        
+          <max>40</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.952174</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-2000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>1.49</decayTime>            
+              <decayHFRatio>0.5</decayHFRatio>            
+              <reflectionsLevel>-2466</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1926</reverbLevel>            
+              <reverbDelay>0.1</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>21</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RF_ShotCarlGustaf</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxVoices>2</maxVoices>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/CarlGustaf</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>60</min>        
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.952174</min>        
+          <max>1.02391</max>
+        </pitchRange>      
+        <filters>
+          <li Class="SoundFilterReverb">
+            <baseSetup>
+              <dryLevel>0</dryLevel>            
+              <room>-1000</room>            
+              <roomHF>-4000</roomHF>            
+              <roomLF>0</roomLF>            
+              <decayTime>0.3</decayTime>            
+              <decayHFRatio>0.1</decayHFRatio>            
+              <reflectionsLevel>-1831</reflectionsLevel>            
+              <reflectionsDelay>0</reflectionsDelay>            
+              <reverbLevel>-1630</reverbLevel>            
+              <reverbDelay>0.03</reverbDelay>            
+              <hfReference>5000</hfReference>            
+              <lfReference>250</lfReference>            
+              <diffusion>100</diffusion>            
+              <density>100</density>
+            </baseSetup>
+          </li>
+        </filters>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</DefPackage>

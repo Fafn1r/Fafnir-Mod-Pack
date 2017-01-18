@@ -128,7 +128,7 @@ namespace Psychology
             {
                 r.SetTicksAtZero(0);
             }
-            if (r.TicksAtZero > 1000)
+            if (r.TicksAtZero > 1000 && (!pawn.RaceProps.Humanlike || !pawn.story.traits.HasTrait(TraitDefOfPsychology.Insomniac)))
             {
                 float mtb;
                 if (r.TicksAtZero < 15000)

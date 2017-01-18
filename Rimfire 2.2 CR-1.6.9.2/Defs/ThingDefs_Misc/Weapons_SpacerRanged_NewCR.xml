@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<!-- ==================== Charge pistol =========================== -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_ChargePistol</defName>
+		<label>charge pistol</label>
+		<description>Charged-shot energy/projectile pistol. Weak and short range, but quick.</description>
+		<graphicData>
+			<texPath>Things/Release/ChargePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>23300</WorkToMake>
+			<Mass>1.60</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.35</ShotSpread>
+				<SwayFactor>2.10</SwayFactor>
+				<Bulk>3.00</Bulk>
+				<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>10</Steel>
+			<Plasteel>20</Plasteel>
+			<Component>3</Component>
+		</costList>
+		<generateCommonality>0.35</generateCommonality>
+		<techLevel>Spacer</techLevel>
+		<thingCategories>
+			<li>ChargeGuns</li>
+		</thingCategories>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.15</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_6x24mmCharged</projectileDef>
+				<warmupTime>0.30</warmupTime>
+				<range>12</range>
+				<soundCast>ShotChargeRifle</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>15</magazineSize>
+				<reloadTicks>180</reloadTicks>
+				<ammoSet>AmmoSet_6x24mmCharged</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>MedievalShields_ValidSidearm</li>
+			<li>CR_Sidearm</li>
+		</weaponTags>
+	</ThingDef>
+
+	<!-- ==================== Charge SMG ============================== -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_ChargeSMG</defName>
+		<label>charge SMG</label>
+		<description>Charged-shot energy/projectile SMG. Short range, low power, high rate of fire. Very quick to aim and fire.</description>
+		<graphicData>
+			<texPath>Things/Release/ChargeSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>37500</WorkToMake>
+			<Mass>4.60</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>0.35</ShotSpread>
+				<SwayFactor>1.90</SwayFactor>
+				<Bulk>6.00</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>30</Plasteel>
+			<Component>5</Component>
+		</costList>
+		<generateCommonality>0.3</generateCommonality>
+		<techLevel>Spacer</techLevel>
+		<thingCategories>
+			<li>ChargeGuns</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.25</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_6x24mmCharged</projectileDef>
+				<warmupTime>0.90</warmupTime>
+				<range>20</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>ShotChargeRifle</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTicks>240</reloadTicks>
+				<ammoSet>AmmoSet_6x24mmCharged</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+
+	<!-- ==================== Charge shotgun ========================== -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_ChargeShotgun</defName>
+		<label>charge shotgun</label>
+		<description>Charged-shot energy/projectile shotgun. Deadly, but short range.</description>
+		<graphicData>
+			<texPath>Things/Release/ChargeShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>35400</WorkToMake>
+			<Mass>4.50</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.75</ShotSpread>
+				<SwayFactor>1.40</SwayFactor>
+				<Bulk>8.00</Bulk>
+				<RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>40</Plasteel>
+			<Component>6</Component>
+		</costList>
+		<generateCommonality>0.1</generateCommonality>
+		<techLevel>Spacer</techLevel>
+		<thingCategories>
+			<li>ChargeGuns</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.47</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_6x24mmCharged</projectileDef>
+				<warmupTime>0.5</warmupTime>
+				<range>18</range>
+				<soundCast>ShotChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>15</magazineSize>
+				<reloadTicks>240</reloadTicks>
+				<ammoSet>AmmoSet_6x24mmCharged</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>AdvancedGun</li>
+		</weaponTags>
+	</ThingDef>
+
+	<!-- ==================== Charge sniper =========================== -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_ChargeSniper</defName>
+		<label>charge sniper rifle</label>
+		<description>Charged-shot energy/projectile sniper. Long range, great accuracy and power.</description>
+		<graphicData>
+			<texPath>Things/Release/ChargeSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>54200</WorkToMake>
+			<Mass>5.30</Mass>
+				<AimEfficiency>1.25</AimEfficiency>
+				<ShotSpread>0.04</ShotSpread>
+				<SwayFactor>2.09</SwayFactor>
+				<Bulk>9.92</Bulk>
+				<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>45</Plasteel>
+			<Component>8</Component>
+		</costList>
+		<generateCommonality>0.2</generateCommonality>
+		<techLevel>Spacer</techLevel>
+		<thingCategories>
+			<li>ChargeGuns</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_6x24mmCharged</projectileDef>
+				<warmupTime>1.6</warmupTime>
+				<range>100</range>
+				<soundCast>ShotChargeRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_6x24mmCharged</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>AdvancedGun</li>
+		</weaponTags>
+	</ThingDef>
+
+</ThingDefs>

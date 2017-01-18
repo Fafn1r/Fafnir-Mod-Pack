@@ -60,7 +60,7 @@ namespace Psychology
         {
             if (pawn.pather != null && pawn.pather.nextCell.GetDoor(pawn.Map) != null)
             {
-                Building_Door d = pawn.pather.lastPathedTargetPosition.GetDoor(pawn.Map);
+                Building_Door d = pawn.pather.nextCell.GetDoor(pawn.Map);
                 if (pawn.health.hediffSet.HasHediff(HediffDefOfPsychology.Saboteur) & !d.HoldOpen && !pawn.Drafted && Rand.Value < 0.05f)
                 {
                     d.HoldOpenInt(true);

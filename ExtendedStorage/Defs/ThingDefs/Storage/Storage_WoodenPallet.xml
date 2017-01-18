@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <!--============================== Storage ===========================-->
+
+  <ExtendedStorage.ESdef ParentName="BuildingBase">
+    <defName>Storage_WoodenPallet</defName>
+    <label>Wooden Pallet</label>
+    <thingClass>ExtendedStorage.Building_ExtendedStorage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/WoodenPalletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawsize>2,1</drawsize>
+    </graphicData>
+    <maxStorage>600</maxStorage>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>780</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <description>Haulers carry materials here for storage.</description>
+    <size>(2,1)</size>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <killedLeavings>
+      <ChunkSlagSteel>3</ChunkSlagSteel>
+    </killedLeavings>
+    <filthLeaving>BuildingRubble</filthLeaving>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+            <li>Manufactured</li>
+            <li>PlantMatter</li>
+            <li>Drugs</li>
+          </categories>
+          <thingDefs>
+            <li>MortarShell</li>
+            <li>Hay</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <tickerType>Normal</tickerType>
+    <designationCategory>Furniture</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+  </ExtendedStorage.ESdef>
+
+</Buildings>

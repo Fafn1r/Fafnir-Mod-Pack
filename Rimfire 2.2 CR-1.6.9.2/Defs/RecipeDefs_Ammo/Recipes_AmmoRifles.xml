@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_5656SpencerRimfire</defName>
+		<label>make .56-56 Spencer rimfire cartridge x500</label>
+		<description>Craft 500 .56-56 Spencer rimfire cartridges.</description>
+		<jobString>Making .56-56 Spencer rimfire cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_5656SpencerRimfire>500</Ammo_5656SpencerRimfire>
+		</products>
+	</RecipeDef>
+	
+</RecipeDefs>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+	
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Combat_Realism.BulletCR</thingClass>
+		<label>bullet</label>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile Class="Combat_Realism.ProjectilePropertiesCR"/>
+	</ThingDef>
+	
+	<!-- ==================== .22 LR ========================== -->
+	
+	<ThingDef Name="Base22LRBullet" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<speed>68</speed>
+			<dropsCasings>true</dropsCasings>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="Base22LRBullet">
+		<defName>Bullet_22LR_FMJ</defName>
+		<label>.22 LR bullet (FMJ)</label>
+		<projectile>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetration>0.25</armorPenetration>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="Base22LRBullet">
+		<defName>Bullet_22LR_HP</defName>
+		<label>.22 LR bullet (HP)</label>
+		<projectile>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetration>0.2</armorPenetration>
+		</projectile>
+	</ThingDef>
+	
+	<!-- ==================== .500 S&W ========================== -->
+	
+	<ThingDef Name="Base500SWBullet" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<speed>82</speed>
+			<dropsCasings>true</dropsCasings>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="Base500SWBullet">
+		<defName>Bullet_500SW_FMJ</defName>
+		<label>.500 S&amp;W Magnum bullet (FMJ)</label>
+		<projectile>
+			<damageAmountBase>17</damageAmountBase>
+			<armorPenetration>0.35</armorPenetration>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="Base500SWBullet">
+		<defName>Bullet_500SW_HP</defName>
+		<label>.500 S&amp;W Magnum bullet (HP)</label>
+		<projectile>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetration>0.275</armorPenetration>
+		</projectile>
+	</ThingDef>
+	
+</ThingDefs>

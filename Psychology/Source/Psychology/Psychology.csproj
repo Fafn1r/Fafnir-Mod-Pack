@@ -52,6 +52,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alert_Homesick.cs" />
+    <Compile Include="Alert_CliqueMembers.cs" />
+    <Compile Include="Alert_Individuality.cs" />
     <Compile Include="Detour\_Building_Door.cs" />
     <Compile Include="Detour\_PawnUIOverlay.cs" />
     <Compile Include="Detour\_SocialCardUtility.cs" />

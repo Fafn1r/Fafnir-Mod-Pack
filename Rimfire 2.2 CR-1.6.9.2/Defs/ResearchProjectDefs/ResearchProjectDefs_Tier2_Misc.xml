@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>RF_SmallRockets</defName>
+		<label>small rockets</label>
+		<description>Allows you to assemble RPG launchers: multi-shot assault weapons that pack a decent punch.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Machining</li>
+		</prerequisites>
+		<researchViewX>16</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>RF_AntiMateriel</defName>
+		<label>antimateriel weapons</label>
+		<description>Allows you to craft high calibre rifles which deal extra damage to buildings and ignore armour.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>RF_PlasteelGuns</li>
+		</prerequisites>
+		<researchViewX>14</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>RF_PlasteelGuns</defName>
+		<label>plasteel gun assembly</label>
+		<description>Allows integration of plasteel gun parts for creation of such weapons as the automatic shotgun, military rifle and the modern SMG. Required for researching antimateriel weaponry.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Machining</li>
+		</prerequisites>
+		<researchViewX>13</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

@@ -13,17 +13,14 @@ namespace Psychology
         public override bool TryExecute(IncidentParms parms)
         {
             Map map = (Map)parms.target;
-            List<Pawn> list = (from p in map.mapPawns.AllPawnsSpawned
-                               where p.RaceProps.Humanlike && p.Faction.IsPlayer
-                               select p).ToList();
-            if (list.Count == 0)
+            Pawn pawn = map.mapPawns.FreeColonistsSpawned.RandomElement();
+            if (pawn == null)
             {
                 return false;
             }
-            Pawn pawn = list.RandomElement();
-            List<Pawn> enemies = (from p in map.mapPawns.AllPawnsSpawned
-                               where p.RaceProps.Humanlike && p.Faction.IsPlayer && p != pawn && p.relations.OpinionOf(pawn) < -20 && pawn.relations.OpinionOf(p) < -20
-                                     select p).ToList();
+            List<Pawn> enemies = (from p in map.mapPawns.FreeColonistsSpawned
+                                  where p != pawn && p.relations.OpinionOf(pawn) < -20 && pawn.relations.OpinionOf(p) < -20
+                                  select p).ToList();
             if (enemies.Count == 0)
             {
                 return false;

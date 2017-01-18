@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ==================== .56-56 Spencer rimfire ========================== -->
+
+	<Combat_Realism.AmmoSetDef>
+		<defName>AmmoSet_5656Spencer</defName>
+		<label>.56-56 Spencer rimfire</label>
+		<ammoTypes>
+			<li>Ammo_5656SpencerRimfire</li>
+		</ammoTypes>
+	</Combat_Realism.AmmoSetDef>
+	
+	<!-- ==================== .22 LR ========================== -->
+
+	<Combat_Realism.AmmoSetDef>
+		<defName>AmmoSet_22LR</defName>
+		<label>.22 LR</label>
+		<ammoTypes>
+			<li>Ammo_22LR_FMJ</li>
+			<li>Ammo_22LR_HP</li>
+		</ammoTypes>
+	</Combat_Realism.AmmoSetDef>
+	
+	<!-- ==================== .500 S&W Magnum ========================== -->
+
+	<Combat_Realism.AmmoSetDef>
+		<defName>AmmoSet_500SW</defName>
+		<label>.500 S&amp;W Magnum</label>
+		<ammoTypes>
+			<li>Ammo_500SW_FMJ</li>
+			<li>Ammo_500SW_HP</li>
+		</ammoTypes>
+	</Combat_Realism.AmmoSetDef>
+	
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+ 
+	<ResearchProjectDef>
+		<defName>DermalRegenerator</defName>
+		<label>dermal regeneration</label>
+		<description>All those scars and lacerations can be easily healed given we can acquire the materials needed to build a regenerator.</description>
+		<baseCost>1200</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>24</researchViewX>
+    <researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

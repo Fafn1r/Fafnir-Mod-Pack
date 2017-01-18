@@ -37,12 +37,12 @@
       <li>
         <label>stifled individuality</label>
         <description>Most of the colony wears the exact same things. It's creepy, and I want to express my individuality.</description>
-        <baseMoodEffect>-10</baseMoodEffect>
+        <baseMoodEffect>-8</baseMoodEffect>
       </li>
       <li>
         <label>stifled individuality</label>
         <description>Everyone here wears the exact same things! It's deeply unsettling, and I want to express my individuality.</description>
-        <baseMoodEffect>-15</baseMoodEffect>
+        <baseMoodEffect>-12</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

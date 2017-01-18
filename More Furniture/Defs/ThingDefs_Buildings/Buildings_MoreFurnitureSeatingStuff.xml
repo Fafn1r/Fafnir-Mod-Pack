@@ -49,7 +49,7 @@
 
 <!--====================== bench ======================-->  
 
-  <ThingDef ParentName="FurnitureBase">
+  <ThingDef ParentName="ArtableFurnitureBase">
     <defName>Bench</defName>
     <label>bench</label>
     <graphicData>
@@ -86,7 +86,7 @@
       <li>Woody</li>
       <li>Stony</li>
     </stuffCategories>
-    <costStuffCount>20</costStuffCount>
+    <costStuffCount>25</costStuffCount>
     <pathCost>30</pathCost>
     <fillPercent>0.30</fillPercent>
     <building>

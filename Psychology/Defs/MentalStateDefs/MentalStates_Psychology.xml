@@ -36,27 +36,6 @@
     <intensity>Extreme</intensity>
   </MentalBreakDef>
   
-  <MentalStateDef ParentName="BaseMentalState">
-    <defName>PsychologyBerserk</defName>
-    <stateClass>MentalState_Berserk</stateClass>
-    <label>berserk</label>
-    <category>Aggro</category>
-    <moodRecoveryThought>Catharsis</moodRecoveryThought>
-    <blockNormalThoughts>true</blockNormalThoughts>
-    <nameColor>(0.9,0.2,0.5)</nameColor>
-    <beginLetterLabel>berserk</beginLetterLabel>
-    <beginLetter>{0} has gone berserk!</beginLetter>
-    <beginLetterType>BadUrgent</beginLetterType>
-    <maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
-    <recoveryMessage>{0}'s berserk rage has come to an end.</recoveryMessage>
-    <baseInspectLine>Mental state: Berserk</baseInspectLine>
-    <stateEffecter>Berserk</stateEffecter>
-    <tale>MentalStateBerserk</tale>
-    <recoverFromSleep>true</recoverFromSleep>
-    <recoverFromDowned>true</recoverFromDowned>
-    <unspawnedCanDo>true</unspawnedCanDo>
-  </MentalStateDef>
-  
   <MentalBreakDef>
     <defName>Sadism_Bloodlust</defName>
     <mentalState>Sadism</mentalState>
@@ -76,7 +55,7 @@
   <MentalBreakDef>
     <defName>Sadism_Brawler</defName>
     <mentalState>Sadism</mentalState>
-    <baseCommonality>0.25</baseCommonality>
+    <baseCommonality>0.5</baseCommonality>
     <intensity>Extreme</intensity>
 	<requiredTrait>Brawler</requiredTrait>
   </MentalBreakDef>
@@ -103,6 +82,7 @@
     <maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
     <recoveryMessage>{0}'s cruel frenzy has come to an end.</recoveryMessage>
     <baseInspectLine>Mental state: Sadism</baseInspectLine>
+    <stateEffecter>Berserk</stateEffecter>
     <tale>MentalStateSadism</tale>
     <recoverFromSleep>true</recoverFromSleep>
     <recoverFromDowned>true</recoverFromDowned>

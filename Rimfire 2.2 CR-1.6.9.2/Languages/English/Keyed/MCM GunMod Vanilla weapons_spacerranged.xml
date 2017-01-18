@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Short_Gun_ChargeRifle>charge rifle</Short_Gun_ChargeRifle>
+	<Short_Bullet_ChargeRifle>charge rifle shot</Short_Bullet_ChargeRifle>
+	
+	<Long_Gun_ChargeRifle>R4 charge rifle</Long_Gun_ChargeRifle>
+	<Long_Bullet_ChargeRifle>R4 charge rifle shot</Long_Bullet_ChargeRifle>
+	
+	<AEight_Gun_ChargeRifle>R-4 charge rifle</AEight_Gun_ChargeRifle>
+	<AEight_Bullet_ChargeRifle>charge rifle shot</AEight_Bullet_ChargeRifle>
+	
+	<ANine_Gun_ChargeRifle>charge rifle</ANine_Gun_ChargeRifle>
+	<ANine_Bullet_ChargeRifle>charge rifle shot</ANine_Bullet_ChargeRifle>
+	
+	<Simple_Gun_ChargeRifle>charge rifle</Simple_Gun_ChargeRifle>
+	<Simple_Bullet_ChargeRifle>charge rifle shot</Simple_Bullet_ChargeRifle>
+
+</LanguageData>

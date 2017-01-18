@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DefPackage-SoundDef>
+
+  <SoundDef>
+    <defName>RF_TailGreaseGun</defName>  
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxVoices>2</maxVoices>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>      
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/GreaseGunTick</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>18.23529</min>        
+          <max>20.58824</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9082352</min>        
+          <max>1.091765</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</DefPackage-SoundDef>

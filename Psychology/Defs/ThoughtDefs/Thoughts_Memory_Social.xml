@@ -137,7 +137,7 @@
   <ThoughtDef>
     <defName>Clique</defName>
     <thoughtClass>Thought_MemorySocial</thoughtClass>
-    <durationDays>35.0</durationDays>
+    <durationDays>30.0</durationDays>
     <stackLimit>300</stackLimit>
     <stackLimitPerPawn>1</stackLimitPerPawn>
     <stages>
@@ -151,7 +151,7 @@
   <ThoughtDef>
     <defName>CliqueFollower</defName>
     <thoughtClass>Thought_MemorySocial</thoughtClass>
-    <durationDays>5.0</durationDays>
+    <durationDays>2.0</durationDays>
     <stackLimit>300</stackLimit>
     <stackLimitPerPawn>1</stackLimitPerPawn>
     <stages>

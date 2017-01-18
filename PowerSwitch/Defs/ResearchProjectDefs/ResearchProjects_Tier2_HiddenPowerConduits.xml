@@ -11,7 +11,8 @@
 		<prerequisites>
 			<li>Electricity</li>
 		</prerequisites>
-		<researchViewX>3</researchViewX>
+		<researchViewX>7</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 	
 </ResearchProjectDefs>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+	
+	<ThingCategoryDef>
+		<defName>GunModMCM_WeaponsMelee</defName>
+		<label>melee weapons</label>
+	</ThingCategoryDef>
+	
+		<ThingCategoryDef>
+			<defName>NeolithicMelee</defName>
+			<label>neolithic weaponry</label>
+			<parent>GunModMCM_WeaponsMelee</parent>
+		</ThingCategoryDef>
+	
+		<ThingCategoryDef>
+			<defName>MedievalMelee</defName>
+			<label>medieval weaponry</label>
+			<parent>GunModMCM_WeaponsMelee</parent>
+		</ThingCategoryDef>
+	
+		<ThingCategoryDef>
+			<defName>IndustrialMelee</defName>
+			<label>industrial weaponry</label>
+			<parent>GunModMCM_WeaponsMelee</parent>
+		</ThingCategoryDef>
+	
+		<ThingCategoryDef>
+			<defName>SpacerMelee</defName>
+			<label>spacer weaponry</label>
+			<parent>GunModMCM_WeaponsMelee</parent>
+		</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>GunModMCM_WeaponsRanged</defName>
+		<label>ranged weapons</label>
+	</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>GunModMCM_Grenades</defName>
+			<label>grenades</label>
+		</ThingCategoryDef>
+	
+		<ThingCategoryDef>
+			<defName>NeolithicRanged</defName>
+			<label>neolithic weaponry</label>
+			<parent>GunModMCM_WeaponsRanged</parent>
+		</ThingCategoryDef>
+	
+		<ThingCategoryDef>
+			<defName>MedievalRanged</defName>
+			<label>medieval weaponry</label>
+			<parent>GunModMCM_WeaponsRanged</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>IndustrialRanged</defName>
+			<label>industrial guns</label>
+			<parent>GunModMCM_WeaponsRanged</parent>
+		</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>Pistols</defName>
+				<label>pistols</label>
+				<parent>IndustrialRanged</parent>
+			</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>Revolvers</defName>
+				<label>revolvers</label>
+				<parent>IndustrialRanged</parent>
+			</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>Shotguns</defName>
+				<label>shotguns</label>
+				<parent>IndustrialRanged</parent>
+			</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>Carbines</defName>
+				<label>carbines</label>
+				<parent>IndustrialRanged</parent>
+			</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>Rifles</defName>
+				<label>rifles</label>
+				<parent>IndustrialRanged</parent>
+			</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>SniperRifles</defName>
+				<label>sniper rifles</label>
+				<parent>IndustrialRanged</parent>
+			</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>AntiMateriel</defName>
+				<label>anti materiel rifles</label>
+				<parent>IndustrialRanged</parent>
+			</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>SubMachineGuns</defName>
+				<label>submachine guns</label>
+				<parent>IndustrialRanged</parent>
+			</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>MachineGuns</defName>
+				<label>machine guns</label>
+				<parent>IndustrialRanged</parent>
+			</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>HeavyWeapons</defName>
+				<label>heavy weapons</label>
+				<parent>IndustrialRanged</parent>
+			</ThingCategoryDef>
+			
+		<ThingCategoryDef>
+			<defName>SpacerRanged</defName>
+			<label>spacer guns</label>
+			<parent>GunModMCM_WeaponsRanged</parent>
+		</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>ChargeGuns</defName>
+				<label>charge guns</label>
+				<parent>SpacerRanged</parent>
+			</ThingCategoryDef>
+			
+			<ThingCategoryDef>
+				<defName>MechanoidGuns</defName>
+				<label>mechanoid guns</label>
+				<parent>SpacerRanged</parent>
+			</ThingCategoryDef>
+			
+</ThingCategoryDefs>

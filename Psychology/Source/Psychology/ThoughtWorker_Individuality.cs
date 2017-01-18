@@ -22,6 +22,8 @@ namespace Psychology
                 return ThoughtState.Inactive;
             if (GenDate.MonthsPassed < 2)
                 return ThoughtState.Inactive;
+            if (!PsychologyBase.IndividualityOn())
+                return ThoughtState.Inactive;
             if (!lastTick.ContainsKey(p) || Find.TickManager.TicksGame - 250 > lastTick[p][0])
             {
                 Func<Apparel, bool> identical = delegate (Apparel x)

@@ -78,7 +78,7 @@
 			        <li>VG_PileofDirt</li>
 	     			 </thingDefs>
 	  		    </filter>
-				<count>20</count>
+				<count>30</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -91,7 +91,7 @@
 	      </specialFiltersToDisallow>
 	     </fixedIngredientFilter>
 		<products>
-			<RawFertilizer>30</RawFertilizer>
+			<RawFertilizer>40</RawFertilizer>
 		</products>
 		<workSkill>Crafting</workSkill>
   		<recipeUsers>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+	
+	<!-- ==================== .56-56 Spencer rimfire ========================== -->
+	
+	<ThingDef Class="Combat_Realism.AmmoDef" ParentName="SmallAmmoBase">
+		<defName>Ammo_5656SpencerRimfire</defName>
+		<label>.56-56 Spencer rimfire cartridge</label>
+		<description>Ancient cartridge for use in the Spencer repeating rifle.</description>
+		<tradeTags>
+			<li>CR_AutoEnableTrade</li>
+			<li>CR_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo5656Spencer</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Ammo/Rifle/FMJ</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.04</MarketValue>
+			<Mass>0.012</Mass>
+			<Bulk>0.025</Bulk>
+		</statBases>
+		<linkedProjectile>Bullet_5656Spencer</linkedProjectile>
+		<ammoClass>FullMetalJacket</ammoClass>
+	</ThingDef>
+
+</ThingDefs>

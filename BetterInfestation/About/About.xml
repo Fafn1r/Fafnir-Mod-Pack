@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Improved Infestation</name>
+	<author>twoski</author>
+	<url></url>
+	<targetVersion>0.16.0</targetVersion>
+	<description>This mod changes how the infestation event works:
+	
+- Hives can spawn almost anywhere. They can spawn in your home area, or elsewhere as long as there is a roof. They take between roughly 2 to 3.5 days to reproduce.
+
+- The maximum limit for hives is now reduced and will vary based on the difficulty level of the event occurring. For example, if the event happens early in the game, the hive limit will be around 5. Late game, the limit will be around 10. The number of initially spawned hives also increases with difficulty.
+
+- Once the hives reproduce and hit the current hive limit, the hives will periodically send out aggressive manhunter insects. If there are more hives, expect to see manhunter insects more frequently. Manhunter insects will attack both colonists and animals and attempt to drag them back to their hive.</description>
+</ModMetaData>

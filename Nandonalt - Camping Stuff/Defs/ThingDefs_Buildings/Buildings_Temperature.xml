@@ -8,10 +8,11 @@
     <description>Cooks meals and produces heat. Uses chemfuel as a fuel. As with all heat sources, it must be placed indoors so it has a closed space to heat.</description>    
     <category>Building</category>
     <graphicData>
-      <texPath>CampingStuff/PortableHeater</texPath>
+      <texPath>CampingStuff/primus</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawRotated>false</drawRotated>
       <allowFlip>false</allowFlip>
+	  
       <damageData>
         <rect>(0.2,0,0.6,0.1)</rect>
       </damageData>
@@ -60,6 +61,9 @@
       <li Class="CompProperties_HeatPusher">
         <heatPerSecond>21</heatPerSecond>
         <heatPushMaxTemperature>25</heatPushMaxTemperature>
+      </li>
+	    <li Class="CompProperties_FireOverlay">
+        <fireSize>0.1</fireSize>
       </li>
      <li>
         <compClass>CompGatherSpot</compClass>

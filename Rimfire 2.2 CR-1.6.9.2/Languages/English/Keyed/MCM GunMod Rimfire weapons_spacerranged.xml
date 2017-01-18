@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	
+	<Short_RF_Gun_ChargePistol>charge pistol</Short_RF_Gun_ChargePistol>
+	<Short_RF_Gun_ChargeShotgun>charge shotgun</Short_RF_Gun_ChargeShotgun>
+	<Short_RF_Gun_ChargeSMG>charge SMG</Short_RF_Gun_ChargeSMG>
+	<Short_RF_Gun_ChargeSniper>charge sniper</Short_RF_Gun_ChargeSniper>
+	<Short_RF_Bullet_ChargePistol>charge pistol shot</Short_RF_Bullet_ChargePistol>
+	<Short_RF_Bullet_ChargeShotgun>charge shotgun blast</Short_RF_Bullet_ChargeShotgun>
+	<Short_RF_Bullet_ChargeSMG>charge SMG shot</Short_RF_Bullet_ChargeSMG>
+	<Short_RF_Bullet_ChargeSniper>charge sniper shot</Short_RF_Bullet_ChargeSniper>
+	
+	<Long_RF_Gun_ChargePistol>P18 charge pistol</Long_RF_Gun_ChargePistol>
+	<Long_RF_Gun_ChargeShotgun>S12 charge shotgun</Long_RF_Gun_ChargeShotgun>
+	<Long_RF_Gun_ChargeSMG>S9 charge SMG</Long_RF_Gun_ChargeSMG>
+	<Long_RF_Gun_ChargeSniper>S50 charge sniper</Long_RF_Gun_ChargeSniper>
+	<Long_RF_Bullet_ChargePistol>P18 charge pistol shot</Long_RF_Bullet_ChargePistol>
+	<Long_RF_Bullet_ChargeShotgun>S12 charge shotgun blast</Long_RF_Bullet_ChargeShotgun>
+	<Long_RF_Bullet_ChargeSMG>S9 charge SMG shot</Long_RF_Bullet_ChargeSMG>
+	<Long_RF_Bullet_ChargeSniper>S50 charge sniper shot</Long_RF_Bullet_ChargeSniper>
+	
+	<AEight_RF_Gun_ChargePistol>P-18 charge pistol</AEight_RF_Gun_ChargePistol>
+	<AEight_RF_Gun_ChargeShotgun>S-12 charge shotgun</AEight_RF_Gun_ChargeShotgun>
+	<AEight_RF_Gun_ChargeSMG>S-9 charge SMG</AEight_RF_Gun_ChargeSMG>
+	<AEight_RF_Gun_ChargeSniper>S-50 charge sniper</AEight_RF_Gun_ChargeSniper>
+	<AEight_RF_Bullet_ChargePistol>P-18 charge pistol shot</AEight_RF_Bullet_ChargePistol>
+	<AEight_RF_Bullet_ChargeShotgun>S-12 charge shotgun blast</AEight_RF_Bullet_ChargeShotgun>
+	<AEight_RF_Bullet_ChargeSMG>S-9 charge SMG shot</AEight_RF_Bullet_ChargeSMG>
+	<AEight_RF_Bullet_ChargeSniper>S-50 charge sniper shot</AEight_RF_Bullet_ChargeSniper>
+	
+	<ANine_RF_Gun_ChargePistol>charge pistol</ANine_RF_Gun_ChargePistol>
+	<ANine_RF_Gun_ChargeShotgun>charge shotgun</ANine_RF_Gun_ChargeShotgun>
+	<ANine_RF_Gun_ChargeSMG>charge SMG</ANine_RF_Gun_ChargeSMG>
+	<ANine_RF_Gun_ChargeSniper>charge sniper</ANine_RF_Gun_ChargeSniper>
+	<ANine_RF_Bullet_ChargePistol>charge pistol shot</ANine_RF_Bullet_ChargePistol>
+	<ANine_RF_Bullet_ChargeShotgun>charge shotgun blast</ANine_RF_Bullet_ChargeShotgun>
+	<ANine_RF_Bullet_ChargeSMG>charge SMG shot</ANine_RF_Bullet_ChargeSMG>
+	<ANine_RF_Bullet_ChargeSniper>charge sniper</ANine_RF_Bullet_ChargeSniper>
+	
+	<Simple_RF_Gun_ChargePistol>charge pistol</Simple_RF_Gun_ChargePistol>
+	<Simple_RF_Gun_ChargeShotgun>charge shotgun</Simple_RF_Gun_ChargeShotgun>
+	<Simple_RF_Gun_ChargeSMG>charge SMG</Simple_RF_Gun_ChargeSMG>
+	<Simple_RF_Gun_ChargeSniper>charge sniper</Simple_RF_Gun_ChargeSniper>
+	<Simple_RF_Bullet_ChargePistol>charge pistol shot</Simple_RF_Bullet_ChargePistol>
+	<Simple_RF_Bullet_ChargeShotgun>charge shotgun blast</Simple_RF_Bullet_ChargeShotgun>
+	<Simple_RF_Bullet_ChargeSMG>charge SMG shot</Simple_RF_Bullet_ChargeSMG>
+	<Simple_RF_Bullet_ChargeSniper>charge sniper shot</Simple_RF_Bullet_ChargeSniper>
+
+</LanguageData>

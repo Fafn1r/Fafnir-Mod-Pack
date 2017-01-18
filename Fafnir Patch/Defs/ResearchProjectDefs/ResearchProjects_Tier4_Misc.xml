@@ -16,8 +16,8 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>10</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewX>20</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -33,8 +33,8 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>9</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewX>19</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -51,8 +51,8 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>9</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewX>17</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -68,8 +68,8 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>9</researchViewX>
-		<researchViewY>3</researchViewY>
+		<researchViewX>19</researchViewX>
+		<researchViewY>4</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -85,8 +85,8 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>10</researchViewX>
-		<researchViewY>3</researchViewY>
+		<researchViewX>18</researchViewX>
+		<researchViewY>5</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -102,8 +102,8 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>10</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>25</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -119,7 +119,7 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>10</researchViewX>
+		<researchViewX>22</researchViewX>
 		<researchViewY>5</researchViewY>
 	</ResearchProjectDef>
 
@@ -136,8 +136,8 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>11</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>24</researchViewX>
+		<researchViewY>5</researchViewY>
 	</ResearchProjectDef>
 
 </Defs>

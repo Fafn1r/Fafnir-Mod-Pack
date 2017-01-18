@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+	<ThingDef Name="AmmoBase" Abstract="True">
+		<thingClass>Combat_Realism.AmmoThing</thingClass>
+		<label>unspecified ammunition</label>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>500</stackLimit>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+		<tradeTags>	
+			<li>CR_Ammo</li>
+		</tradeTags>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+	
+	<ThingDef ParentName="AmmoBase" Name="BaseWeaponAndAmmoNeolithic" Abstract="True">
+		<equipmentType>Primary</equipmentType>
+		<pathCost>10</pathCost>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<SellPriceFactor>0.5</SellPriceFactor>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>Neolithic</li>
+		</weaponTags>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!-- ==================== CombatRealism Pila override ============= 
+	-->
+	<ThingDef Class="Combat_Realism.AmmoDef" ParentName="BaseWeaponAndAmmoNeolithic">
+		<defName>Pila</defName>
+		<label>javelins</label>
+		<description>A non-reusable throwing spear which may be thrown on its own or using an atlatl.</description>
+		<graphicData>
+			<texPath>Things/Ammo/Neolithic/Pilum</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		</graphicData>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<costList>
+			<WoodLog>1</WoodLog>
+			<Steel>1</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>1400</WorkToMake>
+			<Mass>3.00</Mass>
+				<AimEfficiency>0.25</AimEfficiency>
+				<ShotSpread>2.5</ShotSpread>
+				<SwayFactor>2</SwayFactor>
+				<Bulk>4.00</Bulk>
+				<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>30</equippedAngleOffset>
+		<stackLimit>75</stackLimit>
+		<weaponTags>
+			<li>NeolithicRanged</li>
+			<li>CR_Pila</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CR_AutoEnableTrade</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCROneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Pilum_Thrown</projectileDef>
+				<warmupTime>1.0</warmupTime>
+				<range>6</range>
+				<!--<soundCast>Interact_BeatFire</soundCast>-->
+			</li>
+		</verbs>
+		<linkedProjectile>RF_Pilum_Fired</linkedProjectile>
+		<ammoClass>Javelin</ammoClass>
+	</ThingDef>
+	
+</ThingDefs>

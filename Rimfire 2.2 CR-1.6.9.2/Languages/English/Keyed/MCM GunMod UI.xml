@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	
+	<Short_TranslationOption>short real-life names</Short_TranslationOption>
+	<Long_TranslationOption>long real-life names</Long_TranslationOption>
+	<AEight_TranslationOption>A8 names</AEight_TranslationOption>
+	<ANine_TranslationOption>A9+ names</ANine_TranslationOption>
+	<Simple_TranslationOption>simple names</Simple_TranslationOption>
+	
+	<RF_ToggleClearDisallowed>Nuke disallowed</RF_ToggleClearDisallowed>
+	<RF_ToggleClearDisallowed_Description>Clears the currently loaded colony save file of any of the currently disallowed guns. This change CAN NOT BE REVERTED.</RF_ToggleClearDisallowed_Description>
+	<RF_ToggleClearDisallowed_Warning>ALL disallowed guns will be REMOVED from the CURRENT savefile when the Mod Options window is closed. This change CAN NOT BE REVERTED.</RF_ToggleClearDisallowed_Warning>
+	<RF_ToggleClearDisallowed_Report>Nuke report:   {0} total destroyed, of which {1} on ground, {2} in inventories and {3} equipped.</RF_ToggleClearDisallowed_Report>
+	<RF_ToggleClearDisallowed_IngameOnly>Nuke disallowed (in-game only)</RF_ToggleClearDisallowed_IngameOnly>
+	
+	<RF_ToggleFullGame>Unlocked weapon disabling</RF_ToggleFullGame>
+	<RF_ToggleFullGame_Description>Enabled: the filter below will extend toggles for vanilla guns and all mod guns.</RF_ToggleFullGame_Description>
+	
+	<RF_ToggleCategorize>Categorization</RF_ToggleCategorize>
+	<RF_ToggleCategorize_Description>Enabled: vanilla and modded guns will be visibly categorized by type (pistol, shotgun).</RF_ToggleCategorize_Description>
+	
+	<RF_ToggleRecipes>Weapon crafting</RF_ToggleRecipes>
+	<RF_ToggleRecipes_Description>Enabled: all enabled guns below are craftable, Disabled: none of the guns below are craftable.</RF_ToggleRecipes_Description>
+	
+	<RF_DesignationType>Name package</RF_DesignationType>
+	<RF_DesignationType_Description>Select your preferred gun name package - gun names are automatically updated and displayed below.</RF_DesignationType_Description>
+	
+	<RF_RemoveInactive>Inactive weapon removal</RF_RemoveInactive>
+	<RF_RemoveInactive_Description>Enabled: all disabled guns below are actively destroyed (untradable, destroy on drop, not saved), Disabled: disabled guns are prevented from being created anymore.</RF_RemoveInactive_Description>
+	
+	<RF_WeaponTag_Message>All non-essential weapons were disabled. Further disabling will cause instabilities.</RF_WeaponTag_Message>
+	<RF_WeaponTag_Warning>The weaponTags: {0}; are missing from your current weapons setup. This WILL cause instabilities.</RF_WeaponTag_Warning>
+	
+	<RF_ShouldNotSeeThis>This should not be visible.</RF_ShouldNotSeeThis>
+	
+</LanguageData>

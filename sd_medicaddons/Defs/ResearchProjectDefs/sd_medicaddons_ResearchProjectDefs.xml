@@ -7,7 +7,8 @@
 		<description>New means to set up your medical area medieval style.</description>
 		<baseCost>100</baseCost>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>0</researchViewX>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -16,7 +17,8 @@
 		<description>Setting up a hospital area in your colony with these instruments will increase your colonists chances of survival. New means to set up your medical area somewhat civilized.</description>
 		<baseCost>200</baseCost>
 		<techLevel>Industrial</techLevel>
-		<researchViewX>4</researchViewX>
+		<researchViewX>15</researchViewX>
+		<researchViewY>1.5</researchViewY>
 		<prerequisites>
 			<li>MicroelectronicsBasics</li>
 			<li>sd_medicaddons_research_medieval_med</li>
@@ -38,7 +40,8 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>11</researchViewX>
+		<researchViewX>22</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
 

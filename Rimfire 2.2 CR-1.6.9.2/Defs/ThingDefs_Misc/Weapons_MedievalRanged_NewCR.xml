@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef Name="BaseWeaponMedieval" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>Medieval</li>
+		</weaponTags>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ==================== Short crossbow ========================== 
+	-->
+	<ThingDef ParentName="BaseWeaponMedieval">
+		<defName>RF_ShortCrossbow</defName>
+		<label>short crossbow</label>
+		<description>A short crossbow allowing for easier carry and target acquisition but with greatly impaired projectile velocity and force.</description>
+		<graphicData>
+			<texPath>Things/Release/ShortCrossbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<costList>
+			<Steel>50</Steel>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>3.50</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>0.25</ShotSpread>
+				<SwayFactor>2</SwayFactor>
+				<Bulk>3.50</Bulk>
+				<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>MedievalRanged</li>
+			<li>MedTimes_Weapon_Ranged</li>	<!-- For MedievalTimes compatibility -->
+		</weaponTags>
+		<thingCategories>
+			<li>MedievalRanged</li>
+		</thingCategories>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Projectile_Arrow_Stone</projectileDef>
+				<warmupTime>1.50</warmupTime>
+				<range>23</range>
+				<soundCast>BowSmall</soundCast>
+				<ejectsCasings>false</ejectsCasings>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<ammoSet>AmmoSet_Arrow</ammoSet>
+				<magazineSize>1</magazineSize>
+				<reloadTicks>120</reloadTicks>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>false</aiUseBurstMode>
+				<aiUseAimMode>false</aiUseAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</ThingDefs>

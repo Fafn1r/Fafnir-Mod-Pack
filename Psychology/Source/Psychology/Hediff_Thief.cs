@@ -96,16 +96,24 @@ namespace Psychology
 
         public override void Tick()
         {
-            if(pawn.pather != null && GetLastCell(pawn.pather).GetDoor(pawn.Map) != null)
+            if (pawn.Downed || pawn.Dead || (pawn.pather != null && pawn.pather.WillCollideWithPawnOnNextPathCell()))
+            {
+                pawn.health.RemoveHediff(this);
+                if(pawn.pather != null)
+                {
+                    AlertThief(pawn, pawn.pather.nextCell.GetFirstPawn(pawn.Map));
+                }
+                else
+                {
+                    AlertThief(pawn, null);
+                }
+            }
+            if (pawn.pather != null && GetLastCell(pawn.pather).GetDoor(pawn.Map) != null)
             {
                 GetLastCell(pawn.pather).GetDoor(pawn.Map).StartManualCloseBy(pawn);
             }
             if (pawn.Map != null && lastSpottedTick < Find.TickManager.TicksGame - 250)
             {
-                if (pawn.Downed || pawn.Dead)
-                {
-                    pawn.health.RemoveHediff(this);
-                }
                 lastSpottedTick = Find.TickManager.TicksGame;
                 Room room = RoomQuery.RoomAt(pawn);
                 int num = 0;
@@ -134,16 +142,7 @@ namespace Psychology
                                     if (Rand.Value > spotChance)
                                     {
                                         pawn.health.RemoveHediff(this);
-                                        pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
-                                        List<Pawn> thisPawn = new List<Pawn>();
-                                        thisPawn.Add(pawn);
-                                        IncidentParms parms = new IncidentParms();
-                                        parms.faction = pawn.Faction;
-                                        parms.spawnCenter = pawn.Position;
-                                        Lord lord = LordMaker.MakeNewLord(pawn.Faction, RaidStrategyDefOf.ImmediateAttack.Worker.MakeLordJob(parms, pawn.Map), pawn.Map, thisPawn);
-                                        AvoidGridMaker.RegenerateAvoidGridsFor(pawn.Faction, pawn.Map);
-                                        LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
-                                        Find.LetterStack.ReceiveLetter("LetterLabelThief".Translate(), "ThiefRevealed".Translate(new object[] { observer.LabelShort, pawn.Faction.Name }).AdjustedFor(pawn), LetterType.BadUrgent, pawn, null);
+                                        AlertThief(pawn, observer);
                                     }
                                 }
                             }
@@ -171,11 +170,37 @@ namespace Psychology
         public override void PostRemoved()
         {
             pawn.Drawer.renderer.graphics = oldGraphics;
+            pawn.Drawer.renderer.graphics.ResolveAllGraphics();
             SetShadowGraphic(pawn.Drawer.renderer, oldShadow);
             Thing holding = pawn.carryTracker.CarriedThing;
             if (holding != null)
             {
                 SetGraphicInt(holding, lastCarriedGraphic);
+            }
+            else
+            {
+                SetGraphicInt(lastCarried, lastCarriedGraphic);
+            }
+        }
+
+        public void AlertThief(Pawn pawn, Pawn observer)
+        {
+            pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
+            List<Pawn> thisPawn = new List<Pawn>();
+            thisPawn.Add(pawn);
+            IncidentParms parms = new IncidentParms();
+            parms.faction = pawn.Faction;
+            parms.spawnCenter = pawn.Position;
+            Lord lord = LordMaker.MakeNewLord(pawn.Faction, RaidStrategyDefOf.ImmediateAttack.Worker.MakeLordJob(parms, pawn.Map), pawn.Map, thisPawn);
+            AvoidGridMaker.RegenerateAvoidGridsFor(pawn.Faction, pawn.Map);
+            LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
+            if(observer != null)
+            {
+                Find.LetterStack.ReceiveLetter("LetterLabelThief".Translate(), "ThiefRevealed".Translate(new object[] { observer.LabelShort, pawn.Faction.Name }).AdjustedFor(pawn), LetterType.BadUrgent, pawn, null);
+            }
+            else
+            {
+                Find.LetterStack.ReceiveLetter("LetterLabelThief".Translate(), "ThiefInjured".Translate(new object[] { pawn.Faction.Name }).AdjustedFor(pawn), LetterType.BadNonUrgent, pawn, null);
             }
         }
 

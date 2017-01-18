@@ -1,0 +1,3095 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+	
+	<ThingDef Name="BaseGun" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Industrial</techLevel>
+		<smeltable>true</smeltable>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>ArtName_WeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef Name="BaseMakeableGun" ParentName="BaseGun" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef Name="BaseHumanMakeableGun" ParentName="BaseMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+	</ThingDef>
+	
+<!-- R E V O L V E R S -->
+	<!-- ==================== Deringer ================================ 
+			- 0.5x hitpoints
+			- Low value
+			- Very low range
+			- Slightly high damage
+			
+			011 DMG - 060 SPD - 048 WMP - 012 RNG
+			Cooldown 0.70
+			% 0.96 - 0.71 - 0.45 - 0.28
+			
+			55 $
+			26.5k WtM - 25 stl, 1 cmpt
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Deringer</defName>
+		<label>pocket revolver</label>
+		<description>A small decorated revolver, very cheap to make. Accurate at short range only, moderately damaging with a short aim- and cooldown period.</description>
+		<graphicData>
+			<texPath>Things/Release/Deringer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<WorkToMake>12500</WorkToMake>
+			<Mass>0.45</Mass>
+			<MaxHitPoints>50</MaxHitPoints>
+				<AimEfficiency>0.20</AimEfficiency>
+				<ShotSpread>0.16</ShotSpread>
+				<SwayFactor>0.56</SwayFactor>
+				<Bulk>0.45</Bulk>
+				<RangedWeapon_Cooldown>0.15</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Revolvers</li>
+		</thingCategories>
+		<costList>
+			<Steel>25</Steel>
+			<Component>1</Component>
+		</costList>
+		<generateCommonality>0.30</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_40Rimfire</projectileDef>
+				<warmupTime>0.2</warmupTime>
+				<range>5</range>
+				<soundCast>RF_ShotDeringer</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTicks>180</reloadTicks>
+				<ammoSet>AmmoSet_40Rimfire</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>MedievalShields_ValidSidearm</li>
+			<li>CR_Sidearm</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Taurus Judge ============================
+			- High value
+			- High damage
+			- Comparable to Mosin, lower damage low range but low warmup
+			
+			016 DMG - 060 SPD - 56 WMP - 15 RNG
+			Cooldown 0.90
+			% 0.98 - 0.81 - 0.51 - 0.29
+			
+			750 $
+			48k WtM - 65 stl, 6 cmpt
+			
+			.410 bore
+			.454 Casull
+			.45 Colt
+			.45 S&W
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Taurus</defName>
+		<label>court revolver</label>
+		<description>A large and versatile revolver designed as a personal defence weapon capable of firing buckshot ammunition. Low range and average accuracy, highly damaging with a short aim period.</description>
+		<graphicData>
+			<texPath>Things/Release/TaurusJudge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<WorkToMake>22500</WorkToMake>
+			<Mass>0.82</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>0.16</ShotSpread>
+				<SwayFactor>1.37</SwayFactor>
+				<Bulk>1.90</Bulk>
+				<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Revolvers</li>
+		</thingCategories>
+		<costList>
+			<Steel>55</Steel>
+			<Component>6</Component>
+		</costList>
+		<generateCommonality>0.20</generateCommonality>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_45Colt_FMJ</projectileDef>
+				<warmupTime>0.4</warmupTime>
+				<range>10</range>
+				<soundCast>RF_ShotTaurus</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>5</magazineSize>
+				<reloadTicks>181</reloadTicks>
+				<ammoSet>AmmoSet_45Colt</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+		<!--<li>MedievalShields_ValidSidearm</li> "i mean if you shot a taurus 1 handed you smack yerself in the face" -MedievalShields author -->
+			<li>CR_Sidearm</li>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== S&W Model 500 ===========================
+			024 DMG - 060 SPD - 69 WMP - 16 RNG
+			Cooldown 1.50
+			% 0.98 - 0.81 - 0.51 - 0.29
+			
+			947 $
+			60k WtM - 80 stl, 8 cmpt
+			
+			.500 S&W
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_ModelFivehundred</defName>
+		<label>large-calibre revolver</label>
+		<description>A huge, shiny steel .500 calibre revolver with very strong recoil. Low range and average accuracy, extremely damaging.</description>
+		<graphicData>
+			<texPath>Things/Release/Model500</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<WorkToMake>28000</WorkToMake>
+			<Mass>2.25</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>0.16</ShotSpread>
+				<SwayFactor>1.37</SwayFactor>
+				<Bulk>2.13</Bulk>
+				<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Revolvers</li>
+		</thingCategories>
+		<costList>
+			<Steel>60</Steel>
+			<Component>8</Component>
+		</costList>
+		<generateCommonality>0.40</generateCommonality>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_500SW_FMJ</projectileDef>
+				<warmupTime>0.45</warmupTime>
+				<range>13</range>
+				<soundCast>RF_ShotModelFivehundred</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>5</magazineSize>
+				<reloadTicks>181</reloadTicks>
+				<ammoSet>AmmoSet_500SW</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CR_SMG</li>
+			<li>CR_Sidearm</li>
+		</weaponTags>
+	</ThingDef>
+	
+<!-- P I S T O L S -->
+	<!-- ==================== Ruger Mk III Standard =================== 
+			- Very high fire rate
+			- Very high accuracy
+			- Low range
+			- Low value
+			- Low damage
+			
+			006 DMG - 055 SPD - 046 WMP - 016 RNG
+			Cooldown 0.45
+			% 0.95 - 0.85 - 0.76 - 0.05
+			
+			112 $
+			24k WtM - 12 stl, 2 cmpt
+			
+			.22 LR
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_RugerMkIII</defName>
+		<label>rimfire pistol</label>
+		<description>A tiny calibre handgun with uses in target shooting - of little value on a battlefield. Great accuracy, very low damage, fast with low recoil.</description>
+		<graphicData>
+			<texPath>Things/Release/RugerMkIII</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<WorkToMake>11250</WorkToMake>
+			<Mass>0.96</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>0.16</ShotSpread>
+				<SwayFactor>1.32</SwayFactor>
+				<Bulk>1.21</Bulk>
+				<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<costList>
+			<Steel>20</Steel>
+			<Component>2</Component>
+		</costList>
+		<generateCommonality>0.10</generateCommonality>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_22LR_FMJ</projectileDef>
+				<warmupTime>0.2</warmupTime>
+				<range>10</range>
+				<soundCast>RF_ShotRugerMkIII</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTicks>180</reloadTicks>
+				<ammoSet>AmmoSet_22LR</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>MedievalShields_ValidSidearm</li>
+			<li>CR_Sidearm</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Sphinx AT 2000 ========================== 
+			- High accuracy
+			- High range
+			- Low detoriation rate
+			- High value
+			- High damage
+			
+			012 DMG - 060 SPD - 057 WMP - 027 RNG
+			Cooldown 0.72
+			% 0.95 - 0.80 - 0.65 - 0.35
+			
+			775 $
+			38k WtM - 50 stl, 3 cmpt, 5 pstl
+			
+			9x19mm para
+			.40 S&W
+			.45 ACP
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_AT2K</defName>
+		<label>detective pistol</label>
+		<description>A high quality and highly durable handgun, used by elite forces and sports shooters. Great accuracy, moderate damage and a tad slow.</description>
+		<graphicData>
+			<texPath>Things/Release/SphinxAT2000</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<WorkToMake>17800</WorkToMake>
+			<Mass>0.94</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>0.16</ShotSpread>
+				<SwayFactor>1.50</SwayFactor>
+				<Bulk>2.00</Bulk>
+				<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+			<DeteriorationRate>1</DeteriorationRate>	<!-- HIGHLY DURABLE -->
+		</statBases>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<costList>
+			<Steel>50</Steel>
+			<Component>3</Component>
+			<Plasteel>5</Plasteel>
+		</costList>
+		<generateCommonality>0.05</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>RF_PlasteelGuns</researchPrerequisite>
+		</recipeMaker>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<warmupTime>0.3</warmupTime>
+				<range>10</range>
+				<soundCast>RF_ShotAT2K</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>15</magazineSize>
+				<reloadTicks>180</reloadTicks>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>MedievalShields_ValidSidearm</li>
+			<li>CR_Sidearm</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Vektor CP-1 ============================= 
+			- High fire rate
+			- Low value
+			- Low range
+			- Low damage
+			
+			008 DMG - 057 SPD - 052 WMP - 021 RNG
+			Cooldown 0.62
+			% 0.91 - 0.74 - 0.49 - 0.30
+			
+			210 $
+			32k WtM - 35 stl, 2 cmpt
+			
+			9x19mm para
+			9x21mm IMI (Italian)
+			.40 S&W (CP1N)
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_VektorCP</defName>
+		<label>curved frame pistol</label>
+		<description>An ergonomical handgun with a drastically non-rectangular design. Good accuracy and low recoil, but weak and with a slightly lower range.</description>
+		<graphicData>
+			<texPath>Things/Release/VektorCP1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>0.72</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>0.16</ShotSpread>
+				<SwayFactor>1.14</SwayFactor>
+				<Bulk>1.77</Bulk>
+				<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<costList>
+			<Steel>35</Steel>
+			<Component>2</Component>
+		</costList>
+		<generateCommonality>0.5</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<warmupTime>0.3</warmupTime>
+				<range>10</range>
+				<soundCast>RF_ShotVektorCP1</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTicks>180</reloadTicks>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>MedievalShields_ValidSidearm</li>
+			<li>CR_Sidearm</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Para-Ordnance P14-45 ==================== 
+			- Average fire rate
+			- Slightly high range
+			- Slightly low value
+			- Average damage
+			
+			010 DMG - 060 SPD - 050 WMP - 025 RNG
+			Cooldown 0.77
+			% 0.92 - 0.81 - 0.60 - 0.28
+			
+			254 $
+			36k WtM - 35 stl, 3 cmpt
+			
+			.45 ACP
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_ParaOrdnancePFourteenFortyfive</defName>
+		<label>counterfeit handgun</label>
+		<description>A counterfeit ancient 45 ACP handgun with slightly improved internal mechanisms and plastic frame. High accuracy and above average range, average fire rate and damage.</description>
+		<graphicData>
+			<texPath>Things/Release/ParaOrdnanceP1445</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<WorkToMake>16900</WorkToMake>
+			<Mass>1.10</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>0.16</ShotSpread>
+				<SwayFactor>2.08</SwayFactor>
+				<Bulk>2.10</Bulk>
+				<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<costList>
+			<Steel>35</Steel>
+			<Component>3</Component>
+		</costList>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_45ACP_FMJ</projectileDef>
+				<warmupTime>0.3</warmupTime>
+				<range>10</range>
+				<soundCast>RF_ShotParaOrdnanceP1445</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>14</magazineSize>
+				<reloadTicks>180</reloadTicks>
+				<ammoSet>AmmoSet_45ACP</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>MedievalShields_ValidSidearm</li>
+			<li>CR_Sidearm</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Tokarev TT ============================== 
+			- Average range
+			- High muzzle velocity
+			- Slightly high accuracy
+			- Slightly high damage
+			- Slightly high value
+			
+			011 DMG - 070 SPD - 050 WMP - 023 RNG
+			Cooldown 0.70
+			% 0.92 - 0.75 - 0.52 - 0.32
+			
+			230 $
+			37.5k WtM - 50 stl, 2 cmpt
+			
+			7.62x25mm tokarev
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_TokarevTT</defName>
+		<label>soviet pistol</label>
+		<description>A small semi-automatic handgun with a bite. Has high bullet velocity and does moderate damage, decent accuracy and moderate recoil.</description>
+		<graphicData>
+			<texPath>Things/Release/TokarevTT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<statBases>
+			<WorkToMake>17600</WorkToMake>
+			<Mass>0.85</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>0.16</ShotSpread>
+				<SwayFactor>1.32</SwayFactor>
+				<Bulk>1.94</Bulk>
+				<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<costList>
+			<Steel>50</Steel>
+			<Component>2</Component>
+		</costList>
+		<generateCommonality>0.75</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_762x25mmTokarev_FMJ</projectileDef>
+				<warmupTime>0.3</warmupTime>
+				<range>10</range>
+				<soundCast>RF_ShotTokarevTT</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>8</magazineSize>
+				<reloadTicks>180</reloadTicks>
+				<ammoSet>AmmoSet_762x25mmTokarev</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>MedievalShields_ValidSidearm</li>
+			<li>CR_Sidearm</li>
+		</weaponTags>
+	</ThingDef>
+	
+<!-- M A C H I N E P I S T O L S -->
+	<!-- ==================== Tec-9 =================================== 
+			- Very high fire rate
+			- Slightly low accuracy
+			- Low damage
+			- Slightly high value
+			
+			008 DMG - 055 SPD - 030 WMP - 019 RNG
+			Cooldown 0.10
+			% 0.92 - 0.72 - 0.48 - 0.31
+			
+			575 $
+			47k WtM - 75 stl, 4 cmpt
+			
+			9x19mm para
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Tecnine</defName>
+		<label>machinepistol</label>
+		<description>A lightweight semi-automatic pistol with a quick draw, low damage and very high firerate. Operates at a short range.</description>
+		<graphicData>
+			<texPath>Things/Release/Tec9</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<WorkToMake>23500</WorkToMake>
+			<Mass>1.30</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>0.16</ShotSpread>
+				<SwayFactor>2.32</SwayFactor>
+				<Bulk>3.78</Bulk>
+				<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<costList>
+			<Steel>40</Steel>
+			<Component>4</Component>
+		</costList>
+		<generateCommonality>0.40</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<warmupTime>0.3</warmupTime>
+				<range>10</range>
+				<soundCast>RF_ShotTec9</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>20</magazineSize>
+				<reloadTicks>180</reloadTicks>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>MedievalShields_ValidSidearm</li>
+			<li>CR_Sidearm</li>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== 93R machinepistol ======================= 
+			- Low damage
+			- High burstfire rate
+			- High value
+			- Low accuracy
+			
+			007 DMG - 060 SPD - 050 WMP - 023 RNG
+			Cooldown 0.66
+			Burst 4x 004
+			% 0.91 - 0.69 - 0.47 - 0.25
+			
+			677 $
+			43k WtM - 90 stl, 5 cmpt, 5 log
+			
+			9x19mm para
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_93R</defName>
+		<label>burstfire machinepistol</label>
+		<description>A nice-looking machinepistol with a very fast burstfire mode, low stopping power and hits up to pistol range. It fires a four-round burst.</description>
+		<graphicData>
+			<texPath>Things/Release/93R</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<WorkToMake>21500</WorkToMake>
+			<Mass>1.17</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>0.16</ShotSpread>
+				<SwayFactor>0.54</SwayFactor>
+				<Bulk>1.72</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<costList>
+			<Steel>45</Steel>
+			<Component>5</Component>
+			<WoodLog>5</WoodLog>
+		</costList>
+		<generateCommonality>0.40</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.10</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<warmupTime>0.7</warmupTime>
+				<range>10</range>
+				<soundCast>RF_Shot93R</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>15</magazineSize>
+				<reloadTicks>180</reloadTicks>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>MedievalShields_ValidSidearm</li>
+			<li>CR_Sidearm</li>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+	
+<!-- S M G S -->
+	<!-- ==================== Steyr TMP =============================== 
+		
+			006 DMG - 055 SPD - 050 WMP - 024 RNG
+			Cooldown 0.75
+			Burst 3x 006
+			% 0.70 - 0.59 - 0.39 - 0.13
+			
+			590 $
+			55k WtM - 90 stl, 3 cmpt
+			
+			9x19mm para
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_TMP</defName>
+		<label>silenced PDW</label>
+		<description>A big machinepistol or small submachinegun. It fires a three-round burst. Somewhat accurate long range, fast burstfire with low stopping power.</description>
+		<graphicData>
+			<texPath>Things/Release/TMP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<WorkToMake>27500</WorkToMake>
+			<Mass>1.30</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.12</ShotSpread>
+				<SwayFactor>0.60</SwayFactor>
+				<Bulk>4.23</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>SubMachineGuns</li>
+		</thingCategories>
+		<costList>
+			<Steel>48</Steel>
+			<Component>3</Component>
+		</costList>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.39</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<warmupTime>0.9</warmupTime>
+				<range>20</range>
+				<soundCast>RF_ShotTMP</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTicks>240</reloadTicks>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>MedievalShields_ValidSidearm</li>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Skorpion vz 61 ========================== 
+	
+			005 DMG - 060 SPD - 065 WMP - 023 RNG
+			Cooldown 0.50
+			Burst 5x 005
+			% 0.73 - 0.62 - 0.44 - 0.17
+			
+			667 $
+			70k WtM - 90 stl, 3 cmpt, 10 log
+			
+			.32 ACP = .32 Auto = 7.65mm Browning = 7.65x17mm = 7.65 Walther
+			9x19mm para
+			9x18mm makarov
+			.380 ACP = 9x17mm short
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Skorpion</defName>
+		<label>folding stock SMG</label>
+		<description>A machinepistol or light SMG with a notorious folding stock design. It fires a quick five-round burst. Fires weak ammunition at pistol range.</description>
+		<graphicData>
+			<texPath>Things/Release/Skorpion</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>1.30</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.12</ShotSpread>
+				<SwayFactor>0.63</SwayFactor>
+				<Bulk>2.59</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>SubMachineGuns</li>
+		</thingCategories>
+		<costList>
+			<Steel>45</Steel>
+			<Component>3</Component>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<generateCommonality>1.25</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.52</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_32ACP_FMJ</projectileDef>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<warmupTime>0.80</warmupTime>
+				<range>20</range>
+				<soundCast>RF_ShotSkorpion</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>20</magazineSize>
+				<reloadTicks>240</reloadTicks>
+				<ammoSet>AmmoSet_32ACP</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>MedievalShields_ValidSidearm</li>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== H&K MP5K-PDW ============================ 
+	
+			007 DMG - 060 SPD - 055 WMP - 024 RNG
+			Cooldown 0.45
+			Burst 5x 004
+			% 0.75 - 0.65 - 0.45 - 0.15
+			
+			747 $
+			95k WtM - 100 stl, 4 cmpt
+			
+			9x19mm para
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_MPFiveKPDW</defName>
+		<label>aviation crew SMG</label>
+		<description>A lightweight SMG with a folding stock which makes it easy to carry, versatile and in working order in a pinch. It fires a five-round burst. Fires quite damaging ammunition at pistol range.</description>
+		<graphicData>
+			<texPath>Things/Release/MP5K-PDW</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<WorkToMake>47500</WorkToMake>
+			<Mass>2.50</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.12</ShotSpread>
+				<SwayFactor>0.77</SwayFactor>
+				<Bulk>3.92</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>SubMachineGuns</li>
+		</thingCategories>
+		<costList>
+			<Steel>50</Steel>
+			<Component>4</Component>
+		</costList>
+		<generateCommonality>0.60</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.32</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<warmupTime>0.90</warmupTime>
+				<range>20</range>
+				<soundCast>RF_ShotMPFiveKPDW</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTicks>240</reloadTicks>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>false</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== KRISS Vector ============================ 
+	
+			007 DMG - 055 SPD - 045 WMP - 023 RNG
+			Cooldown 0.50
+			Burst 4x 013
+			% 0.79 - 0.68 - 0.47 - 0.18
+			
+			987 $
+			105k WtM - 110 stl, 3 cmpt, 10 pstl
+			
+			.45 ACP
+			9x19mm para
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Vector</defName>
+		<label>modern SMG</label>
+		<description>A submachinegun that fires in medium length bursts. It fires a four-round burst. Its substantially reduced knockback causes it to be accurate up to medium range, but its bullet drop limits maximal range by a lot.</description>
+		<graphicData>
+			<texPath>Things/Release/Vector</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<WorkToMake>49000</WorkToMake>
+			<Mass>2.70</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.12</ShotSpread>
+				<SwayFactor>0.90</SwayFactor>
+				<Bulk>5.58</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>SubMachineGuns</li>
+		</thingCategories>
+		<costList>
+			<Steel>63</Steel>
+			<Component>3</Component>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<generateCommonality>0.50</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>RF_PlasteelGuns</researchPrerequisite>
+		</recipeMaker>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.41</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_45ACP_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<warmupTime>0.9</warmupTime>
+				<range>10</range>
+				<soundCast>RF_ShotVector</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>25</magazineSize>
+				<reloadTicks>240</reloadTicks>
+				<ammoSet>AmmoSet_45ACP</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== M-3 submachinegun ======================= 
+	
+			008 DMG - 055 SPD - 070 WMP - 027 RNG
+			Cooldown 0.66
+			Burst 5x 009
+			% 0.78 - 0.61 - 0.39 - 0.11
+			
+			395 $
+			28.5k WtM - 100 stl, 2 cmpt
+			
+			.45 ACP
+			9x19mm para
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_GreaseGun</defName>
+		<label>greasegun SMG</label>
+		<description>A very simplistic submachinegun design for todays standards which is quite easy to mass-produce. It fires a five-round burst. Low damage, high firerate, short range.</description>
+		<graphicData>
+			<texPath>Things/Release/GreaseGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<WorkToMake>13300</WorkToMake>
+			<Mass>3.70</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.12</ShotSpread>
+				<SwayFactor>1.14</SwayFactor>
+				<Bulk>6.46</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>SubMachineGuns</li>
+		</thingCategories>
+		<costList>
+			<Steel>58</Steel>
+			<Component>2</Component>
+		</costList>
+		<generateCommonality>1.50</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.16</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_45ACP_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<warmupTime>0.9</warmupTime>
+				<range>14</range>
+				<soundCast>RF_ShotGreaseGun</soundCast>
+				<soundCastTail>RF_TailGreaseGun</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTicks>240</reloadTicks>
+				<ammoSet>AmmoSet_45ACP</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Hafdasa C-4 =============================
+		flavour: it weighs more than average SMGs
+		flavour: it has more HP due to durable receiver
+		
+			006 DMG - 055 SPD - 055 WMP - 027 RNG
+			Cooldown 0.66
+			Burst 4x 004
+			% 0.82 - 0.64 - 0.43 - 0.10
+			
+			569 $
+			56k WtM - 130 stl, 3 cmpt
+		
+		9x19mm para
+		.45 ACP
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_CFourHafdasa</defName>
+		<label>aluminum-cast SMG</label>
+		<description>A folding stock submachine gun with a one-piece aluminum receiver, making it very durable and slightly heavy. It fires a four-round burst. Low damage, high firerate, short range.</description>
+		<graphicData>
+			<texPath>Things/Release/HafdasaC4</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractSMG</soundInteract>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>3.20</Mass>
+			<MaxHitPoints>200</MaxHitPoints>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.12</ShotSpread>
+				<SwayFactor>1.21</SwayFactor>
+				<Bulk>6.72</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>SubMachineGuns</li>
+		</thingCategories>
+		<costList>
+			<Steel>75</Steel>
+			<Component>3</Component>
+		</costList>
+		<generateCommonality>0.75</generateCommonality>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.30</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_45ACP_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<warmupTime>0.9</warmupTime>
+				<range>14</range>
+				<soundCast>RF_ShotCFourHafdasa</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>40</magazineSize>
+				<reloadTicks>240</reloadTicks>
+				<ammoSet>AmmoSet_45ACP</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+	
+<!-- C A R B I N E S -->
+	<!-- ==================== Beretta CX4 Storm ======================= 
+			010 DMG - 070 SPD - 092 WMP - 028 RNG
+			Cooldown 0.69
+			Burst 2x 021
+			% 0.91 - 0.92 - 0.79 - 0.60
+			
+			973 $
+			65k WtM - 100 stl, 3 cmpt, 10 pstl
+			
+			9x19mm para
+			9x21mm IMI
+			.40 S&W
+			.45 ACP
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_CXfour</defName>
+		<label>storm carbine</label>
+		<description>A highly reliable, compact pistol calibre carbine designed to fire pistol rounds up to rifle range. It fires a slow two-round burst. Average damage, range and fire rate.</description>
+		<graphicData>
+			<texPath>Things/Release/CX4</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>30300</WorkToMake>
+			<Mass>2.58</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>0.85</SwayFactor>
+				<Bulk>6.80</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Carbines</li>
+		</thingCategories>
+		<costList>
+			<Steel>60</Steel>
+			<Component>3</Component>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>45</ticksBetweenBurstShots>
+				<warmupTime>1</warmupTime>
+				<range>33</range>
+				<soundCast>RF_ShotCX4</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>15</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== Ruger PC-9 ============================== 
+			012 DMG - 065 SPD - 070 WMP - 032 RNG
+			Cooldown 0.60
+			% 0.91 - 0.94 - 0.83 - 0.60
+			
+			548 $
+			65k WtM - 105 stl, 3 cmpt
+			
+			9x19mm para
+			.40 S&W
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_PCnine</defName>
+		<label>police carbine</label>
+		<description>A pistol calibre carbine sidearm carried on the back. Its long barrel allows it to fire pistol bullets at rifle range. Above average damage and fire rate, high range.</description>
+		<graphicData>
+			<texPath>Things/Release/RugerPC9</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>30300</WorkToMake>
+			<Mass>3.20</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>1.05</SwayFactor>
+				<Bulk>7.74</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Carbines</li>
+		</thingCategories>
+		<costList>
+			<Steel>65</Steel>
+			<Component>3</Component>
+		</costList>
+		<generateCommonality>1.25</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<warmupTime>1</warmupTime>
+				<range>33</range>
+				<soundCast>RF_ShotRugerPC9</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>15</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Ruger 10/22 =============================
+			006 DMG - 055 SPD - 047 WMP - 030 RNG
+			Cooldown 0.60
+			% 0.75 - 0.84 - 0.80 - 0.75
+			
+			245 $
+			32.5k WtM - 60 stl, 2 cmpt, 20 log
+			
+			.22 LR
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_TenTwentyTwo</defName>
+		<label>varmint rifle</label>
+		<description>Semi-automatic, rotary magazine rimfire rifle with an ergonomic wooden design and adjustable scope. Medium firerate, very low damage, high accuracy, medium range.</description>
+		<graphicData>
+			<texPath>Things/Release/10-22</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>2.30</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>0.92</SwayFactor>
+				<Bulk>8.54</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Carbines</li>
+		</thingCategories>
+		<costList>
+			<Steel>45</Steel>
+			<Component>2</Component>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<generateCommonality>2</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_22LR_FMJ</projectileDef>
+				<warmupTime>1</warmupTime>
+				<range>30</range>
+				<soundCast>RF_ShotTenTwentyTwo</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_22LR</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CR_SMG</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== HK USC ================================== 
+			008 DMG - 072 SPD - 083 WMP - 027 RNG
+			Cooldown 0.66
+			Burst 3x 011
+			% 0.90 - 0.87 - 0.78 - 0.60
+			
+			637 $
+			72k WtM - 120 stl, 4 cmpt
+			
+			.45 ACP
+			.40 S&W
+			9x19mm para
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_USC</defName>
+		<label>civilian PCC</label>
+		<description>A stable semi-automatic pistol calibre carbine with low kickback and an unusual stock design. It fires a three-round burst. Below average damage and range, above average fire rate.</description>
+		<graphicData>
+			<texPath>Things/Release/USC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>33600</WorkToMake>
+			<Mass>2.30</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>0.85</SwayFactor>
+				<Bulk>6.90</Bulk>
+				<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Carbines</li>
+		</thingCategories>
+		<costList>
+			<Steel>55</Steel>
+			<Component>4</Component>
+		</costList>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_45ACP_FMJ</projectileDef>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>45</ticksBetweenBurstShots>
+				<warmupTime>1</warmupTime>
+				<range>27</range>
+				<soundCast>RF_ShotUSC</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_45ACP</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== Spencer Repeating Rifle ================= 
+			014 DMG - 050 SPD - 060 WMP - 032 RNG
+			Cooldown 2.40
+			% 0.75 - 0.94 - 0.84 - 0.67
+			
+			420 $
+			50k WtM - 100 stl, 3 cmpt, 5 log
+			
+			.56-56 Spencer rimfire
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Spencer</defName>
+		<label>repeating rifle</label>
+		<description>An ancient pattern, lever-action repeating rifle with its feeding system in the buttstock. Above average damage, low fire rate, high range.</description>
+		<graphicData>
+			<texPath>Things/Release/Spencer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>23300</WorkToMake>
+			<Mass>3.74</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>1.05</SwayFactor>
+				<Bulk>9.57</Bulk>
+				<RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Carbines</li>
+		</thingCategories>
+		<costList>
+			<Steel>50</Steel>
+			<Component>3</Component>
+			<WoodLog>5</WoodLog>
+		</costList>
+		<generateCommonality>0.15</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_5656Spencer</projectileDef>
+				<warmupTime>1</warmupTime>
+				<range>30</range>
+				<soundCast>RF_ShotSpencer</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>7</magazineSize>
+				<reloadTicks>420</reloadTicks>
+				<ammoSet>AmmoSet_5656Spencer</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+<!-- S H O T G U N S -->
+	<!-- ==================== Armsel Striker ========================== 
+	
+			016 DMG - 055 SPD - 050 WMP - 015 RNG
+			Cooldown 0.83
+			% 0.78 - 0.88 - 0.75 - 0.60
+			
+			512 $
+			41k WtM - 95 stl, 4 cmpt
+			
+			12 gauge x 70 mm
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Striker</defName>
+		<label>combat shotgun</label>
+		<description>A cheap-looking semi-automatic shotgun which is relatively easy to produce. Has a higher fire rate and high damage output, but low range.</description>
+		<graphicData>
+			<texPath>Things/Release/Striker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractShotgun</soundInteract>
+		<statBases>
+			<WorkToMake>24600</WorkToMake>
+			<Mass>4.40</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.5</ShotSpread>
+				<SwayFactor>1.70</SwayFactor>
+				<Bulk>9.90</Bulk>
+				<RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Shotguns</li>
+		</thingCategories>
+		<costList>
+			<Steel>64</Steel>
+			<Component>4</Component>
+		</costList>
+		<generateCommonality>0.60</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.12</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_12Gauge_Buck</projectileDef>
+				<warmupTime>0.50</warmupTime>
+				<range>15</range>
+				<soundCast>RF_ShotStriker</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>12</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_12Gauge</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== AA-12 autoshotgun ======================= 
+	
+			010 DMG - 060 SPD - 080 WMP - 028 RNG
+			Cooldown 1.00
+			Burst 3x 012
+			% 0.82 - 0.89 - 0.80 - 0.69
+			
+			1920 $
+			110k WtM - 130 stl, 5 cmpt, 20 pstl
+			
+			12 gauge
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_AAtwelve</defName>
+		<label>automatic shotgun</label>
+		<description>An automatic shotgun with almost no recoil and a long production time. It fires a three-round burst. Moderately accurate just under rifle range, and has high damage output.</description>
+		<graphicData>
+			<texPath>Things/Release/AA12</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractShotgun</soundInteract>
+		<statBases>
+			<WorkToMake>66000</WorkToMake>
+			<Mass>5.20</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.5</ShotSpread>
+				<SwayFactor>2.18</SwayFactor>
+				<Bulk>9.91</Bulk>
+				<RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Shotguns</li>
+		</thingCategories>
+		<costList>
+			<Steel>87</Steel>
+			<Component>5</Component>
+			<Plasteel>20</Plasteel>
+		</costList>
+		<generateCommonality>0.15</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>RF_PlasteelGuns</researchPrerequisite>
+		</recipeMaker>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.45</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_12Gauge_Buck</projectileDef>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<warmupTime>0.50</warmupTime>
+				<range>15</range>
+				<soundCast>RF_ShotAA12</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_12Gauge</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== HK CAWS ================================= 
+
+			010 DMG - 060 SPD - 069 WMP - 023 RNG
+			Cooldown 1.00
+			Burst 2x 013
+			% 0.84 - 0.86 - 0.85 - 0.62
+			
+			1080 $
+			120k WtM - 160 stl, 4 cmpt
+		
+		12 gauge (18.5x76 mmR, belted)
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_HKCaws</defName>
+		<label>CAW shotgun</label>
+		<description>A fully ambidextrous close assault weapon which loads modified 12 gauge shells. It fires a two-round burst. Moderately accurate over shotgun range, with high damage output.</description>
+		<graphicData>
+			<texPath>Things/Release/HKCaws</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractShotgun</soundInteract>
+		<statBases>
+			<WorkToMake>72000</WorkToMake>
+			<Mass>4.30</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.5</ShotSpread>
+				<SwayFactor>1.66</SwayFactor>
+				<Bulk>9.53</Bulk>
+				<RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Shotguns</li>
+		</thingCategories>
+		<costList>
+			<Steel>107</Steel>
+			<Component>4</Component>
+		</costList>
+		<generateCommonality>0.40</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.52</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_12Gauge_Buck</projectileDef>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+				<warmupTime>0.50</warmupTime>
+				<range>15</range>
+				<soundCast>RF_ShotHKCaws</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTicks>360</reloadTicks>
+				<ammoSet>AmmoSet_12Gauge</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+<!-- M I L I T A R Y R I F L E S -->
+	<!-- ==================== Galil =================================== 
+	
+			007 DMG - 070 SPD - 075 WMP - 029 RNG
+			Cooldown 1.00
+			Burst 3x 006
+			% 0.70 - 0.82 - 0.73 - 0.61
+			
+			612 $
+			100k WtM - 90 stl, 4 cmpt, 15 log
+			
+			5.56x45mm NATO
+			7.62x51mm NATO
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Galil</defName>
+		<label>jagged rifle</label>
+		<description>Ancient pattern military weapon with a jagged, budget design and a strong connection with rebel movements. It fires a three-round burst. Good range, low power, high rate of fire.</description>
+		<graphicData>
+			<texPath>Things/Release/Galil</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>37500</WorkToMake>
+			<Mass>4.35</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>1.33</SwayFactor>
+				<Bulk>9.15</Bulk>
+				<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Rifles</li>
+		</thingCategories>
+		<costList>
+			<Steel>54</Steel>
+			<Component>7</Component>
+			<WoodLog>15</WoodLog>
+		</costList>
+		<generateCommonality>0.90</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.15</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<warmupTime>0.80</warmupTime>
+				<range>67</range>
+				<soundCast>RF_ShotGalil</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>25</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== XM-8 ==================================== 
+	
+			007 DMG - 070 SPD - 080 WMP - 032 RNG
+			Cooldown 0.92
+			Burst 3x 005
+			% 0.70 - 0.87 - 0.78 - 0.69
+			
+			1410 $
+			130k WtM - 105 stl, 4 cmpt, 15 pstl
+			
+		5.56x45mm NATO
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_XMeight</defName>
+		<label>military rifle</label>
+		<description>Ancient pattern military weapon. It fires a quick three-round burst. Good range, low power, high rate of fire.</description>
+		<graphicData>
+			<texPath>Things/Release/XM8</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>48750</WorkToMake>
+			<Mass>3.40</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>1.03</SwayFactor>
+				<Bulk>8.38</Bulk>
+				<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Rifles</li>
+		</thingCategories>
+		<costList>
+			<Steel>63</Steel>
+			<Component>7</Component>
+			<Plasteel>15</Plasteel>
+		</costList>
+		<generateCommonality>0.75</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>RF_PlasteelGuns</researchPrerequisite>
+		</recipeMaker>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.07</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<warmupTime>0.80</warmupTime>
+				<range>60</range>
+				<soundCast>RF_ShotXM8</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== AK-47 ===================================
+	
+			007 DMG - 070 SPD - 080 WMP - 032 RNG
+			Cooldown 0.92
+			Burst 3x 005
+			% 0.73 - 0.89 - 0.74 - 0.50
+			
+			412 $
+			100k WtM - 100 stl, 4 cmpt, 15 log
+			
+		7.62x39mm
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_AKFortySeven</defName>
+		<label>guerilla rifle</label>
+		<description>Ancient pattern disposable military weapon suited for many combat situations. Has an iconic, robust and easy-to-use design. It fires a three-round burst. Good range, decent damage and rate of fire, low accuracy.</description>
+		<graphicData>
+			<texPath>Things/Release/AK47</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>37500</WorkToMake>
+			<Mass>3.47</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>1.23</SwayFactor>
+				<Bulk>8.80</Bulk>
+				<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Rifles</li>
+		</thingCategories>
+		<costList>
+			<Steel>60</Steel>
+			<Component>7</Component>
+			<WoodLog>15</WoodLog>
+		</costList>
+		<generateCommonality>1.35</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.87</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_762x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<warmupTime>0.8</warmupTime>
+				<range>47</range>
+				<soundCast>RF_ShotAK47</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+<!-- S N I P E R R I F L E S -->
+	<!-- ==================== Mosin =================================== 
+	
+			020 DMG - 070 SPD - 146 WMP - 036 RNG
+			Cooldown 0.92
+			% 0.75 - 0.97 - 0.98 - 0.92
+			
+			410 $
+			48k WtM - 70 stl, 3 cmpt, 20 log
+			
+			7.62x54mmR
+			7.62x53mmR (Finnish)
+			7.92x57mm Mauser
+			8x50mmR Mannlicher
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Mosin</defName>
+		<label>3-line rifle</label>
+		<description>Ancient bolt-action rifle. Probably pulled from a basement somewhere. Good range, Good power, low rate of fire.</description>
+		<graphicData>
+			<texPath>Things/Release/Mosin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>4.00</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>1.54</SwayFactor>
+				<Bulk>10.47</Bulk>
+				<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Rifles</li>
+		</thingCategories>
+		<costList>
+			<Steel>47</Steel>
+			<Component>3</Component>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
+				<warmupTime>1.1</warmupTime>
+				<range>67</range>
+				<soundCast>RF_ShotMosin</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>5</magazineSize>
+				<reloadTicks>180</reloadTicks>
+				<ammoSet>AmmoSet_762x54mmR</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== WA-2000 ================================= 
+			- 1.5x hitpoints
+			- Average fire rate
+			- High accuracy
+			- High damage
+			- Average recoil
+			
+			045 DMG - 100 SPD - 210 WMP - 045 RNG
+			Cooldown 2.50
+			% 0.50 - 0.90 - 0.90 - 0.91
+			
+			1080 $
+			150k WtM - 120 stl, 8 cmpt, 30 log
+			
+			7.62x51mm NATO
+			.300 Winchester Magnum
+			7.5x55mm Swiss
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_WA2K</defName>
+		<label>specialist rifle</label>
+		<description>Limited edition olden days sniper rifle. Great range, exceptional accuracy, very high damage and very low fire rate.</description>
+		<graphicData>
+			<texPath>Things/Release/WA2K</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>68750</WorkToMake>
+			<Mass>7.91</Mass>
+			<MaxHitPoints>150</MaxHitPoints>
+				<AimEfficiency>1.25</AimEfficiency>
+				<ShotSpread>0.017</ShotSpread>
+				<SwayFactor>2.00</SwayFactor>
+				<Bulk>9.47</Bulk>
+				<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>SniperRifles</li>
+		</thingCategories>
+		<costList>
+			<Steel>72</Steel>
+			<Component>9</Component>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<generateCommonality>0.05</generateCommonality>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<warmupTime>1.6</warmupTime>
+				<range>93</range>
+				<soundCast>RF_ShotWA2K</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>6</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Steyr Scout ============================= 
+			- Slightly high fire rate
+			- Average accuracy
+			- Slightly low damage
+			- Low recoil
+			
+			038 DMG - 100 SPD - 200 WMP - 050 RNG
+			Cooldown 1.92
+			% 0.40 - 0.86 - 0.89 - 0.91
+			
+			1296 $
+			112.5k WtM - 90 stl, 7 cmpt, 8 pstl
+			
+			5.56x45mm NATO
+			.223 Remington
+			.243 Winchester
+			7mm-08 Remington
+			7.62x51mm NATO
+			.308 Winchester
+			.376 Steyr
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Scout</defName>
+		<label>hunting rifle</label>
+		<description>Relatively lightweight, nylon hunting rifle with a great long-range scope. Low firerate, high damage, high accuracy, high range.</description>
+		<graphicData>
+			<texPath>Things/Release/Scout</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>51500</WorkToMake>
+			<Mass>3.00</Mass>
+				<AimEfficiency>1.25</AimEfficiency>
+				<ShotSpread>0.04</ShotSpread>
+				<SwayFactor>1.39</SwayFactor>
+				<Bulk>9.35</Bulk>
+				<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>SniperRifles</li>
+		</thingCategories>
+		<costList>
+			<Steel>54</Steel>
+			<Component>8</Component>
+			<Plasteel>8</Plasteel>
+		</costList>
+		<generateCommonality>0.75</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>RF_PlasteelGuns</researchPrerequisite>
+		</recipeMaker>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<warmupTime>1.6</warmupTime>
+				<range>80</range>
+				<soundCast>RF_ShotScout</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>5</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Dragunov SVD ============================ 
+		
+			039 DMG - 100 SPD - 180 WMP - 040 RNG
+			Cooldown 2.10
+			% 0.67 - 0.80 - 0.85 - 0.67
+			
+			695 $
+			100k WtM - 90 stl, 6 cmpt, 15 log
+			
+			7.62x54mmR
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_DragunovSVD</defName>
+		<label>soviet DMR</label>
+		<description>A semi-automatic, wooden design, designated marksman rifle for long range suppressive use against infantry targets. Medium firerate, high damage, medium accuracy, medium range.</description>
+		<graphicData>
+			<texPath>Things/Release/DragunovSVD</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>45800</WorkToMake>
+			<Mass>4.30</Mass>
+				<AimEfficiency>1.15</AimEfficiency>
+				<ShotSpread>0.05</ShotSpread>
+				<SwayFactor>1.47</SwayFactor>
+				<Bulk>11.37</Bulk>
+				<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>SniperRifles</li>
+		</thingCategories>
+		<costList>
+			<Steel>54</Steel>
+			<Component>8</Component>
+			<WoodLog>15</WoodLog>
+		</costList>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
+				<warmupTime>1.6</warmupTime>
+				<range>80</range>
+				<soundCast>RF_ShotDragunovSVD</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTicks>300</reloadTicks>
+				<ammoSet>AmmoSet_762x54mmR</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+	
+<!-- A N T I M A T E R I E L R I F L E S -->
+	<!-- ==================== Armalite AR-50 ========================== 
+			- Average fire rate
+			- Slightly high accuracy
+			- Slightly high damage
+			- Extremely low recoil
+			- High value
+			- Anti-materiel
+			
+			050 AMD
+			043 DMG - 100 SPD - 210 WMP - 055 RNG
+			Cooldown 1.80
+			% 0.41 - 0.85 - 0.90 - 0.92
+			
+			1715 $
+			200k WtM - 160 stl, 15 cmpt, 10 pstl
+			
+			.50 BMG
+			.416 Barrett
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_ARFifty</defName>
+		<label>deadeye rifle</label>
+		<description>A heavy and accurate, military-grade bolt-action rifle chambered for .50 calibre anti-materiel bullets. Its weight and muzzle brake significantly lower recoil. Average firerate, very high damage, accuracy and range.</description>
+		<graphicData>
+			<texPath>Things/Release/ArmaliteAR50</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>91700</WorkToMake>
+			<Mass>15.50</Mass>
+				<AimEfficiency>1.25</AimEfficiency>
+				<ShotSpread>0.04</ShotSpread>
+				<SwayFactor>0.51</SwayFactor>
+				<Bulk>17.83</Bulk>
+				<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>AntiMateriel</li>
+		</thingCategories>
+		<costList>
+			<Steel>96</Steel>
+			<Component>15</Component>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<generateCommonality>0.15</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>RF_AntiMateriel</researchPrerequisite>
+		</recipeMaker>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_50BMG_FMJ</projectileDef>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>2.2</warmupTime>
+				<range>180</range>
+				<soundCast>RF_ShotARFifty</soundCast>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTicks>120</reloadTicks>
+				<ammoSet>AmmoSet_50BMG</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Micor Defense MD 50 ===================== 
+			- Low fire rate
+			- Extremely high damage
+			- Extremely high accuracy
+			- Very high value
+			- Anti-materiel
+			
+			210 AMD
+			070 DMG - 110 SPD - 240 WMP - 053 RNG
+			Cooldown 1.50
+			% 0.35 - 0.85 - 0.94 - 0.98
+			
+			2995 $
+			250k WtM - 220 stl, 25 cmpt, 20 pstl
+			
+			.50 BMG
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_MDFifty</defName>
+		<label>heavy AMR</label>
+		<description>An autoloading anti-materiel rifle with a compact bullpup design allowing it to be operated and carried by a single person. Used to destroy walls. Low fire rate, high range, extremely high damage and accuracy.</description>
+		<graphicData>
+			<texPath>Things/Release/MD50</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>115000</WorkToMake>
+			<Mass>7.70</Mass>
+				<AimEfficiency>1.25</AimEfficiency>
+				<ShotSpread>0.04</ShotSpread>
+				<SwayFactor>0.30</SwayFactor>
+				<Bulk>10.89</Bulk>
+				<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>AntiMateriel</li>
+		</thingCategories>
+		<costList>
+			<Steel>132</Steel>
+			<Component>25</Component>
+			<Plasteel>20</Plasteel>
+		</costList>
+		<generateCommonality>0.05</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>RF_AntiMateriel</researchPrerequisite>
+		</recipeMaker>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_50BMG_FMJ</projectileDef>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>2.2</warmupTime>
+				<range>180</range>
+				<soundCast>RF_ShotMDFifty</soundCast>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTicks>420</reloadTicks>
+				<ammoSet>AmmoSet_50BMG</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Ultima Ratio 'Hecate II' ================ 
+			- Very low fire rate
+			- Very high damage
+			- Very high accuracy
+			- Very high value
+			- Anti-materiel
+			
+			180 AMD
+			065 DMG - 105 SPD - 240 WMP - 047 RNG
+			Cooldown 2.20
+			% 0.34 - 0.80 - 0.92 - 0.96
+			
+			1875 $
+			237.5k WtM - 200 stl, 20 cmpt, 10 pstl, 20 log
+			
+			.50 BMG
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_HecateII</defName>
+		<label>SASR</label>
+		<description>A special application scoped rifle with a long muzzle brake and wooden stock. Packs a ton both in battle and when carried, greatly slowing any wielders pace. Used to destroy walls. Low fire rate, high range, very high damage and accuracy.</description>
+		<graphicData>
+			<texPath>Things/Release/UltimaRatioHecate2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>110000</WorkToMake>
+			<Mass>13.80</Mass>
+				<AimEfficiency>1.25</AimEfficiency>
+				<ShotSpread>0.017</ShotSpread>
+				<SwayFactor>0.44</SwayFactor>
+				<Bulk>13.80</Bulk>
+				<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>AntiMateriel</li>
+		</thingCategories>
+		<costList>
+			<Steel>120</Steel>
+			<Component>20</Component>
+			<Plasteel>10</Plasteel>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<generateCommonality>1.1</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>RF_AntiMateriel</researchPrerequisite>
+		</recipeMaker>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_50BMG_FMJ</projectileDef>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>2.2</warmupTime>
+				<range>180</range>
+				<soundCast>RF_ShotHecateII</soundCast>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>7</magazineSize>
+				<reloadTicks>420</reloadTicks>
+				<ammoSet>AmmoSet_50BMG</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Barrett M82A1 =========================== 
+			- Low fire rate
+			- Very high damage
+			- Very high accuracy
+			- High value
+			- Anti-materiel
+			
+			095 AMD
+			055 DMG - 100 SPD - 225 WMP - 050 RNG
+			Cooldown 2.00
+			% 0.34 - 0.83 - 0.93 - 0.98
+			
+			2443 $
+			225k WtM - 200 stl, 20 cmpt, 15 pstl
+			
+			.416 Barrett
+			.50 BMG
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_MEightyTwo</defName>
+		<label>police AMR</label>
+		<description>A semi-automatic anti-materiel rifle with recoil compensation and a lightweight design. Used to destroy walls. Low fire rate, high range, very high damage and accuracy.</description>
+		<graphicData>
+			<texPath>Things/Release/M82</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>225000</WorkToMake>
+			<Mass>14.00</Mass>
+				<AimEfficiency>1.25</AimEfficiency>
+				<ShotSpread>0.04</ShotSpread>
+				<SwayFactor>0.47</SwayFactor>
+				<Bulk>12.00</Bulk>
+				<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>AntiMateriel</li>
+		</thingCategories>
+		<costList>
+			<Steel>120</Steel>
+			<Component>20</Component>
+			<Plasteel>15</Plasteel>
+		</costList>
+		<generateCommonality>0.3</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>RF_AntiMateriel</researchPrerequisite>
+		</recipeMaker>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_50BMG_FMJ</projectileDef>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>2.2</warmupTime>
+				<range>180</range>
+				<soundCast>RF_ShotMEightyTwo</soundCast>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTicks>420</reloadTicks>
+				<ammoSet>AmmoSet_50BMG</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+	</ThingDef>
+	
+<!-- M A C H I N E G U N S
+	LMG
+		008 DMG - 040 SPD - 120 WMP - 026 RNG
+		Cooldown 1.40
+		Burst 06x 007
+		% 0.50 - 0.64 - 0.41 - 0.22
+		
+		800 $
+		90k WtM - 150 stl, 4 cmpts
+		
+	MINIGUN
+		008 DMG - 070 SPD - 240 WMP - 032 RNG
+		Cooldown 0.66
+		Burst 30x 004
+		% 0.50 - 0.42 - 0.18 - 0.06
+		
+		2200 $
+		220k WtM - 120 stl, 20 cmpts
+-->
+	<!-- ==================== M134 machinegun ========================= 
+	
+			008 DMG - 070 SPD - 160 WMP - 032 RNG
+			Cooldown 1.20
+			Burst 20x 003
+			% 0.50 - 0.40 - 0.20 - 0.10
+			
+			2412 $
+			240k WtM - 160 stl, 23 cmpt
+			
+			7.62x51mm NATO
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Mhundredthirtyfour</defName>
+		<label>mitrailleuse</label>
+		<description>A light-weight multi-barrel machine gun with an extremely high rate of fire. Slightly superior accuracy.</description>
+		<graphicData>
+			<texPath>Things/Release/M134</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>110000</WorkToMake>
+			<Mass>19.00</Mass>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.3</Flammability>
+				<AimEfficiency>0.15</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>3.70</SwayFactor>
+				<Bulk>16.00</Bulk>
+				<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>HeavyWeapons</li>
+		</thingCategories>
+		<costList>
+			<Steel>160</Steel>
+			<Component>23</Component>
+		</costList>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>3.60</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<burstShotCount>100</burstShotCount>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+				<warmupTime>1.8</warmupTime>
+				<range>80</range>
+				<soundCast>RF_ShotM134</soundCast>
+				<muzzleFlashScale>1</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>100</magazineSize>
+				<reloadTicks>600</reloadTicks>
+				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+				<aimedBurstShotCount>20</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== Type 73 machine gun ===================== 
+	
+			008 DMG - 050 SPD - 120 WMP - 026 RNG
+			Cooldown 1.60
+			Burst 06x 006
+			% 0.33 - 0.57 - 0.51 - 0.24
+			
+			815 $
+			85k WtM - 140 stl, 6 cmpt, 10 log
+			
+			7.62x54mmR
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_Type73LMG</defName>
+		<label>box-magazine GPMG</label>
+		<description>A general-purpose machine gun with a large calibre, curved box magazine. High damage and fire rate, more accurate at medium range.</description>
+		<graphicData>
+			<texPath>Things/Release/Type73LMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<Mass>10.6</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>3.09</SwayFactor>
+				<Bulk>14.28</Bulk>
+				<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>MachineGuns</li>
+		</thingCategories>
+		<costList>
+			<Steel>70</Steel>
+			<Component>6</Component>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<generateCommonality>0.75</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.45</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
+				<warmupTime>2.2</warmupTime>
+				<range>107</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>RF_ShotType73LMG</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTicks>420</reloadTicks>
+				<ammoSet>AmmoSet_762x54mmR</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CR_MachineGun</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Madsen LMG ==============================
+	
+			008 DMG - 050 SPD - 110 WMP - 026 RNG
+			Cooldown 1.35
+			Burst 05x 009
+			% 0.25 - 0.57 - 0.46 - 0.28
+			
+			704 $
+			70k WtM - 125 stl, 5 cmpts, 10 log
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_MadsenLMG</defName>
+		<label>replica LMG</label>
+		<description>A replica of the first carryable machine gun, recoil controlled and with a small gravity-fed magazine. High damage and average fire rate, accurate at higher range.</description>
+		<graphicData>
+			<texPath>Things/Release/MadsenLMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>26500</WorkToMake>
+			<Mass>9.07</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>2.78</SwayFactor>
+				<Bulk>11.43</Bulk>
+				<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>MachineGuns</li>
+		</thingCategories>
+		<costList>
+			<Steel>65</Steel>
+			<Component>5</Component>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<generateCommonality>0.5</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.34</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_303British_FMJ</projectileDef>
+				<warmupTime>2.2</warmupTime>
+				<range>107</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>RF_ShotMadsenLMG</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTicks>420</reloadTicks>
+				<ammoSet>AmmoSet_303British</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CR_MachineGun</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- ==================== Rheinmetall MG60 ========================
+	
+			008 DMG - 040 SPD - 130 WMP - 028 RNG
+			Cooldown 1.48
+			Burst 08x 004
+			% 0.50 - 0.65 - 0.40 - 0.19
+			
+			1142 $
+			95k WtM - 180 stl, 8 cmpts, 5 log
+			
+			7.62x51mm NATO
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_MGSixty</defName>
+		<label>replica GPMG</label>
+		<description>An ancient prototype general-purpose machine gun with an unusually high fire rate for its time. High damage, accurate at medium range.</description>
+		<graphicData>
+			<texPath>Things/Release/MG60</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>10.50</Mass>
+				<AimEfficiency>0.50</AimEfficiency>
+				<ShotSpread>0.08</ShotSpread>
+				<SwayFactor>3.25</SwayFactor>
+				<Bulk>11.15</Bulk>
+				<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>MachineGuns</li>
+		</thingCategories>
+		<costList>
+			<Steel>85</Steel>
+			<Component>8</Component>
+			<WoodLog>5</WoodLog>
+		</costList>
+		<generateCommonality>0.85</generateCommonality>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.45</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<warmupTime>2.2</warmupTime>
+				<range>107</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>RF_ShotMGSixty</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTicks>420</reloadTicks>
+				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CR_MachineGun</li>
+		</weaponTags>
+	</ThingDef>
+	
+<!-- E X P L O S I V E S -->
+	<!-- ==================== Milkor MGL ============================== 
+	
+			040 DMG - 020 SPD - 100 WMP - 016 RNG
+			Cooldown 1.66
+			Bomb 1.90
+			% 0.65 - 0.48 - 0.16 - 0.04
+			
+			2610 $
+			260k WtM - 90 stl, 8 cmpt, 25 pstl, 10 shl
+			
+			40x46mm grenade
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_MilkorMGL</defName>
+		<label>multiple grenade launcher</label>
+		<description>A launcher type weapon that fires 40mm concussive grenades at a higher rate than a human could.</description>
+		<graphicData>
+			<texPath>Things/Release/MilkorMGL</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>115000</WorkToMake>
+			<Mass>5.30</Mass>
+				<AimEfficiency>0.875</AimEfficiency>
+				<ShotSpread>0.1</ShotSpread>
+				<SwayFactor>1.51</SwayFactor>
+				<Bulk>10.89</Bulk>
+				<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>HeavyWeapons</li>
+		</thingCategories>
+		<costList>
+			<Steel>60</Steel>
+			<Component>10</Component>
+			<Plasteel>25</Plasteel>
+			<MortarShell>10</MortarShell>
+		</costList>
+		<generateCommonality>0.05</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>RF_PlasteelGuns</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.4</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_40x46mmGrenade_HE</projectileDef>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>1.10</warmupTime>
+				<forcedMissRadius>1.0</forcedMissRadius>
+				<range>40</range>	<!-- grenades at 12.9 -->
+				<minrange>2</minrange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>RF_ShotMilkorMGL</soundCast>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>6</magazineSize>
+				<reloadTicks>900</reloadTicks>
+				<ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiUseAimMode>FALSE</aiUseAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== RPG-7 =================================== 
+			040 DMG - 050 SPD - 270 WMP - 040 RNG
+			Cooldown 4.50
+			Bomb 0.00
+			% 0.40 - 0.40 - 0.92 - 0.56
+			
+			540 $
+			150k WtM - 150 stl, 10 cmpt, 25 log, 10 shl
+			
+			40mm rpg
+	-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_RPGSeven</defName>
+		<label>RPG launcher</label>
+		<description>A short rocket-propelled grenade launcher that fires single projectiles which explode on impact. A relatively very cheap, multiple use rocket launcher.</description>
+		<graphicData>
+			<texPath>Things/Release/RPG-7_heat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>7.00</Mass>
+				<AimEfficiency>1</AimEfficiency>
+				<ShotSpread>1</ShotSpread>
+				<SwayFactor>2.42</SwayFactor>
+				<Bulk>9.50</Bulk>
+				<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>HeavyWeapons</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisite>RF_SmallRockets</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>80</Steel>
+			<Component>10</Component>
+			<WoodLog>25</WoodLog>
+			<MortarShell>10</MortarShell>
+		</costList>
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_RPG7Grenade_HEAT</projectileDef>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>1.80</warmupTime>
+				<forcedMissRadius>2.8</forcedMissRadius>
+				<range>40</range>	<!-- grenades at 12.9, rockets at 40 -->
+				<minrange>5</minrange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>RF_ShotRPG7</soundCast>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTicks>600</reloadTicks>
+				<ammoSet>AmmoSet_RPG7Grenade</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== Carl Gustaf launcher ==================== 
+			040 DMG - 050 SPD - 270 WMP - 040 RNG
+			Cooldown 4.50
+			Bomb 0.00
+			% 0.50 - 0.75 - 0.92 - 0.56
+			
+			4500 $
+			200k WtM - 250 stl, 18 cmpt, 40 pstl, 12 shl
+	-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RF_Projectile_CarlGustaf</defName>
+		<label>MAAWS rocket</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Release/CarlGustaf_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<speed>50</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<explosionRadius>4.6</explosionRadius>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RF_Gun_CarlGustaf</defName>
+		<label>MAAWS</label>
+		<description>The Multi-role Anti-armor Anti-tank Weapon System: a recoil dampened, breech hinged main tube with optical sights, capable of firing high explosive rounds. A strong and slow firing multiple use alternative to single-shot launchers.</description>
+		<graphicData>
+			<texPath>Things/Release/CarlGustaf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>100000</WorkToMake>
+			<Mass>8.50</Mass>
+			<AccuracyTouch>0.5</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.92</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>4.50</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>HeavyWeapons</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisite>RF_SmallRockets</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>250</Steel>
+			<Component>18</Component>
+			<MortarShell>12</MortarShell>
+			<Plasteel>40</Plasteel>
+		</costList>
+		<generateCommonality>0.2</generateCommonality>
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Projectile_CarlGustaf</projectileDef>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>5.00</warmupTime>
+				<forcedMissRadius>2.8</forcedMissRadius>
+				<range>40</range>	<!-- grenades at 12.9, rockets at 40 -->
+				<minrange>5</minrange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>RF_ShotCarlGustaf</soundCast>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+</ThingDefs>

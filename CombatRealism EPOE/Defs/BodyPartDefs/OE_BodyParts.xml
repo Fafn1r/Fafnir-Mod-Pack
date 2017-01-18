@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<BodyPartDefs>
+
+  <BodyPartDef>
+    <defName>LeftLeg</defName>
+    <label>left leg</label>
+    <hitPoints>40</hitPoints>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <skinCovered>true</skinCovered>
+    <activities>
+      <li>Moving_leftWay1</li>
+    </activities>
+    <spawnThingOnRemoved>Leg</spawnThingOnRemoved>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>RightLeg</defName>
+    <label>right leg</label>
+    <hitPoints>40</hitPoints>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <skinCovered>true</skinCovered>
+    <activities>
+      <li>Moving_rightWay1</li>
+    </activities>
+    <spawnThingOnRemoved>Leg</spawnThingOnRemoved>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>Rib1</defName>
+    <label>first rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Rib2</defName>
+    <label>second rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Rib3</defName>
+    <label>third rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Rib4</defName>
+    <label>fourth rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+	
+  <BodyPartDef>
+    <defName>Rib5</defName>
+    <label>fifth rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>Rib6</defName>
+    <label>sixth rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Rib7</defName>
+    <label>seventh rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Rib8</defName>
+    <label>eighth rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Rib9</defName>
+    <label>ninth rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Rib10</defName>
+    <label>tenth rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Rib11</defName>
+    <label>eleventh rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Rib12</defName>
+    <label>twelfth rib</label>
+    <hitPoints>13</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+  
+</BodyPartDefs>

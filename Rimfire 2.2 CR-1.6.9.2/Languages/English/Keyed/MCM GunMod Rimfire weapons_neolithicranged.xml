@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Short_RF_Atlatl>atlatl</Short_RF_Atlatl>
+	<Short_RF_Pilum_Fired>atlatl dart (fired)</Short_RF_Pilum_Fired>
+
+	<Long_RF_Atlatl>atlatl</Long_RF_Atlatl>
+	<Long_RF_Pilum_Fired>atlatl dart (fired)</Long_RF_Pilum_Fired>
+
+	<AEight_RF_Atlatl>atlatl</AEight_RF_Atlatl>
+	<AEight_RF_Pilum_Fired>atlatl dart (fired)</AEight_RF_Pilum_Fired>
+
+	<ANine_RF_Atlatl>atlatl</ANine_RF_Atlatl>
+	<ANine_RF_Pilum_Fired>atlatl dart (fired)</ANine_RF_Pilum_Fired>
+
+	<Simple_RF_Atlatl>spear thrower</Simple_RF_Atlatl>
+	<Simple_RF_Pilum_Fired>spear (fired)</Simple_RF_Pilum_Fired>
+
+</LanguageData>

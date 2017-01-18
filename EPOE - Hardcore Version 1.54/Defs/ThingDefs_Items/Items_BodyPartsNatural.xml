@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Leg</defName>
+		<label>leg</label>
+		<description>Basically long meaty sticks that let you move around.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+		</statBases>
+		<tradeability>Never</tradeability>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Arm</defName>
+		<label>arm</label>
+		<description>Arms are like legs, except you can carry stuff with them.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+		</statBases>
+		<tradeability>Never</tradeability>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Stomach</defName>
+		<label>stomach</label>
+		<description>Digests food and turns it into energy and nutrients.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Heart</defName>
+		<label>heart</label>
+		<description>Supplies blood and oxygen to all parts of the body. Ready to find a new owner.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Liver</defName>
+		<label>liver</label>
+		<description>Plays an important role in metabolism.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Lung</defName>
+		<label>lung</label>
+		<description>Essential part of the respiratory system.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Kidney</defName>
+		<label>kidney</label>
+		<description>Filters and removes waste products from the blood.</description>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Organ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+	</ThingDef>
+
+</ThingDefs>

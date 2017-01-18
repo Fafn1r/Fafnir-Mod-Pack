@@ -16,7 +16,7 @@ namespace Psychology.Detour
         {
             if (_this.GetType() == typeof(InteractionWorker_DeepTalk))
             {
-                if (initiator.needs.mood.thoughts.memories.NumMemoryThoughtsOfDef(ThoughtDefOfPsychology.Homesickness) > 0 && Rand.Value < 0.5f)
+                if (initiator.needs.mood.thoughts.memories.NumMemoryThoughtsOfDef(ThoughtDefOfPsychology.Homesickness) > 0 && Rand.Value < (0.1f + initiator.GetStatValue(StatDefOf.SocialImpact)))
                 {
                     recipient.needs.mood.thoughts.memories.TryGainMemoryThought(ThoughtDefOfPsychology.Homesickness);
                 }
@@ -75,7 +75,7 @@ namespace Psychology.Detour
                 }
                 if (clique || cliqueLinks.Count > 0)
                 {
-                    if (Rand.Value <= 0.05f)
+                    if (Rand.Value <= 0.05f && lastFightTick <= Find.TickManager.TicksGame - 5000)
                     {
                         if (!checkInitiator && Rand.Value <= Mathf.InverseLerp(50f, -100f, recipient.relations.OpinionOf(initiator)))
                         {
@@ -93,9 +93,12 @@ namespace Psychology.Detour
                             }
                             initiator.interactions.StartSocialFight(recipient);
                         }
+                        lastFightTick = Find.TickManager.TicksGame;
                     }
                 }
             }
         }
+
+        private static int lastFightTick = -9999;
     }
 }

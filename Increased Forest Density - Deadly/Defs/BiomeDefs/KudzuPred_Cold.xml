@@ -63,57 +63,27 @@
     </terrainsByFertility>
     <terrainPatchMakers>
       <li>
-        <perlinFrequency>0.017</perlinFrequency>
+        <perlinFrequency>0.015</perlinFrequency>
         <thresholds>
           <li>
             <terrain>MossyTerrain</terrain>
-            <min>0.15</min>
-            <max>0.40</max>
+            <min>0.0</min>
+            <max>0.32</max>
           </li>
           <li>
-            <terrain>Ice</terrain>
-            <min>0.40</min>
-            <max>0.70</max>
+            <terrain>Marsh</terrain>
+            <min>0.32</min>
+            <max>0.76</max>
           </li>
           <li>
             <terrain>WaterShallow</terrain>
-            <min>0.70</min>
-            <max>0.82</max>
+            <min>0.76</min>
+            <max>0.98</max>
           </li>
           <li>
             <terrain>WaterDeep</terrain>
-            <min>0.82</min>
-            <max>1.27</max>
-          </li>
-        </thresholds>
-      </li>
-	  <li>
-        <perlinFrequency>0.008</perlinFrequency>
-        <thresholds>
-          <li>
-            <terrain>MarshyTerrain</terrain>
-            <min>0.10</min>
-            <max>0.25</max>
-          </li>
-		  <li>
-            <terrain>SoilRich</terrain>
-            <min>0.25</min>
-            <max>0.40</max>
-          </li>
-        </thresholds>
-      </li>
-	  <li>
-        <perlinFrequency>0.02</perlinFrequency>
-        <thresholds>
-          <li>
-            <terrain>MarshyTerrain</terrain>
-            <min>0.20</min>
-            <max>0.40</max>
-          </li>
-		  <li>
-            <terrain>Marsh</terrain>
-            <min>0.40</min>
-            <max>0.60</max>
+            <min>0.98</min>
+            <max>999</max>
           </li>
         </thresholds>
       </li>
@@ -142,30 +112,27 @@
 	  <PlantTreeOak>0.6</PlantTreeOak>
     </wildPlants>
     <wildAnimals>
-      <PolarBear>0.18</PolarBear>
-	  <WolfArctic>0.35</WolfArctic>
-      <FoxArctic>0.1</FoxArctic>
-      <Chinchilla>0.3</Chinchilla>
-      <Boomalope>0.2</Boomalope>
-      <Capybara>0.1</Capybara>
-      <Alpaca>0.2</Alpaca>
-      <Ibex>0.2</Ibex>
-      <Deer>0.2</Deer>
-      <Muffalo>0.15</Muffalo>
-      <Squirrel>0.3</Squirrel>
-      <WildBoar>0.15</WildBoar>
-      <Boomrat>0.1</Boomrat>
-      <Snowhare>0.6</Snowhare>
+      <Elk>0.5</Elk>
+      <Ibex>0.4</Ibex>
+      <Caribou>0.5</Caribou>
+      <Muffalo>0.5</Muffalo>
+      <Squirrel>1</Squirrel>
+      <WildBoar>0.5</WildBoar>
+      <Hare>1</Hare>
+      <Husky>0.01</Husky>
       <Turkey>0.2</Turkey>
-      <Ostrich>0.05</Ostrich>
-      <Raccoon>0.1</Raccoon>
+      <Deer>0.03</Deer>
+      <Rat>0.8</Rat>
       <Megasloth>0.03</Megasloth>
-      <Warg>0.5</Warg>
-      <GrizzlyBear>0.35</GrizzlyBear>
-      <Cougar>0.01</Cougar>
-      <Lynx>0.4</Lynx>
-      <WolfTimber>0.6</WolfTimber>
-      <FoxRed>0.05</FoxRed>
+      <Raccoon>0.4</Raccoon>
+      <Warg>0.02</Warg>
+      <GrizzlyBear>0.03</GrizzlyBear>
+      <Cougar>0.02</Cougar>
+      <Lynx>0.02</Lynx>
+      <WolfTimber>0.14</WolfTimber>
+      <WolfArctic>0.03</WolfArctic>
+      <FoxArctic>0.04</FoxArctic>
+      <FoxRed>0.04</FoxRed>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>

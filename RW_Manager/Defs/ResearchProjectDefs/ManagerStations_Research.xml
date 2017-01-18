@@ -13,7 +13,8 @@ Allows building manager desks with a computer, pre-installed with a host of guar
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites></prerequisites>
-        <researchViewX>7</researchViewX>
+        <researchViewX>16</researchViewX>
+        <researchViewY>4</researchViewY>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -30,7 +31,8 @@ Advancements in AI and colony-aware computers allow the building of Colony Aware
         <prerequisites>
             <li>ManagingSoftware</li>
         </prerequisites>
-        <researchViewX>8</researchViewX>
+        <researchViewX>25</researchViewX>
+        <researchViewY>4</researchViewY>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -49,6 +51,7 @@ Advancements in AI and colony-aware computers allow the building of Colony Aware
             <specialAction>FluffyManager.ResearchWorkers.UnlockPowerTab</specialAction>
           </li>
         </researchMods>
-        <researchViewX>8</researchViewX>
+        <researchViewX>17</researchViewX>
+        <researchViewY>4</researchViewY>
     </ResearchProjectDef>
 </ResearchProjectDefs>

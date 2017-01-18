@@ -11,6 +11,7 @@
 		<baseCost>300</baseCost>
 		    <techLevel>Neolithic</techLevel>
  		<researchViewX>0</researchViewX>
+ 		<researchViewY>0</researchViewY>
  </ResearchProjectDef>
 
 
@@ -24,6 +25,7 @@
 			<li>agriculture</li>
 		</prerequisites>
  		<researchViewX>1</researchViewX>
+ 		<researchViewY>0</researchViewY>
   </ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -35,7 +37,8 @@
 		<prerequisites>
 			<li>agricultureII</li>
 		</prerequisites>
- 		<researchViewX>2</researchViewX>
+ 		<researchViewX>3</researchViewX>
+ 		<researchViewY>0</researchViewY>
  	 </ResearchProjectDef>
 
 
@@ -49,6 +52,7 @@
 			<li>agriculture</li>
 		</prerequisites>
  		<researchViewX>1</researchViewX>
+ 		<researchViewY>1</researchViewY>
  	 </ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -57,7 +61,8 @@
 		<description>Researches plants the absorb minerals from the ground. That can be extracted in a smelter.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Industrial</techLevel>
-		<researchViewX>7</researchViewX>
+		<researchViewX>20</researchViewX>
+		<researchViewY>1</researchViewY>
  	 </ResearchProjectDef>
 
 
@@ -68,8 +73,8 @@
 		<description>Researches methods of advanced cooking machines. \nUnlocks the electric cooking stove, Sweets table, for makes Milk based treats and candies.</description>
 		<baseCost>500</baseCost>
 		    <techLevel>Industrial</techLevel>
-		<researchViewX>2</researchViewX>
-
+		<researchViewX>7</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
 
@@ -79,7 +84,8 @@
 		<description>Researches methods of making farmable soil. \n\nUnlocks placing soil on smoothed stone and other finished flooring. \n\nUnlocks Floor menus Place Soil and Garden Soil.</description>
 		<baseCost>800</baseCost>
 		    <techLevel>Medieval</techLevel>
-		<researchViewX>1</researchViewX>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0.5</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -92,7 +98,8 @@
 			<li>SoilReclam</li>
 			<li>MultiAnalyzer</li>
 		</prerequisites>
-		<researchViewX>9</researchViewX>
+		<researchViewX>19</researchViewX>
+		<researchViewY>0.5</researchViewY>
 	</ResearchProjectDef>
 
 
@@ -105,7 +112,8 @@
     <prerequisites>
       <li>Hydroponics</li>
     </prerequisites>
-		<researchViewX>8</researchViewX>
+	<researchViewX>12</researchViewX>
+	<researchViewY>0</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -114,7 +122,8 @@
     <description>Allows you to build advanced sun lamps that prvode lamp and act as a small heater to grow crops.</description>
     <baseCost>800</baseCost>
     <techLevel>Industrial</techLevel>
-		<researchViewX>2</researchViewX>
+	<researchViewX>7</researchViewX>
+	<researchViewY>0</researchViewY>
   </ResearchProjectDef>
 
 

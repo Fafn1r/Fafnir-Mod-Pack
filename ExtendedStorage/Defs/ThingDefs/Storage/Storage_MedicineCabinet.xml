@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <!--============================== Storage ===========================-->
+
+  <ExtendedStorage.ESdef ParentName="BuildingBase">
+    <defName>Storage_MedicineCabinet</defName>
+    <label>Medicine Cabinet</label>
+    <thingClass>ExtendedStorage.Building_ExtendedStorage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/MedCab/MedCab</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <maxStorage>300</maxStorage>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>580</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <description>Haulers carry medicine and drugs here for storage.</description>
+    <size>(2,1)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+    <filthLeaving>BuildingRubble</filthLeaving>
+    <building>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+            <li>Drugs</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <tickerType>Normal</tickerType>
+    <designationCategory>Furniture</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+  </ExtendedStorage.ESdef>
+
+</Buildings>

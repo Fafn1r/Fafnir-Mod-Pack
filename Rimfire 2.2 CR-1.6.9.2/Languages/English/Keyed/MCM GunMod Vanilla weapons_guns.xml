@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Short_Gun_Pistol>M1911</Short_Gun_Pistol>
+	<Short_Gun_PumpShotgun>Mossberg 500</Short_Gun_PumpShotgun>
+	<Short_Gun_SurvivalRifle>Lee-Enfield</Short_Gun_SurvivalRifle>
+	<Short_Gun_AssaultRifle>M16</Short_Gun_AssaultRifle>
+	<Short_Gun_SniperRifle>M24</Short_Gun_SniperRifle>
+	<Short_Gun_PDW>Uzi</Short_Gun_PDW>
+	<Short_Gun_HeavySMG>KG-9</Short_Gun_HeavySMG>
+	<Short_Gun_LMG>DPM</Short_Gun_LMG>
+	<Short_Gun_Minigun>M61</Short_Gun_Minigun>
+	<Short_Bullet_Pistol>M1911 bullet</Short_Bullet_Pistol>
+	<Short_Bullet_PumpShotgun>Mossberg 500 blast</Short_Bullet_PumpShotgun>
+	<Short_Bullet_SurvivalRifle>Lee-Enfield bullet</Short_Bullet_SurvivalRifle>
+	<Short_Bullet_AssaultRifle>M16 bullet</Short_Bullet_AssaultRifle>
+	<Short_Bullet_SniperRifle>M24 bullet</Short_Bullet_SniperRifle>
+	<Short_Bullet_PDW>Uzi bullet</Short_Bullet_PDW>
+	<Short_Bullet_HeavySMG>KG-9 bullet</Short_Bullet_HeavySMG>
+	<Short_Bullet_LMG>DPM bullet</Short_Bullet_LMG>
+	<Short_Bullet_Minigun>M61 bullet</Short_Bullet_Minigun>
+
+	<Long_Gun_Pistol>Colt M1911</Long_Gun_Pistol>
+	<Long_Gun_PumpShotgun>Mossberg 500</Long_Gun_PumpShotgun>
+	<Long_Gun_SurvivalRifle>Lee-Enfield No. 4</Long_Gun_SurvivalRifle>
+	<Long_Gun_AssaultRifle>Colt M16A3</Long_Gun_AssaultRifle>
+	<Long_Gun_SniperRifle>Remington M24 Sniper Weapon System</Long_Gun_SniperRifle>
+	<Long_Gun_PDW>IMI Uzi</Long_Gun_PDW>
+	<Long_Gun_HeavySMG>Interdynamic KG-9</Long_Gun_HeavySMG>
+	<Long_Gun_LMG>Degtyaryov machine gun</Long_Gun_LMG>
+	<Long_Gun_Minigun>Hand held GE M61 Vulcan</Long_Gun_Minigun>
+	<Long_Bullet_Pistol>Colt M1911 bullet</Long_Bullet_Pistol>
+	<Long_Bullet_PumpShotgun>Mossberg 500 blast</Long_Bullet_PumpShotgun>
+	<Long_Bullet_SurvivalRifle>Lee-Enfield No. 4 bullet</Long_Bullet_SurvivalRifle>
+	<Long_Bullet_AssaultRifle>Colt M16A3 bullet</Long_Bullet_AssaultRifle>
+	<Long_Bullet_SniperRifle>Remington M24 Sniper Weapon System bullet</Long_Bullet_SniperRifle>
+	<Long_Bullet_PDW>IMI Uzi bullet</Long_Bullet_PDW>
+	<Long_Bullet_HeavySMG>Interdynamic KG-9 bullet</Long_Bullet_HeavySMG>
+	<Long_Bullet_LMG>Degtyaryov bullet</Long_Bullet_LMG>
+	<Long_Bullet_Minigun>Hand held GE M61 Vulcan bullet</Long_Bullet_Minigun>
+	
+	<AEight_Gun_Pistol>pistol</AEight_Gun_Pistol>
+	<AEight_Gun_PumpShotgun>pump shotgun</AEight_Gun_PumpShotgun>
+	<AEight_Gun_SurvivalRifle>Lee-Enfield</AEight_Gun_SurvivalRifle>
+	<AEight_Gun_AssaultRifle>M-16</AEight_Gun_AssaultRifle>
+	<AEight_Gun_SniperRifle>M-24</AEight_Gun_SniperRifle>
+	<AEight_Gun_PDW>Uzi</AEight_Gun_PDW>
+	<AEight_Gun_HeavySMG>KG-9</AEight_Gun_HeavySMG>
+	<AEight_Gun_LMG>L-15 LMG</AEight_Gun_LMG>
+	<AEight_Gun_Minigun>minigun</AEight_Gun_Minigun>
+	<AEight_Bullet_Pistol>pistol bullet</AEight_Bullet_Pistol>
+	<AEight_Bullet_PumpShotgun>shotgun blast</AEight_Bullet_PumpShotgun>
+	<AEight_Bullet_SurvivalRifle>rifle bullet</AEight_Bullet_SurvivalRifle>
+	<AEight_Bullet_AssaultRifle>M-16 bullet</AEight_Bullet_AssaultRifle>
+	<AEight_Bullet_SniperRifle>M-24 bullet</AEight_Bullet_SniperRifle>
+	<AEight_Bullet_PDW>uzi bullet</AEight_Bullet_PDW>
+	<AEight_Bullet_HeavySMG>KG-9</AEight_Bullet_HeavySMG>
+	<AEight_Bullet_LMG>L-15 bullet</AEight_Bullet_LMG>
+	<AEight_Bullet_Minigun>minigun bullet</AEight_Bullet_Minigun>
+
+		<ANine_Gun_Pistol>pistol</ANine_Gun_Pistol>
+		<ANine_Gun_PumpShotgun>pump shotgun</ANine_Gun_PumpShotgun>
+		<ANine_Gun_SurvivalRifle>survival rifle</ANine_Gun_SurvivalRifle>
+		<ANine_Gun_AssaultRifle>assault rifle</ANine_Gun_AssaultRifle>
+		<ANine_Gun_SniperRifle>sniper rifle</ANine_Gun_SniperRifle>
+		<ANine_Gun_PDW>PDW</ANine_Gun_PDW>
+		<ANine_Gun_HeavySMG>heavy SMG</ANine_Gun_HeavySMG>
+		<ANine_Gun_LMG>LMG</ANine_Gun_LMG>
+		<ANine_Gun_Minigun>minigun</ANine_Gun_Minigun>
+		<ANine_Bullet_Pistol>pistol bullet</ANine_Bullet_Pistol>
+		<ANine_Bullet_PumpShotgun>shotgun blast</ANine_Bullet_PumpShotgun>
+		<ANine_Bullet_SurvivalRifle>survival rifle bullet</ANine_Bullet_SurvivalRifle>
+		<ANine_Bullet_AssaultRifle>assault rifle bullet</ANine_Bullet_AssaultRifle>
+		<ANine_Bullet_SniperRifle>sniper rifle bullet</ANine_Bullet_SniperRifle>
+		<ANine_Bullet_PDW>PDW bullet</ANine_Bullet_PDW>
+		<ANine_Bullet_HeavySMG>heavy SMG bullet</ANine_Bullet_HeavySMG>
+		<ANine_Bullet_LMG>LMG bullet</ANine_Bullet_LMG>
+		<ANine_Bullet_Minigun>minigun bullet</ANine_Bullet_Minigun>
+
+		<Simple_Gun_Pistol>base pistol</Simple_Gun_Pistol>
+		<Simple_Gun_PumpShotgun>pump shotgun</Simple_Gun_PumpShotgun>
+		<Simple_Gun_SurvivalRifle>survival rifle</Simple_Gun_SurvivalRifle>
+		<Simple_Gun_AssaultRifle>standard assault rifle</Simple_Gun_AssaultRifle>
+		<Simple_Gun_SniperRifle>sniper rifle</Simple_Gun_SniperRifle>
+		<Simple_Gun_PDW>SMG</Simple_Gun_PDW>
+		<Simple_Gun_HeavySMG>heavy SMG</Simple_Gun_HeavySMG>
+		<Simple_Gun_LMG>LMG</Simple_Gun_LMG>
+		<Simple_Gun_Minigun>minigun</Simple_Gun_Minigun>
+		<Simple_Bullet_Pistol>base pistol bullet</Simple_Bullet_Pistol>
+		<Simple_Bullet_PumpShotgun>pump shotgun blast</Simple_Bullet_PumpShotgun>
+		<Simple_Bullet_SurvivalRifle>survival rifle bullet</Simple_Bullet_SurvivalRifle>
+		<Simple_Bullet_AssaultRifle>standard assault rifle bullet</Simple_Bullet_AssaultRifle>
+		<Simple_Bullet_SniperRifle>sniper rifle bullet</Simple_Bullet_SniperRifle>
+		<Simple_Bullet_PDW>SMG bullet</Simple_Bullet_PDW>
+		<Simple_Bullet_HeavySMG>heavy SMG bullet</Simple_Bullet_HeavySMG>
+		<Simple_Bullet_LMG>LMG bullet</Simple_Bullet_LMG>
+		<Simple_Bullet_Minigun>minigun bullet</Simple_Bullet_Minigun>
+
+</LanguageData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ==================== Javelins ======================== -->
+
+	<Combat_Realism.AmmoSetDef>
+		<defName>AmmoSet_Javelins</defName>
+		<label>javelins</label>
+		<ammoTypes>
+			<li>Pila</li>
+		</ammoTypes>
+	</Combat_Realism.AmmoSetDef>
+	
+</Defs>

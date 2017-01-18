@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Short_RF_ShortCrossbow>short crossbow</Short_RF_ShortCrossbow>
+	<Short_RF_Projectile_ShortCrossbow>short crossbow bolt</Short_RF_Projectile_ShortCrossbow>
+
+	<Long_RF_ShortCrossbow>short crossbow</Long_RF_ShortCrossbow>
+	<Long_RF_Projectile_ShortCrossbow>short crossbow bolt</Long_RF_Projectile_ShortCrossbow>
+
+	<AEight_RF_ShortCrossbow>short crossbow</AEight_RF_ShortCrossbow>
+	<AEight_RF_Projectile_ShortCrossbow>short crossbow bolt</AEight_RF_Projectile_ShortCrossbow>
+
+	<ANine_RF_ShortCrossbow>short crossbow</ANine_RF_ShortCrossbow>
+	<ANine_RF_Projectile_ShortCrossbow>short crossbow bolt</ANine_RF_Projectile_ShortCrossbow>
+
+	<Simple_RF_ShortCrossbow>crossbow</Simple_RF_ShortCrossbow>
+	<Simple_RF_Projectile_ShortCrossbow>crossbow bolt</Simple_RF_Projectile_ShortCrossbow>
+
+</LanguageData>

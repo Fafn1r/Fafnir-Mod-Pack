@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef Name="BaseWeaponNeolithic" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>Neolithic</li>
+		</weaponTags>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ==================== Atlatl ================================== 
+	-->
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>RF_Atlatl</defName>
+		<label>atlatl</label>
+		<description>A device which supplies a more powerful method for throwing javelins.</description>
+		<graphicData>
+			<texPath>Things/Release/Atlatl</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<costList>
+			<WoodLog>2</WoodLog>
+		</costList>
+		<generateCommonality>1.50</generateCommonality>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>0.80</Mass>
+				<AimEfficiency>0.35</AimEfficiency>
+				<ShotSpread>2</ShotSpread>
+				<SwayFactor>2</SwayFactor>
+				<Bulk>0.80</Bulk>
+				<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>NeolithicRanged</li>
+			<li>CR_Pila</li>
+		</weaponTags>
+		<thingCategories>
+			<li>NeolithicRanged</li>
+		</thingCategories>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>RF_Pilum_Fired</projectileDef>
+				<warmupTime>1</warmupTime>
+				<range>16</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<ejectsCasings>false</ejectsCasings>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<ammoSet>AmmoSet_Javelins</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aiUseBurstMode>false</aiUseBurstMode>
+				<aiUseAimMode>false</aiUseAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</ThingDefs>

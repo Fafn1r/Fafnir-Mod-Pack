@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecipeDefs>
+    <RecipeDef Name="SurgeryBone" ParentName="SurgeryFlesh" Abstract="True">
+<surgeonSurgerySuccessChanceExponent>1</surgeonSurgerySuccessChanceExponent>
+		<surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.02</deathOnFailedSurgeryChance>
+        <recipeUsers>
+            <li>Human</li>
+        </recipeUsers>
+    </RecipeDef>
+
+<RecipeDef ParentName="SurgeryBone">
+  <defName>RepairClavicle</defName>
+  <label>repair clavicle</label>
+  <description>Repair clavicle</description>
+  <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+  <jobString>Repairing clavicle</jobString>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <workAmount>4000</workAmount>
+  <ingredients>
+    <li>
+      <filter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+      </filter>
+      <count>2</count>
+    </li>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Plasteel</li>
+        </thingDefs>
+      </filter>
+      <count>10</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <categories>
+      <li>Medicine</li>
+    </categories>
+    <exceptedThingDefs>
+      <li>HerbalMedicine</li>
+    </exceptedThingDefs>
+    <thingDefs>
+      <li>Plasteel</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>LeftClavicle</li>
+    <li>RightClavicle</li>
+  </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryBone">
+  <defName>RepairSternum</defName>
+  <label>repair sternum</label>
+  <description>Repair Sternum</description>
+  <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+  <jobString>Repairing Sternum</jobString>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <workAmount>4000</workAmount>
+  <ingredients>
+    <li>
+      <filter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+      </filter>
+      <count>2</count>
+    </li>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Steel</li>
+        </thingDefs>
+      </filter>
+      <count>40</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <categories>
+      <li>Medicine</li>
+    </categories>
+    <exceptedThingDefs>
+      <li>HerbalMedicine</li>
+    </exceptedThingDefs>
+    <thingDefs>
+      <li>Steel</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Sternum</li>
+  </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+</RecipeDef>
+
+<!-- RibCage -->
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairFirstRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair first rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib1</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairSecondRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair second rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib2</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairThirdRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair third rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib3</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairFourthRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair fourth rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib4</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairFifthRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair fifth rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib5</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairSixthRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair sixth rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib6</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairSeventhRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair seventh rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib7</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairEighthRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair eighth rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib8</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairNinthRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair ninth rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib9</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairTenthRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair tenth rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib10</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairEleventhRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair eleventh rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib11</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="SurgeryBone">
+        <defName>RepairTwelfthRib</defName>
+        <label>repair rib cage</label>
+        <description>Repair twelfth rib</description>
+        <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+        <jobString>Repairing rib cage</jobString>
+        <workAmount>4000</workAmount>
+  <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+      <exceptedThingDefs>
+        <li>HerbalMedicine</li>
+      </exceptedThingDefs>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <skillRequirements>
+            <li>
+                <skill>Medicine</skill>
+                <minLevel>8</minLevel>
+            </li>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Rib12</li>
+        </appliedOnFixedBodyParts>
+      <researchPrerequisite>SimpleProsthetics</researchPrerequisite>
+    </RecipeDef>
+
+</RecipeDefs>

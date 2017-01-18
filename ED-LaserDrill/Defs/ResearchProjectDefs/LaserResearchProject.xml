@@ -10,8 +10,8 @@
 		<prerequisites>
 			<li>DeepDrilling</li>
 		</prerequisites>
-		<researchViewX>10</researchViewX>
-		
+		<researchViewX>20</researchViewX>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -23,7 +23,8 @@
 		<prerequisites>
 			<li>Research_LaserSteamGeyser_Drill</li>
 		</prerequisites>
-		<researchViewX>11</researchViewX>
+		<researchViewX>20</researchViewX>
+		<researchViewY>4</researchViewY>
 	</ResearchProjectDef>
 
 </ResearchProjectDefs>

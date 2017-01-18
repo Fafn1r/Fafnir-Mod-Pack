@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	
+	<RF_DesignationType_ANine>A9+ names</RF_DesignationType_ANine>
+	<RF_DesignationType_Simple>simple names</RF_DesignationType_Simple>
+	<RF_DesignationType_Short>short real-life names</RF_DesignationType_Short>
+	<RF_DesignationType_Long>long real-life names</RF_DesignationType_Long>
+	<RF_DesignationType_AEight>A8 names</RF_DesignationType_AEight>
+	
+	<RF_Nuke>NUKE</RF_Nuke>
+	
+	<RF_GunListPopup_Label>Gun list</RF_GunListPopup_Label>
+	<RF_GunListPopup>Open gun list</RF_GunListPopup>
+	<RF_GunListPopup_Description>Toggle guns and preview changes to the in-game guns.</RF_GunListPopup_Description>
+	
+</LanguageData>

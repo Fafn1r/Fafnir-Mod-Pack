@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+   
+   <HediffDef Name="addedPartPropsBase" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+      <isBad>false</isBad>
+      <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+   </HediffDef>
+   
+   <!-- Natural body parts -->
+   
+   <HediffDef ParentName="addedPartPropsBase">
+      <defName>Stomach</defName>
+      <label>stomach</label>
+      <spawnThingOnRemoved>Stomach</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartPropsBase">
+      <defName>Heart</defName>
+      <label>heart</label>
+      <spawnThingOnRemoved>Heart</spawnThingOnRemoved>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartPropsBase">
+      <defName>Arm</defName>
+      <label>arm</label>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="addedPartPropsBase">
+      <defName>Leg</defName>
+      <label>leg</label>
+      <addedPartProps>
+         <isSolid>true</isSolid>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+   </HediffDef>
+
+</Defs>

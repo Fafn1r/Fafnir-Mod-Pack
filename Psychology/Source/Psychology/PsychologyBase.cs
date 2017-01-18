@@ -20,10 +20,12 @@ namespace Psychology
         private static bool sabotabby = false;
         public static bool detoursMedical = true;
         public static bool detoursSexual = true;
+        public static bool notBabyMode = true;
         private SettingHandle<bool> toggleKinsey;
         private SettingHandle<bool> toggleEmpathy;
         private SettingHandle<KinseyMode> kinseyMode;
         private SettingHandle<bool> toggleSabotage;
+        private SettingHandle<bool> toggleIndividuality;
 
         public enum KinseyMode
         {
@@ -45,6 +47,11 @@ namespace Psychology
         static public bool SabotageOn()
         {
             return sabotabby;
+        }
+
+        static public bool IndividualityOn()
+        {
+            return notBabyMode;
         }
 
         public override string ModIdentifier
@@ -119,6 +126,7 @@ namespace Psychology
             kinsey = toggleKinsey.Value;
             mode = kinseyMode.Value;
             sabotabby = toggleSabotage.Value;
+            notBabyMode = toggleIndividuality.Value;
         }
 
         public override void DefsLoaded()
@@ -129,8 +137,10 @@ namespace Psychology
                 toggleKinsey = Settings.GetHandle<bool>("EnableSexuality", "SexualityChangesTitle".Translate(), "SexualityChangesTooltip".Translate(), true);
                 kinseyMode = Settings.GetHandle<KinseyMode>("KinseyMode", "KinseyModeTitle".Translate(), "KinseyModeTooltip".Translate(), KinseyMode.Realistic, null, "KinseyMode_");
                 toggleSabotage = Settings.GetHandle<bool>("EnableSabotage", "SabotageIncidentTitle".Translate(), "SabotageIncidentTooltip".Translate(), false);
+                toggleIndividuality = Settings.GetHandle<bool>("EnableIndividuality", "IndividualityTitle".Translate(), "IndividualityTooltip".Translate(), true);
 
-                sabotabby = toggleSabotage;
+                sabotabby = toggleSabotage.Value;
+                notBabyMode = toggleIndividuality.Value;
 
                 if (!detoursMedical)
                 {
@@ -348,6 +358,75 @@ namespace Psychology
                 berserk.baseCommonality = 0f;
                 MentalStateDef fireStartingSpree = DefDatabase<MentalStateDef>.GetNamed("FireStartingSpree");
                 fireStartingSpree.workerClass = typeof(MentalStateWorker_FireStartingSpree);
+
+                /*
+                 * Now to enjoy the benefits of having made a popular mod!
+                 * This will be our little secret.
+                 */
+                Backstory childMe = new Backstory();
+                childMe.bodyTypeMale = BodyType.Male;
+                childMe.bodyTypeFemale = BodyType.Female;
+                childMe.slot = BackstorySlot.Childhood;
+                childMe.SetTitle("Child soldier");
+                childMe.SetTitleShort("Scout");
+                childMe.baseDesc = "NAME was born into a dictatorial outlander society on a nearby rimworld. Their chief export was war, and HE was conscripted at a young age into the military to serve as a scout due to HIS runner's build. HECAP learned how to use a gun, patch wounds on the battlefield, and communicate with HIS squad. It was there HE earned HIS nickname.";
+                childMe.skillGains.Add("Shooting", 4);
+                childMe.skillGains.Add("Medicine", 2);
+                childMe.skillGains.Add("Social", 1);
+                childMe.requiredWorkTags = WorkTags.Violent;
+                childMe.shuffleable = false;
+                childMe.PostLoad();
+                childMe.ResolveReferences();
+                //Disabled until I can be bothered to code it so they're actually siblings.
+                /*Backstory adultMale = new Backstory();
+                adultMale.bodyTypeMale = BodyType.Male;
+                adultMale.bodyTypeFemale = BodyType.Female;
+                adultMale.slot = BackstorySlot.Adulthood;
+                adultMale.SetTitle("Missing in action");
+                adultMale.SetTitleShort("P.O.W.");
+                adultMale.baseDesc = "Eventually, HE was captured on a mission by one of his faction's many enemies. HECAP was tortured for information, the techniques of which HE never forgot. When they could get no more out of HIM, HE was sent to a prison camp, where HE worked for years before staging an escape and fleeing into civilization.";
+                adultMale.skillGains.Add("Crafting", 4);
+                adultMale.skillGains.Add("Construction", 3);
+                adultMale.skillGains.Add("Mining", 2);
+                adultMale.skillGains.Add("Social", 1);
+                adultMale.spawnCategories = new List<string>();
+                adultMale.spawnCategories.AddRange(new string[] { "Civil", "Raider", "Slave", "Trader", "Traveler" });
+                adultMale.shuffleable = false;
+                adultMale.PostLoad();
+                adultMale.ResolveReferences();*/
+                Backstory adultFemale = new Backstory();
+                adultFemale.bodyTypeMale = BodyType.Male;
+                adultFemale.bodyTypeFemale = BodyType.Female;
+                adultFemale.slot = BackstorySlot.Adulthood;
+                adultFemale.SetTitle("Battlefield medic");
+                adultFemale.SetTitleShort("Medic");
+                adultFemale.baseDesc = "HECAP continued to serve in the military, being promoted through the ranks as HIS skill increased. HECAP learned how to treat more serious wounds as HIS role slowly transitioned from scout to medic, as well as how to make good use of army rations. HECAP built good rapport with HIS squad as a result.";
+                adultFemale.skillGains.Add("Shooting", 4);
+                adultFemale.skillGains.Add("Medicine", 3);
+                adultFemale.skillGains.Add("Cooking", 2);
+                adultFemale.skillGains.Add("Social", 1);
+                adultFemale.spawnCategories = new List<string>();
+                adultFemale.spawnCategories.AddRange(new string[] { "Civil", "Raider", "Slave", "Trader", "Traveler" });
+                adultFemale.shuffleable = false;
+                adultFemale.PostLoad();
+                adultFemale.ResolveReferences();
+                /*PawnBio maleMe = new PawnBio();
+                maleMe.childhood = childMe;
+                maleMe.adulthood = adultMale;
+                maleMe.gender = GenderPossibility.Male;
+                maleMe.name = NameTriple.FromString("Nathan 'Jackal' Tarai");
+                maleMe.PostLoad();
+                SolidBioDatabase.allBios.Add(maleMe);*/
+                PawnBio femaleMe = new PawnBio();
+                femaleMe.childhood = childMe;
+                femaleMe.adulthood = adultFemale;
+                femaleMe.gender = GenderPossibility.Female;
+                femaleMe.name = NameTriple.FromString("Elizabeth 'Eagle' Tarai");
+                femaleMe.PostLoad();
+                SolidBioDatabase.allBios.Add(femaleMe);
+                BackstoryDatabase.AddBackstory(childMe);
+                //BackstoryDatabase.AddBackstory(adultMale);
+                BackstoryDatabase.AddBackstory(adultFemale);
             }
         }
 

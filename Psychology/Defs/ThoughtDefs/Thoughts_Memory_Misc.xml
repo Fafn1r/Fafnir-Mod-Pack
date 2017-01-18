@@ -226,8 +226,7 @@
   <ThoughtDef>
     <defName>Homesickness</defName>
     <durationDays>6</durationDays>
-    <stackLimit>5</stackLimit>
-    <stackedEffectMultiplier>0.25</stackedEffectMultiplier>
+    <stackLimit>1</stackLimit>
     <stages>
 	  <li>
         <label>feeling homesick</label>

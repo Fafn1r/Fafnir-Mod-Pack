@@ -74,11 +74,7 @@ namespace Psychology.Detour
             {
                 if (pawn.RaceProps.Humanlike && pawn.story.traits.HasTrait(TraitDefOfPsychology.Insomniac))
                 {
-                    if (curLevel < 0.001f)
-                    {
-                        return 8f;
-                    }
-                    else if(curLevel < 0.3f)
+                    if(curLevel < 0.3f)
                     {
                         return 1f;
                     }
@@ -103,13 +99,9 @@ namespace Psychology.Detour
                 {
                     if (pawn.RaceProps.Humanlike && pawn.story.traits.HasTrait(TraitDefOfPsychology.Insomniac))
                     {
-                        if (curLevel < 0.001f)
+                        if (curLevel < 0.3f)
                         {
-                            return 8f;
-                        }
-                        else if (curLevel < 0.3f)
-                        {
-                            return 2f;
+                            return 3f;
                         }
                         return 0f;
                     }
@@ -130,13 +122,9 @@ namespace Psychology.Detour
                     }
                     if (pawn.RaceProps.Humanlike && pawn.story.traits.HasTrait(TraitDefOfPsychology.Insomniac))
                     {
-                        if (curLevel < 0.001f)
+                        if (curLevel < 0.75f)
                         {
-                            return 8f;
-                        }
-                        else if (curLevel < 0.75f)
-                        {
-                            return 2f;
+                            return 3f;
                         }
                         return 0f;
                     }

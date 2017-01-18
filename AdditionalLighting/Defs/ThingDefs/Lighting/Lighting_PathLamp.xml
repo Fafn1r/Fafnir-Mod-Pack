@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <!-- ======================== Lighting ======================= -->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Lighting_PathLamp</defName>
+    <label>Path light</label>
+    <thingClass>AdditionalLighting.Building_PathLamp</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/LampPath</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <WorkToBuild>50</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <description>Small light with built in solar panel that lights an area.</description>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <designationCategory>Lighting</designationCategory>
+    <rotatable>false</rotatable>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+
+</Buildings>

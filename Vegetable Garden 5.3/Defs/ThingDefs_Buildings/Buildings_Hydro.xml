@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
-
+<!--
   <ThingDef ParentName="BuildingBase">
     <defName>Planterbox</defName>
     <label>Planter Box</label>
@@ -44,11 +44,11 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>FoodProduction</designationCategory>
   </ThingDef>
-
+-->
   <ThingDef ParentName="BuildingBase">
     <defName>ModularPlanterbox</defName>
-    <label>Modular Planter Box</label>
-    <description>Crude box filled with soil, that allows you to grow anywhere. Growth rate is reduced to 60% Does not require power. Modular allows you to make 1x1 connected boxes of any size.</description>
+    <label>Planter Box</label>
+    <description>Crude box filled with soil, that allows you to grow anywhere. Does not require power. Modular allows you to make 1x1 connected boxes of any size.</description>
     <thingClass>Building_PlantGrower</thingClass>
     <graphicData>
       <texPath>Things/Building/PlanterModular_Atlas</texPath>
@@ -82,8 +82,8 @@
       <li>Woody</li>
       <li>Stony</li>
     </stuffCategories>
-    <costStuffCount>13</costStuffCount>
-    <fertility>0.60</fertility>
+    <costStuffCount>15</costStuffCount>
+    <fertility>1</fertility>
     <building>
       <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
       <sowTag>Hydroponic</sowTag>
@@ -94,7 +94,7 @@
     <designationCategory>FoodProduction</designationCategory>
   </ThingDef>
 
-      
+      <!--
   <ThingDef ParentName="BuildingBase">
     <defName>HydroponicsBasin</defName>
     <label>hydroponics basin</label>
@@ -147,10 +147,10 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>FoodProduction</designationCategory>
   </ThingDef>
-
+-->
   <ThingDef ParentName="BuildingBase">
-    <defName>ModularHydroponicsBasin</defName>
-    <label>Modular Hydroponics Basin</label>
+    <defName>HydroponicsBasin</defName>
+    <label>Hydroponics Basin</label>
     <description>Grows plants quickly in an artificial nutrient bath. Requires power to work; plants will die if power is cut.</description>
     <thingClass>Building_PlantGrower</thingClass>
     <graphicData>
@@ -182,10 +182,16 @@
       <Cleanliness>-3</Cleanliness>
     </statBases>
     <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costStuffCount>15</costStuffCount>
     <costList>
-      <Steel>25</Steel>
+      <Steel>5</Steel>
       <Component>1</Component>
     </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
     <fertility>2.2</fertility>
     <building>
       <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
@@ -205,7 +211,7 @@
     <designationCategory>FoodProduction</designationCategory>
   </ThingDef>
 
-
+<!--
   <ThingDef ParentName="BuildingBase">
     <defName>ADVHydroponicsBasin</defName>
     <label>Advanced hydroponics basin</label>
@@ -263,11 +269,11 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>FoodProduction</designationCategory>
   </ThingDef>
-
+-->
   <ThingDef ParentName="BuildingBase">
     <defName>ADVModularHydroponicsBasin</defName>
-    <label> Adv. Modular hydroponics basin</label>
-    <description>Grows plants more quickly in an artificial nutrient bath. Requires more power to work then basic basin; plants will die if power is cut. Provides it's own light.</description>
+    <label> Adv. hydroponics basin</label>
+    <description>Grows plants more quickly in an artificial nutrient bath. Requires significiantly more power to work then basic basin; plants will die if power is cut. Provides it's own light.</description>
     <thingClass>Building_PlantGrower</thingClass>
     <graphicData>
       <texPath>Things/Building/HydroModular_Atlas</texPath>
@@ -297,10 +303,16 @@
       <Cleanliness>-3</Cleanliness>
     </statBases>
     <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costStuffCount>15</costStuffCount>
     <costList>
-      <Steel>50</Steel>
-      <Component>1</Component>
+      <Steel>10</Steel>
+      <Component>2</Component>
     </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
     <fertility>3</fertility>
     <building>
       <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
@@ -311,7 +323,7 @@
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>50</basePowerConsumption>
+        <basePowerConsumption>42</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Glower">

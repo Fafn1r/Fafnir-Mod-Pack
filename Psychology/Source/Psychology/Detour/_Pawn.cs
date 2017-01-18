@@ -8,6 +8,7 @@ using Verse.AI;
 using Verse.AI.Group;
 using HugsLib.Source.Detour;
 using System.Reflection;
+using UnityEngine;
 
 namespace Psychology.Detour
 {
@@ -66,7 +67,7 @@ namespace Psychology.Detour
             {
                 _this.Faction.Notify_MemberCaptured(_this, arrester.Faction);
             }
-            if (Rand.Value < (arrester.GetStatValue(StatDefOfPsychology.ArrestPeacefullyChance) * (arrester.Faction == _this.Faction ? 1.5 : 1)))
+            if (Rand.Value < (arrester.GetStatValue(StatDefOfPsychology.ArrestPeacefullyChance) * (Mathf.InverseLerp(-100f, 100f, _this.relations.OpinionOf(arrester))) * (arrester.Faction == _this.Faction ? 1.5 : 1)))
             {
                 return true;
             }

@@ -16,5 +16,6 @@
   
   <LetterLabelThief>Thief</LetterLabelThief>
   <ThiefRevealed>{0} has spotted a thief from {1} attempting to sneak into the colony! HECAP is attacking now that HE is caught.</ThiefRevealed>
+  <ThiefInjured>A thief from {1} has been caught attempting to sneak into the colony!</ThiefInjured>
   
 </LanguageData>

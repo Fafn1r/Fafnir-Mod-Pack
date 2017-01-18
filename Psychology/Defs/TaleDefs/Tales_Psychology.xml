@@ -190,7 +190,7 @@
     <rulePack>
       <rulesStrings>
         <li>tale_noun->[pawn_nameShortDef] leaving the colony</li>
-        <li>image->[pawn_nameFull] distancing themselves from the colony [circumstance_group]</li>
+        <li>image->[pawn_nameFull] distancing [pawn_possessive]self from the colony [circumstance_group]</li>
 		<li>image->[pawn_nameFull] avoiding interaction with other colonists [circumstance_group]</li>
 		<li>image->[pawn_nameFull] walking away [circumstance_group]</li>
 		<li>image->[pawn_nameFull] running away [circumstance_group]</li>
@@ -230,6 +230,5 @@
       </rulesStrings>
     </rulePack>
   </TaleDef>
-
 
 </Defs>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Short_Pila>javelins</Short_Pila>
+	<Short_Pilum_Thrown>javelin (thrown)</Short_Pilum_Thrown>
+	
+	<Long_Pila>javelins</Long_Pila>
+	<Long_Pilum_Thrown>javelin (thrown)</Long_Pilum_Thrown>
+	
+	<AEight_Pila>javelins</AEight_Pila>
+	<AEight_Pilum_Thrown>javelin (thrown)</AEight_Pilum_Thrown>
+	
+	<ANine_Pila>javelins</ANine_Pila>
+	<ANine_Pilum_Thrown>javelin (thrown)</ANine_Pilum_Thrown>
+	
+	<Simple_Pila>throwing spears</Simple_Pila>
+	<Simple_Pilum_Thrown>spear (thrown)</Simple_Pilum_Thrown>
+
+</LanguageData>

@@ -238,7 +238,7 @@
     <growOnlyOnRoughRock>false</growOnlyOnRoughRock>
     <growOnlyUndeRoof>false</growOnlyUndeRoof>
     <growOnlyNearNaturalRock>false</growOnlyNearNaturalRock>
-    <minFertility>0.05</minFertility>
+    <minFertility>999.0</minFertility>
     <maxFertility>999.0</maxFertility>
     <minLight>0.0</minLight>
     <maxLight>0.6</maxLight>

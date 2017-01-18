@@ -13,7 +13,8 @@ NOTE: Do not connect your lamps, turrets, etc. directly to the switch! Add a pow
 		<prerequisites>
 			<li>ResearchAutoPowerSwitch</li>
 		</prerequisites>
-		<researchViewX>5</researchViewX>
+		<researchViewX>9</researchViewX>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 	
 </ResearchProjectDefs>

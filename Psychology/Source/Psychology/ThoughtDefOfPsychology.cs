@@ -37,7 +37,6 @@ namespace Psychology
         public static ThoughtDef CheatedOnMeCodependent;
         public static ThoughtDef RebuffedMyRomanceAttemptLecher;
         public static ThoughtDef PanicAttack;
-        public static ThoughtDef TreatmentFailed;
 
         /* Incident-related thoughts */
         public static ThoughtDef Quarrel;
@@ -52,5 +51,7 @@ namespace Psychology
         public static ThoughtDef DreamNightmare;
         public static ThoughtDef RecentlyDesensitized;
         public static ThoughtDef CapturedMe;
+        public static ThoughtDef Individuality;
+        public static ThoughtDef TreatmentFailed;
     }
 }

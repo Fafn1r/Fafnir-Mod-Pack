@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Short_RF_Gun_Deringer>Deringer</Short_RF_Gun_Deringer>
+	<Short_RF_Gun_Taurus>Judge</Short_RF_Gun_Taurus>
+	<Short_RF_Gun_ModelFivehundred>Model 500</Short_RF_Gun_ModelFivehundred>
+	<Short_RF_Gun_RugerMkIII>Ruger</Short_RF_Gun_RugerMkIII>
+	<Short_RF_Gun_AT2K>AT-2000</Short_RF_Gun_AT2K>
+	<Short_RF_Gun_VektorCP>CP1</Short_RF_Gun_VektorCP>
+	<Short_RF_Gun_ParaOrdnancePFourteenFortyfive>P14-45</Short_RF_Gun_ParaOrdnancePFourteenFortyfive>
+	<Short_RF_Gun_TokarevTT>TT-33</Short_RF_Gun_TokarevTT>
+	<Short_RF_Gun_Tecnine>Tec-9 Mini</Short_RF_Gun_Tecnine>
+	<Short_RF_Gun_93R>93R</Short_RF_Gun_93R>
+	<Short_RF_Gun_TMP>TMP</Short_RF_Gun_TMP>
+	<Short_RF_Gun_Skorpion>Skorpion</Short_RF_Gun_Skorpion>
+	<Short_RF_Gun_MPFiveKPDW>H&amp;K MP5K-PDW</Short_RF_Gun_MPFiveKPDW>
+	<Short_RF_Gun_Vector>Kriss Vector</Short_RF_Gun_Vector>
+	<Short_RF_Gun_GreaseGun>M3 SMG</Short_RF_Gun_GreaseGun>
+	<Short_RF_Gun_CFourHafdasa>C-4 SMG</Short_RF_Gun_CFourHafdasa>
+	<Short_RF_Gun_CXfour>Cx4 Carbine</Short_RF_Gun_CXfour>
+	<Short_RF_Gun_PCnine>PC-9 Carbine</Short_RF_Gun_PCnine>
+	<Short_RF_Gun_TenTwentyTwo>10/22 Carbine</Short_RF_Gun_TenTwentyTwo>
+	<Short_RF_Gun_USC>H&amp;K USC</Short_RF_Gun_USC>
+	<Short_RF_Gun_Spencer>Spencer Carbine</Short_RF_Gun_Spencer>
+	<Short_RF_Gun_Striker>Striker</Short_RF_Gun_Striker>
+	<Short_RF_Gun_AAtwelve>AA-12</Short_RF_Gun_AAtwelve>
+	<Short_RF_Gun_HKCaws>H&amp;K CAWS</Short_RF_Gun_HKCaws>
+	<Short_RF_Gun_Galil>Galil</Short_RF_Gun_Galil>
+	<Short_RF_Gun_XMeight>XM8</Short_RF_Gun_XMeight>
+	<Short_RF_Gun_AKFortySeven>AK-47</Short_RF_Gun_AKFortySeven>
+	<Short_RF_Gun_Mosin>Mosin</Short_RF_Gun_Mosin>
+	<Short_RF_Gun_WA2K>WA 2000</Short_RF_Gun_WA2K>
+	<Short_RF_Gun_Scout>Scout</Short_RF_Gun_Scout>
+	<Short_RF_Gun_DragunovSVD>SVD</Short_RF_Gun_DragunovSVD>
+	<Short_RF_Gun_ARFifty>AR-50</Short_RF_Gun_ARFifty>
+	<Short_RF_Gun_MDFifty>Leader 50</Short_RF_Gun_MDFifty>
+	<Short_RF_Gun_HecateII>Hecate II</Short_RF_Gun_HecateII>
+	<Short_RF_Gun_MEightyTwo>M82A1</Short_RF_Gun_MEightyTwo>
+	<Short_RF_Gun_Mhundredthirtyfour>M-134</Short_RF_Gun_Mhundredthirtyfour>
+	<Short_RF_Gun_Type73LMG>Type 73 LMG</Short_RF_Gun_Type73LMG>
+	<Short_RF_Gun_MadsenLMG>Madsen LMG</Short_RF_Gun_MadsenLMG>
+	<Short_RF_Gun_MGSixty>MG-60 LMG</Short_RF_Gun_MGSixty>
+	<Short_RF_Gun_MilkorMGL>Milkor MGL</Short_RF_Gun_MilkorMGL>
+	<Short_RF_Gun_RPGSeven>RPG-7</Short_RF_Gun_RPGSeven>
+	<Short_RF_Gun_CarlGustaf>Carl Gustaf</Short_RF_Gun_CarlGustaf>
+	<Short_RF_Bullet_Deringer>Deringer bullet</Short_RF_Bullet_Deringer>
+	<Short_RF_Bullet_Taurus>Judge bullet</Short_RF_Bullet_Taurus>
+	<Short_RF_Bullet_ModelFivehundred>Model 500 bullet</Short_RF_Bullet_ModelFivehundred>
+	<Short_RF_Bullet_RugerMkIII>Ruger bullet</Short_RF_Bullet_RugerMkIII>
+	<Short_RF_Bullet_AT2K>AT-2000 bullet</Short_RF_Bullet_AT2K>
+	<Short_RF_Bullet_VektorCP>CP1 bullet</Short_RF_Bullet_VektorCP>
+	<Short_RF_Bullet_ParaOrdnancePFourteenFortyfive>P14-45 bullet</Short_RF_Bullet_ParaOrdnancePFourteenFortyfive>
+	<Short_RF_Bullet_TokarevTT>TT-33 bullet</Short_RF_Bullet_TokarevTT>
+	<Short_RF_Bullet_Tecnine>Tec-9 Mini bullet</Short_RF_Bullet_Tecnine>
+	<Short_RF_Bullet_93R>93R bullet</Short_RF_Bullet_93R>
+	<Short_RF_Bullet_TMP>TMP bullet</Short_RF_Bullet_TMP>
+	<Short_RF_Bullet_Skorpion>Skorpion bullet</Short_RF_Bullet_Skorpion>
+	<Short_RF_Bullet_MPFiveKPDW>H&amp;K MP5K-PDW bullet</Short_RF_Bullet_MPFiveKPDW>
+	<Short_RF_Bullet_Vector>Kriss Vector bullet</Short_RF_Bullet_Vector>
+	<Short_RF_Bullet_GreaseGun>M3 SMG bullet</Short_RF_Bullet_GreaseGun>
+	<Short_RF_Bullet_CFourHafdasa>C-4 SMG bullet</Short_RF_Bullet_CFourHafdasa>
+	<Short_RF_Bullet_CXfour>Cx4 Carbine bullet</Short_RF_Bullet_CXfour>
+	<Short_RF_Bullet_PCnine>PC-9 Carbine bullet</Short_RF_Bullet_PCnine>
+	<Short_RF_Bullet_TenTwentyTwo>10/22 Carbine bullet</Short_RF_Bullet_TenTwentyTwo>
+	<Short_RF_Bullet_USC>H&amp;K USC bullet</Short_RF_Bullet_USC>
+	<Short_RF_Bullet_Spencer>Spencer Carbine bullet</Short_RF_Bullet_Spencer>
+	<Short_RF_Bullet_Striker>Striker blast</Short_RF_Bullet_Striker>
+	<Short_RF_Bullet_AAtwelve>AA-12 blast</Short_RF_Bullet_AAtwelve>
+	<Short_RF_Bullet_HKCaws>H&amp;K CAWS blast</Short_RF_Bullet_HKCaws>
+	<Short_RF_Bullet_Galil>Galil bullet</Short_RF_Bullet_Galil>
+	<Short_RF_Bullet_XMeight>XM8 bullet</Short_RF_Bullet_XMeight>
+	<Short_RF_Bullet_AKFortySeven>AK-47 bullet</Short_RF_Bullet_AKFortySeven>
+	<Short_RF_Bullet_Mosin>Mosin bullet</Short_RF_Bullet_Mosin>
+	<Short_RF_Bullet_WA2K>WA 2000 bullet</Short_RF_Bullet_WA2K>
+	<Short_RF_Bullet_Scout>Scout bullet</Short_RF_Bullet_Scout>
+	<Short_RF_Bullet_DragunovSVD>SVD bullet</Short_RF_Bullet_DragunovSVD>
+	<Short_RF_Bullet_ARFifty>AR-50 bullet</Short_RF_Bullet_ARFifty>
+	<Short_RF_Bullet_MDFifty>Leader 50 bullet</Short_RF_Bullet_MDFifty>
+	<Short_RF_Bullet_HecateII>Hecate II bullet</Short_RF_Bullet_HecateII>
+	<Short_RF_Bullet_MEightyTwo>M82A1 bullet</Short_RF_Bullet_MEightyTwo>
+	<Short_RF_Bullet_Mhundredthirtyfour>M-134 bullet</Short_RF_Bullet_Mhundredthirtyfour>
+	<Short_RF_Bullet_Type73LMG>Type 73 LMG bullet</Short_RF_Bullet_Type73LMG>
+	<Short_RF_Bullet_MadsenLMG>Madsen LMG bullet</Short_RF_Bullet_MadsenLMG>
+	<Short_RF_Bullet_MGSixty>MG-60 LMG bullet</Short_RF_Bullet_MGSixty>
+	<Short_RF_Bullet_MilkorMGL>MGL grenade</Short_RF_Bullet_MilkorMGL>
+	<Short_RF_Bullet_RPGSeven>rocket propelled grenade</Short_RF_Bullet_RPGSeven>
+	<Short_RF_Projectile_CarlGustaf>Carl Gustaf projectile</Short_RF_Projectile_CarlGustaf>
+
+	<Long_RF_Gun_Deringer>Remington Deringer</Long_RF_Gun_Deringer>
+	<Long_RF_Gun_Taurus>Forjas Taurus Judge</Long_RF_Gun_Taurus>
+	<Long_RF_Gun_ModelFivehundred>Smith &amp; Wesson Model 500</Long_RF_Gun_ModelFivehundred>
+	<Long_RF_Gun_RugerMkIII>Ruger Mark III Standard</Long_RF_Gun_RugerMkIII>
+	<Long_RF_Gun_AT2K>Sphinx Systems AT-2000</Long_RF_Gun_AT2K>
+	<Long_RF_Gun_VektorCP>LIW Vektor CP1</Long_RF_Gun_VektorCP>
+	<Long_RF_Gun_ParaOrdnancePFourteenFortyfive>Para-Ordnance P14-45</Long_RF_Gun_ParaOrdnancePFourteenFortyfive>
+	<Long_RF_Gun_TokarevTT>Tula-Tokarev TT-33</Long_RF_Gun_TokarevTT>
+	<Long_RF_Gun_Tecnine>Intratec TEC-9 Mini</Long_RF_Gun_Tecnine>
+	<Long_RF_Gun_93R>Beretta 93R machine pistol</Long_RF_Gun_93R>
+	<Long_RF_Gun_TMP>Steyr Mannlicher TMP</Long_RF_Gun_TMP>
+	<Long_RF_Gun_Skorpion>Škorpion SA Vz. 61</Long_RF_Gun_Skorpion>
+	<Long_RF_Gun_MPFiveKPDW>Heckler &amp; Koch HK MP5K-PDW</Long_RF_Gun_MPFiveKPDW>
+	<Long_RF_Gun_Vector>TDI/KRISS USA Vector</Long_RF_Gun_Vector>
+	<Long_RF_Gun_GreaseGun>M3 U.S. Submachine Gun</Long_RF_Gun_GreaseGun>
+	<Long_RF_Gun_CFourHafdasa>HAFDASA C-4</Long_RF_Gun_CFourHafdasa>
+	<Long_RF_Gun_CXfour>Beretta Cx4 Storm</Long_RF_Gun_CXfour>
+	<Long_RF_Gun_PCnine>Ruger PC-9 police carbine</Long_RF_Gun_PCnine>
+	<Long_RF_Gun_TenTwentyTwo>Ruger 10/22 autoloading rifle</Long_RF_Gun_TenTwentyTwo>
+	<Long_RF_Gun_USC>Heckler &amp; Koch HK USC</Long_RF_Gun_USC>
+	<Long_RF_Gun_Spencer>Spencer M1865 repeating rifle</Long_RF_Gun_Spencer>
+	<Long_RF_Gun_Striker>SWD/Cobray Street Sweeper</Long_RF_Gun_Striker>
+	<Long_RF_Gun_AAtwelve>AA-12 Atchisson assault shotgun</Long_RF_Gun_AAtwelve>
+	<Long_RF_Gun_HKCaws>Heckler &amp; Koch HK CAWS</Long_RF_Gun_HKCaws>
+	<Long_RF_Gun_Galil>IMI Galil ARM</Long_RF_Gun_Galil>
+	<Long_RF_Gun_XMeight>XM8 Lightweight Assault Rifle</Long_RF_Gun_XMeight>
+	<Long_RF_Gun_AKFortySeven>Kalashnikov AK-47</Long_RF_Gun_AKFortySeven>
+	<Long_RF_Gun_Mosin>Mosin-Nagant M1891/30</Long_RF_Gun_Mosin>
+	<Long_RF_Gun_WA2K>Walther WA-2000</Long_RF_Gun_WA2K>
+	<Long_RF_Gun_Scout>Steyr Mannlicher Scout</Long_RF_Gun_Scout>
+	<Long_RF_Gun_DragunovSVD>Dragunov SVD</Long_RF_Gun_DragunovSVD>
+	<Long_RF_Gun_ARFifty>ArmaLite AR-50A1B Rifle</Long_RF_Gun_ARFifty>
+	<Long_RF_Gun_MDFifty>MICOR Defense MD/Leader 50</Long_RF_Gun_MDFifty>
+	<Long_RF_Gun_HecateII>PGM Precision Ultima Ratio 'Hécate II'</Long_RF_Gun_HecateII>
+	<Long_RF_Gun_MEightyTwo>Barrett M82A1</Long_RF_Gun_MEightyTwo>
+	<Long_RF_Gun_Mhundredthirtyfour>Hand held M-134</Long_RF_Gun_Mhundredthirtyfour>
+	<Long_RF_Gun_Type73LMG>Type 73 box-magazine LMG</Long_RF_Gun_Type73LMG>
+	<Long_RF_Gun_MadsenLMG>Madsen M1948 LMG</Long_RF_Gun_MadsenLMG>
+	<Long_RF_Gun_MGSixty>Rheinmetall MG60 LMG</Long_RF_Gun_MGSixty>
+	<Long_RF_Gun_MilkorMGL>Milkor M32 MGL</Long_RF_Gun_MilkorMGL>
+	<Long_RF_Gun_RPGSeven>RPG-7 Commando</Long_RF_Gun_RPGSeven>
+	<Long_RF_Gun_CarlGustaf>Carl Gustaf M3 recoilless rifle</Long_RF_Gun_CarlGustaf>
+	<Long_RF_Bullet_Deringer>Remington Deringer bullet</Long_RF_Bullet_Deringer>
+	<Long_RF_Bullet_Taurus>Forjas Taurus Judge bullet</Long_RF_Bullet_Taurus>
+	<Long_RF_Bullet_ModelFivehundred>Smith &amp; Wesson Model 500 bullet</Long_RF_Bullet_ModelFivehundred>
+	<Long_RF_Bullet_RugerMkIII>Ruger Mark III Standard bullet</Long_RF_Bullet_RugerMkIII>
+	<Long_RF_Bullet_AT2K>Sphinx Systems AT-2000 bullet</Long_RF_Bullet_AT2K>
+	<Long_RF_Bullet_VektorCP>LIW Vektor CP1 bullet</Long_RF_Bullet_VektorCP>
+	<Long_RF_Bullet_ParaOrdnancePFourteenFortyfive>Para-Ordnance P14-45 bullet</Long_RF_Bullet_ParaOrdnancePFourteenFortyfive>
+	<Long_RF_Bullet_TokarevTT>Tula-Tokarev TT-33 bullet</Long_RF_Bullet_TokarevTT>
+	<Long_RF_Bullet_Tecnine>Intratec TEC-9 Mini bullet</Long_RF_Bullet_Tecnine>
+	<Long_RF_Bullet_93R>Beretta 93R machine pistol bullet</Long_RF_Bullet_93R>
+	<Long_RF_Bullet_TMP>Steyr Mannlicher TMP bullet</Long_RF_Bullet_TMP>
+	<Long_RF_Bullet_Skorpion>Škorpion SA Vz. 61 bullet</Long_RF_Bullet_Skorpion>
+	<Long_RF_Bullet_MPFiveKPDW>Heckler &amp; Koch HK MP5K-PDW bullet</Long_RF_Bullet_MPFiveKPDW>
+	<Long_RF_Bullet_Vector>TDI/KRISS USA Vector bullet</Long_RF_Bullet_Vector>
+	<Long_RF_Bullet_GreaseGun>M3 U.S. Submachine Gun bullet</Long_RF_Bullet_GreaseGun>
+	<Long_RF_Bullet_CFourHafdasa>HAFDASA C-4 bullet</Long_RF_Bullet_CFourHafdasa>
+	<Long_RF_Bullet_CXfour>Beretta Cx4 Storm bullet</Long_RF_Bullet_CXfour>
+	<Long_RF_Bullet_PCnine>Ruger PC-9 police carbine bullet</Long_RF_Bullet_PCnine>
+	<Long_RF_Bullet_TenTwentyTwo>Ruger 10/22 autoloading rifle bullet</Long_RF_Bullet_TenTwentyTwo>
+	<Long_RF_Bullet_USC>Heckler &amp; Koch HK USC bullet</Long_RF_Bullet_USC>
+	<Long_RF_Bullet_Spencer>Spencer M1865 repeating rifle bullet</Long_RF_Bullet_Spencer>
+	<Long_RF_Bullet_Striker>SWD/Cobray Street Sweeper blast</Long_RF_Bullet_Striker>
+	<Long_RF_Bullet_AAtwelve>AA-12 Atchisson assault shotgun blast</Long_RF_Bullet_AAtwelve>
+	<Long_RF_Bullet_HKCaws>Heckler &amp; Koch HK CAWS blast</Long_RF_Bullet_HKCaws>
+	<Long_RF_Bullet_Galil>IMI Galil ARM bullet</Long_RF_Bullet_Galil>
+	<Long_RF_Bullet_XMeight>XM8 Lightweight Assault Rifle bullet</Long_RF_Bullet_XMeight>
+	<Long_RF_Bullet_AKFortySeven>Kalashnikov AK-47 bullet</Long_RF_Bullet_AKFortySeven>
+	<Long_RF_Bullet_Mosin>Mosin-Nagant M1891/30 bullet</Long_RF_Bullet_Mosin>
+	<Long_RF_Bullet_WA2K>Walther WA-2000 bullet</Long_RF_Bullet_WA2K>
+	<Long_RF_Bullet_Scout>Steyr Mannlicher Scout bullet</Long_RF_Bullet_Scout>
+	<Long_RF_Bullet_DragunovSVD>Dragunov SVD bullet</Long_RF_Bullet_DragunovSVD>
+	<Long_RF_Bullet_ARFifty>ArmaLite AR-50A1B Rifle bullet</Long_RF_Bullet_ARFifty>
+	<Long_RF_Bullet_MDFifty>MICOR Defense MD/Leader 50 bullet</Long_RF_Bullet_MDFifty>
+	<Long_RF_Bullet_HecateII>PGM Precision Ultima Ratio 'Hécate II' bullet</Long_RF_Bullet_HecateII>
+	<Long_RF_Bullet_MEightyTwo>Barrett M82A1 bullet</Long_RF_Bullet_MEightyTwo>
+	<Long_RF_Bullet_Mhundredthirtyfour>Hand held M-134 bullet</Long_RF_Bullet_Mhundredthirtyfour>
+	<Long_RF_Bullet_Type73LMG>Type 73 box-magazine LMG bullet</Long_RF_Bullet_Type73LMG>
+	<Long_RF_Bullet_MadsenLMG>Madsen M1948 LMG bullet</Long_RF_Bullet_MadsenLMG>
+	<Long_RF_Bullet_MGSixty>Rheinmetall MG60 LMG bullet</Long_RF_Bullet_MGSixty>
+	<Long_RF_Bullet_MilkorMGL>Milkor M32 MGL grenade</Long_RF_Bullet_MilkorMGL>
+	<Long_RF_Bullet_RPGSeven>RPG-7 rocket propelled grenade</Long_RF_Bullet_RPGSeven>
+	<Long_RF_Projectile_CarlGustaf>Carl Gustaf M3 recoilless rifle projectile</Long_RF_Projectile_CarlGustaf>
+
+		<AEight_RF_Gun_Deringer>Deringer revolver</AEight_RF_Gun_Deringer>
+		<AEight_RF_Gun_Taurus>Taurus revolver</AEight_RF_Gun_Taurus>
+		<AEight_RF_Gun_ModelFivehundred>Model 500 revolver</AEight_RF_Gun_ModelFivehundred>
+		<AEight_RF_Gun_RugerMkIII>Ruger pistol</AEight_RF_Gun_RugerMkIII>
+		<AEight_RF_Gun_AT2K>AT-2000 pistol</AEight_RF_Gun_AT2K>
+		<AEight_RF_Gun_VektorCP>Vektor pistol</AEight_RF_Gun_VektorCP>
+		<AEight_RF_Gun_ParaOrdnancePFourteenFortyfive>P14-45 pistol</AEight_RF_Gun_ParaOrdnancePFourteenFortyfive>
+		<AEight_RF_Gun_TokarevTT>TT pistol</AEight_RF_Gun_TokarevTT>
+		<AEight_RF_Gun_Tecnine>TEC-9 machinepistol</AEight_RF_Gun_Tecnine>
+		<AEight_RF_Gun_93R>93R machinepistol</AEight_RF_Gun_93R>
+		<AEight_RF_Gun_TMP>TMP SMG</AEight_RF_Gun_TMP>
+		<AEight_RF_Gun_Skorpion>Skorpion SMG</AEight_RF_Gun_Skorpion>
+		<AEight_RF_Gun_MPFiveKPDW>MP-5 PDW</AEight_RF_Gun_MPFiveKPDW>
+		<AEight_RF_Gun_Vector>Vector SMG</AEight_RF_Gun_Vector>
+		<AEight_RF_Gun_GreaseGun>M-3 SMG</AEight_RF_Gun_GreaseGun>
+		<AEight_RF_Gun_CFourHafdasa>C-4 SMG</AEight_RF_Gun_CFourHafdasa>
+		<AEight_RF_Gun_CXfour>CX-4 carbine</AEight_RF_Gun_CXfour>
+		<AEight_RF_Gun_PCnine>PC-9 carbine</AEight_RF_Gun_PCnine>
+		<AEight_RF_Gun_TenTwentyTwo>10-22 carbine</AEight_RF_Gun_TenTwentyTwo>
+		<AEight_RF_Gun_USC>USC carbine</AEight_RF_Gun_USC>
+		<AEight_RF_Gun_Spencer>Spencer carbine</AEight_RF_Gun_Spencer>
+		<AEight_RF_Gun_Striker>Striker autoshotgun</AEight_RF_Gun_Striker>
+		<AEight_RF_Gun_AAtwelve>AA-12 autoshotgun</AEight_RF_Gun_AAtwelve>
+		<AEight_RF_Gun_HKCaws>Caws autoshotgun</AEight_RF_Gun_HKCaws>
+		<AEight_RF_Gun_Galil>Galil assault rifle</AEight_RF_Gun_Galil>
+		<AEight_RF_Gun_XMeight>XM-8 assault rifle</AEight_RF_Gun_XMeight>
+		<AEight_RF_Gun_AKFortySeven>AK-47 assault rifle</AEight_RF_Gun_AKFortySeven>
+		<AEight_RF_Gun_Mosin>Mosin rifle</AEight_RF_Gun_Mosin>
+		<AEight_RF_Gun_WA2K>WA-2000 sniper rifle</AEight_RF_Gun_WA2K>
+		<AEight_RF_Gun_Scout>Scout sniper rifle</AEight_RF_Gun_Scout>
+		<AEight_RF_Gun_DragunovSVD>Dragunov sniper rifle</AEight_RF_Gun_DragunovSVD>
+		<AEight_RF_Gun_ARFifty>AR-50 antimateriel rifle</AEight_RF_Gun_ARFifty>
+		<AEight_RF_Gun_MDFifty>MD-50 antimateriel rifle</AEight_RF_Gun_MDFifty>
+		<AEight_RF_Gun_HecateII>Hecate-II antimateriel rifle</AEight_RF_Gun_HecateII>
+		<AEight_RF_Gun_MEightyTwo>M-82 antimateriel rifle</AEight_RF_Gun_MEightyTwo>
+		<AEight_RF_Gun_Mhundredthirtyfour>M-134 machinegun</AEight_RF_Gun_Mhundredthirtyfour>
+		<AEight_RF_Gun_Type73LMG>Type-73 LMG</AEight_RF_Gun_Type73LMG>
+		<AEight_RF_Gun_MadsenLMG>Madsen LMG</AEight_RF_Gun_MadsenLMG>
+		<AEight_RF_Gun_MGSixty>MG-60 LMG</AEight_RF_Gun_MGSixty>
+		<AEight_RF_Gun_MilkorMGL>Milkor grenade launcher</AEight_RF_Gun_MilkorMGL>
+		<AEight_RF_Gun_RPGSeven>RPG-7 grenade launcher</AEight_RF_Gun_RPGSeven>
+		<AEight_RF_Gun_CarlGustaf>Carl Gustaf launcher</AEight_RF_Gun_CarlGustaf>
+		<AEight_RF_Bullet_Deringer>Deringer revolver bullet</AEight_RF_Bullet_Deringer>
+		<AEight_RF_Bullet_Taurus>Taurus revolver bullet</AEight_RF_Bullet_Taurus>
+		<AEight_RF_Bullet_ModelFivehundred>Model 500 revolver bullet</AEight_RF_Bullet_ModelFivehundred>
+		<AEight_RF_Bullet_RugerMkIII>Ruger pistol bullet</AEight_RF_Bullet_RugerMkIII>
+		<AEight_RF_Bullet_AT2K>AT-2000 pistol bullet</AEight_RF_Bullet_AT2K>
+		<AEight_RF_Bullet_VektorCP>Vektor pistol bullet</AEight_RF_Bullet_VektorCP>
+		<AEight_RF_Bullet_ParaOrdnancePFourteenFortyfive>P14-45 pistol bullet</AEight_RF_Bullet_ParaOrdnancePFourteenFortyfive>
+		<AEight_RF_Bullet_TokarevTT>TT pistol bullet</AEight_RF_Bullet_TokarevTT>
+		<AEight_RF_Bullet_Tecnine>TEC-9 machinepistol bullet</AEight_RF_Bullet_Tecnine>
+		<AEight_RF_Bullet_93R>93R machinepistol bullet</AEight_RF_Bullet_93R>
+		<AEight_RF_Bullet_TMP>TMP SMG bullet</AEight_RF_Bullet_TMP>
+		<AEight_RF_Bullet_Skorpion>Skorpion SMG bullet</AEight_RF_Bullet_Skorpion>
+		<AEight_RF_Bullet_MPFiveKPDW>MP-5 PDW bullet</AEight_RF_Bullet_MPFiveKPDW>
+		<AEight_RF_Bullet_Vector>Vector SMG bullet</AEight_RF_Bullet_Vector>
+		<AEight_RF_Bullet_GreaseGun>M-3 SMG bullet</AEight_RF_Bullet_GreaseGun>
+		<AEight_RF_Bullet_CFourHafdasa>C-4 SMG bullet</AEight_RF_Bullet_CFourHafdasa>
+		<AEight_RF_Bullet_CXfour>CX-4 carbine bullet</AEight_RF_Bullet_CXfour>
+		<AEight_RF_Bullet_PCnine>PC-9 carbine bullet</AEight_RF_Bullet_PCnine>
+		<AEight_RF_Bullet_TenTwentyTwo>10-22 carbine bullet</AEight_RF_Bullet_TenTwentyTwo>
+		<AEight_RF_Bullet_USC>USC carbine bullet</AEight_RF_Bullet_USC>
+		<AEight_RF_Bullet_Spencer>Spencer carbine bullet</AEight_RF_Bullet_Spencer>
+		<AEight_RF_Bullet_Striker>Striker autoshotgun blast</AEight_RF_Bullet_Striker>
+		<AEight_RF_Bullet_AAtwelve>AA-12 autoshotgun blast</AEight_RF_Bullet_AAtwelve>
+		<AEight_RF_Bullet_HKCaws>Caws autoshotgun blast</AEight_RF_Bullet_HKCaws>
+		<AEight_RF_Bullet_Galil>Galil assault rifle bullet</AEight_RF_Bullet_Galil>
+		<AEight_RF_Bullet_XMeight>XM-8 assault rifle bullet</AEight_RF_Bullet_XMeight>
+		<AEight_RF_Bullet_AKFortySeven>AK-47 assault rifle bullet</AEight_RF_Bullet_AKFortySeven>
+		<AEight_RF_Bullet_Mosin>Mosin rifle bullet</AEight_RF_Bullet_Mosin>
+		<AEight_RF_Bullet_WA2K>WA-2000 sniper rifle bullet</AEight_RF_Bullet_WA2K>
+		<AEight_RF_Bullet_Scout>Scout sniper rifle bullet</AEight_RF_Bullet_Scout>
+		<AEight_RF_Bullet_DragunovSVD>Dragunov sniper rifle bullet</AEight_RF_Bullet_DragunovSVD>
+		<AEight_RF_Bullet_ARFifty>AR-50 antimateriel rifle bullet</AEight_RF_Bullet_ARFifty>
+		<AEight_RF_Bullet_MDFifty>MD-50 antimateriel rifle bullet</AEight_RF_Bullet_MDFifty>
+		<AEight_RF_Bullet_HecateII>Hecate-II antimateriel rifle bullet</AEight_RF_Bullet_HecateII>
+		<AEight_RF_Bullet_MEightyTwo>M-82 antimateriel rifle bullet</AEight_RF_Bullet_MEightyTwo>
+		<AEight_RF_Bullet_Mhundredthirtyfour>M-134 machinegun bullet</AEight_RF_Bullet_Mhundredthirtyfour>
+		<AEight_RF_Bullet_Type73LMG>Type-73 LMG bullet</AEight_RF_Bullet_Type73LMG>
+		<AEight_RF_Bullet_MadsenLMG>Madsen LMG bullet</AEight_RF_Bullet_MadsenLMG>
+		<AEight_RF_Bullet_MGSixty>MG-60 LMG bullet</AEight_RF_Bullet_MGSixty>
+		<AEight_RF_Bullet_MilkorMGL>MGL grenade</AEight_RF_Bullet_MilkorMGL>
+		<AEight_RF_Bullet_RPGSeven>rocket propelled grenade</AEight_RF_Bullet_RPGSeven>
+		<AEight_RF_Projectile_CarlGustaf>Carl Gustaf projectile</AEight_RF_Projectile_CarlGustaf>
+
+		<ANine_RF_Gun_Deringer>pocket revolver</ANine_RF_Gun_Deringer>
+		<ANine_RF_Gun_Taurus>court revolver</ANine_RF_Gun_Taurus>
+		<ANine_RF_Gun_ModelFivehundred>large-calibre revolver</ANine_RF_Gun_ModelFivehundred>
+		<ANine_RF_Gun_RugerMkIII>rimfire pistol</ANine_RF_Gun_RugerMkIII>
+		<ANine_RF_Gun_AT2K>detective pistol</ANine_RF_Gun_AT2K>
+		<ANine_RF_Gun_VektorCP>curved frame pistol</ANine_RF_Gun_VektorCP>
+		<ANine_RF_Gun_ParaOrdnancePFourteenFortyfive>counterfeit handgun</ANine_RF_Gun_ParaOrdnancePFourteenFortyfive>
+		<ANine_RF_Gun_TokarevTT>soviet pistol</ANine_RF_Gun_TokarevTT>
+		<ANine_RF_Gun_Tecnine>assault pistol</ANine_RF_Gun_Tecnine>
+		<ANine_RF_Gun_93R>burstfire machinepistol</ANine_RF_Gun_93R>
+		<ANine_RF_Gun_TMP>silenced PDW</ANine_RF_Gun_TMP>
+		<ANine_RF_Gun_Skorpion>folding stock SMG</ANine_RF_Gun_Skorpion>
+		<ANine_RF_Gun_MPFiveKPDW>aviation crew SMG</ANine_RF_Gun_MPFiveKPDW>
+		<ANine_RF_Gun_Vector>modern SMG</ANine_RF_Gun_Vector>
+		<ANine_RF_Gun_GreaseGun>greasegun SMG</ANine_RF_Gun_GreaseGun>
+		<ANine_RF_Gun_CFourHafdasa>aluminum-cast SMG</ANine_RF_Gun_CFourHafdasa>
+		<ANine_RF_Gun_CXfour>storm carbine</ANine_RF_Gun_CXfour>
+		<ANine_RF_Gun_PCnine>police carbine</ANine_RF_Gun_PCnine>
+		<ANine_RF_Gun_TenTwentyTwo>varmint rifle</ANine_RF_Gun_TenTwentyTwo>
+		<ANine_RF_Gun_USC>civilian PCC</ANine_RF_Gun_USC>
+		<ANine_RF_Gun_Spencer>repeating rifle</ANine_RF_Gun_Spencer>
+		<ANine_RF_Gun_Striker>combat shotgun</ANine_RF_Gun_Striker>
+		<ANine_RF_Gun_AAtwelve>automatic shotgun</ANine_RF_Gun_AAtwelve>
+		<ANine_RF_Gun_HKCaws>CAW shotgun</ANine_RF_Gun_HKCaws>
+		<ANine_RF_Gun_Galil>jagged rifle</ANine_RF_Gun_Galil>
+		<ANine_RF_Gun_XMeight>military rifle</ANine_RF_Gun_XMeight>
+		<ANine_RF_Gun_AKFortySeven>guerilla rifle</ANine_RF_Gun_AKFortySeven>
+		<ANine_RF_Gun_Mosin>3-line rifle</ANine_RF_Gun_Mosin>
+		<ANine_RF_Gun_WA2K>specialist rifle</ANine_RF_Gun_WA2K>
+		<ANine_RF_Gun_Scout>hunting rifle</ANine_RF_Gun_Scout>
+		<ANine_RF_Gun_DragunovSVD>soviet DMR</ANine_RF_Gun_DragunovSVD>
+		<ANine_RF_Gun_ARFifty>deadeye rifle</ANine_RF_Gun_ARFifty>
+		<ANine_RF_Gun_MDFifty>heavy AMR</ANine_RF_Gun_MDFifty>
+		<ANine_RF_Gun_HecateII>SASR</ANine_RF_Gun_HecateII>
+		<ANine_RF_Gun_MEightyTwo>police AMR</ANine_RF_Gun_MEightyTwo>
+		<ANine_RF_Gun_Mhundredthirtyfour>mitrailleuse</ANine_RF_Gun_Mhundredthirtyfour>
+		<ANine_RF_Gun_Type73LMG>box-magazine GPMG</ANine_RF_Gun_Type73LMG>
+		<ANine_RF_Gun_MadsenLMG>replica LMG</ANine_RF_Gun_MadsenLMG>
+		<ANine_RF_Gun_MGSixty>replica GPMG</ANine_RF_Gun_MGSixty>
+		<ANine_RF_Gun_MilkorMGL>multiple grenade launcher</ANine_RF_Gun_MilkorMGL>
+		<ANine_RF_Gun_RPGSeven>RPG launcher</ANine_RF_Gun_RPGSeven>
+		<ANine_RF_Gun_CarlGustaf>MAAWS</ANine_RF_Gun_CarlGustaf>
+		<ANine_RF_Bullet_Deringer>pocket revolver bullet</ANine_RF_Bullet_Deringer>
+		<ANine_RF_Bullet_Taurus>court revolver bullet</ANine_RF_Bullet_Taurus>
+		<ANine_RF_Bullet_ModelFivehundred>large-calibre revolver bullet</ANine_RF_Bullet_ModelFivehundred>
+		<ANine_RF_Bullet_RugerMkIII>rimfire pistol bullet</ANine_RF_Bullet_RugerMkIII>
+		<ANine_RF_Bullet_AT2K>detective pistol bullet</ANine_RF_Bullet_AT2K>
+		<ANine_RF_Bullet_VektorCP>curved frame pistol bullet</ANine_RF_Bullet_VektorCP>
+		<ANine_RF_Bullet_ParaOrdnancePFourteenFortyfive>counterfeit handgun bullet</ANine_RF_Bullet_ParaOrdnancePFourteenFortyfive>
+		<ANine_RF_Bullet_TokarevTT>soviet pistol bullet</ANine_RF_Bullet_TokarevTT>
+		<ANine_RF_Bullet_Tecnine>assault pistol bullet</ANine_RF_Bullet_Tecnine>
+		<ANine_RF_Bullet_93R>burstfire machinepistol bullet</ANine_RF_Bullet_93R>
+		<ANine_RF_Bullet_TMP>silenced PDW bullet</ANine_RF_Bullet_TMP>
+		<ANine_RF_Bullet_Skorpion>folding stock SMG bullet</ANine_RF_Bullet_Skorpion>
+		<ANine_RF_Bullet_MPFiveKPDW>aviation crew SMG bullet</ANine_RF_Bullet_MPFiveKPDW>
+		<ANine_RF_Bullet_Vector>modern SMG bullet</ANine_RF_Bullet_Vector>
+		<ANine_RF_Bullet_GreaseGun>greasegun SMG bullet</ANine_RF_Bullet_GreaseGun>
+		<ANine_RF_Bullet_CFourHafdasa>aluminum-cast SMG bullet</ANine_RF_Bullet_CFourHafdasa>
+		<ANine_RF_Bullet_CXfour>storm carbine bullet</ANine_RF_Bullet_CXfour>
+		<ANine_RF_Bullet_PCnine>police carbine bullet</ANine_RF_Bullet_PCnine>
+		<ANine_RF_Bullet_TenTwentyTwo>varmint rifle bullet</ANine_RF_Bullet_TenTwentyTwo>
+		<ANine_RF_Bullet_USC>civilian PCC bullet</ANine_RF_Bullet_USC>
+		<ANine_RF_Bullet_Spencer>repeating rifle bullet</ANine_RF_Bullet_Spencer>
+		<ANine_RF_Bullet_Striker>combat shotgun blast</ANine_RF_Bullet_Striker>
+		<ANine_RF_Bullet_AAtwelve>automatic shotgun blast</ANine_RF_Bullet_AAtwelve>
+		<ANine_RF_Bullet_HKCaws>CAW shotgun blast</ANine_RF_Bullet_HKCaws>
+		<ANine_RF_Bullet_Galil>jagged rifle bullet</ANine_RF_Bullet_Galil>
+		<ANine_RF_Bullet_XMeight>military rifle bullet</ANine_RF_Bullet_XMeight>
+		<ANine_RF_Bullet_AKFortySeven>guerilla rifle bullet</ANine_RF_Bullet_AKFortySeven>
+		<ANine_RF_Bullet_Mosin>3-line rifle bullet</ANine_RF_Bullet_Mosin>
+		<ANine_RF_Bullet_WA2K>specialist rifle bullet</ANine_RF_Bullet_WA2K>
+		<ANine_RF_Bullet_Scout>hunting rifle bullet</ANine_RF_Bullet_Scout>
+		<ANine_RF_Bullet_DragunovSVD>soviet DMR bullet</ANine_RF_Bullet_DragunovSVD>
+		<ANine_RF_Bullet_ARFifty>deadeye rifle bullet</ANine_RF_Bullet_ARFifty>
+		<ANine_RF_Bullet_MDFifty>heavy AMR bullet</ANine_RF_Bullet_MDFifty>
+		<ANine_RF_Bullet_HecateII>SASR bullet</ANine_RF_Bullet_HecateII>
+		<ANine_RF_Bullet_MEightyTwo>police AMR bullet</ANine_RF_Bullet_MEightyTwo>
+		<ANine_RF_Bullet_Mhundredthirtyfour>mitrailleuse bullet</ANine_RF_Bullet_Mhundredthirtyfour>
+		<ANine_RF_Bullet_Type73LMG>box-magazine GPMG bullet</ANine_RF_Bullet_Type73LMG>
+		<ANine_RF_Bullet_MadsenLMG>replica LMG bullet</ANine_RF_Bullet_MadsenLMG>
+		<ANine_RF_Bullet_MGSixty>replica GPMG bullet</ANine_RF_Bullet_MGSixty>
+		<ANine_RF_Bullet_MilkorMGL>MGL grenade</ANine_RF_Bullet_MilkorMGL>
+		<ANine_RF_Bullet_RPGSeven>rocket propelled grenade</ANine_RF_Bullet_RPGSeven>
+		<ANine_RF_Projectile_CarlGustaf>MAAWS projectile</ANine_RF_Projectile_CarlGustaf>
+
+	<Simple_RF_Gun_Deringer>cheap pocket revolver</Simple_RF_Gun_Deringer>
+	<Simple_RF_Gun_Taurus>spreadshot revolver</Simple_RF_Gun_Taurus>
+	<Simple_RF_Gun_ModelFivehundred>heavy revolver</Simple_RF_Gun_ModelFivehundred>
+	<Simple_RF_Gun_RugerMkIII>weak pistol</Simple_RF_Gun_RugerMkIII>
+	<Simple_RF_Gun_AT2K>plasteel pistol</Simple_RF_Gun_AT2K>
+	<Simple_RF_Gun_VektorCP>cheap pistol</Simple_RF_Gun_VektorCP>
+	<Simple_RF_Gun_ParaOrdnancePFourteenFortyfive>sidegrade pistol</Simple_RF_Gun_ParaOrdnancePFourteenFortyfive>
+	<Simple_RF_Gun_TokarevTT>soviet pistol</Simple_RF_Gun_TokarevTT>
+	<Simple_RF_Gun_Tecnine>singleshot machinepistol</Simple_RF_Gun_Tecnine>
+	<Simple_RF_Gun_93R>multishot machinepistol</Simple_RF_Gun_93R>
+	<Simple_RF_Gun_TMP>sidegrade SMG</Simple_RF_Gun_TMP>
+	<Simple_RF_Gun_Skorpion>fiveshot SMG</Simple_RF_Gun_Skorpion>
+	<Simple_RF_Gun_MPFiveKPDW>quick fiveshot SMG</Simple_RF_Gun_MPFiveKPDW>
+	<Simple_RF_Gun_Vector>plasteel SMG</Simple_RF_Gun_Vector>
+	<Simple_RF_Gun_GreaseGun>cheap SMG</Simple_RF_Gun_GreaseGun>
+	<Simple_RF_Gun_CFourHafdasa>durable SMG</Simple_RF_Gun_CFourHafdasa>
+	<Simple_RF_Gun_CXfour>twoshot carbine</Simple_RF_Gun_CXfour>
+	<Simple_RF_Gun_PCnine>singleshot carbine</Simple_RF_Gun_PCnine>
+	<Simple_RF_Gun_TenTwentyTwo>autoloading carbine</Simple_RF_Gun_TenTwentyTwo>
+	<Simple_RF_Gun_USC>multishot carbine</Simple_RF_Gun_USC>
+	<Simple_RF_Gun_Spencer>american civil war carbine</Simple_RF_Gun_Spencer>
+	<Simple_RF_Gun_Striker>cheap autoshotgun</Simple_RF_Gun_Striker>
+	<Simple_RF_Gun_AAtwelve>plasteel autoshotgun</Simple_RF_Gun_AAtwelve>
+	<Simple_RF_Gun_HKCaws>autoshotgun</Simple_RF_Gun_HKCaws>
+	<Simple_RF_Gun_Galil>cheap assault rifle</Simple_RF_Gun_Galil>
+	<Simple_RF_Gun_XMeight>plasteel assault rifle</Simple_RF_Gun_XMeight>
+	<Simple_RF_Gun_AKFortySeven>sidegrade assault rifle</Simple_RF_Gun_AKFortySeven>
+	<Simple_RF_Gun_Mosin>sidegrade survival rifle</Simple_RF_Gun_Mosin>
+	<Simple_RF_Gun_WA2K>heavy sniper rifle</Simple_RF_Gun_WA2K>
+	<Simple_RF_Gun_Scout>hunting sniper rifle</Simple_RF_Gun_Scout>
+	<Simple_RF_Gun_DragunovSVD>squad support sniper rifle</Simple_RF_Gun_DragunovSVD>
+	<Simple_RF_Gun_ARFifty>weak antimateriel rifle</Simple_RF_Gun_ARFifty>
+	<Simple_RF_Gun_MDFifty>heavy antimateriel rifle</Simple_RF_Gun_MDFifty>
+	<Simple_RF_Gun_HecateII>medium antimateriel rifle</Simple_RF_Gun_HecateII>
+	<Simple_RF_Gun_MEightyTwo>plasteel antimateriel rifle</Simple_RF_Gun_MEightyTwo>
+	<Simple_RF_Gun_Mhundredthirtyfour>light minigun</Simple_RF_Gun_Mhundredthirtyfour>
+	<Simple_RF_Gun_Type73LMG>heavy LMG</Simple_RF_Gun_Type73LMG>
+	<Simple_RF_Gun_MadsenLMG>cheap LMG</Simple_RF_Gun_MadsenLMG>
+	<Simple_RF_Gun_MGSixty>buzzsaw LMG</Simple_RF_Gun_MGSixty>
+	<Simple_RF_Gun_MilkorMGL>singleshot grenade launcher</Simple_RF_Gun_MilkorMGL>
+	<Simple_RF_Gun_RPGSeven>cheap reusable rocket launcher</Simple_RF_Gun_RPGSeven>
+	<Simple_RF_Gun_CarlGustaf>plasteel reusable rocket launcher</Simple_RF_Gun_CarlGustaf>
+	<Simple_RF_Bullet_Deringer>cheap pocket revolver bullet</Simple_RF_Bullet_Deringer>
+	<Simple_RF_Bullet_Taurus>spreadshot revolver bullet</Simple_RF_Bullet_Taurus>
+	<Simple_RF_Bullet_ModelFivehundred>heavy revolver bullet</Simple_RF_Bullet_ModelFivehundred>
+	<Simple_RF_Bullet_RugerMkIII>weak pistol bullet</Simple_RF_Bullet_RugerMkIII>
+	<Simple_RF_Bullet_AT2K>plasteel pistol bullet</Simple_RF_Bullet_AT2K>
+	<Simple_RF_Bullet_VektorCP>cheap pistol bullet</Simple_RF_Bullet_VektorCP>
+	<Simple_RF_Bullet_ParaOrdnancePFourteenFortyfive>sidegrade pistol bullet</Simple_RF_Bullet_ParaOrdnancePFourteenFortyfive>
+	<Simple_RF_Bullet_TokarevTT>soviet pistol bullet</Simple_RF_Bullet_TokarevTT>
+	<Simple_RF_Bullet_Tecnine>singleshot machinepistol bullet</Simple_RF_Bullet_Tecnine>
+	<Simple_RF_Bullet_93R>multishot machinepistol bullet</Simple_RF_Bullet_93R>
+	<Simple_RF_Bullet_TMP>sidegrade SMG bullet</Simple_RF_Bullet_TMP>
+	<Simple_RF_Bullet_Skorpion>fiveshot SMG bullet</Simple_RF_Bullet_Skorpion>
+	<Simple_RF_Bullet_MPFiveKPDW>quick fiveshot SMG bullet</Simple_RF_Bullet_MPFiveKPDW>
+	<Simple_RF_Bullet_Vector>plasteel SMG bullet</Simple_RF_Bullet_Vector>
+	<Simple_RF_Bullet_GreaseGun>cheap SMG bullet</Simple_RF_Bullet_GreaseGun>
+	<Simple_RF_Bullet_CFourHafdasa>durable SMG bullet</Simple_RF_Bullet_CFourHafdasa>
+	<Simple_RF_Bullet_CXfour>twoshot carbine bullet</Simple_RF_Bullet_CXfour>
+	<Simple_RF_Bullet_PCnine>singleshot carbine bullet</Simple_RF_Bullet_PCnine>
+	<Simple_RF_Bullet_TenTwentyTwo>autoloading carbine bullet</Simple_RF_Bullet_TenTwentyTwo>
+	<Simple_RF_Bullet_USC>multishot carbine bullet</Simple_RF_Bullet_USC>
+	<Simple_RF_Bullet_Spencer>american civil war carbine bullet</Simple_RF_Bullet_Spencer>
+	<Simple_RF_Bullet_Striker>cheap autoshotgun blast</Simple_RF_Bullet_Striker>
+	<Simple_RF_Bullet_AAtwelve>plasteel autoshotgun blast</Simple_RF_Bullet_AAtwelve>
+	<Simple_RF_Bullet_HKCaws>autoshotgun blast</Simple_RF_Bullet_HKCaws>
+	<Simple_RF_Bullet_Galil>cheap assault rifle bullet</Simple_RF_Bullet_Galil>
+	<Simple_RF_Bullet_XMeight>plasteel assault rifle bullet</Simple_RF_Bullet_XMeight>
+	<Simple_RF_Bullet_AKFortySeven>sidegrade assault rifle bullet</Simple_RF_Bullet_AKFortySeven>
+	<Simple_RF_Bullet_Mosin>sidegrade survival rifle bullet</Simple_RF_Bullet_Mosin>
+	<Simple_RF_Bullet_WA2K>heavy sniper rifle bullet</Simple_RF_Bullet_WA2K>
+	<Simple_RF_Bullet_Scout>hunting sniper rifle bullet</Simple_RF_Bullet_Scout>
+	<Simple_RF_Bullet_DragunovSVD>squad support sniper rifle bullet</Simple_RF_Bullet_DragunovSVD>
+	<Simple_RF_Bullet_ARFifty>weak antimateriel rifle bullet</Simple_RF_Bullet_ARFifty>
+	<Simple_RF_Bullet_MDFifty>heavy antimateriel rifle bullet</Simple_RF_Bullet_MDFifty>
+	<Simple_RF_Bullet_HecateII>medium antimateriel rifle bullet</Simple_RF_Bullet_HecateII>
+	<Simple_RF_Bullet_MEightyTwo>plasteel antimateriel rifle bullet</Simple_RF_Bullet_MEightyTwo>
+	<Simple_RF_Bullet_Mhundredthirtyfour>light minigun bullet</Simple_RF_Bullet_Mhundredthirtyfour>
+	<Simple_RF_Bullet_Type73LMG>heavy LMG bullet</Simple_RF_Bullet_Type73LMG>
+	<Simple_RF_Bullet_MadsenLMG>cheap LMG bullet</Simple_RF_Bullet_MadsenLMG>
+	<Simple_RF_Bullet_MGSixty>buzzsaw LMG bullet</Simple_RF_Bullet_MGSixty>
+	<Simple_RF_Bullet_MilkorMGL>grenade</Simple_RF_Bullet_MilkorMGL>
+	<Simple_RF_Bullet_RPGSeven>rocket</Simple_RF_Bullet_RPGSeven>
+	<Simple_RF_Projectile_CarlGustaf>rocket</Simple_RF_Projectile_CarlGustaf>
+
+</LanguageData>

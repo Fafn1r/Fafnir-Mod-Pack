@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Rimfire 2.2 CR-1.6.9.2</name>
+	<author>Alistaire</author>
+	<url>https://ludeon.com/forums/index.php?topic=9536</url>
+	<targetVersion>0.16.1386</targetVersion>
+	<description>REQUIRES HugsLib 2.2.3+ by UnlimitedHugs
+REQUIRES CombatRealism-1.6.9.2+ by SK
+
+
+Rimfire adds fourty-eight weapons in a style similar to the vanilla set. Each weapon can be toggled individually in the Community Core Library (CCL) Mod Configuration Menu (MCM) - Mod Options in the main menu with CCL active. The CCL MCM additionally allows toggling each and every weapon in the game, along with mods, weapon craftability, categorization, whether disabled weapons are actively destroyed, and in-game the "Nuke" functionality can be used to remove all instances of disabled weapons from the savefile.</description>
+</ModMetaData>

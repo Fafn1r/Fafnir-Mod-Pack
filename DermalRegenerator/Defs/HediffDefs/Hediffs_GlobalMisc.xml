@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef Name="DiseaseBase" Abstract="True">
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+  </HediffDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>DermalRegeneratorSickness</defName>
+    <label>Dermal Regenerator sickness</label>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>10000</min>
+          <max>10000</max>
+        </disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <vomitMtbDays>0.25</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.7</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
