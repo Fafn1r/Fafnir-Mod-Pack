@@ -37,8 +37,8 @@
         <max>1.05</max>
       </visualSizeRange>
     </plant>
-    <minLight>-999</minLight>
-    <maxLight>999</maxLight>
+    <minLight>0</minLight>
+    <maxLight>100</maxLight>
    </ThingDef>
 
 

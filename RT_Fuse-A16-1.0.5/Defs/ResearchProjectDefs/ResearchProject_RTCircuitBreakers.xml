@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>ResearchProject_RTCircuitBreakers</defName>
+		<label>circuit breakers</label>
+		<description>Allows building circuit breakers; can be placed anywhere on a power network with batteries. Each one is enough to safely dissipate up to 3000 Wd (three standard batteries) discharge, and will need to be manually reset if tripped.</description>
+		<baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>ResearchProject_RTBasicFuses</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>17</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>
